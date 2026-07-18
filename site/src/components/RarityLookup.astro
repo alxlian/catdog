@@ -1,0 +1,53 @@
+<section id="rarity">
+  <h2>How Rare Is Your Pet?</h2>
+  <p>Look up your pet's breed and neighbourhood to see how unique they are among Toronto's licensed animals.</p>
+  <div class="rarity-form">
+    <select id="rarity-species">
+      <option value="">Species...</option>
+      <option value="DOG">Dog</option>
+      <option value="CAT">Cat</option>
+    </select>
+    <select id="rarity-breed" disabled>
+      <option value="">Breed...</option>
+    </select>
+    <select id="rarity-fsa" disabled>
+      <option value="">Neighbourhood (FSA)...</option>
+    </select>
+  </div>
+  <div id="rarity-result"></div>
+</section>
+
+<script>
+  import { initRarityLookup } from '../scripts/rarity.js';
+  import breedList from '../data/breed-list.json';
+  import fsaSummary from '../data/fsa-summary.json';
+  initRarityLookup(breedList, fsaSummary);
+</script>
+
+<style>
+  #rarity { text-align: center; }
+  #rarity > p { color: var(--gray); max-width: 36rem; margin: 0 auto; }
+  .rarity-form {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+  }
+  .rarity-form select {
+    padding: 0.625rem 1rem;
+    border: 1px solid var(--gray-light);
+    border-radius: 0.375rem;
+    font-family: var(--font);
+    font-size: 0.9375rem;
+    min-width: 12rem;
+    background: white;
+  }
+  .rarity-form select:disabled { opacity: 0.5; }
+  #rarity-result {
+    max-width: 32rem;
+    margin: 0 auto;
+    font-size: 1.125rem;
+    min-height: 4rem;
+  }
+</style>

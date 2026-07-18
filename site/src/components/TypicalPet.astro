@@ -1,0 +1,35 @@
+---
+import citywide from '../data/citywide.json';
+
+const dogBreed = citywide.top_breed?.DOG;
+const catBreed = citywide.top_breed?.CAT;
+const dogName = citywide.top_name?.DOG;
+const catName = citywide.top_name?.CAT;
+---
+
+<section id="typical">
+  <h2>The Most Typical Pet in Toronto</h2>
+  <p>These are independent stats from separate datasets — not one combined animal profile.</p>
+  <div class="grid-3">
+    <div class="stat-card">
+      <div class="stat-label">Most Licensed Species</div>
+      <div class="stat-value">{citywide.species_split.DOG > citywide.species_split.CAT ? 'Dog' : 'Cat'}</div>
+      <div class="stat-label">{Math.max(citywide.species_split.DOG, citywide.species_split.CAT).toLocaleString()} licenses</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Most Common Breed</div>
+      {dogBreed && <div><span class="stat-value dog-color" style="font-size:1.5rem">{dogBreed.breed}</span><div class="stat-label">{dogBreed.count.toLocaleString()} dogs</div></div>}
+      {catBreed && <div style="margin-top:0.75rem"><span class="stat-value cat-color" style="font-size:1.5rem">{catBreed.breed}</span><div class="stat-label">{catBreed.count.toLocaleString()} cats</div></div>}
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Most Popular Name</div>
+      {dogName && <div><span class="stat-value dog-color" style="font-size:1.5rem">{dogName.name}</span><div class="stat-label">{dogName.count.toLocaleString()} dogs ({dogName.year})</div></div>}
+      {catName && <div style="margin-top:0.75rem"><span class="stat-value cat-color" style="font-size:1.5rem">{catName.name}</span><div class="stat-label">{catName.count.toLocaleString()} cats ({catName.year})</div></div>}
+    </div>
+  </div>
+</section>
+
+<style>
+  #typical { text-align: center; }
+  #typical > p { color: var(--gray); max-width: 36rem; margin: 0 auto 2rem; font-style: italic; }
+</style>
