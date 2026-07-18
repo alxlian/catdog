@@ -1,0 +1,29 @@
+{
+  "total_licenses": 230620,
+  "species_split": {
+    "DOG": 163169,
+    "CAT": 67451
+  },
+  "top_breed": {
+    "DOG": {
+      "breed": "LABRADOR RETR",
+      "count": 15815
+    },
+    "CAT": {
+      "breed": "DOMESTIC SH",
+      "count": 49504
+    }
+  },
+  "top_name": {
+    "CAT": {
+      "name": "LUNA",
+      "count": 120,
+      "year": 2026
+    },
+    "DOG": {
+      "name": "LUNA",
+      "count": 299,
+      "year": 2026
+    }
+  }
+}

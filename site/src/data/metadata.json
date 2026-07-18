@@ -1,0 +1,13 @@
+{
+  "generated_at": "2026-07-18T16:03:40.137101+00:00",
+  "year_range": [
+    2023,
+    2026
+  ],
+  "total_records": 230620,
+  "disclaimers": [
+    "Dog/cat dominance reflects licensing behavior, not confirmed pet population. Cat licensing compliance is generally lower than dog compliance.",
+    "Per-capita rate uses 2021 Census population against 2023+ license data \u2014 there is a year mismatch.",
+    "All data is self-reported voluntary-compliance licensing, not a full census of pets in the city."
+  ]
+}
