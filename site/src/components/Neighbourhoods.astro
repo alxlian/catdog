@@ -1,0 +1,25 @@
+<section id="neighbourhoods">
+  <h2>The Neighbourhoods</h2>
+  <p>Which areas of Toronto are dog country, and which lean feline? This map shows the dog-to-cat licensing ratio by Forward Sortation Area (postal code prefix).</p>
+  <div id="fsa-map"></div>
+  <div id="map-tooltip" class="tooltip" style="display:none;"></div>
+  <p class="disclaimer">Dog/cat dominance reflects licensing behavior, not confirmed pet population. Cat licensing compliance is generally lower than dog licensing compliance — an area may appear dog-dominant simply because dog owners are more likely to license.</p>
+</section>
+
+<script>
+  import { renderMap } from '../scripts/map.js';
+  import fsaSummary from '../data/fsa-summary.json';
+  import fsaGeo from '../data/fsa-geo.json';
+  renderMap('#fsa-map', '#map-tooltip', fsaGeo, fsaSummary);
+</script>
+
+<style>
+  #neighbourhoods { text-align: center; }
+  #neighbourhoods p { max-width: 40rem; margin: 0 auto; color: var(--gray); }
+  #fsa-map {
+    margin: 2rem auto;
+    max-width: 48rem;
+    position: relative;
+  }
+  #fsa-map svg { width: 100%; height: auto; }
+</style>
