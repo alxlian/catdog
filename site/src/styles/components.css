@@ -1,0 +1,62 @@
+/* Stat cards */
+.stat-card {
+  background: white;
+  border: 1px solid var(--gray-light);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  text-align: center;
+}
+.stat-card .stat-value {
+  font-size: 2.5rem;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+.stat-card .stat-label {
+  font-size: 0.875rem;
+  color: var(--gray);
+  margin-top: 0.25rem;
+}
+
+/* Tooltip */
+.tooltip {
+  position: absolute;
+  background: white;
+  border: 1px solid var(--gray-light);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  pointer-events: none;
+  font-size: 0.875rem;
+  z-index: 100;
+  max-width: 20rem;
+}
+
+/* Disclaimer */
+.disclaimer {
+  font-size: 0.8125rem;
+  color: var(--gray);
+  font-style: italic;
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  border-left: 3px solid var(--gray-light);
+}
+
+/* Dog/Cat color utilities */
+.dog-color { color: var(--red); }
+.cat-color { color: var(--blue); }
+
+/* Grid */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .grid-2, .grid-3 { grid-template-columns: 1fr; }
+}

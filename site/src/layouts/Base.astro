@@ -1,0 +1,23 @@
+---
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+import '../styles/components.css';
+---
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Pets of Toronto</title>
+  <meta name="description" content="Exploring Toronto's licensed dogs and cats — breeds, names, and neighbourhoods, visualized from City of Toronto open data." />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+</head>
+<body>
+  <Nav />
+  <main>
+    <slot />
+  </main>
+  <Footer />
+</body>
+</html>

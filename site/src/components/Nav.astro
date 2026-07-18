@@ -1,0 +1,76 @@
+<nav id="site-nav">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">Pets of TO</a>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="#neighbourhoods">Neighbourhoods</a></li>
+      <li><a href="#breeds">Breeds</a></li>
+      <li><a href="#names">Names</a></li>
+      <li><a href="#typical">Typical Pet</a></li>
+      <li><a href="#rarity">Rarity</a></li>
+    </ul>
+  </div>
+</nav>
+
+<style>
+  #site-nav {
+    position: sticky;
+    top: 0;
+    background: var(--bg);
+    border-bottom: 1px solid var(--gray-light);
+    z-index: 50;
+  }
+  .nav-inner {
+    max-width: 72rem;
+    margin: 0 auto;
+    padding: 0.75rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-logo {
+    font-weight: 700;
+    font-size: 1.125rem;
+    color: var(--navy);
+  }
+  .nav-logo:hover { text-decoration: none; }
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+  }
+  .nav-links a {
+    color: var(--gray);
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: color 0.15s;
+  }
+  .nav-links a:hover,
+  .nav-links a.active { color: var(--navy); text-decoration: none; }
+  .nav-toggle { display: none; background: none; border: none; cursor: pointer; }
+  .nav-toggle span {
+    display: block;
+    width: 1.25rem;
+    height: 2px;
+    background: var(--navy);
+    margin: 4px 0;
+  }
+
+  @media (max-width: 768px) {
+    .nav-toggle { display: block; }
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: var(--bg);
+      padding: 1rem 1.5rem;
+      border-bottom: 1px solid var(--gray-light);
+    }
+    .nav-links.open { display: flex; }
+  }
+</style>
