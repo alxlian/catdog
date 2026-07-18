@@ -1,0 +1,62 @@
+---
+import citywide from '../data/citywide.json';
+
+const total = citywide.total_licenses.toLocaleString();
+const dogCount = citywide.species_split.DOG.toLocaleString();
+const catCount = citywide.species_split.CAT.toLocaleString();
+---
+
+<section id="hero">
+  <div class="hero-content">
+    <h1>The Pets of Toronto</h1>
+    <p class="hero-subtitle">A data portrait of {total} licensed dogs and cats across the city's neighbourhoods.</p>
+    <div class="hero-stats">
+      <div class="stat-card">
+        <div class="stat-value dog-color">{dogCount}</div>
+        <div class="stat-label">Licensed Dogs</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value cat-color">{catCount}</div>
+        <div class="stat-label">Licensed Cats</div>
+      </div>
+    </div>
+    <div id="species-donut" class="donut-container"></div>
+  </div>
+</section>
+
+<script>
+  import { renderDonut } from '../scripts/donut.js';
+  import citywide from '../data/citywide.json';
+  renderDonut('#species-donut', citywide.species_split);
+</script>
+
+<style>
+  #hero {
+    text-align: center;
+    padding: 6rem 1.5rem 4rem;
+  }
+  .hero-subtitle {
+    font-size: 1.25rem;
+    color: var(--gray);
+    margin-top: 0.75rem;
+    max-width: 36rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2.5rem;
+  }
+  .hero-stats .stat-card { min-width: 10rem; }
+  .donut-container {
+    margin: 2.5rem auto 0;
+    max-width: 16rem;
+  }
+
+  @media (max-width: 768px) {
+    #hero { padding: 3rem 1rem 2rem; }
+    .hero-stats { flex-direction: column; align-items: center; }
+  }
+</style>
