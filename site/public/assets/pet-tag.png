@@ -1,0 +1,17 @@
+<svg preserveAspectRatio="none" width="100%" height="100%" overflow="visible" style="display: block;" viewBox="0 0 178 213.643" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 1">
+<path id="Subtract" d="M89 42C138.153 42 178 80.4235 178 127.821C178 175.219 138.153 213.643 89 213.643C39.8467 213.643 0 175.219 0 127.821C7.69682e-05 80.4235 39.8467 42 89 42ZM88.3643 50.582C80.2891 50.582 73.7432 56.8949 73.7432 64.6816C73.7433 72.4683 80.2892 78.7803 88.3643 78.7803C96.4394 78.7803 102.985 72.4683 102.985 64.6816C102.985 56.8948 96.4394 50.582 88.3643 50.582Z" fill="url(#paint0_linear_0_30)"/>
+<path id="Ellipse 3" d="M112 21C112 32.598 101.703 42 89 42C76.2975 42 66 32.598 66 21C66 9.40202 76.2975 0 89 0C101.703 0 112 9.40202 112 21ZM74.3368 21C74.3368 28.3941 80.9017 34.3881 89 34.3881C97.0983 34.3881 103.663 28.3941 103.663 21C103.663 13.6059 97.0983 7.61187 89 7.61187C80.9017 7.61187 74.3368 13.6059 74.3368 21Z" fill="var(--fill-0, #FFD64D)"/>
+<rect id="Rectangle 7" x="81" y="21" width="15" height="42" rx="4" fill="url(#paint1_linear_0_30)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_0_30" x1="160.2" y1="205.06" x2="13.3386" y2="28.7452" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F8AC29"/>
+<stop offset="1" stop-color="#FFF444"/>
+</linearGradient>
+<linearGradient id="paint1_linear_0_30" x1="89" y1="15" x2="89" y2="113" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FBCC35"/>
+<stop offset="1" stop-color="#FEA929"/>
+</linearGradient>
+</defs>
+</svg>

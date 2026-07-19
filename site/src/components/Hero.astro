@@ -1,111 +1,152 @@
 ---
 import citywide from '../data/citywide.json';
+import breedList from '../data/breed-list.json';
+import names from '../data/names.json';
 
-const total = citywide.total_licenses.toLocaleString();
-const dogCount = citywide.species_split.DOG.toLocaleString();
-const catCount = citywide.species_split.CAT.toLocaleString();
+const totalDogs = citywide.species_split.DOG.toLocaleString();
+const totalCats = citywide.species_split.CAT.toLocaleString();
+
+// Compute unique breeds
+const uniqueBreeds = new Set(breedList.map((e: any) => e.breed)).size;
+
+// Compute pets named Luna
+let lunaCount = 0;
+for (const species of Object.values(names) as any[]) {
+  if (species['LUNA']) {
+    for (const entry of species['LUNA']) {
+      lunaCount += entry.count;
+    }
+  }
+}
 ---
 
 <section id="hero">
-  <div class="hero-content">
-    <h1>The Pets of Toronto</h1>
-    <p class="hero-subtitle">A data portrait of {total} licensed dogs and cats across the city's neighbourhoods.</p>
-    <div class="hero-stats">
-      <div class="stat-card">
-        <div class="stat-value dog-color">{dogCount}</div>
-        <div class="stat-label">Licensed Dogs</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-value cat-color">{catCount}</div>
-        <div class="stat-label">Licensed Cats</div>
+  <h1 class="hero-title">Cats &amp; Dogs of Toronto</h1>
+
+  <div class="pet-tag-row">
+    <div class="pet-tag">
+      <div class="tag-ring"></div>
+      <div class="tag-connector"></div>
+      <div class="tag-body">
+        <span class="tag-number">{totalDogs}</span>
+        <span class="tag-label">Total Dogs</span>
       </div>
     </div>
-    <div id="species-donut" class="donut-container"></div>
+    <div class="pet-tag">
+      <div class="tag-ring"></div>
+      <div class="tag-connector"></div>
+      <div class="tag-body">
+        <span class="tag-number">{totalCats}</span>
+        <span class="tag-label">Total Cats</span>
+      </div>
+    </div>
+    <div class="pet-tag">
+      <div class="tag-ring"></div>
+      <div class="tag-connector"></div>
+      <div class="tag-body">
+        <span class="tag-number">{uniqueBreeds.toLocaleString()}</span>
+        <span class="tag-label">Unique Breeds</span>
+      </div>
+    </div>
+    <div class="pet-tag">
+      <div class="tag-ring"></div>
+      <div class="tag-connector"></div>
+      <div class="tag-body">
+        <span class="tag-number">{lunaCount.toLocaleString()}</span>
+        <span class="tag-label">Pets Named Luna</span>
+      </div>
+    </div>
   </div>
-  <nav class="hero-nav">
-    <a href="/neighbourhoods" class="hero-nav-card">
-      <span class="hero-nav-icon">🗺</span>
-      <span class="hero-nav-label">Neighbourhoods</span>
-    </a>
-    <a href="/breeds" class="hero-nav-card">
-      <span class="hero-nav-icon">📈</span>
-      <span class="hero-nav-label">Breed Trends</span>
-    </a>
-    <a href="/names" class="hero-nav-card">
-      <span class="hero-nav-icon">🏷</span>
-      <span class="hero-nav-label">Names</span>
-    </a>
-    <a href="/rarity" class="hero-nav-card">
-      <span class="hero-nav-icon">✨</span>
-      <span class="hero-nav-label">How Rare?</span>
-    </a>
-  </nav>
 </section>
-
-<script>
-  import { renderDonut } from '../scripts/donut.js';
-  import citywide from '../data/citywide.json';
-  renderDonut('#species-donut', citywide.species_split);
-</script>
 
 <style>
   #hero {
-    text-align: center;
-    padding: 6rem 1.5rem 4rem;
+    padding: 108px 73px 4rem;
   }
-  .hero-subtitle {
-    font-size: 1.25rem;
-    color: var(--gray);
-    margin-top: 0.75rem;
-    max-width: 36rem;
-    margin-left: auto;
-    margin-right: auto;
+
+  .hero-title {
+    font-size: 48px;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 60px;
   }
-  .hero-stats {
+
+  .pet-tag-row {
     display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin-top: 2.5rem;
-  }
-  .hero-stats .stat-card { min-width: 10rem; }
-  .donut-container {
-    margin: 2.5rem auto 0;
-    max-width: 16rem;
-  }
-  .hero-nav {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 3rem;
+    gap: 53px;
     flex-wrap: wrap;
   }
-  .hero-nav-card {
+
+  .pet-tag {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.5rem;
-    padding: 1.25rem 1.5rem;
-    background: white;
-    border: 1px solid var(--gray-light);
-    border-radius: 0.75rem;
-    text-decoration: none;
-    color: var(--navy);
-    transition: all 0.2s;
-    min-width: 8rem;
+    width: 178px;
   }
-  .hero-nav-card:hover {
-    text-decoration: none;
-    border-color: var(--navy);
-    box-shadow: 0 4px 12px rgba(26, 43, 74, 0.1);
-    transform: translateY(-2px);
+
+  .tag-ring {
+    width: 28px;
+    height: 28px;
+    border: 4px solid #D4A012;
+    border-radius: 50%;
+    background: var(--bg);
+    position: relative;
+    z-index: 2;
   }
-  .hero-nav-icon { font-size: 1.5rem; }
-  .hero-nav-label { font-size: 0.8125rem; font-weight: 600; }
+
+  .tag-connector {
+    width: 4px;
+    height: 12px;
+    background: #D4A012;
+    margin-top: -2px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .tag-body {
+    width: 178px;
+    height: 178px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 35% 35%, #F7D44C, #E8A817, #D4960A);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow:
+      0 4px 12px rgba(0, 0, 0, 0.15),
+      inset 0 2px 4px rgba(255, 255, 255, 0.3);
+    margin-top: -4px;
+    position: relative;
+    z-index: 0;
+  }
+
+  .tag-number {
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--tag-text);
+    line-height: 1;
+  }
+
+  .tag-label {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--tag-text);
+    text-transform: uppercase;
+    margin-top: 6px;
+    letter-spacing: 0.02em;
+  }
 
   @media (max-width: 768px) {
-    #hero { padding: 3rem 1rem 2rem; }
-    .hero-stats { flex-direction: column; align-items: center; }
-    .hero-nav { gap: 0.75rem; }
-    .hero-nav-card { min-width: 6rem; padding: 1rem; }
+    #hero { padding: 2rem 1rem; }
+    .hero-title { font-size: 2rem; margin-bottom: 2rem; }
+    .pet-tag-row {
+      gap: 2rem;
+      justify-content: center;
+    }
+    .pet-tag { width: 140px; }
+    .tag-body { width: 140px; height: 140px; }
+    .tag-number { font-size: 24px; }
+    .tag-label { font-size: 11px; }
   }
 </style>
