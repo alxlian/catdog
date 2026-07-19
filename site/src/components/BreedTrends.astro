@@ -1,14 +1,16 @@
+---
+import SpeciesToggle from './SpeciesToggle.astro';
+---
+
 <section id="breeds">
   <h2>Breed Trends</h2>
-  <p>How has breed popularity shifted across Toronto? Search for a breed to see its license count over time.</p>
+  <p>How has breed popularity shifted across Toronto? Search for a breed to see its share of licenses over time.</p>
   <div class="breed-controls">
-    <select id="breed-species-toggle">
-      <option value="DOG">Dogs</option>
-      <option value="CAT">Cats</option>
-    </select>
+    <SpeciesToggle id="breed-species-toggle" />
     <input type="text" id="breed-search" placeholder="Search breeds..." />
   </div>
   <div id="breed-line-chart"></div>
+  <div id="breed-legend" class="breed-legend"></div>
   <h3>Rising & Declining</h3>
   <div class="grid-2">
     <div>
@@ -32,19 +34,27 @@
   #breeds p { max-width: 40rem; color: var(--gray); }
   .breed-controls {
     display: flex;
+    align-items: center;
     gap: 1rem;
     margin: 1.5rem 0;
   }
-  .breed-controls select,
   .breed-controls input {
     padding: 0.5rem 0.75rem;
     border: 1px solid var(--gray-light);
     border-radius: 0.375rem;
     font-family: var(--font);
     font-size: 0.875rem;
+    flex: 1;
+    max-width: 20rem;
   }
-  .breed-controls input { flex: 1; max-width: 20rem; }
   #breed-line-chart { margin: 1.5rem 0; }
+  .breed-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem 1.5rem;
+    font-size: 0.8125rem;
+    margin-bottom: 2rem;
+  }
   #breeds h3 { margin-top: 2rem; }
   #breeds h4 { font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.75rem; }
 </style>

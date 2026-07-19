@@ -1,17 +1,17 @@
+---
+import SpeciesToggle from './SpeciesToggle.astro';
+---
+
 <section id="rarity">
   <h2>How Rare Is Your Pet?</h2>
   <p>Look up your pet's breed and neighbourhood to see how unique they are among Toronto's licensed animals.</p>
   <div class="rarity-form">
-    <select id="rarity-species">
-      <option value="">Species...</option>
-      <option value="DOG">Dog</option>
-      <option value="CAT">Cat</option>
-    </select>
+    <SpeciesToggle id="rarity-species-toggle" />
     <select id="rarity-breed" disabled>
-      <option value="">Breed...</option>
+      <option value="">Select a breed...</option>
     </select>
     <select id="rarity-fsa" disabled>
-      <option value="">Neighbourhood (FSA)...</option>
+      <option value="">Select neighbourhood (FSA)...</option>
     </select>
   </div>
   <div id="rarity-result"></div>
@@ -31,6 +31,7 @@
     display: flex;
     gap: 1rem;
     justify-content: center;
+    align-items: center;
     margin: 2rem 0;
     flex-wrap: wrap;
   }

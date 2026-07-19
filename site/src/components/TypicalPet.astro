@@ -1,6 +1,11 @@
 ---
 import citywide from '../data/citywide.json';
 
+function toTitleCase(str: string) {
+  if (!str) return '';
+  return str.toLowerCase().replace(/\b\w/g, (c: string) => c.toUpperCase());
+}
+
 const dogBreed = citywide.top_breed?.DOG;
 const catBreed = citywide.top_breed?.CAT;
 const dogName = citywide.top_name?.DOG;
@@ -18,13 +23,13 @@ const catName = citywide.top_name?.CAT;
     </div>
     <div class="stat-card">
       <div class="stat-label">Most Common Breed</div>
-      {dogBreed && <div><span class="stat-value dog-color" style="font-size:1.5rem">{dogBreed.breed}</span><div class="stat-label">{dogBreed.count.toLocaleString()} dogs</div></div>}
-      {catBreed && <div style="margin-top:0.75rem"><span class="stat-value cat-color" style="font-size:1.5rem">{catBreed.breed}</span><div class="stat-label">{catBreed.count.toLocaleString()} cats</div></div>}
+      {dogBreed && <div><span class="stat-value dog-color" style="font-size:1.5rem">{toTitleCase(dogBreed.breed)}</span><div class="stat-label">{dogBreed.count.toLocaleString()} dogs</div></div>}
+      {catBreed && <div style="margin-top:0.75rem"><span class="stat-value cat-color" style="font-size:1.5rem">{toTitleCase(catBreed.breed)}</span><div class="stat-label">{catBreed.count.toLocaleString()} cats</div></div>}
     </div>
     <div class="stat-card">
       <div class="stat-label">Most Popular Name</div>
-      {dogName && <div><span class="stat-value dog-color" style="font-size:1.5rem">{dogName.name}</span><div class="stat-label">{dogName.count.toLocaleString()} dogs ({dogName.year})</div></div>}
-      {catName && <div style="margin-top:0.75rem"><span class="stat-value cat-color" style="font-size:1.5rem">{catName.name}</span><div class="stat-label">{catName.count.toLocaleString()} cats ({catName.year})</div></div>}
+      {dogName && <div><span class="stat-value dog-color" style="font-size:1.5rem">{toTitleCase(dogName.name)}</span><div class="stat-label">{dogName.count.toLocaleString()} dogs ({dogName.year})</div></div>}
+      {catName && <div style="margin-top:0.75rem"><span class="stat-value cat-color" style="font-size:1.5rem">{toTitleCase(catName.name)}</span><div class="stat-label">{catName.count.toLocaleString()} cats ({catName.year})</div></div>}
     </div>
   </div>
 </section>

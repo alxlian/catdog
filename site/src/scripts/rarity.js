@@ -1,10 +1,14 @@
+import { toTitleCase } from './utils.js';
+
 export function initRarityLookup(breedList, fsaSummary) {
-  const speciesSelect = document.getElementById('rarity-species');
+  const toggleContainer = document.getElementById('rarity-species-toggle');
   const breedSelect = document.getElementById('rarity-breed');
   const fsaSelect = document.getElementById('rarity-fsa');
   const resultDiv = document.getElementById('rarity-result');
 
-  if (!speciesSelect || !breedSelect || !fsaSelect || !resultDiv) return;
+  if (!breedSelect || !fsaSelect || !resultDiv) return;
+
+  let currentSpecies = 'DOG';
 
   // Index breed list for fast lookup
   const index = {};
@@ -25,29 +29,32 @@ export function initRarityLookup(breedList, fsaSummary) {
     fsasBySpeciesBreed[key].add(entry.fsa);
   }
 
-  speciesSelect.addEventListener('change', () => {
-    const species = speciesSelect.value;
-    breedSelect.innerHTML = '<option value="">Breed...</option>';
-    fsaSelect.innerHTML = '<option value="">Neighbourhood (FSA)...</option>';
+  function populateBreeds() {
+    breedSelect.innerHTML = '<option value="">Select a breed...</option>';
+    fsaSelect.innerHTML = '<option value="">Select neighbourhood (FSA)...</option>';
     fsaSelect.disabled = true;
     resultDiv.innerHTML = '';
 
-    if (!species) {
-      breedSelect.disabled = true;
-      return;
-    }
-
-    const breeds = [...(breedsBySpecies[species] || [])].sort();
+    const breeds = [...(breedsBySpecies[currentSpecies] || [])].sort();
     breeds.forEach(b => {
-      breedSelect.appendChild(new Option(b, b));
+      breedSelect.appendChild(new Option(toTitleCase(b), b));
     });
     breedSelect.disabled = false;
+  }
+
+  // Toggle switch handler
+  toggleContainer?.querySelectorAll('.toggle-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      toggleContainer.querySelectorAll('.toggle-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentSpecies = btn.dataset.value;
+      populateBreeds();
+    });
   });
 
   breedSelect.addEventListener('change', () => {
-    const species = speciesSelect.value;
     const breed = breedSelect.value;
-    fsaSelect.innerHTML = '<option value="">Neighbourhood (FSA)...</option>';
+    fsaSelect.innerHTML = '<option value="">Select neighbourhood (FSA)...</option>';
     resultDiv.innerHTML = '';
 
     if (!breed) {
@@ -55,7 +62,7 @@ export function initRarityLookup(breedList, fsaSummary) {
       return;
     }
 
-    const key = `${species}|${breed}`;
+    const key = `${currentSpecies}|${breed}`;
     const fsas = [...(fsasBySpeciesBreed[key] || [])].sort();
     fsas.forEach(fsa => {
       const neighbourhood = fsaSummary[fsa]?.neighbourhood || fsa;
@@ -65,7 +72,6 @@ export function initRarityLookup(breedList, fsaSummary) {
   });
 
   fsaSelect.addEventListener('change', () => {
-    const species = speciesSelect.value;
     const breed = breedSelect.value;
     const fsa = fsaSelect.value;
 
@@ -74,9 +80,10 @@ export function initRarityLookup(breedList, fsaSummary) {
       return;
     }
 
-    const key = `${species}|${breed}|${fsa}`;
+    const key = `${currentSpecies}|${breed}|${fsa}`;
     const entry = index[key];
     const neighbourhood = fsaSummary[fsa]?.neighbourhood || fsa;
+    const breedDisplay = toTitleCase(breed);
 
     if (entry) {
       const pctText = entry.rarity_percentile > 0
@@ -84,17 +91,20 @@ export function initRarityLookup(breedList, fsaSummary) {
         : `That's <strong>among the most common</strong> breeds in your neighbourhood.`;
       resultDiv.innerHTML = `
         <div class="stat-card" style="text-align:center">
-          <p>There ${entry.count === 1 ? 'is' : 'are'} <strong>${entry.count}</strong> licensed ${breed}${entry.count !== 1 ? 's' : ''} in <strong>${fsa}</strong> (${neighbourhood}).</p>
+          <p>There ${entry.count === 1 ? 'is' : 'are'} <strong>${entry.count}</strong> licensed ${breedDisplay}${entry.count !== 1 ? 's' : ''} in <strong>${fsa}</strong> (${neighbourhood}).</p>
           <p style="margin-top:0.5rem">${pctText}</p>
         </div>
       `;
     } else {
       resultDiv.innerHTML = `
         <div class="stat-card">
-          <p>No licensed ${breed}s found in ${fsa} (${neighbourhood}).</p>
+          <p>No licensed ${breedDisplay}s found in ${fsa} (${neighbourhood}).</p>
           <p style="margin-top:0.5rem;color:var(--gray)">This breed may not be registered in this area.</p>
         </div>
       `;
     }
   });
+
+  // Initial population
+  populateBreeds();
 }

@@ -22,6 +22,24 @@ const catCount = citywide.species_split.CAT.toLocaleString();
     </div>
     <div id="species-donut" class="donut-container"></div>
   </div>
+  <nav class="hero-nav">
+    <a href="/neighbourhoods" class="hero-nav-card">
+      <span class="hero-nav-icon">🗺</span>
+      <span class="hero-nav-label">Neighbourhoods</span>
+    </a>
+    <a href="/breeds" class="hero-nav-card">
+      <span class="hero-nav-icon">📈</span>
+      <span class="hero-nav-label">Breed Trends</span>
+    </a>
+    <a href="/names" class="hero-nav-card">
+      <span class="hero-nav-icon">🏷</span>
+      <span class="hero-nav-label">Names</span>
+    </a>
+    <a href="/rarity" class="hero-nav-card">
+      <span class="hero-nav-icon">✨</span>
+      <span class="hero-nav-label">How Rare?</span>
+    </a>
+  </nav>
 </section>
 
 <script>
@@ -54,9 +72,40 @@ const catCount = citywide.species_split.CAT.toLocaleString();
     margin: 2.5rem auto 0;
     max-width: 16rem;
   }
+  .hero-nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+  }
+  .hero-nav-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1.25rem 1.5rem;
+    background: white;
+    border: 1px solid var(--gray-light);
+    border-radius: 0.75rem;
+    text-decoration: none;
+    color: var(--navy);
+    transition: all 0.2s;
+    min-width: 8rem;
+  }
+  .hero-nav-card:hover {
+    text-decoration: none;
+    border-color: var(--navy);
+    box-shadow: 0 4px 12px rgba(26, 43, 74, 0.1);
+    transform: translateY(-2px);
+  }
+  .hero-nav-icon { font-size: 1.5rem; }
+  .hero-nav-label { font-size: 0.8125rem; font-weight: 600; }
 
   @media (max-width: 768px) {
     #hero { padding: 3rem 1rem 2rem; }
     .hero-stats { flex-direction: column; align-items: center; }
+    .hero-nav { gap: 0.75rem; }
+    .hero-nav-card { min-width: 6rem; padding: 1rem; }
   }
 </style>

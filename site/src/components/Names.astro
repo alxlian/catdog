@@ -1,17 +1,15 @@
+---
+import SpeciesToggle from './SpeciesToggle.astro';
+---
+
 <section id="names">
   <h2>Pet Names</h2>
-  <p>The most popular names for Toronto's licensed pets. Search for a name to see how its ranking has changed over the years.</p>
+  <p>The most popular names for Toronto's licensed pets, ranked by the latest year of data.</p>
   <div class="names-controls">
-    <select id="names-species-toggle">
-      <option value="DOG">Dogs</option>
-      <option value="CAT">Cats</option>
-    </select>
+    <SpeciesToggle id="names-species-toggle" />
     <input type="text" id="name-search" placeholder="Search for a name..." />
   </div>
-  <div class="grid-2">
-    <div id="names-leaderboard"></div>
-    <div id="name-bump-chart"></div>
-  </div>
+  <div id="names-leaderboard"></div>
 </section>
 
 <script>
@@ -24,17 +22,18 @@
   #names p { max-width: 40rem; color: var(--gray); }
   .names-controls {
     display: flex;
+    align-items: center;
     gap: 1rem;
     margin: 1.5rem 0;
   }
-  .names-controls select,
   .names-controls input {
     padding: 0.5rem 0.75rem;
     border: 1px solid var(--gray-light);
     border-radius: 0.375rem;
     font-family: var(--font);
     font-size: 0.875rem;
+    flex: 1;
+    max-width: 20rem;
   }
-  .names-controls input { flex: 1; max-width: 20rem; }
   #names-leaderboard { font-size: 0.875rem; }
 </style>

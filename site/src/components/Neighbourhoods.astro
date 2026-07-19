@@ -1,8 +1,33 @@
+---
+import SpeciesToggle from './SpeciesToggle.astro';
+---
+
 <section id="neighbourhoods">
   <h2>The Neighbourhoods</h2>
-  <p>Which areas of Toronto are dog country, and which lean feline? This map shows the dog-to-cat licensing ratio by Forward Sortation Area (postal code prefix).</p>
-  <div id="fsa-map"></div>
-  <div id="map-tooltip" class="tooltip" style="display:none;"></div>
+  <p>Which areas of Toronto are dog country, and which lean feline? Explore the map by Forward Sortation Area.</p>
+  <div class="map-controls">
+    <SpeciesToggle id="map-species-toggle" />
+    <div class="map-mode-select">
+      <label>Show:</label>
+      <select id="map-mode">
+        <option value="ratio">Dog/Cat Ratio</option>
+        <option value="density">Licensing Density</option>
+        <option value="common">Most Common Breed</option>
+        <option value="signature">Signature Breed</option>
+      </select>
+    </div>
+  </div>
+  <div class="map-layout">
+    <div class="map-container">
+      <div id="fsa-map"></div>
+      <div id="map-tooltip" class="tooltip" style="display:none;"></div>
+    </div>
+    <aside id="map-sidebar" class="map-sidebar">
+      <div class="sidebar-placeholder">
+        <p>Hover over a neighbourhood to see details</p>
+      </div>
+    </aside>
+  </div>
   <p class="disclaimer">Dog/cat dominance reflects licensing behavior, not confirmed pet population. Cat licensing compliance is generally lower than dog licensing compliance — an area may appear dog-dominant simply because dog owners are more likely to license.</p>
 </section>
 
@@ -10,16 +35,72 @@
   import { renderMap } from '../scripts/map.js';
   import fsaSummary from '../data/fsa-summary.json';
   import fsaGeo from '../data/fsa-geo.json';
-  renderMap('#fsa-map', '#map-tooltip', fsaGeo, fsaSummary);
+  renderMap('#fsa-map', '#map-tooltip', '#map-sidebar', fsaGeo, fsaSummary);
 </script>
 
 <style>
   #neighbourhoods { text-align: center; }
-  #neighbourhoods p { max-width: 40rem; margin: 0 auto; color: var(--gray); }
-  #fsa-map {
-    margin: 2rem auto;
-    max-width: 48rem;
+  #neighbourhoods > p { max-width: 40rem; margin: 0 auto; color: var(--gray); }
+  .map-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+    flex-wrap: wrap;
+  }
+  .map-mode-select {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    color: var(--gray);
+  }
+  .map-mode-select select {
+    padding: 0.5rem 0.75rem;
+    border: 1px solid var(--gray-light);
+    border-radius: 0.375rem;
+    font-family: var(--font);
+    font-size: 0.875rem;
+    background: white;
+  }
+  .map-layout {
+    display: grid;
+    grid-template-columns: 1fr 20rem;
+    gap: 1.5rem;
+    margin: 1.5rem auto;
+    max-width: 72rem;
+    text-align: left;
+  }
+  .map-container {
     position: relative;
   }
   #fsa-map svg { width: 100%; height: auto; }
+  .map-sidebar {
+    background: white;
+    border: 1px solid var(--gray-light);
+    border-radius: 0.75rem;
+    padding: 1.25rem;
+    font-size: 0.8125rem;
+    max-height: 36rem;
+    overflow-y: auto;
+    align-self: start;
+    position: sticky;
+    top: 5rem;
+  }
+  .sidebar-placeholder {
+    color: var(--gray);
+    text-align: center;
+    padding: 2rem 0;
+  }
+
+  @media (max-width: 768px) {
+    .map-layout {
+      grid-template-columns: 1fr;
+    }
+    .map-sidebar {
+      position: static;
+      max-height: none;
+    }
+  }
 </style>

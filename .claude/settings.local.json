@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(py --version)",
+      "Bash(python:*)",
+      "Bash(pip install:*)",
+      "Bash(npm --version)",
+      "Bash(npm install:*)",
+      "Bash(npx astro:*)",
+      "Bash(node -e \"import\\(''astro''\\).then\\(m => console.log\\(''astro module OK, version:'', m.version ?? ''loaded''\\)\\)\")",
+      "Bash(node -e \":*)",
+      "WebSearch",
+      "WebFetch(domain:www150.statcan.gc.ca)",
+      "WebFetch(domain:en.wikipedia.org)",
+      "WebFetch(domain:www.greatertorontohomepros.com)",
+      "WebFetch(domain:en.m.wikipedia.org)",
+      "WebFetch(domain:www.bsma.ca)",
+      "WebFetch(domain:en-academic.com)",
+      "WebFetch(domain:jordanbell.info)",
+      "Bash(curl -sL -o /tmp/statcan-fsa.zip \"https://www150.statcan.gc.ca/n1/tbl/csv/98100019-eng.zip\")",
+      "Read(//tmp/**)",
+      "Bash(unzip -o statcan-fsa.zip -d statcan-fsa)",
+      "Bash(grep ^2021,M[0-9][A-Z] /tmp/statcan-fsa/98100019.csv)",
+      "WebFetch(domain:geo.statcan.gc.ca)",
+      "Bash(cd:*)"
+    ]
+  }
+}

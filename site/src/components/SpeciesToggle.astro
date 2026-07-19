@@ -1,0 +1,44 @@
+---
+interface Props {
+  id: string;
+  defaultValue?: 'DOG' | 'CAT';
+}
+const { id, defaultValue = 'DOG' } = Astro.props;
+---
+
+<div class="species-toggle" id={id}>
+  <button class:list={['toggle-btn', 'toggle-dog', { active: defaultValue === 'DOG' }]} data-value="DOG">Dogs</button>
+  <button class:list={['toggle-btn', 'toggle-cat', { active: defaultValue === 'CAT' }]} data-value="CAT">Cats</button>
+</div>
+
+<style>
+  .species-toggle {
+    display: inline-flex;
+    border: 1px solid var(--gray-light);
+    border-radius: 2rem;
+    overflow: hidden;
+    background: white;
+  }
+  .toggle-btn {
+    padding: 0.5rem 1.25rem;
+    border: none;
+    background: transparent;
+    font-family: var(--font);
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    color: var(--gray);
+    transition: all 0.2s;
+  }
+  .toggle-btn.active.toggle-dog {
+    background: var(--red);
+    color: white;
+  }
+  .toggle-btn.active.toggle-cat {
+    background: var(--blue);
+    color: white;
+  }
+  .toggle-btn:hover:not(.active) {
+    background: var(--gray-light);
+  }
+</style>
