@@ -1,0 +1,67 @@
+---
+import breedTrends from '../data/breed-trends.json';
+
+// Compute yearly totals at build time for the blurb
+const yearlyTotals: Record<number, { DOG: number; CAT: number }> = {};
+for (const species of ['DOG', 'CAT'] as const) {
+  const breeds = (breedTrends as any)[species] || {};
+  for (const entries of Object.values(breeds) as any[]) {
+    for (const e of entries) {
+      if (!yearlyTotals[e.year]) yearlyTotals[e.year] = { DOG: 0, CAT: 0 };
+      yearlyTotals[e.year][species] += e.count;
+    }
+  }
+}
+
+const years = Object.keys(yearlyTotals).map(Number).sort();
+const firstYear = years[0];
+const lastFullYear = years[years.length - 2]; // second-to-last since current year is partial
+const firstTotal = yearlyTotals[firstYear].DOG + yearlyTotals[firstYear].CAT;
+const lastTotal = yearlyTotals[lastFullYear].DOG + yearlyTotals[lastFullYear].CAT;
+const growthPct = Math.round(((lastTotal - firstTotal) / firstTotal) * 100);
+const dogRatio = Math.round((yearlyTotals[lastFullYear].DOG / lastTotal) * 100);
+---
+
+<section id="licensing-over-time" class="exhibit">
+  <h2>Licensing Over Time</h2>
+  <p class="exhibit-blurb">
+    Toronto's pet licensing has grown <strong>{growthPct}%</strong> from {firstYear} to {lastFullYear},
+    with dogs consistently making up about <strong>{dogRatio}%</strong> of all licenses.
+    The gap between dogs and cats tells a familiar story — while cat ownership is rising fast,
+    cat owners are still far less likely to register their pets.
+  </p>
+  <div id="licensing-chart"></div>
+</section>
+
+<script>
+  import { renderLicensingOverTime } from '../scripts/licensing-chart.js';
+  import breedTrends from '../data/breed-trends.json';
+  renderLicensingOverTime('#licensing-chart', breedTrends);
+</script>
+
+<style>
+  .exhibit {
+    margin-bottom: 4rem;
+  }
+
+  .exhibit h2 {
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 12px;
+  }
+
+  .exhibit-blurb {
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--text-muted);
+    line-height: 1.7;
+    max-width: 640px;
+    margin-bottom: 2rem;
+  }
+
+  .exhibit-blurb strong {
+    color: var(--text);
+    font-weight: 500;
+  }
+</style>

@@ -1,0 +1,149 @@
+---
+import citywide from '../data/citywide.json';
+import fsaSummary from '../data/fsa-summary.json';
+import breedList from '../data/breed-list.json';
+import { toTitleCase } from '../scripts/utils.js';
+
+// Compute highlight stats
+const neighbourhoodCount = Object.keys(fsaSummary).length;
+
+// Most dog-heavy neighbourhood
+const entries = Object.entries(fsaSummary) as [string, any][];
+const mostDoggy = entries.reduce((best, [, d]) =>
+  d.dog_ratio > (best?.dog_ratio || 0) ? d : best, entries[0][1]);
+
+// Unique breeds
+const uniqueBreeds = new Set(breedList.map((e: any) => e.breed)).size;
+
+const chapters = [
+  {
+    href: '/neighbourhoods',
+    stat: neighbourhoodCount.toString(),
+    label: 'Neighbourhoods',
+    blurb: `${mostDoggy.neighbourhood} is the doggiest area in Toronto at ${Math.round(mostDoggy.dog_ratio * 100)}% dogs. See which neighbourhoods lean cat or dog.`,
+  },
+  {
+    href: '/breeds',
+    stat: uniqueBreeds.toLocaleString(),
+    label: 'Breeds Tracked',
+    blurb: `From Labrador Retrievers to Chinese Cresteds — see which breeds are rising, falling, and holding steady across the city.`,
+  },
+  {
+    href: '/typical',
+    stat: '2.4:1',
+    label: 'Dog-to-Cat Ratio',
+    blurb: `For every cat license in Toronto, there are roughly 2.4 dog licenses. Explore what the "typical" Toronto pet looks like.`,
+  },
+  {
+    href: '/rarity',
+    stat: citywide.top_name.DOG.name ? toTitleCase(citywide.top_name.DOG.name) : '?',
+    label: '#1 Pet Name',
+    blurb: `${toTitleCase(citywide.top_name.DOG.name)} reigns supreme for both dogs and cats. Find out how common — or rare — your pet's name and breed really are.`,
+  },
+];
+---
+
+<section id="chapters">
+  <h2>Explore More</h2>
+  <p class="chapters-blurb">Dive deeper into Toronto's pet data.</p>
+
+  <div class="chapters-grid">
+    {chapters.map((ch) => (
+      <a href={ch.href} class="chapter-card">
+        <div class="chapter-stat">{ch.stat}</div>
+        <div class="chapter-label">{ch.label}</div>
+        <p class="chapter-desc">{ch.blurb}</p>
+        <span class="chapter-cta">Explore &rarr;</span>
+      </a>
+    ))}
+  </div>
+</section>
+
+<style>
+  #chapters {
+    margin-top: 2rem;
+    padding-bottom: 4rem;
+  }
+
+  #chapters h2 {
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 8px;
+  }
+
+  .chapters-blurb {
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+  }
+
+  .chapters-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .chapter-card {
+    background: var(--sidebar-bg);
+    border: 1px solid var(--nav-active-bg);
+    border-radius: 16px;
+    padding: 28px 28px 24px;
+    text-decoration: none;
+    color: var(--text);
+    transition: border-color 0.2s, box-shadow 0.2s, transform 0.15s;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .chapter-card:hover {
+    border-color: var(--accent);
+    box-shadow: 0 4px 20px rgba(235, 94, 40, 0.1);
+    transform: translateY(-2px);
+    text-decoration: none;
+  }
+
+  .chapter-stat {
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--accent);
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+
+  .chapter-label {
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--text-muted);
+    margin-bottom: 12px;
+  }
+
+  .chapter-desc {
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--text-muted);
+    line-height: 1.6;
+    flex: 1;
+  }
+
+  .chapter-cta {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--accent);
+    margin-top: 16px;
+    transition: gap 0.15s;
+  }
+
+  .chapter-card:hover .chapter-cta {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 768px) {
+    .chapters-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
