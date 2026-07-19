@@ -7,6 +7,88 @@ import Chapters from '../components/Chapters.astro';
 
 <Base>
   <Hero />
-  <LicensingOverTime />
+
+  <div class="section-divider"></div>
+
+  <section id="glance-exhibits">
+    <div class="exhibits-row">
+      <div class="exhibit-col">
+        <LicensingOverTime />
+      </div>
+      <div class="exhibit-col">
+        <div class="exhibit">
+          <h2>Dog vs Cat Ownership</h2>
+          <p class="exhibit-blurb">
+            Which neighbourhoods lean dog, and which lean cat? Hover to see the breakdown by postal code.
+          </p>
+          <div id="glance-map"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
   <Chapters />
 </Base>
+
+<script>
+  import { renderMiniMap } from '../scripts/mini-map.js';
+  import fsaSummary from '../data/fsa-summary.json';
+  import fsaGeo from '../data/fsa-geo.json';
+  renderMiniMap('#glance-map', fsaGeo, fsaSummary);
+</script>
+
+<style>
+  .section-divider {
+    border: none;
+    border-top: 1px solid var(--nav-active-bg);
+    margin: 0 175px;
+  }
+
+  #glance-exhibits {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .exhibits-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+  }
+
+  .exhibit-col .exhibit h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 10px;
+  }
+
+  .exhibit-col .exhibit .exhibit-blurb {
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+  }
+
+  @media (max-width: 1200px) {
+    .section-divider { margin: 0 80px; }
+  }
+
+  @media (max-width: 1024px) {
+    .exhibits-row {
+      grid-template-columns: 1fr;
+    }
+    .section-divider {
+      margin: 0 40px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .section-divider { margin: 0 1rem; }
+    #glance-exhibits { padding-top: 1.5rem; padding-bottom: 1.5rem; }
+    .exhibits-row { gap: 2rem; }
+  }
+</style>
