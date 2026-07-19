@@ -20,7 +20,7 @@
   --gray: #828282;
   --gray-light: #EFEAE0;
 
-  --sidebar-width: 381px;
+  --sidebar-width: 310px;
 }
 
 *, *::before, *::after {
@@ -64,9 +64,7 @@ main {
 }
 
 section {
-  max-width: 72rem;
-  margin: 0 auto;
-  padding: 4rem 1.5rem;
+  padding: 4rem 175px;
 }
 
 a {

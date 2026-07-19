@@ -80,8 +80,9 @@ export function renderMap(mapSelector, tooltipSelector, sidebarSelector, geoData
       if (tooltip) {
         tooltip.innerHTML = `<strong>${data.neighbourhood}</strong><br/>Top ${currentSpecies === 'DOG' ? 'dog' : 'cat'} breed: ${breedText}`;
         tooltip.style.display = 'block';
-        tooltip.style.left = event.pageX + 12 + 'px';
-        tooltip.style.top = event.pageY - 10 + 'px';
+        const rect = container.getBoundingClientRect();
+        tooltip.style.left = (event.clientX - rect.left + 12) + 'px';
+        tooltip.style.top = (event.clientY - rect.top - 10) + 'px';
       }
 
       // Full detail in sidebar
@@ -89,8 +90,9 @@ export function renderMap(mapSelector, tooltipSelector, sidebarSelector, geoData
     })
     .on('mousemove', (event) => {
       if (tooltip) {
-        tooltip.style.left = event.pageX + 12 + 'px';
-        tooltip.style.top = event.pageY - 10 + 'px';
+        const rect = container.getBoundingClientRect();
+        tooltip.style.left = (event.clientX - rect.left + 12) + 'px';
+        tooltip.style.top = (event.clientY - rect.top - 10) + 'px';
       }
     })
     .on('mouseleave', (event) => {

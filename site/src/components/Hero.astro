@@ -22,6 +22,10 @@ for (const species of Object.values(names) as any[]) {
 
 <section id="hero">
   <h1 class="hero-title">Cats &amp; Dogs of Toronto</h1>
+  <p class="hero-blurb">
+    A look at every licensed dog and cat in the city — who they are, where they live,
+    and what their names say about us. Built from City of Toronto open data.
+  </p>
 
   <div class="pet-tag-row">
     <div class="pet-tag">
@@ -61,20 +65,28 @@ for (const species of Object.values(names) as any[]) {
 
 <style>
   #hero {
-    padding: 108px 73px 4rem;
+    padding: 108px 175px 4rem;
   }
 
   .hero-title {
     font-size: 48px;
     font-weight: 600;
     color: var(--text);
-    margin-bottom: 60px;
+    margin-bottom: 12px;
+  }
+
+  .hero-blurb {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--text-muted);
+    line-height: 1.7;
+    max-width: 540px;
+    margin-bottom: 48px;
   }
 
   .pet-tag-row {
     display: flex;
-    gap: 53px;
-    flex-wrap: wrap;
+    gap: 40px;
   }
 
   .pet-tag {
@@ -82,54 +94,97 @@ for (const species of Object.values(names) as any[]) {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 178px;
+    width: 170px;
   }
 
   .tag-ring {
-    width: 28px;
-    height: 28px;
-    border: 4px solid #D4A012;
+    width: 26px;
+    height: 26px;
+    border: 3.5px solid #F5C133;
     border-radius: 50%;
     background: var(--bg);
     position: relative;
     z-index: 2;
+    box-shadow: 0 1px 3px rgba(232, 168, 23, 0.2);
   }
 
   .tag-connector {
-    width: 4px;
-    height: 12px;
-    background: #D4A012;
+    width: 3.5px;
+    height: 10px;
+    background: #F5C133;
     margin-top: -2px;
     position: relative;
     z-index: 1;
+    border-radius: 2px;
   }
 
   .tag-body {
-    width: 178px;
-    height: 178px;
+    width: 170px;
+    height: 170px;
     border-radius: 50%;
-    background: radial-gradient(circle at 35% 35%, #F7D44C, #E8A817, #D4960A);
+    background:
+      radial-gradient(circle at 35% 30%, rgba(255, 255, 230, 0.6) 0%, transparent 45%),
+      radial-gradient(circle at 50% 50%, #FFD95C 0%, #F5C133 50%, #E8A817 100%);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     box-shadow:
-      0 4px 12px rgba(0, 0, 0, 0.15),
-      inset 0 2px 4px rgba(255, 255, 255, 0.3);
+      0 6px 16px rgba(232, 168, 23, 0.25),
+      0 2px 4px rgba(0, 0, 0, 0.06),
+      inset 0 2px 6px rgba(255, 255, 255, 0.5);
     margin-top: -4px;
     position: relative;
     z-index: 0;
+    border: 2px solid #F5C133;
+    cursor: pointer;
+    transform-origin: top center;
+    transition: transform 0.15s, box-shadow 0.15s;
+  }
+
+  .tag-body:hover {
+    transform: scale(1.03);
+    box-shadow:
+      0 8px 24px rgba(232, 168, 23, 0.3),
+      0 3px 6px rgba(0, 0, 0, 0.08),
+      inset 0 2px 6px rgba(255, 255, 255, 0.5);
+  }
+
+  .tag-body::before {
+    content: '';
+    position: absolute;
+    top: 14%;
+    left: 22%;
+    width: 28%;
+    height: 20%;
+    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.5) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+  }
+
+  .pet-tag.shaking .tag-body {
+    animation: tag-shake 0.6s ease-in-out;
+  }
+
+  @keyframes tag-shake {
+    0% { transform: rotate(0deg); }
+    15% { transform: rotate(8deg); }
+    30% { transform: rotate(-6deg); }
+    45% { transform: rotate(4deg); }
+    60% { transform: rotate(-3deg); }
+    75% { transform: rotate(1.5deg); }
+    100% { transform: rotate(0deg); }
   }
 
   .tag-number {
-    font-size: 36px;
+    font-size: 34px;
     font-weight: 600;
     color: var(--tag-text);
     line-height: 1;
   }
 
   .tag-label {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 400;
     color: var(--tag-text);
     text-transform: uppercase;
@@ -146,7 +201,20 @@ for (const species of Object.values(names) as any[]) {
     }
     .pet-tag { width: 140px; }
     .tag-body { width: 140px; height: 140px; }
-    .tag-number { font-size: 24px; }
-    .tag-label { font-size: 11px; }
+    .tag-number { font-size: 20px; }
+    .tag-label { font-size: 10px; }
   }
 </style>
+
+<script>
+  document.querySelectorAll('.pet-tag').forEach(tag => {
+    tag.addEventListener('click', () => {
+      tag.classList.remove('shaking');
+      void tag.offsetWidth;
+      tag.classList.add('shaking');
+    });
+    tag.addEventListener('animationend', () => {
+      tag.classList.remove('shaking');
+    });
+  });
+</script>
