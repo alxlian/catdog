@@ -65,7 +65,7 @@ for (const species of Object.values(names) as any[]) {
 
 <style>
   #hero {
-    padding: 108px 175px 4rem;
+    padding: 80px 175px calc(2rem + 50px);
   }
 
   .hero-title {
@@ -192,17 +192,34 @@ for (const species of Object.values(names) as any[]) {
     letter-spacing: 0.02em;
   }
 
-  @media (max-width: 768px) {
-    #hero { padding: 2rem 1rem; }
-    .hero-title { font-size: 2rem; margin-bottom: 2rem; }
-    .pet-tag-row {
-      gap: 2rem;
-      justify-content: center;
-    }
+  @media (max-width: 1200px) {
+    #hero { padding: 60px 80px 2.5rem; }
+  }
+
+  @media (max-width: 1024px) {
+    #hero { padding: 50px 40px 2rem; }
+    .pet-tag-row { gap: 24px; }
     .pet-tag { width: 140px; }
     .tag-body { width: 140px; height: 140px; }
-    .tag-number { font-size: 20px; }
-    .tag-label { font-size: 10px; }
+    .tag-number { font-size: 26px; }
+    .tag-label { font-size: 11px; }
+  }
+
+  @media (max-width: 768px) {
+    #hero { padding: 2rem 1rem; }
+    .hero-title { font-size: 1.75rem; margin-bottom: 8px; }
+    .hero-blurb { font-size: 14px; margin-bottom: 2rem; }
+    .pet-tag-row {
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+    .pet-tag { width: 120px; }
+    .tag-body { width: 120px; height: 120px; }
+    .tag-number { font-size: 22px; }
+    .tag-label { font-size: 9px; }
+    .tag-ring { width: 20px; height: 20px; border-width: 3px; }
+    .tag-connector { width: 3px; height: 8px; }
   }
 </style>
 

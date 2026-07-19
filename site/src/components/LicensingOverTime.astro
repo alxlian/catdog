@@ -15,23 +15,27 @@ for (const species of ['DOG', 'CAT'] as const) {
 
 const years = Object.keys(yearlyTotals).map(Number).sort();
 const firstYear = years[0];
-const lastFullYear = years[years.length - 2]; // second-to-last since current year is partial
+const lastFullYear = years[years.length - 2];
 const firstTotal = yearlyTotals[firstYear].DOG + yearlyTotals[firstYear].CAT;
 const lastTotal = yearlyTotals[lastFullYear].DOG + yearlyTotals[lastFullYear].CAT;
 const growthPct = Math.round(((lastTotal - firstTotal) / firstTotal) * 100);
 const dogRatio = Math.round((yearlyTotals[lastFullYear].DOG / lastTotal) * 100);
+const currentYear = years[years.length - 1];
 ---
 
-<section id="licensing-over-time" class="exhibit">
+<div class="exhibit">
   <h2>Licensing Over Time</h2>
   <p class="exhibit-blurb">
     Toronto's pet licensing has grown <strong>{growthPct}%</strong> from {firstYear} to {lastFullYear},
     with dogs consistently making up about <strong>{dogRatio}%</strong> of all licenses.
-    The gap between dogs and cats tells a familiar story — while cat ownership is rising fast,
-    cat owners are still far less likely to register their pets.
   </p>
+  <div class="callout">
+    <span class="callout-icon">i</span>
+    <span>The gap between dogs and cats reflects licensing behavior, not true ownership. Cat owners are significantly less likely to register — an area may appear dog-dominant simply because dogs are more often licensed.</span>
+  </div>
   <div id="licensing-chart"></div>
-</section>
+  <p class="chart-note">* {currentYear} data is year-to-date and not yet complete.</p>
+</div>
 
 <script>
   import { renderLicensingOverTime } from '../scripts/licensing-chart.js';
@@ -40,28 +44,70 @@ const dogRatio = Math.round((yearlyTotals[lastFullYear].DOG / lastTotal) * 100);
 </script>
 
 <style>
-  .exhibit {
-    margin-bottom: 4rem;
-  }
-
   .exhibit h2 {
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 600;
     color: var(--text);
-    margin-bottom: 12px;
+    margin-bottom: 10px;
   }
 
   .exhibit-blurb {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 300;
     color: var(--text-muted);
     line-height: 1.7;
-    max-width: 640px;
-    margin-bottom: 2rem;
+    max-width: 580px;
+    margin-bottom: 12px;
   }
 
   .exhibit-blurb strong {
-    color: var(--text);
+    color: var(--accent);
     font-weight: 500;
+  }
+
+  .callout {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    background: var(--sidebar-bg);
+    border: 1px solid var(--nav-active-bg);
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-bottom: 1.5rem;
+    max-width: 580px;
+  }
+
+  .callout-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: var(--nav-active-bg);
+    color: var(--text-muted);
+    font-size: 11px;
+    font-weight: 600;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+
+  .callout span:last-child {
+    font-size: 12px;
+    font-weight: 300;
+    color: var(--text-muted);
+    line-height: 1.5;
+  }
+
+  .chart-note {
+    font-size: 11px;
+    color: var(--text-muted);
+    font-style: italic;
+    margin-top: 8px;
+  }
+
+  @media (max-width: 768px) {
+    .callout { max-width: 100%; }
+    .exhibit-blurb { max-width: 100%; }
   }
 </style>
