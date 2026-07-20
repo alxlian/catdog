@@ -1,24 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700;800&display=swap');
 
 :root {
-  /* Figma palette */
+  /* Palette */
   --bg: #FFFCF2;
-  --sidebar-bg: #FBF6ED;
+  --sidebar-bg: #FFFCF2;
   --nav-active-bg: #EFEAE0;
   --accent: #EB5E28;
   --accent-light: #FFE1D5;
   --tag-text: #614814;
-  --text: #000000;
-  --text-muted: #828282;
-  --sidebar-border: #828282;
+  --text: #252422;
+  --text-muted: #403D39;
+  --sidebar-border: #CCC5B9;
   --font: 'Lexend', system-ui, sans-serif;
 
   /* Legacy compat for existing components */
-  --navy: #000000;
+  --navy: #252422;
   --red: #EB5E28;
   --blue: #3B7EA1;
-  --gray: #828282;
-  --gray-light: #EFEAE0;
+  --gray: #403D39;
+  --gray-light: #CCC5B9;
 
   --sidebar-width: 310px;
 }
@@ -61,6 +61,13 @@ main {
   flex: 1;
   margin-left: var(--sidebar-width);
   min-width: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
 }
 
 section {
