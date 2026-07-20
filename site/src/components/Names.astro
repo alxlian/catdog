@@ -25,12 +25,12 @@ const sharedCount = Object.keys(dogNames).filter(n => catNames[n]).length;
 <section id="names">
   <div class="names-hero">
     <div class="names-header">
-      <h1 class="names-title">Pet Names</h1>
+      <h1 class="names-title">What's in a Name?</h1>
       <p class="names-blurb">
-        {totalUnique.toLocaleString()} unique names across Toronto's pets.
-        <strong>{toTitleCase(topDogName.name)}</strong> leads for dogs with {topDogName.total.toLocaleString()} registrations,
-        while <strong>{toTitleCase(topCatName.name)}</strong> is the top cat name at {topCatName.total.toLocaleString()}.
-        {sharedCount} names are shared between dogs and cats.
+        Toronto's pet owners have come up with {totalUnique.toLocaleString()} unique names — and yet,
+        <strong>{toTitleCase(topDogName.name)}</strong> still leads the pack for dogs with {topDogName.total.toLocaleString()} all-time registrations.
+        On the cat side, <strong>{toTitleCase(topCatName.name)}</strong> takes the crown at {topCatName.total.toLocaleString()}.
+        {sharedCount} names cross the species line.
       </p>
       <div class="names-callout">
         <strong>Note:</strong> The City of Toronto only publishes a ranked list of the most popular pet names each year — not a complete registry of every name.
@@ -38,7 +38,7 @@ const sharedCount = Object.keys(dogNames).filter(n => catNames[n]).length;
       </div>
     </div>
     <div class="card names-trend-card">
-      <h3 class="card-heading">Name Trends <span class="card-heading-note">rank over time for top 5</span></h3>
+      <h3 class="card-heading">Name Trends <span class="card-heading-note">current top 5 by yearly rank</span></h3>
       <div id="name-trend-chart"></div>
       <div id="name-trend-legend" class="trend-legend"></div>
     </div>
@@ -56,21 +56,21 @@ const sharedCount = Object.keys(dogNames).filter(n => catNames[n]).length;
       <div id="names-leaderboard"></div>
     </div>
     <div class="card">
-      <h3 class="card-heading">Crossover Names</h3>
-      <p class="card-desc">The most popular names shared by dogs and cats.</p>
+      <h3 class="card-heading">Crossover Stars</h3>
+      <p class="card-desc">Names that work for both sides — and how popular they are with each.</p>
       <div id="crossover-names"></div>
     </div>
   </div>
 
   <div class="names-row">
     <div class="card">
-      <h3 class="card-heading">Only for Dogs</h3>
-      <p class="card-desc">Popular names you'll never find on a cat.</p>
+      <h3 class="card-heading">Dogs Only</h3>
+      <p class="card-desc">Names you'll never hear at the cat clinic.</p>
       <div id="dog-exclusive"></div>
     </div>
     <div class="card">
-      <h3 class="card-heading">Only for Cats</h3>
-      <p class="card-desc">Names that are strictly feline territory.</p>
+      <h3 class="card-heading">Cats Only</h3>
+      <p class="card-desc">Strictly feline territory — no dogs allowed.</p>
       <div id="cat-exclusive"></div>
     </div>
   </div>
@@ -101,6 +101,7 @@ const sharedCount = Object.keys(dogNames).filter(n => catNames[n]).length;
 
   .names-trend-card {
     min-width: 0;
+    overflow: visible;
   }
 
   .names-title {

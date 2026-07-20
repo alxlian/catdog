@@ -1,40 +1,501 @@
 ---
 import citywide from '../data/citywide.json';
-
-function toTitleCase(str: string) {
-  if (!str) return '';
-  return str.toLowerCase().replace(/\b\w/g, (c: string) => c.toUpperCase());
-}
+import breedList from '../data/breed-list.json';
+import fsaSummary from '../data/fsa-summary.json';
+import fsaGeo from '../data/fsa-geo.json';
+import names from '../data/names.json';
+import { toTitleCase } from '../scripts/utils.js';
 
 const dogBreed = citywide.top_breed?.DOG;
 const catBreed = citywide.top_breed?.CAT;
 const dogName = citywide.top_name?.DOG;
 const catName = citywide.top_name?.CAT;
+
+// Filter to GTA FSAs only
+const geoFsas = new Set(
+  (fsaGeo as any).features.map((f: any) => f.properties.CFSAUID || f.properties.FSA || f.properties.name)
+);
+const gtaFsaSummary = Object.entries(fsaSummary as Record<string, any>)
+  .filter(([fsa]) => geoFsas.has(fsa));
+
+// Top neighbourhood per species
+const topDogNbh = gtaFsaSummary.sort((a, b) => b[1].dog_count - a[1].dog_count)[0];
+const topCatNbh = [...gtaFsaSummary].sort((a, b) => b[1].cat_count - a[1].cat_count)[0];
+
+// Top name per species (all-time)
+const dogNames = (names as any).DOG || {};
+const catNames = (names as any).CAT || {};
+const topDogNameAllTime = Object.entries(dogNames)
+  .map(([name, entries]: [string, any]) => ({ name, total: entries.reduce((s: number, e: any) => s + e.count, 0) }))
+  .sort((a, b) => b.total - a.total)[0];
+const topCatNameAllTime = Object.entries(catNames)
+  .map(([name, entries]: [string, any]) => ({ name, total: entries.reduce((s: number, e: any) => s + e.count, 0) }))
+  .sort((a, b) => b.total - a.total)[0];
+
+// Breed diversity: count unique dog breeds per FSA
+const breedsByFsa: Record<string, Set<string>> = {};
+for (const row of (breedList as any[])) {
+  if (row.species !== 'DOG' || !geoFsas.has(row.fsa)) continue;
+  if (!breedsByFsa[row.fsa]) breedsByFsa[row.fsa] = new Set();
+  breedsByFsa[row.fsa].add(row.breed);
+}
+const diversityRanking = Object.entries(breedsByFsa)
+  .map(([fsa, breeds]) => {
+    const summary = (fsaSummary as any)[fsa];
+    return { fsa, neighbourhood: summary?.neighbourhood || fsa, count: breeds.size, total: summary?.dog_count || 0 };
+  })
+  .sort((a, b) => b.count - a.count);
+const mostDiverse = diversityRanking.slice(0, 5);
+const leastDiverse = [...diversityRanking].sort((a, b) => a.count - b.count).slice(0, 5);
+
+// Breed dominance: top breed's share of all dogs in each FSA
+const dominanceRanking = gtaFsaSummary
+  .map(([fsa, d]: [string, any]) => {
+    const topBreed = d.top_breeds?.DOG?.[0];
+    if (!topBreed || !d.dog_count) return null;
+    const pct = (topBreed.count / d.dog_count * 100);
+    return { fsa, neighbourhood: d.neighbourhood, breed: topBreed.breed, pct, count: topBreed.count, total: d.dog_count };
+  })
+  .filter(Boolean)
+  .sort((a: any, b: any) => b.pct - a.pct);
+const mostDominant = dominanceRanking.slice(0, 5);
+
+// Rare breed spotlight: breeds that appear in only 1 FSA with count=1
+// Filter out truncated names (ending mid-word, too short, or with trailing dash/space)
+function isCleanBreedName(name: string) {
+  if (name.length < 4) return false;
+  if (name.endsWith('-') || name.endsWith(' ')) return false;
+  // Skip names that look truncated (end with a partial word < 3 chars after last space)
+  const parts = name.trim().split(/\s+/);
+  const lastPart = parts[parts.length - 1];
+  if (parts.length > 1 && lastPart.length <= 2 && !['SH', 'LH', 'MH'].includes(lastPart)) return false;
+  return true;
+}
+const breedFsaCounts: Record<string, { count: number; fsa: string; neighbourhood: string }> = {};
+for (const row of (breedList as any[])) {
+  if (row.species !== 'DOG' || !geoFsas.has(row.fsa) || row.count > 1) continue;
+  if (!isCleanBreedName(row.breed)) continue;
+  if (!breedFsaCounts[row.breed]) {
+    const summary = (fsaSummary as any)[row.fsa];
+    breedFsaCounts[row.breed] = { count: 0, fsa: row.fsa, neighbourhood: summary?.neighbourhood || row.fsa };
+  }
+  breedFsaCounts[row.breed].count++;
+}
+const oneOfAKind = Object.entries(breedFsaCounts)
+  .filter(([, v]) => v.count === 1)
+  .map(([breed, v]) => ({ breed, fsa: v.fsa, neighbourhood: v.neighbourhood }))
+  .slice(0, 10);
 ---
 
 <section id="typical">
-  <h2>The Most Typical Pet in Toronto</h2>
-  <p>These are independent stats from separate datasets — not one combined animal profile.</p>
-  <div class="grid-3">
-    <div class="stat-card">
-      <div class="stat-label">Most Licensed Species</div>
-      <div class="stat-value">{citywide.species_split.DOG > citywide.species_split.CAT ? 'Dog' : 'Cat'}</div>
-      <div class="stat-label">{Math.max(citywide.species_split.DOG, citywide.species_split.CAT).toLocaleString()} licenses</div>
+  <div class="typical-header">
+    <h1 class="typical-title">By the Numbers</h1>
+    <p class="typical-blurb">
+      If you could build the most average Toronto pet from the data, here's what you'd get.
+      Meet the city's {citywide.total_licenses.toLocaleString()} licensed companions — from the breeds everyone loves to the ones only one person has.
+    </p>
+  </div>
+
+  <div class="typical-stats">
+    <div class="profile-card dog-card">
+      <div class="profile-top">
+        <span class="profile-emoji">🐕</span>
+        <span class="profile-label">Most Typical Dog</span>
+      </div>
+      <div class="profile-name">{topDogNameAllTime ? toTitleCase(topDogNameAllTime.name) : ''}</div>
+      <div class="profile-breed">{dogBreed ? toTitleCase(dogBreed.breed) : ''}</div>
+      <div class="profile-nbh">{topDogNbh ? topDogNbh[1].neighbourhood : ''}</div>
+      <div class="profile-stats">
+        <div class="profile-stat">
+          <span class="profile-stat-num">{dogBreed?.count.toLocaleString()}</span>
+          <span class="profile-stat-label">of this breed</span>
+        </div>
+        <div class="profile-stat">
+          <span class="profile-stat-num">{topDogNameAllTime?.total.toLocaleString()}</span>
+          <span class="profile-stat-label">with this name</span>
+        </div>
+        <div class="profile-stat">
+          <span class="profile-stat-num">{topDogNbh ? topDogNbh[1].dog_count.toLocaleString() : ''}</span>
+          <span class="profile-stat-label">dogs here</span>
+        </div>
+      </div>
     </div>
-    <div class="stat-card">
-      <div class="stat-label">Most Common Breed</div>
-      {dogBreed && <div><span class="stat-value dog-color" style="font-size:1.5rem">{toTitleCase(dogBreed.breed)}</span><div class="stat-label">{dogBreed.count.toLocaleString()} dogs</div></div>}
-      {catBreed && <div style="margin-top:0.75rem"><span class="stat-value cat-color" style="font-size:1.5rem">{toTitleCase(catBreed.breed)}</span><div class="stat-label">{catBreed.count.toLocaleString()} cats</div></div>}
+    <div class="profile-card cat-card">
+      <div class="profile-top">
+        <span class="profile-emoji">🐈</span>
+        <span class="profile-label">Most Typical Cat</span>
+      </div>
+      <div class="profile-name">{topCatNameAllTime ? toTitleCase(topCatNameAllTime.name) : ''}</div>
+      <div class="profile-breed">{catBreed ? toTitleCase(catBreed.breed) : ''}</div>
+      <div class="profile-nbh">{topCatNbh ? topCatNbh[1].neighbourhood : ''}</div>
+      <div class="profile-stats">
+        <div class="profile-stat">
+          <span class="profile-stat-num">{catBreed?.count.toLocaleString()}</span>
+          <span class="profile-stat-label">of this breed</span>
+        </div>
+        <div class="profile-stat">
+          <span class="profile-stat-num">{topCatNameAllTime?.total.toLocaleString()}</span>
+          <span class="profile-stat-label">with this name</span>
+        </div>
+        <div class="profile-stat">
+          <span class="profile-stat-num">{topCatNbh ? topCatNbh[1].cat_count.toLocaleString() : ''}</span>
+          <span class="profile-stat-label">cats here</span>
+        </div>
+      </div>
     </div>
-    <div class="stat-card">
-      <div class="stat-label">Most Popular Name</div>
-      {dogName && <div><span class="stat-value dog-color" style="font-size:1.5rem">{toTitleCase(dogName.name)}</span><div class="stat-label">{dogName.count.toLocaleString()} dogs ({dogName.year})</div></div>}
-      {catName && <div style="margin-top:0.75rem"><span class="stat-value cat-color" style="font-size:1.5rem">{toTitleCase(catName.name)}</span><div class="stat-label">{catName.count.toLocaleString()} cats ({catName.year})</div></div>}
+  </div>
+
+  <div class="typical-row">
+    <div class="card">
+      <h3 class="card-heading">The Melting Pots</h3>
+      <p class="card-desc">Neighbourhoods where you'll find every breed under the sun.</p>
+      <div class="diversity-list">
+        {mostDiverse.map((d, i) => (
+          <div class="diversity-row">
+            <span class="diversity-rank">{i + 1}</span>
+            <div class="diversity-info">
+              <span class="diversity-name">{d.neighbourhood} <span class="diversity-fsa">{d.fsa}</span></span>
+              <span class="diversity-sub">{d.total.toLocaleString()} dogs registered</span>
+            </div>
+            <span class="diversity-stat">{d.count} <span class="diversity-stat-label">breeds</span></span>
+          </div>
+        ))}
+      </div>
+    </div>
+    <div class="card">
+      <h3 class="card-heading">The Loyalists</h3>
+      <p class="card-desc">These areas stick to what they know — the fewest breeds in the city.</p>
+      <div class="diversity-list">
+        {leastDiverse.map((d, i) => (
+          <div class="diversity-row">
+            <span class="diversity-rank">{i + 1}</span>
+            <div class="diversity-info">
+              <span class="diversity-name">{d.neighbourhood} <span class="diversity-fsa">{d.fsa}</span></span>
+              <span class="diversity-sub">{d.total.toLocaleString()} dogs registered</span>
+            </div>
+            <span class="diversity-stat">{d.count} <span class="diversity-stat-label">breeds</span></span>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+
+  <div class="typical-row">
+    <div class="card">
+      <h3 class="card-heading">One-Breed Towns</h3>
+      <p class="card-desc">Places where one breed runs the neighbourhood.</p>
+      <div class="diversity-list">
+        {mostDominant.map((d: any, i: number) => (
+          <div class="diversity-row">
+            <span class="diversity-rank">{i + 1}</span>
+            <div class="diversity-info">
+              <span class="diversity-name">{d.neighbourhood} <span class="diversity-fsa">{d.fsa}</span></span>
+              <span class="diversity-sub">{toTitleCase(d.breed)}</span>
+            </div>
+            <span class="diversity-stat">{d.pct.toFixed(0)}%</span>
+          </div>
+        ))}
+      </div>
+    </div>
+    <div>
+      <h3 class="section-heading">One of a Kind</h3>
+      <p class="card-desc" style="margin-bottom:1rem">These breeds have exactly one registered pet in all of Toronto. Every count is real.</p>
+      <div class="rare-grid">
+        {oneOfAKind.map((d) => (
+          <div class="rare-tag">
+            <span class="rare-breed">{toTitleCase(d.breed)}</span>
+            <span class="rare-nbh">{d.neighbourhood}</span>
+          </div>
+        ))}
+      </div>
     </div>
   </div>
 </section>
 
 <style>
-  #typical { text-align: center; }
-  #typical > p { color: var(--gray); max-width: 36rem; margin: 0 auto 2rem; font-style: italic; }
+  #typical {
+    text-align: left;
+  }
+
+  .typical-header {
+    margin-bottom: 1.5rem;
+  }
+
+  .typical-title {
+    font-size: 48px;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 12px;
+  }
+
+  .typical-blurb {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--text-muted);
+    line-height: 1.7;
+    max-width: 48rem;
+  }
+
+  .typical-blurb strong {
+    color: var(--accent);
+    font-weight: 500;
+  }
+
+  .typical-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    max-width: 80rem;
+  }
+
+  .typical-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    max-width: 80rem;
+    align-items: start;
+    margin-bottom: 1.5rem;
+  }
+
+  .card {
+    background: white;
+    border: 1px solid var(--gray-light);
+    border-radius: 1rem;
+    padding: 1.25rem;
+  }
+
+  .profile-card {
+    border-radius: 1.25rem;
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+  }
+
+  .dog-card {
+    background: #FFF0EB;
+    color: var(--text);
+  }
+
+  .cat-card {
+    background: #EBF4F8;
+    color: var(--text);
+  }
+
+  .profile-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .profile-emoji {
+    font-size: 1.5rem;
+  }
+
+  .profile-label {
+    font-size: 0.6875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-muted);
+  }
+
+  .dog-card .profile-name {
+    color: var(--accent);
+  }
+
+  .cat-card .profile-name {
+    color: var(--blue);
+  }
+
+  .profile-name {
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 0.25rem;
+  }
+
+  .profile-breed {
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: var(--text);
+    margin-bottom: 0.125rem;
+  }
+
+  .profile-nbh {
+    font-size: 0.8125rem;
+    font-weight: 400;
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+  }
+
+  .profile-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    padding-top: 1.25rem;
+  }
+
+  .profile-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dog-card .profile-stat-num {
+    color: var(--accent);
+  }
+
+  .cat-card .profile-stat-num {
+    color: var(--blue);
+  }
+
+  .profile-stat-num {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  .profile-stat-label {
+    font-size: 0.5625rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-muted);
+    font-weight: 500;
+  }
+
+  .section-heading {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 0.25rem;
+  }
+
+  .card-heading {
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--text);
+    margin-bottom: 0.25rem;
+  }
+
+  .card-desc {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-bottom: 0.75rem;
+  }
+
+  .diversity-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .diversity-row {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0.375rem;
+    border-bottom: 1px solid #f5f0e8;
+  }
+
+  .diversity-row:last-child {
+    border-bottom: none;
+  }
+
+  .diversity-rank {
+    font-size: 0.625rem;
+    font-weight: 600;
+    color: var(--gray);
+    min-width: 1rem;
+    text-align: right;
+  }
+
+  .diversity-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .diversity-name {
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: var(--text);
+  }
+
+  .diversity-fsa {
+    font-size: 0.6875rem;
+    font-weight: 400;
+    color: var(--gray);
+    margin-left: 0.25rem;
+  }
+
+  .diversity-sub {
+    font-size: 0.6875rem;
+    color: var(--text-muted);
+    line-height: 1.3;
+  }
+
+  .diversity-stat {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--accent);
+    text-align: right;
+    flex-shrink: 0;
+    line-height: 1;
+  }
+
+  .diversity-stat-label {
+    font-size: 0.6875rem;
+    font-weight: 400;
+    color: var(--text-muted);
+  }
+
+  .rare-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .rare-tag {
+    background: white;
+    border: 1px solid var(--gray-light);
+    border-radius: 0.75rem;
+    padding: 0.5rem 0.75rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .rare-breed {
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: var(--text);
+    line-height: 1.2;
+  }
+
+  .rare-nbh {
+    font-size: 0.625rem;
+    color: var(--text-muted);
+  }
+
+  @media (max-width: 1024px) {
+    .typical-row {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .typical-title {
+      font-size: 1.75rem;
+    }
+    .typical-stats {
+      grid-template-columns: 1fr;
+    }
+    .typical-row {
+      grid-template-columns: 1fr;
+    }
+  }
 </style>

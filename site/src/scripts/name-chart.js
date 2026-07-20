@@ -93,7 +93,7 @@ function renderTrendChart(container, legendContainer, data) {
 
   if (!top5.length) return;
 
-  const margin = { top: 24, right: 80, bottom: 36, left: 40 };
+  const margin = { top: 36, right: 80, bottom: 36, left: 40 };
   const width = 560;
   const height = 220;
   const innerW = width - margin.left - margin.right;
@@ -107,17 +107,20 @@ function renderTrendChart(container, legendContainer, data) {
     .domain([d3.max(allEntries, e => e.rank) + 1, 1])
     .range([innerH, 0]);
   const color = d3.scaleOrdinal(PALETTE);
+  const maxRank = d3.max(allEntries, e => e.rank);
+  const yTicks = [1, ...y.ticks(4).filter(t => t !== 1)];
 
   const svg = d3.select(container)
     .append('svg')
     .attr('viewBox', `0 0 ${width} ${height}`)
     .style('font-family', "'Lexend', system-ui, sans-serif")
+    .style('overflow', 'visible')
     .append('g')
     .attr('transform', `translate(${margin.left},${margin.top})`);
 
   // Gridlines
   svg.append('g')
-    .call(d3.axisLeft(y).ticks(5).tickSize(-innerW).tickFormat(''))
+    .call(d3.axisLeft(y).tickValues(yTicks).tickSize(-innerW).tickFormat(''))
     .call(g => g.select('.domain').remove())
     .call(g => g.selectAll('.tick line').attr('stroke', '#E8E4DA').attr('stroke-dasharray', '3 3'));
 
@@ -130,7 +133,7 @@ function renderTrendChart(container, legendContainer, data) {
 
   // Y axis (rank — inverted so #1 is at top)
   svg.append('g')
-    .call(d3.axisLeft(y).ticks(5).tickFormat(d => '#' + d).tickSize(0))
+    .call(d3.axisLeft(y).tickValues(yTicks).tickFormat(d => '#' + d).tickSize(0))
     .call(g => g.select('.domain').remove())
     .call(g => g.selectAll('.tick text').attr('dx', '-0.5em').attr('fill', '#403D39').attr('font-size', '10px'));
 
@@ -225,12 +228,18 @@ function renderCrossover(container, namesData) {
   const dogNames = namesData.DOG || {};
   const catNames = namesData.CAT || {};
 
+  // Total registrations per species (for computing share)
+  const allDogCount = Object.values(dogNames).reduce((s, entries) => s + entries.reduce((a, e) => a + e.count, 0), 0);
+  const allCatCount = Object.values(catNames).reduce((s, entries) => s + entries.reduce((a, e) => a + e.count, 0), 0);
+
   const shared = Object.keys(dogNames)
     .filter(n => catNames[n])
     .map(n => {
       const dogTotal = dogNames[n].reduce((s, e) => s + e.count, 0);
       const catTotal = catNames[n].reduce((s, e) => s + e.count, 0);
-      return { name: n, dog: dogTotal, cat: catTotal, total: dogTotal + catTotal };
+      const dogPct = (dogTotal / allDogCount) * 100;
+      const catPct = (catTotal / allCatCount) * 100;
+      return { name: n, dogPct, catPct, total: dogTotal + catTotal };
     })
     .sort((a, b) => b.total - a.total)
     .slice(0, 8);
@@ -240,16 +249,14 @@ function renderCrossover(container, namesData) {
     return;
   }
 
-  container.innerHTML = shared.map(d => {
-    const dogPct = Math.round((d.dog / d.total) * 100);
-    const catPct = 100 - dogPct;
-    return `<div style="display:flex;align-items:center;gap:0.5rem;padding:0.35rem 0">
-      <span style="font-size:0.8125rem;font-weight:500;color:var(--text);width:5rem">${toTitleCase(d.name)}</span>
-      <div style="flex:1;display:flex;height:18px;border-radius:4px;overflow:hidden">
-        <div style="width:${dogPct}%;background:#EB5E28;display:flex;align-items:center;justify-content:center;color:white;font-size:9px;font-weight:500;min-width:24px">${d.dog.toLocaleString()}</div>
-        <div style="width:${catPct}%;background:#3B7EA1;display:flex;align-items:center;justify-content:center;color:white;font-size:9px;font-weight:500;min-width:24px">${d.cat.toLocaleString()}</div>
-      </div>
-      <span style="font-size:0.6875rem;color:var(--gray);flex-shrink:0;width:2.5rem;text-align:right">${d.total.toLocaleString()}</span>
+  container.innerHTML = `<div style="display:flex;justify-content:flex-end;gap:1.5rem;padding-bottom:0.375rem;border-bottom:1px solid #f5f0e8;margin-bottom:0.25rem">
+    <span style="font-size:0.625rem;font-weight:500;color:#EB5E28;width:3.5rem;text-align:right">Dogs</span>
+    <span style="font-size:0.625rem;font-weight:500;color:#3B7EA1;width:3.5rem;text-align:right">Cats</span>
+  </div>` + shared.map(d => {
+    return `<div style="display:flex;align-items:center;padding:0.375rem 0;border-bottom:1px solid #f5f0e8">
+      <span style="font-size:0.8125rem;font-weight:500;color:var(--text);flex:1">${toTitleCase(d.name)}</span>
+      <span style="font-size:0.8125rem;font-weight:600;color:#EB5E28;width:3.5rem;text-align:right">${d.dogPct.toFixed(1)}%</span>
+      <span style="font-size:0.8125rem;font-weight:600;color:#3B7EA1;width:3.5rem;text-align:right">${d.catPct.toFixed(1)}%</span>
     </div>`;
   }).join('');
 }
