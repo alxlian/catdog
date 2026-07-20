@@ -1,26 +1,58 @@
 ---
-import SpeciesToggle from './SpeciesToggle.astro';
+import breedTrends from '../data/breed-trends.json';
+import { toTitleCase } from '../scripts/utils.js';
+
+const dogData = (breedTrends as any).DOG || {};
+const catData = (breedTrends as any).CAT || {};
+const totalBreeds = new Set([...Object.keys(dogData), ...Object.keys(catData)]).size;
+
+// Top dog breed by latest share
+const topDog = Object.entries(dogData)
+  .sort((a: any, b: any) => (b[1].at(-1)?.share || 0) - (a[1].at(-1)?.share || 0))[0] as [string, any];
+const topDogPct = topDog ? (topDog[1].at(-1).share * 100).toFixed(1) : '0';
+
+// Fastest rising dog
+const dogChanges = Object.entries(dogData)
+  .map(([breed, entries]: [string, any]) => ({ breed, change: entries.at(-1)?.yoy_change, count: entries.at(-1)?.count }))
+  .filter(c => c.change != null && c.count > 10)
+  .sort((a, b) => b.change - a.change);
+const fastestRiser = dogChanges[0];
 ---
 
 <section id="breeds">
-  <h2>Breed Trends</h2>
-  <p>How has breed popularity shifted across Toronto? Search for a breed to see its share of licenses over time.</p>
-  <div class="breed-controls">
-    <SpeciesToggle id="breed-species-toggle" />
-    <input type="text" id="breed-search" placeholder="Search breeds..." />
+  <div class="breeds-header">
+    <h1 class="breeds-title">Breed Trends</h1>
+    <p class="breeds-blurb">
+      Tracking {totalBreeds.toLocaleString()} breeds across Toronto.
+      <strong>{topDog ? toTitleCase(topDog[0]) : ''}</strong> is still the most popular dog breed at {topDogPct}% of all registrations{fastestRiser ? `, while ${toTitleCase(fastestRiser.breed)} is the fastest rising breed at +${(fastestRiser.change * 100).toFixed(1)}% year-over-year` : ''}.
+    </p>
   </div>
-  <div id="breed-line-chart"></div>
-  <div id="breed-legend" class="breed-legend"></div>
-  <h3>Rising & Declining</h3>
-  <div class="grid-2">
-    <div>
-      <h4 class="dog-color">Rising</h4>
-      <div id="rising-breeds"></div>
+
+  <div class="breeds-controls">
+    <div class="btn-group" id="breed-species-toggle">
+      <button class="toggle-btn active" data-value="DOG">Dogs</button>
+      <button class="toggle-btn" data-value="CAT">Cats</button>
     </div>
-    <div>
-      <h4 class="cat-color">Declining</h4>
-      <div id="declining-breeds"></div>
+    <input type="text" id="breed-search" class="breed-search" placeholder="Search breeds..." />
+  </div>
+
+  <div class="breeds-layout">
+    <div class="chart-col">
+      <div class="chart-container">
+        <div id="breed-line-chart"></div>
+        <div id="breed-legend" class="breed-legend"></div>
+      </div>
     </div>
+    <aside class="trends-col">
+      <div class="trend-section">
+        <h3 class="trend-heading trend-rising">Rising</h3>
+        <div id="rising-breeds"></div>
+      </div>
+      <div class="trend-section">
+        <h3 class="trend-heading trend-declining">Declining</h3>
+        <div id="declining-breeds"></div>
+      </div>
+    </aside>
   </div>
 </section>
 
@@ -31,30 +63,177 @@ import SpeciesToggle from './SpeciesToggle.astro';
 </script>
 
 <style>
-  #breeds p { max-width: 40rem; color: var(--gray); }
-  .breed-controls {
+  #breeds {
+    text-align: left;
+  }
+
+  .breeds-header {
+    margin-bottom: 1.5rem;
+  }
+
+  .breeds-title {
+    font-size: 48px;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 12px;
+  }
+
+  .breeds-blurb {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--text-muted);
+    line-height: 1.7;
+    max-width: 48rem;
+  }
+
+  .breeds-blurb strong {
+    color: var(--accent);
+    font-weight: 500;
+  }
+
+  .breeds-controls {
     display: flex;
     align-items: center;
-    gap: 1rem;
-    margin: 1.5rem 0;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
   }
-  .breed-controls input {
+
+  .btn-group {
+    display: inline-flex;
+    border: 1px solid var(--gray-light);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    background: white;
+  }
+
+  .btn-group button {
+    padding: 0.5rem 1.25rem;
+    border: none;
+    border-right: 1px solid var(--gray-light);
+    background: transparent;
+    font-family: var(--font);
+    font-size: 0.8125rem;
+    font-weight: 500;
+    cursor: pointer;
+    color: var(--gray);
+    transition: all 0.2s;
+    white-space: nowrap;
+  }
+
+  .btn-group button:last-child {
+    border-right: none;
+  }
+
+  .btn-group button.active {
+    background: var(--accent);
+    color: white;
+  }
+
+  .btn-group button:hover:not(.active) {
+    background: var(--gray-light);
+  }
+
+  .breed-search {
     padding: 0.5rem 0.75rem;
     border: 1px solid var(--gray-light);
-    border-radius: 0.375rem;
+    border-radius: 0.5rem;
     font-family: var(--font);
-    font-size: 0.875rem;
+    font-size: 0.8125rem;
+    background: white;
+    max-width: 16rem;
     flex: 1;
-    max-width: 20rem;
   }
-  #breed-line-chart { margin: 1.5rem 0; }
+
+  .breeds-layout {
+    display: grid;
+    grid-template-columns: 1fr 22rem;
+    gap: 1.5rem;
+    max-width: 80rem;
+    align-items: start;
+  }
+
+  .chart-col {
+    min-width: 0;
+  }
+
+  .chart-container {
+    background: white;
+    border: 1px solid var(--gray-light);
+    border-radius: 1rem;
+    padding: 1.25rem;
+  }
+
+  #breed-line-chart {
+    margin-bottom: 0.5rem;
+  }
+
+  #breed-line-chart svg {
+    width: 100%;
+    height: auto;
+  }
+
   .breed-legend {
     display: flex;
     flex-wrap: wrap;
     gap: 0.75rem 1.5rem;
     font-size: 0.8125rem;
-    margin-bottom: 2rem;
   }
-  #breeds h3 { margin-top: 2rem; }
-  #breeds h4 { font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.75rem; }
+
+  .trends-col {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .trend-section {
+    background: white;
+    border: 1px solid var(--gray-light);
+    border-radius: 1rem;
+    padding: 1.25rem;
+  }
+
+  .trend-heading {
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid;
+  }
+
+  .trend-rising {
+    color: var(--accent);
+    border-color: var(--accent);
+  }
+
+  .trend-declining {
+    color: var(--blue);
+    border-color: var(--blue);
+  }
+
+  @media (max-width: 1024px) {
+    .breeds-layout {
+      grid-template-columns: 1fr;
+    }
+    .trends-col {
+      flex-direction: row;
+    }
+    .trend-section {
+      flex: 1;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .breeds-title {
+      font-size: 1.75rem;
+    }
+    .breeds-controls {
+      gap: 0.5rem;
+    }
+    .trends-col {
+      flex-direction: column;
+    }
+  }
 </style>
