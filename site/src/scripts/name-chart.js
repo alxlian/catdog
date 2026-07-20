@@ -1,10 +1,16 @@
 import * as d3 from 'd3';
 import { toTitleCase } from './utils.js';
 
-export function renderNames(namesData) {
+const PALETTE = ['#EB5E28', '#3B7EA1', '#D4960A', '#7B6D4E', '#9C4D8B'];
+
+export function renderNamesPage(namesData) {
   const toggleContainer = document.getElementById('names-species-toggle');
-  const searchInput = document.getElementById('name-search');
   const leaderboard = document.getElementById('names-leaderboard');
+  const trendChart = document.getElementById('name-trend-chart');
+  const trendLegend = document.getElementById('name-trend-legend');
+  const dogExclusive = document.getElementById('dog-exclusive');
+  const catExclusive = document.getElementById('cat-exclusive');
+  const crossover = document.getElementById('crossover-names');
 
   if (!leaderboard) return;
 
@@ -12,11 +18,12 @@ export function renderNames(namesData) {
 
   function render() {
     const data = namesData[currentSpecies] || {};
-    const searchTerm = searchInput?.value?.toUpperCase() || '';
-    renderLeaderboard(leaderboard, data, searchTerm);
+    renderLeaderboard(leaderboard, data);
+    renderTrendChart(trendChart, trendLegend, data);
+    renderExclusives(dogExclusive, catExclusive, namesData);
+    renderCrossover(crossover, namesData);
   }
 
-  // Toggle switch handler
   toggleContainer?.querySelectorAll('.toggle-btn').forEach(btn => {
     btn.addEventListener('click', () => {
       toggleContainer.querySelectorAll('.toggle-btn').forEach(b => b.classList.remove('active'));
@@ -26,91 +33,223 @@ export function renderNames(namesData) {
     });
   });
 
-  searchInput?.addEventListener('input', () => render());
-
   render();
 }
 
-function renderLeaderboard(container, data, searchTerm) {
-  // Find latest year
-  let latestYear = 0;
+function getLatestYear(data) {
+  let latest = 0;
   for (const entries of Object.values(data)) {
     for (const e of entries) {
-      if (e.year > latestYear) latestYear = e.year;
+      if (e.year > latest) latest = e.year;
     }
   }
+  return latest;
+}
 
-  // Get top names by rank in latest year
-  const all = [];
-  for (const [name, entries] of Object.entries(data)) {
-    const latest = entries.find(e => e.year === latestYear);
-    if (latest) {
-      all.push({ name, rank: latest.rank, count: latest.count, entries });
-    }
-  }
-  all.sort((a, b) => a.rank - b.rank);
+function renderLeaderboard(container, data) {
+  // All-time totals
+  const all = Object.entries(data).map(([name, entries]) => ({
+    name,
+    total: entries.reduce((s, e) => s + e.count, 0),
+    entries,
+  }));
+  all.sort((a, b) => b.total - a.total);
 
-  // Filter by search
-  let display = all;
-  if (searchTerm) {
-    display = all.filter(d => d.name.includes(searchTerm));
-  }
-  display = display.slice(0, 20);
+  const display = all.slice(0, 20);
 
   if (!display.length) {
-    container.innerHTML = '<p style="color:var(--gray)">No matching names found.</p>';
+    container.innerHTML = '<p style="color:var(--gray);font-size:13px">No matching names found.</p>';
     return;
   }
 
-  // Build sparklines with LOCAL y-scale per name (better trend visibility)
-  const allYears = [...new Set(display.flatMap(d => d.entries.map(e => e.year)))].sort();
+  const maxCount = display[0].total;
 
-  container.innerHTML = `
-    <table style="width:100%;border-collapse:collapse">
-      <thead>
-        <tr style="border-bottom:2px solid var(--gray-light)">
-          <th style="text-align:left;padding:0.5rem 0;width:2rem">#</th>
-          <th style="text-align:left;padding:0.5rem 0">Name</th>
-          <th style="text-align:right;padding:0.5rem 0;width:4rem">Count</th>
-          <th style="width:6rem;padding:0.5rem 0">Trend</th>
-        </tr>
-      </thead>
-      <tbody>
-        ${display.map(d => `
-          <tr style="border-bottom:1px solid var(--gray-light)">
-            <td style="padding:0.375rem 0;color:var(--gray)">${d.rank}</td>
-            <td style="padding:0.375rem 0;font-weight:500">${toTitleCase(d.name)}</td>
-            <td style="padding:0.375rem 0;text-align:right;font-variant-numeric:tabular-nums">${d.count.toLocaleString()}</td>
-            <td style="padding:0.375rem 0"><svg class="sparkline" data-name="${d.name}" viewBox="0 0 80 20" style="width:5rem;height:1.25rem"></svg></td>
-          </tr>
-        `).join('')}
-      </tbody>
-    </table>
-  `;
+  container.innerHTML = `<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0.5rem">
+    ${display.map((d, i) => {
+      return `<div style="background:white;border:1px solid var(--gray-light);border-radius:0.75rem;padding:0.4rem 0.5rem;display:flex;align-items:center;gap:0.5rem">
+        <span style="font-size:0.625rem;font-weight:600;color:var(--gray);min-width:1rem;text-align:right">${i + 1}</span>
+        <div style="flex:1;min-width:0">
+          <div style="font-size:0.8125rem;font-weight:600;color:var(--text);line-height:1.2">${toTitleCase(d.name)}</div>
+          <div style="font-size:0.5625rem;color:var(--gray)">${d.total.toLocaleString()}</div>
+        </div>
+      </div>`;
+    }).join('')}
+  </div>`;
+}
 
-  // Draw sparklines with per-name local scale
-  const x = d3.scaleLinear().domain(d3.extent(allYears)).range([2, 78]);
+function renderTrendChart(container, legendContainer, data) {
+  if (!container) return;
+  container.innerHTML = '';
+  if (legendContainer) legendContainer.innerHTML = '';
 
-  container.querySelectorAll('.sparkline').forEach(svgEl => {
-    const name = svgEl.dataset.name;
-    const entries = data[name];
-    if (!entries || entries.length < 2) return;
+  const latestYear = getLatestYear(data);
+  const all = [];
+  for (const [name, entries] of Object.entries(data)) {
+    const latest = entries.find(e => e.year === latestYear);
+    if (latest) all.push({ name, rank: latest.rank, entries });
+  }
+  all.sort((a, b) => a.rank - b.rank);
+  const top5 = all.slice(0, 5);
 
-    // Local y-scale: just this name's rank range
-    const ranks = entries.map(e => e.rank);
-    const minRank = Math.min(...ranks);
-    const maxRank = Math.max(...ranks);
-    // Add padding so flat lines aren't invisible
-    const padding = maxRank === minRank ? 2 : 0;
-    const y = d3.scaleLinear().domain([maxRank + padding, minRank - padding]).range([18, 2]);
-    const line = d3.line().x(d => x(d.year)).y(d => y(d.rank));
+  if (!top5.length) return;
 
-    d3.select(svgEl)
-      .append('path')
+  const margin = { top: 24, right: 80, bottom: 36, left: 40 };
+  const width = 560;
+  const height = 220;
+  const innerW = width - margin.left - margin.right;
+  const innerH = height - margin.top - margin.bottom;
+
+  const allEntries = top5.flatMap(d => d.entries);
+  const years = [...new Set(allEntries.map(e => e.year))].sort();
+
+  const x = d3.scaleLinear().domain(d3.extent(years)).range([0, innerW]);
+  const y = d3.scaleLinear()
+    .domain([d3.max(allEntries, e => e.rank) + 1, 1])
+    .range([innerH, 0]);
+  const color = d3.scaleOrdinal(PALETTE);
+
+  const svg = d3.select(container)
+    .append('svg')
+    .attr('viewBox', `0 0 ${width} ${height}`)
+    .style('font-family', "'Lexend', system-ui, sans-serif")
+    .append('g')
+    .attr('transform', `translate(${margin.left},${margin.top})`);
+
+  // Gridlines
+  svg.append('g')
+    .call(d3.axisLeft(y).ticks(5).tickSize(-innerW).tickFormat(''))
+    .call(g => g.select('.domain').remove())
+    .call(g => g.selectAll('.tick line').attr('stroke', '#E8E4DA').attr('stroke-dasharray', '3 3'));
+
+  // X axis
+  svg.append('g')
+    .attr('transform', `translate(0,${innerH})`)
+    .call(d3.axisBottom(x).ticks(years.length).tickFormat(d3.format('d')).tickSize(0))
+    .call(g => g.select('.domain').remove())
+    .call(g => g.selectAll('.tick text').attr('dy', '1em').attr('fill', '#403D39').attr('font-size', '10px'));
+
+  // Y axis (rank — inverted so #1 is at top)
+  svg.append('g')
+    .call(d3.axisLeft(y).ticks(5).tickFormat(d => '#' + d).tickSize(0))
+    .call(g => g.select('.domain').remove())
+    .call(g => g.selectAll('.tick text').attr('dx', '-0.5em').attr('fill', '#403D39').attr('font-size', '10px'));
+
+  const line = d3.line()
+    .x(d => x(d.year))
+    .y(d => y(d.rank))
+    .curve(d3.curveMonotoneX);
+
+  top5.forEach((breed, i) => {
+    const entries = breed.entries;
+    const lastEntry = entries[entries.length - 1];
+
+    svg.append('path')
       .datum(entries)
       .attr('fill', 'none')
-      .attr('stroke', '#6B7280')
-      .attr('stroke-width', 1.5)
+      .attr('stroke', color(i))
+      .attr('stroke-width', 2.5)
+      .attr('stroke-linecap', 'round')
       .attr('d', line);
+
+    svg.append('circle')
+      .attr('cx', x(lastEntry.year))
+      .attr('cy', y(lastEntry.rank))
+      .attr('r', 4)
+      .attr('fill', color(i))
+      .attr('stroke', 'white')
+      .attr('stroke-width', 2);
+
+    svg.append('text')
+      .attr('x', x(lastEntry.year) + 8)
+      .attr('y', y(lastEntry.rank))
+      .attr('dy', '0.35em')
+      .attr('font-size', '10px')
+      .attr('font-weight', '500')
+      .attr('fill', color(i))
+      .text(toTitleCase(breed.name));
   });
+
+  // Legend
+  if (legendContainer) {
+    top5.forEach((d, i) => {
+      const item = document.createElement('span');
+      item.style.cssText = 'display:inline-flex;align-items:center;gap:4px;color:#403D39;';
+      item.innerHTML = `<span style="width:8px;height:8px;border-radius:50%;background:${color(i)};display:inline-block"></span>${toTitleCase(d.name)}`;
+      legendContainer.appendChild(item);
+    });
+  }
+}
+
+function renderExclusives(dogEl, catEl, namesData) {
+  if (!dogEl || !catEl) return;
+
+  const dogNames = namesData.DOG || {};
+  const catNames = namesData.CAT || {};
+
+  // Dog-only names (not found in cat data at all)
+  const dogOnly = Object.entries(dogNames)
+    .filter(([name]) => !catNames[name])
+    .map(([name, entries]) => ({ name, total: entries.reduce((s, e) => s + e.count, 0) }))
+    .sort((a, b) => b.total - a.total)
+    .slice(0, 8);
+
+  // Cat-only names
+  const catOnly = Object.entries(catNames)
+    .filter(([name]) => !dogNames[name])
+    .map(([name, entries]) => ({ name, total: entries.reduce((s, e) => s + e.count, 0) }))
+    .sort((a, b) => b.total - a.total)
+    .slice(0, 8);
+
+  dogEl.innerHTML = renderExclusiveList(dogOnly, '#EB5E28');
+  catEl.innerHTML = renderExclusiveList(catOnly, '#3B7EA1');
+}
+
+function renderExclusiveList(items, color) {
+  if (!items.length) return '<p style="color:var(--gray);font-size:12px">No exclusive names found.</p>';
+  const max = items[0].total;
+  return items.map(d => {
+    const barW = Math.max(6, (d.total / max) * 100);
+    return `<div style="display:flex;align-items:center;gap:0.5rem;padding:0.3rem 0">
+      <span style="font-size:0.8125rem;font-weight:500;color:var(--text);width:5.5rem">${toTitleCase(d.name)}</span>
+      <div style="flex:1;height:4px;background:#f5f0e8;border-radius:2px;overflow:hidden">
+        <div style="height:100%;width:${barW}%;background:${color};border-radius:2px"></div>
+      </div>
+      <span style="font-size:0.6875rem;color:var(--gray);font-variant-numeric:tabular-nums;flex-shrink:0">${d.total.toLocaleString()}</span>
+    </div>`;
+  }).join('');
+}
+
+function renderCrossover(container, namesData) {
+  if (!container) return;
+
+  const dogNames = namesData.DOG || {};
+  const catNames = namesData.CAT || {};
+
+  const shared = Object.keys(dogNames)
+    .filter(n => catNames[n])
+    .map(n => {
+      const dogTotal = dogNames[n].reduce((s, e) => s + e.count, 0);
+      const catTotal = catNames[n].reduce((s, e) => s + e.count, 0);
+      return { name: n, dog: dogTotal, cat: catTotal, total: dogTotal + catTotal };
+    })
+    .sort((a, b) => b.total - a.total)
+    .slice(0, 8);
+
+  if (!shared.length) {
+    container.innerHTML = '<p style="color:var(--gray);font-size:12px">No shared names found.</p>';
+    return;
+  }
+
+  container.innerHTML = shared.map(d => {
+    const dogPct = Math.round((d.dog / d.total) * 100);
+    const catPct = 100 - dogPct;
+    return `<div style="display:flex;align-items:center;gap:0.5rem;padding:0.35rem 0">
+      <span style="font-size:0.8125rem;font-weight:500;color:var(--text);width:5rem">${toTitleCase(d.name)}</span>
+      <div style="flex:1;display:flex;height:18px;border-radius:4px;overflow:hidden">
+        <div style="width:${dogPct}%;background:#EB5E28;display:flex;align-items:center;justify-content:center;color:white;font-size:9px;font-weight:500;min-width:24px">${d.dog.toLocaleString()}</div>
+        <div style="width:${catPct}%;background:#3B7EA1;display:flex;align-items:center;justify-content:center;color:white;font-size:9px;font-weight:500;min-width:24px">${d.cat.toLocaleString()}</div>
+      </div>
+      <span style="font-size:0.6875rem;color:var(--gray);flex-shrink:0;width:2.5rem;text-align:right">${d.total.toLocaleString()}</span>
+    </div>`;
+  }).join('');
 }
