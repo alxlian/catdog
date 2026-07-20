@@ -19,11 +19,11 @@ const mostCats = entries.reduce((best, cur) => cur[1].cat_count > best[1].cat_co
 
 <section id="neighbourhoods">
   <div class="nbh-header">
-    <h1 class="nbh-title">The Neighbourhoods</h1>
+    <h1 class="nbh-title">Every Neighbourhood Has a Personality</h1>
     <p class="nbh-blurb">
-      Toronto has {entries.reduce((s, [,d]) => s + d.total, 0).toLocaleString()} licensed pets spread across {entries.length} neighbourhoods.
-      <strong>{mostPets[1].neighbourhood}</strong> is the city's biggest pet neighbourhood with {mostPets[1].total.toLocaleString()} registered animals.
-      <strong>{mostDogs[1].neighbourhood}</strong> is home to the most dogs at {mostDogs[1].dog_count.toLocaleString()}.
+      {entries.reduce((s, [,d]) => s + d.total, 0).toLocaleString()} licensed pets live across {entries.length} neighbourhoods — and each one has its own flavour.
+      <strong>{mostPets[1].neighbourhood}</strong> is pet central with {mostPets[1].total.toLocaleString()} registered animals,
+      while <strong>{mostDogs[1].neighbourhood}</strong> is dog heaven at {mostDogs[1].dog_count.toLocaleString()}.
     </p>
   </div>
 

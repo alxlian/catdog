@@ -20,32 +20,32 @@ const chapters = [
     href: '/neighbourhoods',
     stat: neighbourhoodCount.toString(),
     label: 'Neighbourhoods',
-    blurb: `${mostCats.neighbourhood} has the most cats in Toronto with ${mostCats.cat_count.toLocaleString()} licensed felines. Explore breed diversity across every neighbourhood.`,
+    blurb: `Every corner of Toronto has its own pet personality. ${mostCats.neighbourhood} is secretly cat country with ${mostCats.cat_count.toLocaleString()} licensed felines.`,
   },
   {
     href: '/breeds',
     stat: uniqueBreeds.toLocaleString(),
     label: 'Breeds Tracked',
-    blurb: `From Labrador Retrievers to Chinese Cresteds — see which breeds are rising, falling, and holding steady across the city.`,
+    blurb: `From Labs to Chinese Cresteds — see who's rising, who's fading, and who's holding steady across the city.`,
   },
   {
     href: '/typical',
     stat: '2.4:1',
     label: 'Dog-to-Cat Ratio',
-    blurb: `For every cat license in Toronto, there are roughly 2.4 dog licenses. Explore what the "typical" Toronto pet looks like.`,
+    blurb: `For every licensed cat, there are roughly 2.4 dogs. Meet the most typical Toronto pet — and the one-of-a-kind breeds that break the mould.`,
   },
   {
     href: '/rarity',
     stat: citywide.top_name.DOG.name ? toTitleCase(citywide.top_name.DOG.name) : '?',
     label: '#1 Pet Name',
-    blurb: `${toTitleCase(citywide.top_name.DOG.name)} reigns supreme for both dogs and cats. Find out how common — or rare — your pet's name and breed really are.`,
+    blurb: `${toTitleCase(citywide.top_name.DOG.name)} reigns supreme for dogs and cats alike. Look up your pet and see how you stack up.`,
   },
 ];
 ---
 
 <section id="chapters">
-  <h2>Explore More</h2>
-  <p class="chapters-blurb">Dive deeper into Toronto's pet data.</p>
+  <h2>Go Deeper</h2>
+  <p class="chapters-blurb">There's a lot more to Toronto's pets than the headlines.</p>
 
   <div class="chapters-grid">
     {chapters.map((ch) => (

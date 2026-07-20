@@ -21,10 +21,10 @@ const fastestRiser = dogChanges[0];
 
 <section id="breeds">
   <div class="breeds-header">
-    <h1 class="breeds-title">Breed Trends</h1>
+    <h1 class="breeds-title">Who's Hot, Who's Not</h1>
     <p class="breeds-blurb">
-      Tracking {totalBreeds.toLocaleString()} breeds across Toronto.
-      <strong>{topDog ? toTitleCase(topDog[0]) : ''}</strong> is still the most popular dog breed at {topDogPct}% of all registrations{fastestRiser ? `, while ${toTitleCase(fastestRiser.breed)} is the fastest rising breed at +${(fastestRiser.change * 100).toFixed(1)}% year-over-year` : ''}.
+      {totalBreeds.toLocaleString()} breeds walk the streets of Toronto.
+      <strong>{topDog ? toTitleCase(topDog[0]) : ''}</strong> still owns the top spot at {topDogPct}% of all dogs{fastestRiser ? ` — but <strong>${toTitleCase(fastestRiser.breed)}</strong> is climbing fast at +${(fastestRiser.change * 100).toFixed(1)}% year-over-year` : ''}.
     </p>
   </div>
 

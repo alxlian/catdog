@@ -21,12 +21,12 @@ const isHome = currentPath === '/';
 
       <a href="/breeds" class:list={["nav-item", { active: currentPath.startsWith('/breeds') }]}>
         <svg class="nav-icon" viewBox="0 0 30 30" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 22l4-8 4 4 4-12 4 16"/><circle cx="8" cy="22" r="2"/></svg>
-        <span>Breed Trends</span>
+        <span>Breeds</span>
       </a>
 
       <a href="/names" class:list={["nav-item", { active: currentPath.startsWith('/names') }]}>
         <svg class="nav-icon" viewBox="0 0 30 30" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 8h20M5 15h14M5 22h18"/><circle cx="25" cy="15" r="3"/></svg>
-        <span>Pet Names</span>
+        <span>Names</span>
       </a>
 
       <a href="/typical" class:list={["nav-item", { active: currentPath.startsWith('/typical') }]}>
