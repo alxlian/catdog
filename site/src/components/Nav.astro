@@ -24,6 +24,11 @@ const isHome = currentPath === '/';
         <span>Breed Trends</span>
       </a>
 
+      <a href="/names" class:list={["nav-item", { active: currentPath.startsWith('/names') }]}>
+        <svg class="nav-icon" viewBox="0 0 30 30" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 8h20M5 15h14M5 22h18"/><circle cx="25" cy="15" r="3"/></svg>
+        <span>Pet Names</span>
+      </a>
+
       <a href="/typical" class:list={["nav-item", { active: currentPath.startsWith('/typical') }]}>
         <svg class="nav-icon" viewBox="0 0 30 30" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="18" width="6" height="8"/><rect x="12" y="10" width="6" height="16"/><rect x="21" y="4" width="6" height="22"/></svg>
         <span>By the Numbers</span>
