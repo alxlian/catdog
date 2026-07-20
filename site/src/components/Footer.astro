@@ -1,75 +1,27 @@
----
-import metadata from '../data/metadata.json';
----
-
 <footer id="footer">
-  <div class="footer-inner">
-    <div class="footer-sources">
-      <h3>Data Sources</h3>
-      <ul>
-        <li><a href="https://open.toronto.ca/dataset/licensed-dogs-and-cats/" target="_blank" rel="noopener">Licensed Dogs and Cats — City of Toronto Open Data</a></li>
-        <li><a href="https://open.toronto.ca/dataset/licensed-dog-and-cat-names/" target="_blank" rel="noopener">Licensed Dog and Cat Names — City of Toronto Open Data</a></li>
-        <li>Population: Statistics Canada, 2021 Census by Forward Sortation Area</li>
-      </ul>
-    </div>
-    <div class="footer-disclaimers">
-      <h3>Disclaimers</h3>
-      {metadata.disclaimers.map((d: string) => (
-        <p class="disclaimer">{d}</p>
-      ))}
-    </div>
-    <div class="footer-meta">
-      <p>Data last processed: {new Date(metadata.generated_at).toLocaleDateString('en-CA')}</p>
-      <p>Covering license years {metadata.year_range[0]}&ndash;{metadata.year_range[1]}</p>
-    </div>
-  </div>
+  <p>Data from <a href="https://open.toronto.ca/" target="_blank" rel="noopener">City of Toronto</a> · Inspired by <a href="https://thedogsofsf.com/" target="_blank" rel="noopener">Dogs of SF</a> · Made by <a href="https://x.com/alxlian" target="_blank" rel="noopener">Alex</a></p>
 </footer>
 
 <style>
   #footer {
-    background: var(--sidebar-bg);
-    border-top: 1px solid var(--nav-active-bg);
-    padding: 3rem 1.5rem;
-    margin-top: 4rem;
-  }
-  .footer-inner {
-    max-width: 72rem;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-  }
-  .footer-inner h3 {
-    margin-bottom: 0.75rem;
-    font-size: 1rem;
-    color: var(--text);
-  }
-  .footer-inner ul { list-style: none; }
-  .footer-inner li {
-    margin-bottom: 0.5rem;
-    font-size: 0.875rem;
-    color: var(--text-muted);
-  }
-  .footer-inner a { color: var(--accent); }
-  .footer-disclaimers .disclaimer {
-    color: var(--text-muted);
-    border-left-color: var(--nav-active-bg);
-    font-size: 0.8125rem;
-    margin-bottom: 0.5rem;
-    font-style: italic;
-    padding-left: 1rem;
-    border-left: 3px solid var(--nav-active-bg);
-  }
-  .footer-meta {
-    grid-column: 1 / -1;
+    background: #252422;
+    padding: 0.75rem 1.5rem;
     text-align: center;
-    font-size: 0.8125rem;
-    color: var(--text-muted);
-    border-top: 1px solid var(--nav-active-bg);
-    padding-top: 1.5rem;
   }
 
-  @media (max-width: 768px) {
-    .footer-inner { grid-template-columns: 1fr; }
+  #footer p {
+    font-size: 0.625rem;
+    color: rgba(255, 255, 255, 0.5);
+    letter-spacing: 0.02em;
+  }
+
+  #footer a {
+    color: rgba(255, 255, 255, 0.65);
+    text-decoration: none;
+  }
+
+  #footer a:hover {
+    color: white;
+    text-decoration: underline;
   }
 </style>
