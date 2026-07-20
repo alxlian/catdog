@@ -102,22 +102,13 @@ const oneOfAKind = Object.entries(breedFsaCounts)
         <span class="profile-emoji">🐕</span>
         <span class="profile-label">Most Typical Dog</span>
       </div>
-      <div class="profile-name">{topDogNameAllTime ? toTitleCase(topDogNameAllTime.name) : ''}</div>
-      <div class="profile-breed">{dogBreed ? toTitleCase(dogBreed.breed) : ''}</div>
-      <div class="profile-nbh">{topDogNbh ? topDogNbh[1].neighbourhood : ''}</div>
-      <div class="profile-stats">
-        <div class="profile-stat">
-          <span class="profile-stat-num">{dogBreed?.count.toLocaleString()}</span>
-          <span class="profile-stat-label">of this breed</span>
-        </div>
-        <div class="profile-stat">
-          <span class="profile-stat-num">{topDogNameAllTime?.total.toLocaleString()}</span>
-          <span class="profile-stat-label">with this name</span>
-        </div>
-        <div class="profile-stat">
-          <span class="profile-stat-num">{topDogNbh ? topDogNbh[1].dog_count.toLocaleString() : ''}</span>
-          <span class="profile-stat-label">dogs here</span>
-        </div>
+      <p class="profile-sentence">
+        Meet <span class="profile-highlight dog-highlight">{topDogNameAllTime ? toTitleCase(topDogNameAllTime.name) : ''}</span>, a <span class="profile-highlight dog-highlight">{dogBreed ? toTitleCase(dogBreed.breed) : ''}</span> from <span class="profile-highlight dog-highlight">{topDogNbh ? topDogNbh[1].neighbourhood : ''}</span>.
+      </p>
+      <div class="profile-chips">
+        <span class="profile-chip dog-chip">{dogBreed?.count.toLocaleString()} {dogBreed ? toTitleCase(dogBreed.breed) + 's' : ''}</span>
+        <span class="profile-chip dog-chip">{topDogNameAllTime?.total.toLocaleString()} dogs named {topDogNameAllTime ? toTitleCase(topDogNameAllTime.name) : ''}</span>
+        <span class="profile-chip dog-chip">{topDogNbh ? topDogNbh[1].dog_count.toLocaleString() : ''} dogs in {topDogNbh ? topDogNbh[1].neighbourhood : ''}</span>
       </div>
     </div>
     <div class="profile-card cat-card">
@@ -125,22 +116,13 @@ const oneOfAKind = Object.entries(breedFsaCounts)
         <span class="profile-emoji">🐈</span>
         <span class="profile-label">Most Typical Cat</span>
       </div>
-      <div class="profile-name">{topCatNameAllTime ? toTitleCase(topCatNameAllTime.name) : ''}</div>
-      <div class="profile-breed">{catBreed ? toTitleCase(catBreed.breed) : ''}</div>
-      <div class="profile-nbh">{topCatNbh ? topCatNbh[1].neighbourhood : ''}</div>
-      <div class="profile-stats">
-        <div class="profile-stat">
-          <span class="profile-stat-num">{catBreed?.count.toLocaleString()}</span>
-          <span class="profile-stat-label">of this breed</span>
-        </div>
-        <div class="profile-stat">
-          <span class="profile-stat-num">{topCatNameAllTime?.total.toLocaleString()}</span>
-          <span class="profile-stat-label">with this name</span>
-        </div>
-        <div class="profile-stat">
-          <span class="profile-stat-num">{topCatNbh ? topCatNbh[1].cat_count.toLocaleString() : ''}</span>
-          <span class="profile-stat-label">cats here</span>
-        </div>
+      <p class="profile-sentence">
+        Meet <span class="profile-highlight cat-highlight">{topCatNameAllTime ? toTitleCase(topCatNameAllTime.name) : ''}</span>, a <span class="profile-highlight cat-highlight">{catBreed ? toTitleCase(catBreed.breed) : ''}</span> from <span class="profile-highlight cat-highlight">{topCatNbh ? topCatNbh[1].neighbourhood : ''}</span>.
+      </p>
+      <div class="profile-chips">
+        <span class="profile-chip cat-chip">{catBreed?.count.toLocaleString()} {catBreed ? toTitleCase(catBreed.breed) + 's' : ''}</span>
+        <span class="profile-chip cat-chip">{topCatNameAllTime?.total.toLocaleString()} cats named {topCatNameAllTime ? toTitleCase(topCatNameAllTime.name) : ''}</span>
+        <span class="profile-chip cat-chip">{topCatNbh ? topCatNbh[1].cat_count.toLocaleString() : ''} cats in {topCatNbh ? topCatNbh[1].neighbourhood : ''}</span>
       </div>
     </div>
   </div>
@@ -302,69 +284,50 @@ const oneOfAKind = Object.entries(breedFsaCounts)
     color: var(--text-muted);
   }
 
-  .dog-card .profile-name {
-    color: var(--accent);
-  }
-
-  .cat-card .profile-name {
-    color: var(--blue);
-  }
-
-  .profile-name {
-    font-size: 2.5rem;
-    font-weight: 800;
-    line-height: 1;
-    margin-bottom: 0.25rem;
-  }
-
-  .profile-breed {
-    font-size: 1.125rem;
+  .profile-sentence {
+    font-size: 1.375rem;
     font-weight: 400;
     color: var(--text);
-    margin-bottom: 0.125rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;
+    text-align: center;
   }
 
-  .profile-nbh {
-    font-size: 0.8125rem;
-    font-weight: 400;
-    color: var(--text-muted);
-    margin-bottom: 1.5rem;
+  .profile-highlight {
+    font-weight: 700;
   }
 
-  .profile-stats {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0.5rem;
-    border-top: 1px solid rgba(0, 0, 0, 0.08);
-    padding-top: 1.25rem;
-  }
-
-  .profile-stat {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .dog-card .profile-stat-num {
+  .dog-highlight {
     color: var(--accent);
   }
 
-  .cat-card .profile-stat-num {
+  .cat-highlight {
     color: var(--blue);
   }
 
-  .profile-stat-num {
-    font-size: 1.25rem;
-    font-weight: 700;
-    line-height: 1.2;
+  .profile-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
   }
 
-  .profile-stat-label {
-    font-size: 0.5625rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: var(--text-muted);
+  .profile-chip {
+    font-size: 0.75rem;
     font-weight: 500;
+    padding: 0.375rem 0.75rem;
+    border-radius: 2rem;
+    white-space: nowrap;
+  }
+
+  .dog-chip {
+    background: rgba(235, 94, 40, 0.12);
+    color: var(--accent);
+  }
+
+  .cat-chip {
+    background: rgba(59, 130, 180, 0.12);
+    color: var(--blue);
   }
 
   .section-heading {
