@@ -7,10 +7,10 @@ import { toTitleCase } from '../scripts/utils.js';
 // Compute highlight stats
 const neighbourhoodCount = Object.keys(fsaSummary).length;
 
-// Most dog-heavy neighbourhood
+// Most cat-populated neighbourhood by count
 const entries = Object.entries(fsaSummary) as [string, any][];
-const mostDoggy = entries.reduce((best, [, d]) =>
-  d.dog_ratio > (best?.dog_ratio || 0) ? d : best, entries[0][1]);
+const mostCats = entries.reduce((best, [, d]) =>
+  d.cat_count > (best?.cat_count || 0) ? d : best, entries[0][1]);
 
 // Unique breeds
 const uniqueBreeds = new Set(breedList.map((e: any) => e.breed)).size;
@@ -20,7 +20,7 @@ const chapters = [
     href: '/neighbourhoods',
     stat: neighbourhoodCount.toString(),
     label: 'Neighbourhoods',
-    blurb: `${mostDoggy.neighbourhood} is the doggiest area in Toronto at ${Math.round(mostDoggy.dog_ratio * 100)}% dogs. See which neighbourhoods lean cat or dog.`,
+    blurb: `${mostCats.neighbourhood} has the most cats in Toronto with ${mostCats.cat_count.toLocaleString()} licensed felines. Explore breed diversity across every neighbourhood.`,
   },
   {
     href: '/breeds',

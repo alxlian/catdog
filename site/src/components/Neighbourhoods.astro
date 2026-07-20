@@ -1,106 +1,378 @@
 ---
-import SpeciesToggle from './SpeciesToggle.astro';
+import fsaSummary from '../data/fsa-summary.json';
+import fsaGeo from '../data/fsa-geo.json';
+import { toTitleCase } from '../scripts/utils.js';
+
+// Only include FSAs that are actually on the map
+const geoFsas = new Set(
+  (fsaGeo as any).features.map((f: any) => f.properties.CFSAUID || f.properties.FSA || f.properties.name)
+);
+const entries = Object.entries(fsaSummary as Record<string, any>)
+  .filter(([fsa]) => geoFsas.has(fsa))
+  .sort((a, b) => b[1].total - a[1].total);
+
+// Compute subtitle highlights
+const mostPets = entries.reduce((best, cur) => cur[1].total > best[1].total ? cur : best);
+const mostDogs = entries.reduce((best, cur) => cur[1].dog_count > best[1].dog_count ? cur : best);
+const mostCats = entries.reduce((best, cur) => cur[1].cat_count > best[1].cat_count ? cur : best);
 ---
 
 <section id="neighbourhoods">
-  <h2>The Neighbourhoods</h2>
-  <p>Which areas of Toronto are dog country, and which lean feline? Explore the map by Forward Sortation Area.</p>
-  <div class="map-controls">
-    <SpeciesToggle id="map-species-toggle" />
-    <div class="map-mode-select">
-      <label>Show:</label>
-      <select id="map-mode">
-        <option value="ratio">Dog/Cat Ratio</option>
-        <option value="density">Licensing Density</option>
-        <option value="common">Most Common Breed</option>
-        <option value="signature">Signature Breed</option>
-      </select>
+  <div class="nbh-header">
+    <h1 class="nbh-title">The Neighbourhoods</h1>
+    <p class="nbh-blurb">
+      Toronto has {entries.reduce((s, [,d]) => s + d.total, 0).toLocaleString()} licensed pets spread across {entries.length} neighbourhoods.
+      <strong>{mostPets[1].neighbourhood}</strong> is the city's biggest pet neighbourhood with {mostPets[1].total.toLocaleString()} registered animals.
+      <strong>{mostDogs[1].neighbourhood}</strong> is home to the most dogs at {mostDogs[1].dog_count.toLocaleString()}.
+    </p>
+  </div>
+
+  <div class="nbh-callout">
+    <strong>Note:</strong> Dog/cat counts reflect licensing behaviour, not confirmed pet population.
+    Cat licensing compliance is generally lower than dog licensing — an area may appear dog-dominant
+    simply because dog owners are more likely to license.
+  </div>
+
+  <div class="nbh-controls">
+    <div class="btn-group" id="map-species-toggle">
+      <button class="toggle-btn active" data-value="DOG">Dogs</button>
+      <button class="toggle-btn" data-value="CAT">Cats</button>
+    </div>
+    <div class="btn-group" id="map-mode-group">
+      <button class="mode-btn active" data-mode="common">Common Breed</button>
+      <button class="mode-btn" data-mode="signature">Signature Breed</button>
+      <button class="mode-btn" data-mode="rare">Rarest Breed</button>
+      <button class="mode-btn" data-mode="ratio">Dog/Cat Ownership</button>
     </div>
   </div>
-  <div class="map-layout">
-    <div class="map-container">
-      <div id="fsa-map"></div>
-      <div id="map-tooltip" class="tooltip" style="display:none;"></div>
+
+  <div class="nbh-layout">
+    <div class="map-col">
+      <div class="map-container">
+        <div id="fsa-map"></div>
+        <div id="map-tooltip" class="tooltip" style="display:none;"></div>
+      </div>
     </div>
-    <aside id="map-sidebar" class="map-sidebar">
-      <div class="sidebar-placeholder">
-        <p>Hover over a neighbourhood to see details</p>
+    <aside class="nbh-list-col" id="nbh-list">
+      <div class="list-context" id="list-context">
+        <h3 class="list-context-title">Common Breed — Dogs</h3>
+        <p class="list-context-desc">The most frequently registered dog breed in each neighbourhood. The percentage shows how much of the area's dog population that breed makes up.</p>
+      </div>
+      <div class="nbh-list-scroll">
+        {entries.map(([fsa, d]) => (
+          <div class="nbh-row" data-fsa={fsa}>
+            <div class="nbh-row-left">
+              <span class="nbh-color-dot" data-fsa-dot={fsa}></span>
+              <div class="nbh-row-name">
+                <span class="nbh-name">{d.neighbourhood} <span class="nbh-fsa">{fsa}</span></span>
+                <span class="nbh-breed" data-fsa-breed={fsa}></span>
+              </div>
+            </div>
+            <div class="nbh-row-stat" data-fsa-stat={fsa}></div>
+          </div>
+        ))}
       </div>
     </aside>
   </div>
-  <p class="disclaimer">Dog/cat dominance reflects licensing behavior, not confirmed pet population. Cat licensing compliance is generally lower than dog licensing compliance — an area may appear dog-dominant simply because dog owners are more likely to license.</p>
 </section>
 
 <script>
   import { renderMap } from '../scripts/map.js';
   import fsaSummary from '../data/fsa-summary.json';
   import fsaGeo from '../data/fsa-geo.json';
-  renderMap('#fsa-map', '#map-tooltip', '#map-sidebar', fsaGeo, fsaSummary);
+  renderMap('#fsa-map', '#map-tooltip', '#nbh-list', fsaGeo, fsaSummary);
+
+  // Sync list column height to map container
+  function syncHeight() {
+    const map = document.querySelector('.map-container');
+    const list = document.querySelector('.nbh-list-col');
+    if (map && list) {
+      list.style.height = map.offsetHeight + 'px';
+    }
+  }
+  // Run after map SVG renders
+  requestAnimationFrame(() => requestAnimationFrame(syncHeight));
+  window.addEventListener('resize', syncHeight);
 </script>
 
 <style>
-  #neighbourhoods { text-align: center; }
-  #neighbourhoods > p { max-width: 40rem; margin: 0 auto; color: var(--gray); }
-  .map-controls {
+  #neighbourhoods {
+    text-align: left;
+  }
+
+  .nbh-header {
+    margin-bottom: 1.5rem;
+  }
+
+  .nbh-title {
+    font-size: 48px;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 12px;
+  }
+
+  .nbh-blurb {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--text-muted);
+    line-height: 1.7;
+    max-width: 48rem;
+  }
+
+  .nbh-blurb strong {
+    color: var(--accent);
+    font-weight: 500;
+  }
+
+  .nbh-callout {
+    background: var(--sidebar-bg);
+    border: 1px solid var(--nav-active-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 0.5rem;
+    padding: 0.875rem 1.25rem;
+    font-size: 0.8125rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    max-width: 72rem;
+  }
+
+  .nbh-callout strong {
+    color: var(--accent);
+    font-weight: 600;
+  }
+
+  .nbh-controls {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 1.5rem;
-    margin: 1.5rem 0;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
     flex-wrap: wrap;
+    max-width: 80rem;
   }
-  .map-mode-select {
+
+  .btn-group {
+    display: inline-flex;
+    border: 1px solid var(--gray-light);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    background: white;
+  }
+
+  .btn-group button {
+    padding: 0.5rem 1.25rem;
+    border: none;
+    border-right: 1px solid var(--gray-light);
+    background: transparent;
+    font-family: var(--font);
+    font-size: 0.8125rem;
+    font-weight: 500;
+    cursor: pointer;
+    color: var(--gray);
+    transition: all 0.2s;
+    white-space: nowrap;
+  }
+
+  .btn-group button:last-child {
+    border-right: none;
+  }
+
+  .btn-group button.active {
+    background: var(--accent);
+    color: white;
+  }
+
+  .btn-group button:hover:not(.active) {
+    background: var(--gray-light);
+  }
+
+  .nbh-layout {
+    display: grid;
+    grid-template-columns: 1fr 30rem;
+    gap: 1.5rem;
+    max-width: 80rem;
+    align-items: start;
+  }
+
+  .map-col {
+    min-width: 0;
+    min-height: 0;
+  }
+
+  .map-container {
+    position: relative;
+    background: white;
+    border: 1px solid var(--gray-light);
+    border-radius: 1rem;
+    overflow: hidden;
+    padding: 1rem;
+  }
+
+  #fsa-map svg {
+    width: 100%;
+    height: auto;
+  }
+
+  .tooltip {
+    position: absolute;
+    background: white;
+    border: 1px solid var(--gray-light);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+    color: var(--text);
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 0.75rem;
+    pointer-events: none;
+    z-index: 10;
+    width: 220px;
+    line-height: 1.5;
+  }
+
+  /* Right column: neighbourhood list — height synced to map via JS */
+  .nbh-list-col {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border: 1px solid var(--gray-light);
+    border-radius: 1rem;
+    padding: 1.25rem;
+    overflow: hidden;
+  }
+
+  .list-context {
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid var(--accent);
+  }
+
+  .list-context-title {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 0.25rem;
+  }
+
+  .list-context-desc {
+    font-size: 0.75rem;
+    font-weight: 300;
+    color: var(--text-muted);
+    line-height: 1.5;
+  }
+
+  .nbh-list-scroll {
+    flex: 1;
+    overflow-y: auto;
+    padding-right: 0.25rem;
+    min-height: 0;
+  }
+
+  .nbh-list-scroll::-webkit-scrollbar {
+    width: 4px;
+  }
+  .nbh-list-scroll::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .nbh-list-scroll::-webkit-scrollbar-thumb {
+    background: var(--gray-light);
+    border-radius: 2px;
+  }
+
+  .nbh-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0.375rem;
+    border-bottom: 1px solid #f5f0e8;
+    cursor: default;
+    transition: background 0.15s;
+    gap: 0.5rem;
+  }
+
+  .nbh-row:last-child {
+    border-bottom: none;
+  }
+
+  .nbh-row:hover {
+    background: var(--sidebar-bg);
+    border-radius: 0.375rem;
+  }
+
+  .nbh-row.highlighted {
+    background: var(--accent-light);
+    border-radius: 0.375rem;
+  }
+
+  .nbh-row-left {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    font-size: 0.875rem;
-    color: var(--gray);
+    flex: 1;
   }
-  .map-mode-select select {
-    padding: 0.5rem 0.75rem;
-    border: 1px solid var(--gray-light);
-    border-radius: 0.375rem;
-    font-family: var(--font);
-    font-size: 0.875rem;
-    background: white;
+
+  .nbh-color-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
   }
-  .map-layout {
-    display: grid;
-    grid-template-columns: 1fr 20rem;
-    gap: 1.5rem;
-    margin: 1.5rem auto;
-    max-width: 72rem;
-    text-align: left;
+
+  .nbh-row-name {
+    display: flex;
+    flex-direction: column;
   }
-  .map-container {
-    position: relative;
-  }
-  #fsa-map svg { width: 100%; height: auto; }
-  .map-sidebar {
-    background: white;
-    border: 1px solid var(--gray-light);
-    border-radius: 0.75rem;
-    padding: 1.25rem;
+
+  .nbh-name {
     font-size: 0.8125rem;
-    max-height: none;
-    overflow-y: visible;
-    align-self: start;
-    position: sticky;
-    top: 5rem;
+    font-weight: 500;
+    color: var(--text);
   }
-  .sidebar-placeholder {
+
+  .nbh-fsa {
+    font-size: 0.6875rem;
+    font-weight: 400;
     color: var(--gray);
-    text-align: center;
-    padding: 2rem 0;
+    margin-left: 0.25rem;
+  }
+
+  .nbh-breed {
+    font-size: 0.6875rem;
+    color: var(--text-muted);
+    line-height: 1.3;
+  }
+
+  .nbh-row-stat {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--accent);
+    text-align: right;
+    flex-shrink: 0;
+    line-height: 1;
+  }
+
+  @media (max-width: 1024px) {
+    .nbh-layout {
+      grid-template-columns: 1fr;
+    }
+    .nbh-list-col {
+      position: static;
+      max-height: 32rem;
+    }
   }
 
   @media (max-width: 768px) {
-    .map-layout {
-      grid-template-columns: 1fr;
+    .nbh-title {
+      font-size: 1.75rem;
     }
-    .map-sidebar {
-      position: static;
-      max-height: none;
+    .nbh-controls {
+      gap: 0.5rem;
+    }
+    .btn-group {
+      flex-wrap: wrap;
+    }
+    .btn-group button {
+      padding: 0.4rem 0.75rem;
+      font-size: 0.75rem;
     }
   }
 </style>
