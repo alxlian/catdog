@@ -21,7 +21,7 @@ const mostCats = entries.reduce((best, cur) => cur[1].cat_count > best[1].cat_co
   <div class="nbh-header">
     <h1 class="nbh-title">Every Neighbourhood Has a Personality</h1>
     <p class="nbh-blurb">
-      {entries.reduce((s, [,d]) => s + d.total, 0).toLocaleString()} licensed pets live across {entries.length} neighbourhoods — and each one has its own flavour.
+      {entries.reduce((s, [,d]) => s + d.total, 0).toLocaleString()} licensed pets live across {entries.length} neighbourhoods, and each one has its own flavour.
       <strong>{mostPets[1].neighbourhood}</strong> is pet central with {mostPets[1].total.toLocaleString()} registered animals,
       while <strong>{mostDogs[1].neighbourhood}</strong> is dog heaven at {mostDogs[1].dog_count.toLocaleString()}.
     </p>
@@ -29,7 +29,7 @@ const mostCats = entries.reduce((best, cur) => cur[1].cat_count > best[1].cat_co
 
   <div class="nbh-callout">
     <strong>Note:</strong> Dog/cat counts reflect licensing behaviour, not confirmed pet population.
-    Cat licensing compliance is generally lower than dog licensing — an area may appear dog-dominant
+    Cat licensing compliance is generally lower than dog licensing, so an area may appear dog-dominant
     simply because dog owners are more likely to license.
   </div>
 
@@ -55,7 +55,7 @@ const mostCats = entries.reduce((best, cur) => cur[1].cat_count > best[1].cat_co
     </div>
     <aside class="nbh-list-col" id="nbh-list">
       <div class="list-context" id="list-context">
-        <h3 class="list-context-title">Common Breed — Dogs</h3>
+        <h3 class="list-context-title">Common Breed, Dogs</h3>
         <p class="list-context-desc">The most frequently registered dog breed in each neighbourhood. The percentage shows how much of the area's dog population that breed makes up.</p>
       </div>
       <div class="nbh-list-scroll">

@@ -27,13 +27,13 @@ const sharedCount = Object.keys(dogNames).filter(n => catNames[n]).length;
     <div class="names-header">
       <h1 class="names-title">What's in a Name?</h1>
       <p class="names-blurb">
-        Toronto's pet owners have come up with {totalUnique.toLocaleString()} unique names — and yet,
+        Toronto's pet owners have come up with {totalUnique.toLocaleString()} unique names, and yet
         <strong>{toTitleCase(topDogName.name)}</strong> still leads the pack for dogs with {topDogName.total.toLocaleString()} all-time registrations.
         On the cat side, <strong>{toTitleCase(topCatName.name)}</strong> takes the crown at {topCatName.total.toLocaleString()}.
         {sharedCount} names cross the species line.
       </p>
       <div class="names-callout">
-        <strong>Note:</strong> The City of Toronto only publishes a ranked list of the most popular pet names each year — not a complete registry of every name.
+        <strong>Note:</strong> The City of Toronto only publishes a ranked list of the most popular pet names each year, not a complete registry of every name.
         Names that fall outside the top ranks aren't included, so totals here reflect popularity rankings rather than exact citywide counts.
       </div>
     </div>
@@ -57,7 +57,7 @@ const sharedCount = Object.keys(dogNames).filter(n => catNames[n]).length;
     </div>
     <div class="card">
       <h3 class="card-heading">Crossover Stars</h3>
-      <p class="card-desc">Names that work for both sides — and how popular they are with each.</p>
+      <p class="card-desc">Names that work for both sides, and how popular they are with each.</p>
       <div id="crossover-names"></div>
     </div>
   </div>
@@ -70,7 +70,7 @@ const sharedCount = Object.keys(dogNames).filter(n => catNames[n]).length;
     </div>
     <div class="card">
       <h3 class="card-heading">Cats Only</h3>
-      <p class="card-desc">Strictly feline territory — no dogs allowed.</p>
+      <p class="card-desc">Strictly feline territory. No dogs allowed.</p>
       <div id="cat-exclusive"></div>
     </div>
   </div>
