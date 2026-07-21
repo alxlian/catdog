@@ -1,54 +1,384 @@
 ---
-import SpeciesToggle from './SpeciesToggle.astro';
+import fsaSummary from '../data/fsa-summary.json';
+import breedList from '../data/breed-list.json';
+import fsaGeo from '../data/fsa-geo.json';
+import { toTitleCase } from '../scripts/utils.js';
+
+// Filter to GTA FSAs only
+const geoFsas = new Set(
+  (fsaGeo as any).features.map((f: any) => f.properties.CFSAUID || f.properties.FSA || f.properties.name)
+);
+
+// Pre-compute breed counts citywide per species
+const breedTotals: Record<string, Record<string, number>> = { DOG: {}, CAT: {} };
+for (const row of (breedList as any[])) {
+  if (!breedTotals[row.species]) continue;
+  breedTotals[row.species][row.breed] = (breedTotals[row.species][row.breed] || 0) + row.count;
+}
+
+const totalDogs = Object.values(breedTotals.DOG).reduce((s, c) => s + c, 0);
+const totalCats = Object.values(breedTotals.CAT).reduce((s, c) => s + c, 0);
+const totalBreedsDog = Object.keys(breedTotals.DOG).length;
+const totalBreedsCat = Object.keys(breedTotals.CAT).length;
+const neighbourhoodCount = Object.keys(fsaSummary).length;
 ---
 
 <section id="rarity">
-  <h2>How Rare Is Your Pet?</h2>
-  <p>Look up your pet's breed and neighbourhood to see how unique they are among Toronto's licensed animals.</p>
-  <div class="rarity-form">
-    <SpeciesToggle id="rarity-species-toggle" />
-    <select id="rarity-breed" disabled>
-      <option value="">Select a breed...</option>
-    </select>
-    <select id="rarity-fsa" disabled>
-      <option value="">Select neighbourhood (FSA)...</option>
-    </select>
+  <div class="rarity-header">
+    <h1 class="rarity-title">How Rare Is Your Pet?</h1>
+    <p class="rarity-blurb">
+      Pick your pet's details and we'll tell you exactly how common — or how one-of-a-kind — they are among Toronto's {(totalDogs + totalCats).toLocaleString()} licensed companions.
+    </p>
   </div>
-  <div id="rarity-result"></div>
+
+  <div class="rarity-layout">
+    <div class="rarity-form-col">
+      <div class="rarity-form-card">
+        <div class="form-group">
+          <label class="form-label">I have a...</label>
+          <div class="btn-group" id="rarity-species-toggle">
+            <button class="toggle-btn active" data-value="DOG">Dog</button>
+            <button class="toggle-btn" data-value="CAT">Cat</button>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="rarity-breed-input">Breed</label>
+          <div class="autocomplete-wrap" id="breed-autocomplete">
+            <input type="text" id="rarity-breed-input" class="form-input" placeholder="Start typing a breed..." autocomplete="off" />
+            <div class="autocomplete-dropdown" id="breed-dropdown"></div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="rarity-nbh-input">Neighbourhood</label>
+          <div class="autocomplete-wrap" id="nbh-autocomplete">
+            <input type="text" id="rarity-nbh-input" class="form-input" placeholder="Start typing a neighbourhood..." autocomplete="off" />
+            <div class="autocomplete-dropdown" id="nbh-dropdown"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="rarity-result-col">
+      <div class="rarity-result-card" id="rarity-result">
+        <div class="result-empty">
+          <div class="result-empty-icon">?</div>
+          <p class="result-empty-text">Pick a breed and neighbourhood to see how rare your pet is.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <script>
   import { initRarityLookup } from '../scripts/rarity.js';
   import breedList from '../data/breed-list.json';
   import fsaSummary from '../data/fsa-summary.json';
-  initRarityLookup(breedList, fsaSummary);
+  import fsaGeo from '../data/fsa-geo.json';
+  const geoFsas = (fsaGeo as any).features.map((f: any) => f.properties.CFSAUID || f.properties.FSA || f.properties.name);
+  initRarityLookup(breedList, fsaSummary, geoFsas);
 </script>
 
 <style>
-  #rarity { text-align: center; }
-  #rarity > p { color: var(--gray); max-width: 36rem; margin: 0 auto; }
-  .rarity-form {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    align-items: center;
-    margin: 2rem 0;
-    flex-wrap: wrap;
+  #rarity {
+    text-align: left;
   }
-  .rarity-form select {
-    padding: 0.625rem 1rem;
-    border: 1px solid var(--gray-light);
-    border-radius: 0.375rem;
-    font-family: var(--font);
-    font-size: 0.9375rem;
-    min-width: 12rem;
+
+  .rarity-header {
+    margin-bottom: 2rem;
+  }
+
+  .rarity-title {
+    font-size: 48px;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 12px;
+  }
+
+  .rarity-blurb {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--text-muted);
+    line-height: 1.7;
+    max-width: 48rem;
+  }
+
+  .rarity-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    max-width: 80rem;
+    align-items: start;
+  }
+
+  .rarity-form-card {
     background: white;
+    border: 1px solid var(--gray-light);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
   }
-  .rarity-form select:disabled { opacity: 0.5; }
-  #rarity-result {
-    max-width: 32rem;
-    margin: 0 auto;
-    font-size: 1.125rem;
-    min-height: 4rem;
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .form-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--text-muted);
+  }
+
+  .btn-group {
+    display: inline-flex;
+    border: 1px solid var(--gray-light);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    background: white;
+    align-self: flex-start;
+  }
+
+  .btn-group button {
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-right: 1px solid var(--gray-light);
+    background: transparent;
+    font-family: var(--font);
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    color: var(--gray);
+    transition: all 0.2s;
+    white-space: nowrap;
+  }
+
+  .btn-group button:last-child {
+    border-right: none;
+  }
+
+  .btn-group button.active {
+    background: var(--accent);
+    color: white;
+  }
+
+  .btn-group button:hover:not(.active) {
+    background: var(--gray-light);
+  }
+
+  .autocomplete-wrap {
+    position: relative;
+  }
+
+  .form-input {
+    width: 100%;
+    padding: 0.625rem 0.875rem;
+    border: 1px solid var(--gray-light);
+    border-radius: 0.5rem;
+    font-family: var(--font);
+    font-size: 0.875rem;
+    background: white;
+    color: var(--text);
+    transition: border-color 0.15s;
+  }
+
+  .form-input:focus {
+    outline: none;
+    border-color: var(--accent);
+  }
+
+  .form-input:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  .form-input.has-value {
+    border-color: var(--accent);
+    font-weight: 500;
+  }
+
+  .autocomplete-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    border: 1px solid var(--gray-light);
+    border-top: none;
+    border-radius: 0 0 0.5rem 0.5rem;
+    max-height: 14rem;
+    overflow-y: auto;
+    z-index: 20;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  }
+
+  .autocomplete-dropdown.open {
+    display: block;
+  }
+
+  .rarity-result-card {
+    background: white;
+    border: 1px solid var(--gray-light);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    min-height: 18rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .result-empty {
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  .result-empty-icon {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--gray-light);
+    margin-bottom: 0.75rem;
+    line-height: 1;
+  }
+
+  .result-empty-text {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    font-weight: 300;
+  }
+
+  @media (max-width: 768px) {
+    .rarity-title {
+      font-size: 1.75rem;
+    }
+    .rarity-layout {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<style is:global>
+  .result-filled {
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  .result-breed {
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 0.25rem;
+  }
+
+  .result-location {
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+  }
+
+  .result-rarity-badge {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 0.375rem 1rem;
+    border-radius: 2rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .result-desc {
+    font-size: 0.8125rem;
+    font-weight: 300;
+    color: var(--text-muted);
+    line-height: 1.6;
+    max-width: 22rem;
+    margin: 0 auto 1.25rem;
+  }
+
+  .result-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+    padding-top: 1.25rem;
+    margin-bottom: 1rem;
+  }
+
+  .result-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .result-stat-num {
+    font-size: 1.375rem;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  .result-stat-label {
+    font-size: 0.625rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--text-muted);
+    font-weight: 500;
+    margin-top: 0.125rem;
+  }
+
+  .result-footer {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    font-weight: 300;
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+    padding-top: 0.75rem;
+  }
+
+  .result-footer strong {
+    font-weight: 700;
+  }
+
+  .result-empty {
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  .result-empty-icon {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--gray-light);
+    margin-bottom: 0.75rem;
+    line-height: 1;
+  }
+
+  .result-empty-text {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    font-weight: 300;
+  }
+
+  .ac-option {
+    padding: 0.5rem 0.875rem;
+    font-size: 0.8125rem;
+    cursor: pointer;
+    color: var(--text);
+    transition: background 0.1s;
+    border-bottom: 1px solid #f5f0e8;
+  }
+
+  .ac-option:last-child {
+    border-bottom: none;
+  }
+
+  .ac-option:hover,
+  .ac-option.ac-active {
+    background: var(--nav-active-bg);
   }
 </style>
