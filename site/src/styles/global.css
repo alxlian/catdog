@@ -71,7 +71,7 @@ main {
 }
 
 section {
-  padding: 4rem 175px;
+  padding: 4rem clamp(1rem, 5vw, 175px);
 }
 
 a {
@@ -83,14 +83,6 @@ a:hover { text-decoration: underline; }
 strong, b {
   color: var(--accent);
   font-weight: 500;
-}
-
-@media (max-width: 1200px) {
-  section { padding: 3rem 80px; }
-}
-
-@media (max-width: 1024px) {
-  section { padding: 2.5rem 40px; }
 }
 
 @media (max-width: 768px) {

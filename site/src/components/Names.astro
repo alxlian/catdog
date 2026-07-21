@@ -89,8 +89,8 @@ const sharedCount = Object.keys(dogNames).filter(n => catNames[n]).length;
 
   .names-hero {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    grid-template-columns: 3fr 2fr;
+    gap: 1.5rem;
     align-items: start;
     margin-bottom: 1.5rem;
   }
@@ -101,7 +101,6 @@ const sharedCount = Object.keys(dogNames).filter(n => catNames[n]).length;
 
   .names-trend-card {
     min-width: 0;
-    overflow: visible;
   }
 
   .names-title {
@@ -191,9 +190,8 @@ const sharedCount = Object.keys(dogNames).filter(n => catNames[n]).length;
 
   .names-row {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 3fr 2fr;
     gap: 1.5rem;
-    max-width: 80rem;
     align-items: start;
     margin-bottom: 1.5rem;
   }
@@ -250,11 +248,12 @@ const sharedCount = Object.keys(dogNames).filter(n => catNames[n]).length;
   }
 
   #name-trend-chart svg {
+    display: block;
     width: 100%;
     height: auto;
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1200px) {
     .names-hero {
       grid-template-columns: 1fr;
     }
