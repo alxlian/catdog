@@ -100,16 +100,16 @@ export function renderMap(mapSelector, tooltipSelector, listSelector, geoData, f
   // Update the context header above the list
   const contextDescriptions = {
     common: {
-      DOG: { title: 'Common Breed — Dogs', desc: 'The most frequently registered dog breed in each neighbourhood. The percentage shows how much of the area\'s dog population that breed makes up.' },
-      CAT: { title: 'Common Breed — Cats', desc: 'The most frequently registered cat breed in each neighbourhood. The percentage shows how much of the area\'s cat population that breed makes up.' },
+      DOG: { title: 'Common Breed, Dogs', desc: 'The most frequently registered dog breed in each neighbourhood. The percentage shows how much of the area\'s dog population that breed makes up.' },
+      CAT: { title: 'Common Breed, Cats', desc: 'The most frequently registered cat breed in each neighbourhood. The percentage shows how much of the area\'s cat population that breed makes up.' },
     },
     signature: {
-      DOG: { title: 'Signature Breed — Dogs', desc: 'The dog breed that\'s unusually concentrated in each neighbourhood compared to the city average. The multiplier (×) shows how much more common it is here than citywide.' },
-      CAT: { title: 'Signature Breed — Cats', desc: 'The cat breed that\'s unusually concentrated in each neighbourhood compared to the city average. The multiplier (×) shows how much more common it is here than citywide.' },
+      DOG: { title: 'Signature Breed, Dogs', desc: 'The dog breed that\'s unusually concentrated in each neighbourhood compared to the city average. The multiplier (×) shows how much more common it is here than citywide.' },
+      CAT: { title: 'Signature Breed, Cats', desc: 'The cat breed that\'s unusually concentrated in each neighbourhood compared to the city average. The multiplier (×) shows how much more common it is here than citywide.' },
     },
     rare: {
-      DOG: { title: 'Rarest Breed — Dogs', desc: 'The least common dog breed registered in each neighbourhood. The number shows the total count of that breed in the area.' },
-      CAT: { title: 'Rarest Breed — Cats', desc: 'The least common cat breed registered in each neighbourhood. The number shows the total count of that breed in the area.' },
+      DOG: { title: 'Rarest Breed, Dogs', desc: 'The least common dog breed registered in each neighbourhood. The number shows the total count of that breed in the area.' },
+      CAT: { title: 'Rarest Breed, Cats', desc: 'The least common cat breed registered in each neighbourhood. The number shows the total count of that breed in the area.' },
     },
     ratio: {
       DOG: { title: 'Dog/Cat Ownership', desc: 'The split between dog and cat licenses in each neighbourhood. The percentage shows the proportion that are dogs.' },

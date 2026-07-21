@@ -216,7 +216,7 @@ export function initRarityLookup(breedList, fsaSummary, gtaFsaList) {
         rarityDesc = `More unusual than ${pct}% of breeds around here.`;
       } else if (pct >= 20) {
         rarityLabel = 'Common';
-        rarityDesc = `A familiar face — more popular than ${100 - pct}% of breeds here.`;
+        rarityDesc = `A familiar face. More popular than ${100 - pct}% of breeds here.`;
       } else {
         rarityLabel = 'Everywhere';
         rarityDesc = `One of the most popular breeds in this neighbourhood.`;

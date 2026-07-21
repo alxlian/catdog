@@ -24,7 +24,7 @@ const fastestRiser = dogChanges[0];
     <h1 class="breeds-title">Who's Hot, Who's Not</h1>
     <p class="breeds-blurb">
       {totalBreeds.toLocaleString()} breeds walk the streets of Toronto.
-      <span class="breeds-highlight">{topDog ? toTitleCase(topDog[0]) : ''}</span> still owns the top spot at {topDogPct}% of all dogs{fastestRiser ? <Fragment> — but <span class="breeds-highlight">{toTitleCase(fastestRiser.breed)}</span> is climbing fast at +{(fastestRiser.change * 100).toFixed(1)}% year-over-year</Fragment> : ''}.
+      <span class="breeds-highlight">{topDog ? toTitleCase(topDog[0]) : ''}</span> still owns the top spot at {topDogPct}% of all dogs{fastestRiser ? <Fragment>, but <span class="breeds-highlight">{toTitleCase(fastestRiser.breed)}</span> is climbing fast at +{(fastestRiser.change * 100).toFixed(1)}% year-over-year</Fragment> : ''}.
     </p>
   </div>
 
