@@ -82,13 +82,17 @@ const mostCats = entries.reduce((best, cur) => cur[1].cat_count > best[1].cat_co
   import fsaGeo from '../data/fsa-geo.json';
   renderMap('#fsa-map', '#map-tooltip', '#nbh-list', fsaGeo, fsaSummary);
 
-  // Sync list column height to map container
+  // Sync list column height to map container (only in side-by-side layout)
   function syncHeight() {
     const map = document.querySelector('.map-container');
     const list = document.querySelector('.nbh-list-col');
-    if (map && list) {
-      list.style.height = map.offsetHeight + 'px';
+    if (!map || !list) return;
+    // Only sync when grid is two-column (above 1024px)
+    if (window.innerWidth <= 1200) {
+      list.style.height = '';
+      return;
     }
+    list.style.height = map.offsetHeight + 'px';
   }
   // Run after map SVG renders
   requestAnimationFrame(() => requestAnimationFrame(syncHeight));
@@ -148,7 +152,6 @@ const mostCats = entries.reduce((best, cur) => cur[1].cat_count > best[1].cat_co
     gap: 0.75rem;
     margin-bottom: 1.5rem;
     flex-wrap: wrap;
-    max-width: 80rem;
   }
 
   .btn-group {
@@ -188,9 +191,8 @@ const mostCats = entries.reduce((best, cur) => cur[1].cat_count > best[1].cat_co
 
   .nbh-layout {
     display: grid;
-    grid-template-columns: 1fr 30rem;
+    grid-template-columns: 3fr 2fr;
     gap: 1.5rem;
-    max-width: 80rem;
     align-items: start;
   }
 
@@ -204,11 +206,17 @@ const mostCats = entries.reduce((best, cur) => cur[1].cat_count > best[1].cat_co
     background: white;
     border: 1px solid var(--gray-light);
     border-radius: 1rem;
-    overflow: hidden;
     padding: 1rem;
   }
 
+  #fsa-map {
+    min-width: 0;
+    overflow: hidden;
+    border-radius: 0.5rem;
+  }
+
   #fsa-map svg {
+    display: block;
     width: 100%;
     height: auto;
   }
@@ -350,13 +358,14 @@ const mostCats = entries.reduce((best, cur) => cur[1].cat_count > best[1].cat_co
     line-height: 1;
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1200px) {
     .nbh-layout {
       grid-template-columns: 1fr;
     }
     .nbh-list-col {
       position: static;
       max-height: 32rem;
+      height: auto !important;
     }
   }
 

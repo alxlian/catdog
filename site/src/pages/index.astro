@@ -43,7 +43,7 @@ import Chapters from '../components/Chapters.astro';
   .section-divider {
     border: none;
     border-top: 1px solid var(--nav-active-bg);
-    margin: 0 175px;
+    margin: 0 clamp(1rem, 5vw, 175px);
   }
 
   #glance-exhibits {
@@ -56,6 +56,16 @@ import Chapters from '../components/Chapters.astro';
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
     align-items: start;
+  }
+
+  .exhibit-col {
+    min-width: 0;
+  }
+
+  #glance-map svg {
+    display: block;
+    width: 100%;
+    height: auto;
   }
 
   .exhibit-col .exhibit h2 {
@@ -74,20 +84,12 @@ import Chapters from '../components/Chapters.astro';
   }
 
   @media (max-width: 1200px) {
-    .section-divider { margin: 0 80px; }
-  }
-
-  @media (max-width: 1024px) {
     .exhibits-row {
       grid-template-columns: 1fr;
-    }
-    .section-divider {
-      margin: 0 40px;
     }
   }
 
   @media (max-width: 768px) {
-    .section-divider { margin: 0 1rem; }
     #glance-exhibits { padding-top: 1.5rem; padding-bottom: 1.5rem; }
     .exhibits-row { gap: 2rem; }
   }
