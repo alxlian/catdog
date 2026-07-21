@@ -17,70 +17,34 @@ export function initRarityLookup(breedList, fsaSummary, gtaFsaList) {
   let selectedBreed = '';
   let selectedFsa = '';
 
-  // --- Normalize breed names ---
-  function normalizeBreed(raw) {
-    return raw.trim().replace(/\s*-\s*$/, '').replace(/\s*\(\s*$/, '').trim();
-  }
-
-  function isJunkBreed(raw) {
-    const b = raw.trim();
-    if (b.endsWith('-') || b.endsWith('(')) return true;
-    if (b.length < 2) return true;
-    return false;
-  }
-
-  function buildCanonicalKey(raw) {
-    return raw.trim()
-      .replace(/\s*-\s*$/, '')
-      .replace(/\s*\(\s*$/, '')
-      .trim()
-      .toUpperCase()
-      .replace(/[-\s]+/g, ' ')
-      .replace(/^1\/2\s+/, 'HALF ');
-  }
-
   // Filter to GTA FSAs only
   const gtaBreedList = breedList.filter(e => gtaFsas.has(e.fsa));
 
-  // Build canonical map
-  const canonicalMap = {};
-  for (const entry of gtaBreedList) {
-    if (isJunkBreed(entry.breed)) continue;
-    const canon = buildCanonicalKey(entry.breed);
-    const sp = entry.species;
-    if (!canonicalMap[sp]) canonicalMap[sp] = {};
-    if (!canonicalMap[sp][canon]) {
-      canonicalMap[sp][canon] = { displayName: normalizeBreed(entry.breed), rawBreeds: new Set(), totalCount: 0 };
-    }
-    canonicalMap[sp][canon].rawBreeds.add(entry.breed);
-    canonicalMap[sp][canon].totalCount += entry.count;
-  }
-
-  // Build merged index
-  const mergedIndex = {};
-  const mergedBreedTotals = {};
-  const mergedFsasByBreed = {};
+  // Index: species -> Set of breeds
+  const breedsBySpecies = {};
+  // Index: species|breed|fsa -> entry
+  const index = {};
+  // Breed totals citywide
+  const breedTotals = {};
+  // FSAs per breed
+  const fsasByBreed = {};
+  // Species totals
   const speciesTotals = {};
 
   for (const entry of gtaBreedList) {
-    if (isJunkBreed(entry.breed)) continue;
-    const canon = buildCanonicalKey(entry.breed);
     const sp = entry.species;
-    const indexKey = `${sp}|${canon}|${entry.fsa}`;
+    const breed = entry.breed;
 
-    if (!mergedIndex[indexKey]) {
-      mergedIndex[indexKey] = { count: 0, rarity_percentile: entry.rarity_percentile || 0 };
-    }
-    mergedIndex[indexKey].count += entry.count;
-    if ((entry.rarity_percentile || 0) > mergedIndex[indexKey].rarity_percentile) {
-      mergedIndex[indexKey].rarity_percentile = entry.rarity_percentile;
-    }
+    if (!breedsBySpecies[sp]) breedsBySpecies[sp] = new Set();
+    breedsBySpecies[sp].add(breed);
 
-    const breedKey = `${sp}|${canon}`;
-    mergedBreedTotals[breedKey] = (mergedBreedTotals[breedKey] || 0) + entry.count;
+    index[`${sp}|${breed}|${entry.fsa}`] = entry;
 
-    if (!mergedFsasByBreed[breedKey]) mergedFsasByBreed[breedKey] = new Set();
-    mergedFsasByBreed[breedKey].add(entry.fsa);
+    const breedKey = `${sp}|${breed}`;
+    breedTotals[breedKey] = (breedTotals[breedKey] || 0) + entry.count;
+
+    if (!fsasByBreed[breedKey]) fsasByBreed[breedKey] = new Set();
+    fsasByBreed[breedKey].add(entry.fsa);
 
     speciesTotals[sp] = (speciesTotals[sp] || 0) + entry.count;
   }
@@ -175,13 +139,8 @@ export function initRarityLookup(breedList, fsaSummary, gtaFsaList) {
 
   // --- Breed autocomplete ---
   function getBreedItems() {
-    const speciesMap = canonicalMap[currentSpecies] || {};
-    return Object.entries(speciesMap)
-      .sort((a, b) => a[1].displayName.localeCompare(b[1].displayName))
-      .map(([canon, info]) => ({
-        value: canon,
-        label: toTitleCase(info.displayName)
-      }));
+    const breeds = [...(breedsBySpecies[currentSpecies] || [])].sort();
+    return breeds.map(b => ({ value: b, label: toTitleCase(b) }));
   }
 
   setupAutocomplete(breedInput, breedDropdown, getBreedItems, item => {
@@ -223,20 +182,18 @@ export function initRarityLookup(breedList, fsaSummary, gtaFsaList) {
 
   // --- Show result ---
   function showResult() {
-    const indexKey = `${currentSpecies}|${selectedBreed}|${selectedFsa}`;
-    const entry = mergedIndex[indexKey];
+    const entry = index[`${currentSpecies}|${selectedBreed}|${selectedFsa}`];
     const neighbourhood = fsaSummary[selectedFsa]?.neighbourhood || selectedFsa;
-    const speciesInfo = canonicalMap[currentSpecies]?.[selectedBreed];
-    const breedDisplay = speciesInfo ? toTitleCase(speciesInfo.displayName) : selectedBreed;
+    const breedDisplay = toTitleCase(selectedBreed);
     const speciesLabelPlural = currentSpecies === 'DOG' ? 'dogs' : 'cats';
     const accentColor = currentSpecies === 'DOG' ? 'var(--accent)' : 'var(--blue)';
     const chipBg = currentSpecies === 'DOG' ? 'rgba(235, 94, 40, 0.12)' : 'rgba(59, 130, 180, 0.12)';
 
     const breedKey = `${currentSpecies}|${selectedBreed}`;
-    const citywideCount = mergedBreedTotals[breedKey] || 0;
+    const citywideCount = breedTotals[breedKey] || 0;
     const totalForSpecies = speciesTotals[currentSpecies] || 1;
     const citywideShare = ((citywideCount / totalForSpecies) * 100).toFixed(1);
-    const fsasWithBreed = (mergedFsasByBreed[breedKey] || new Set()).size;
+    const fsasWithBreed = (fsasByBreed[breedKey] || new Set()).size;
     const totalNbhs = allNbhs.length;
 
     if (entry) {
