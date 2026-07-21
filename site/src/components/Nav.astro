@@ -10,38 +10,38 @@ const isHome = currentPath === '/';
 
     <div class="nav-menu">
       <a href="/" class:list={["nav-item", "nav-pill", { active: isHome }]}>
-        <svg class="nav-icon" viewBox="0 0 30 30" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="4" width="10" height="10" rx="2"/><rect x="16" y="4" width="10" height="10" rx="2"/><rect x="4" y="16" width="10" height="10" rx="2"/><rect x="16" y="16" width="10" height="10" rx="2"/></svg>
+        <img class="nav-icon" src="/assets/at-a-glance-icon.png" alt="" />
         <span>At a Glance</span>
       </a>
 
       <a href="/neighbourhoods" class:list={["nav-item", { active: currentPath.startsWith('/neighbourhoods') }]}>
-        <svg class="nav-icon" viewBox="0 0 30 30" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 26V10l8-6 8 6v16"/><path d="M12 26V18h4v8"/><path d="M20 14l6-4v16"/></svg>
+        <img class="nav-icon" src="/assets/neighbourhood-icon.png" alt="" />
         <span>Neighbourhoods</span>
       </a>
 
       <a href="/breeds" class:list={["nav-item", { active: currentPath.startsWith('/breeds') }]}>
-        <svg class="nav-icon" viewBox="0 0 30 30" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 22l4-8 4 4 4-12 4 16"/><circle cx="8" cy="22" r="2"/></svg>
+        <img class="nav-icon" src="/assets/breed-icon.png" alt="" />
         <span>Breeds</span>
       </a>
 
       <a href="/names" class:list={["nav-item", { active: currentPath.startsWith('/names') }]}>
-        <svg class="nav-icon" viewBox="0 0 30 30" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 8h20M5 15h14M5 22h18"/><circle cx="25" cy="15" r="3"/></svg>
+        <img class="nav-icon" src="/assets/pet-icon.png" alt="" />
         <span>Names</span>
       </a>
 
       <a href="/typical" class:list={["nav-item", { active: currentPath.startsWith('/typical') }]}>
-        <svg class="nav-icon" viewBox="0 0 30 30" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="18" width="6" height="8"/><rect x="12" y="10" width="6" height="16"/><rect x="21" y="4" width="6" height="22"/></svg>
+        <img class="nav-icon" src="/assets/numbers-icon.png" alt="" />
         <span>By the Numbers</span>
       </a>
 
       <a href="/rarity" class:list={["nav-item", { active: currentPath.startsWith('/rarity') }]}>
-        <svg class="nav-icon" viewBox="0 0 30 30" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 4l3.09 6.26L25 11.27l-5 4.87 1.18 6.88L15 19.77l-6.18 3.25L10 16.14l-5-4.87 6.91-1.01L15 4z"/></svg>
+        <img class="nav-icon" src="/assets/stars-icon.png" alt="" />
         <span>How Rare Is Your Pet?</span>
       </a>
     </div>
 
     <a href="/adopt" class="nav-item adopt-link">
-      <svg class="nav-icon" viewBox="0 0 30 30" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="4" width="10" height="10" rx="2"/><rect x="16" y="4" width="10" height="10" rx="2"/><rect x="4" y="16" width="10" height="10" rx="2"/><rect x="16" y="16" width="10" height="10" rx="2"/></svg>
+      <img class="nav-icon" src="/assets/pet-icon.png" alt="" />
       <span>Adopt!</span>
     </a>
 
