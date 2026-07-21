@@ -9,7 +9,7 @@
       "DOG": [
         {
           "breed": "LABRADOR RETR",
-          "count": 119
+          "count": 121
         },
         {
           "breed": "SHIH TZU",
@@ -38,11 +38,11 @@
     "rare_breeds": {
       "DOG": [
         {
-          "breed": "CHIHUAHUA MIX",
+          "breed": "AUSTRALIAN LABR",
           "count": 1
         },
         {
-          "breed": "MICRO AMERICAN",
+          "breed": "CHIHUAHUA MIX",
           "count": 1
         },
         {
@@ -83,8 +83,8 @@
     },
     "signature_breed": {
       "DOG": {
-        "breed": "INDIAN PARAIH",
-        "ratio": 143.13
+        "breed": "INDIAN PARIAH D",
+        "ratio": 71.57
       },
       "CAT": {
         "breed": "RAGDOLL",
@@ -117,11 +117,11 @@
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 529
+          "count": 533
         },
         {
           "breed": "DOMESTIC MH",
-          "count": 50
+          "count": 51
         },
         {
           "breed": "DOMESTIC LH",
@@ -132,41 +132,41 @@
     "rare_breeds": {
       "DOG": [
         {
-          "breed": "BELGIAN SHEPHER",
+          "breed": "MIN PINSCHER",
+          "count": 1
+        },
+        {
+          "breed": "AUST CATTLE DOG",
+          "count": 1
+        },
+        {
+          "breed": "BOLONKA ZWETNA",
+          "count": 1
+        },
+        {
+          "breed": "ENG BULLDOG",
           "count": 1
         },
         {
           "breed": "AMER ESKIMO",
           "count": 1
-        },
-        {
-          "breed": "AMERICAN BULLDO",
-          "count": 1
-        },
-        {
-          "breed": "PATTERDALE TERR",
-          "count": 1
-        },
-        {
-          "breed": "BREED UNKNOWN",
-          "count": 1
         }
       ],
       "CAT": [
         {
-          "breed": "BLACK WHITE SHO",
-          "count": 1
+          "breed": "BRITISH SH",
+          "count": 4
         },
         {
-          "breed": "LONG HAIR MEDIU",
-          "count": 1
+          "breed": "RAGDOLL",
+          "count": 3
         },
         {
-          "breed": "TABBY SHORT HAI",
-          "count": 1
+          "breed": "SPHYNX",
+          "count": 2
         },
         {
-          "breed": "SNOWSHOE",
+          "breed": "AMER CURL SH",
           "count": 1
         },
         {
@@ -197,7 +197,7 @@
       "DOG": [
         {
           "breed": "LABRADOR RETR",
-          "count": 284
+          "count": 286
         },
         {
           "breed": "GOLDEN RETR",
@@ -226,19 +226,19 @@
     "rare_breeds": {
       "DOG": [
         {
+          "breed": "AKITA",
+          "count": 1
+        },
+        {
           "breed": "PEKINGESE",
           "count": 1
         },
         {
-          "breed": "ANATOL SHEPHERD",
+          "breed": "ANATOLIAN SHEPHERD",
           "count": 1
         },
         {
           "breed": "AMERICAN STAFF",
-          "count": 1
-        },
-        {
-          "breed": "WESTY TERRIER",
           "count": 1
         },
         {
@@ -271,8 +271,8 @@
     },
     "signature_breed": {
       "DOG": {
-        "breed": "SHITZUE",
-        "ratio": 49.09
+        "breed": "SHEEPADOODLE",
+        "ratio": 29.45
       },
       "CAT": {
         "breed": "CHARTREUX",
@@ -365,8 +365,8 @@
     },
     "signature_breed": {
       "DOG": {
-        "breed": "SHIH-POO",
-        "ratio": 165.15
+        "breed": "AMERICAN COCKER",
+        "ratio": 55.05
       },
       "CAT": {
         "breed": "MANX",
@@ -414,11 +414,11 @@
     "rare_breeds": {
       "DOG": [
         {
-          "breed": "TENN TR BRINDLE",
+          "breed": "GERM SH POINT",
           "count": 1
         },
         {
-          "breed": "AUST CATTLE DOG",
+          "breed": "TREEING CUR",
           "count": 1
         },
         {
@@ -459,8 +459,8 @@
     },
     "signature_breed": {
       "DOG": {
-        "breed": "COCONUT HOUND",
-        "ratio": 100.78
+        "breed": "TREEING WALKER HOUND",
+        "ratio": 4.8
       },
       "CAT": {
         "breed": "OCICAT",
@@ -553,8 +553,8 @@
     },
     "signature_breed": {
       "DOG": {
-        "breed": "SHORT HAIRED CH",
-        "ratio": 64.41
+        "breed": "MAREMMA SHEEPDOG",
+        "ratio": 16.27
       },
       "CAT": {
         "breed": "EXOTIC SH",
@@ -602,11 +602,11 @@
     "rare_breeds": {
       "DOG": [
         {
-          "breed": "PATTERDALE TERR",
+          "breed": "ENG FOXHOUND",
           "count": 1
         },
         {
-          "breed": "MASTIFF BOXER M",
+          "breed": "POTCAKE MIX",
           "count": 1
         },
         {
@@ -647,8 +647,8 @@
     },
     "signature_breed": {
       "DOG": {
-        "breed": "AUSTRIALIAN LAB",
-        "ratio": 66.68
+        "breed": "BULLY",
+        "ratio": 50.01
       },
       "CAT": {
         "breed": "SAVANNAH",
@@ -667,21 +667,21 @@
       "DOG": [
         {
           "breed": "LABRADOR RETR",
-          "count": 368
+          "count": 373
         },
         {
           "breed": "GOLDEN RETR",
-          "count": 212
+          "count": 214
         },
         {
           "breed": "GERM SHEPHERD",
-          "count": 200
+          "count": 203
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 1272
+          "count": 1273
         },
         {
           "breed": "DOMESTIC MH",
@@ -696,27 +696,31 @@
     "rare_breeds": {
       "DOG": [
         {
-          "breed": "TR WALKER HOUND",
+          "breed": "DANDIE DINMONT",
           "count": 1
         },
         {
-          "breed": "COCKAPOO (COCKE",
+          "breed": "CATAHOULA",
           "count": 1
         },
         {
-          "breed": "MINI AUSTRALIAN",
+          "breed": "AUSSIE DOODLE",
           "count": 1
         },
         {
-          "breed": "BREED UNKNOWN",
+          "breed": "TREEING WALKER HOUND",
           "count": 1
         },
         {
-          "breed": "PIT BULL",
+          "breed": "COCKAPOO",
           "count": 1
         }
       ],
       "CAT": [
+        {
+          "breed": "NORWGN FOREST",
+          "count": 2
+        },
         {
           "breed": "CORNISH REX",
           "count": 2
@@ -732,17 +736,13 @@
         {
           "breed": "HAVANA BROWN",
           "count": 1
-        },
-        {
-          "breed": "SNOWSHOE",
-          "count": 1
         }
       ]
     },
     "signature_breed": {
       "DOG": {
-        "breed": "GERMAN SHEPHERD",
-        "ratio": 15.51
+        "breed": "PYREN SHEPHERD",
+        "ratio": 8.46
       },
       "CAT": {
         "breed": "ANGORA",
@@ -761,7 +761,7 @@
       "DOG": [
         {
           "breed": "LABRADOR RETR",
-          "count": 236
+          "count": 238
         },
         {
           "breed": "GOLDEN RETR",
@@ -775,7 +775,7 @@
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 609
+          "count": 610
         },
         {
           "breed": "DOMESTIC LH",
@@ -790,6 +790,10 @@
     "rare_breeds": {
       "DOG": [
         {
+          "breed": "ALASK MALAMUTE",
+          "count": 1
+        },
+        {
           "breed": "CATAHOULA",
           "count": 1
         },
@@ -798,29 +802,25 @@
           "count": 1
         },
         {
-          "breed": "GOLDENDOODLE (G",
+          "breed": "GOLDENDOODLE",
           "count": 1
         },
         {
           "breed": "FLAT COAT RETR",
           "count": 1
-        },
-        {
-          "breed": "SHORT HAIRED CH",
-          "count": 1
         }
       ],
       "CAT": [
+        {
+          "breed": "HIMALAYAN",
+          "count": 1
+        },
         {
           "breed": "AMER WIREHAIR",
           "count": 1
         },
         {
           "breed": "TURKISH ANGORA",
-          "count": 1
-        },
-        {
-          "breed": "TABBY DOMESTIC",
           "count": 1
         },
         {
@@ -835,7 +835,7 @@
     },
     "signature_breed": {
       "DOG": {
-        "breed": "PARSON JACK RUS",
+        "breed": "KOOIKERHONJE",
         "ratio": 61.39
       },
       "CAT": {
@@ -855,7 +855,7 @@
       "DOG": [
         {
           "breed": "GOLDEN RETR",
-          "count": 248
+          "count": 252
         },
         {
           "breed": "LABRADOR RETR",
@@ -869,7 +869,7 @@
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 1116
+          "count": 1117
         },
         {
           "breed": "DOMESTIC LH",
@@ -884,6 +884,14 @@
     "rare_breeds": {
       "DOG": [
         {
+          "breed": "ENG SETTER",
+          "count": 1
+        },
+        {
+          "breed": "RUSSIAN SPITZ",
+          "count": 1
+        },
+        {
           "breed": "FOX TERR WIRE",
           "count": 1
         },
@@ -892,19 +900,15 @@
           "count": 1
         },
         {
-          "breed": "BICHON FRIS\u00c3\u00a9",
-          "count": 1
-        },
-        {
-          "breed": "PEMBROKE WELSH",
-          "count": 1
-        },
-        {
           "breed": "NEWFOUNDLAND",
           "count": 1
         }
       ],
       "CAT": [
+        {
+          "breed": "EXOTIC SH",
+          "count": 7
+        },
         {
           "breed": "RUSSIAN BLUE",
           "count": 5
@@ -920,10 +924,6 @@
         {
           "breed": "CORNISH REX",
           "count": 1
-        },
-        {
-          "breed": "DOMESTIC SHORT-",
-          "count": 1
         }
       ]
     },
@@ -934,7 +934,7 @@
       },
       "CAT": {
         "breed": "UNKNOWN",
-        "ratio": 41.23
+        "ratio": 7.5
       }
     },
     "per_capita_rate": 0.063609
@@ -949,15 +949,15 @@
       "DOG": [
         {
           "breed": "GOLDEN RETR",
-          "count": 366
+          "count": 370
         },
         {
           "breed": "LABRADOR RETR",
-          "count": 354
+          "count": 356
         },
         {
           "breed": "POODLE MIN",
-          "count": 180
+          "count": 181
         }
       ],
       "CAT": [
@@ -978,15 +978,15 @@
     "rare_breeds": {
       "DOG": [
         {
+          "breed": "MASTIFF",
+          "count": 1
+        },
+        {
           "breed": "AMERICAN BULLY",
           "count": 1
         },
         {
           "breed": "CANE CORSO",
-          "count": 1
-        },
-        {
-          "breed": "MINIATURE POODL",
           "count": 1
         },
         {
@@ -1072,6 +1072,10 @@
     "rare_breeds": {
       "DOG": [
         {
+          "breed": "AMERICAN DIRUS",
+          "count": 1
+        },
+        {
           "breed": "KANGAL",
           "count": 1
         },
@@ -1084,11 +1088,7 @@
           "count": 1
         },
         {
-          "breed": "COCKAPOO (COCKE",
-          "count": 1
-        },
-        {
-          "breed": "BREED UNKNOWN",
+          "breed": "COCKAPOO",
           "count": 1
         }
       ],
@@ -1137,11 +1137,11 @@
       "DOG": [
         {
           "breed": "LABRADOR RETR",
-          "count": 561
+          "count": 565
         },
         {
           "breed": "GOLDEN RETR",
-          "count": 312
+          "count": 314
         },
         {
           "breed": "GERM SHEPHERD",
@@ -1151,7 +1151,7 @@
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 858
+          "count": 862
         },
         {
           "breed": "DOMESTIC MH",
@@ -1166,11 +1166,11 @@
     "rare_breeds": {
       "DOG": [
         {
-          "breed": "CHIHUAHUA X POM",
+          "breed": "DACHSHUND MIX",
           "count": 1
         },
         {
-          "breed": "AMERICAN BULLDO",
+          "breed": "CHIHUAHUA MIX",
           "count": 1
         },
         {
@@ -1188,6 +1188,10 @@
       ],
       "CAT": [
         {
+          "breed": "MAINE COON",
+          "count": 4
+        },
+        {
           "breed": "RAGDOLL",
           "count": 3
         },
@@ -1200,10 +1204,6 @@
           "count": 1
         },
         {
-          "breed": "TUXEDO",
-          "count": 1
-        },
-        {
           "breed": "BOMBAY",
           "count": 1
         }
@@ -1211,12 +1211,12 @@
     },
     "signature_breed": {
       "DOG": {
-        "breed": "FORMOSAN MOUNTA",
-        "ratio": 39.06
+        "breed": "FRENCH SPANIEL",
+        "ratio": 16.74
       },
       "CAT": {
-        "breed": "SNOWSHOE",
-        "ratio": 7.09
+        "breed": "DEVON REX",
+        "ratio": 3.97
       }
     },
     "per_capita_rate": 0.165063
@@ -1234,12 +1234,12 @@
           "count": 17
         },
         {
-          "breed": "COCKER SPAN",
+          "breed": "COCKER SPANIEL",
           "count": 16
         },
         {
           "breed": "CHIHUAHUA SH",
-          "count": 12
+          "count": 15
         }
       ],
       "CAT": [
@@ -1305,8 +1305,8 @@
     },
     "signature_breed": {
       "DOG": {
-        "breed": "BERNADOODLE",
-        "ratio": 487.8
+        "breed": "BERNEDOODLE",
+        "ratio": 188.83
       },
       "CAT": {
         "breed": "BRITISH SH",
@@ -1354,23 +1354,23 @@
     "rare_breeds": {
       "DOG": [
         {
-          "breed": "KOREAN JINDO MI",
+          "breed": "DUTCH SHEEPDOG",
           "count": 1
         },
         {
-          "breed": "TR WALKER HOUND",
+          "breed": "KOREAN JINDO",
           "count": 1
         },
         {
-          "breed": "MINIATURE ENGLI",
+          "breed": "TREEING WALKER HOUND",
           "count": 1
         },
         {
-          "breed": "POMSKY (POMERAN",
+          "breed": "POMSKY",
           "count": 1
         },
         {
-          "breed": "CHIHUAHUA AUSTR",
+          "breed": "CHIHUAHUA MIX",
           "count": 1
         }
       ],
@@ -1399,8 +1399,8 @@
     },
     "signature_breed": {
       "DOG": {
-        "breed": "SHILOH SHEPHERD",
-        "ratio": 49.13
+        "breed": "PORTUGUESE CATTLE DOG",
+        "ratio": 29.48
       },
       "CAT": {
         "breed": "BIRMAN",
@@ -1419,7 +1419,7 @@
       "DOG": [
         {
           "breed": "LABRADOR RETR",
-          "count": 263
+          "count": 264
         },
         {
           "breed": "GOLDEN RETR",
@@ -1433,7 +1433,7 @@
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 778
+          "count": 780
         },
         {
           "breed": "DOMESTIC MH",
@@ -1448,7 +1448,7 @@
     "rare_breeds": {
       "DOG": [
         {
-          "breed": "AMERICAN BULL D",
+          "breed": "SAMOYED",
           "count": 1
         },
         {
@@ -1470,15 +1470,15 @@
       ],
       "CAT": [
         {
+          "breed": "SAVANNAH",
+          "count": 2
+        },
+        {
           "breed": "BURMESE",
           "count": 2
         },
         {
           "breed": "HIMALAYAN",
-          "count": 2
-        },
-        {
-          "breed": "SNOWSHOE",
           "count": 2
         },
         {
@@ -1493,8 +1493,8 @@
     },
     "signature_breed": {
       "DOG": {
-        "breed": "MUTT",
-        "ratio": 76.39
+        "breed": "IRISH WATR SPAN",
+        "ratio": 32.74
       },
       "CAT": {
         "breed": "ORIENTAL SH",
@@ -1513,7 +1513,7 @@
       "DOG": [
         {
           "breed": "LABRADOR RETR",
-          "count": 308
+          "count": 311
         },
         {
           "breed": "GOLDEN RETR",
@@ -1527,7 +1527,7 @@
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 1009
+          "count": 1011
         },
         {
           "breed": "DOMESTIC MH",
@@ -1542,15 +1542,15 @@
     "rare_breeds": {
       "DOG": [
         {
+          "breed": "SWED VALLHUND",
+          "count": 1
+        },
+        {
           "breed": "FINNISH SPITZ",
           "count": 1
         },
         {
-          "breed": "AUSTRIALIA KELP",
-          "count": 1
-        },
-        {
-          "breed": "MORKIE (MALTESE",
+          "breed": "MORKIE",
           "count": 1
         },
         {
@@ -1564,6 +1564,14 @@
       ],
       "CAT": [
         {
+          "breed": "OCICAT X",
+          "count": 2
+        },
+        {
+          "breed": "MUNCHKIN SH",
+          "count": 2
+        },
+        {
           "breed": "NORWGN FOREST",
           "count": 1
         },
@@ -1572,27 +1580,19 @@
           "count": 1
         },
         {
-          "breed": "MIX BENGAL TABB",
-          "count": 1
-        },
-        {
-          "breed": "DOMESTIC SHORT-",
-          "count": 1
-        },
-        {
-          "breed": "STANDARD HOUSE",
+          "breed": "BENGAL MIX",
           "count": 1
         }
       ]
     },
     "signature_breed": {
       "DOG": {
-        "breed": "ICELANDIC SHEEP",
-        "ratio": 21.93
+        "breed": "SCOT DEERHOUND",
+        "ratio": 20.1
       },
       "CAT": {
-        "breed": "METIS",
-        "ratio": 45.21
+        "breed": "MIXED",
+        "ratio": 33.91
       }
     },
     "per_capita_rate": 0.106415
@@ -1636,7 +1636,7 @@
     "rare_breeds": {
       "DOG": [
         {
-          "breed": "PARSON RUSS TER",
+          "breed": "AMERICAN STAFF",
           "count": 1
         },
         {
@@ -1666,7 +1666,7 @@
           "count": 1
         },
         {
-          "breed": "BREED UNKNOWN",
+          "breed": "UNKNOWN",
           "count": 1
         },
         {
@@ -1681,8 +1681,8 @@
     },
     "signature_breed": {
       "DOG": {
-        "breed": "JACK RUSSEL",
-        "ratio": 184.51
+        "breed": "ITAL GREYHOUND",
+        "ratio": 12.81
       },
       "CAT": {
         "breed": "NORWGN FOREST",
@@ -1730,23 +1730,23 @@
     "rare_breeds": {
       "DOG": [
         {
+          "breed": "SILKEN WINDHOUN",
+          "count": 1
+        },
+        {
+          "breed": "BULLMASTIFF",
+          "count": 1
+        },
+        {
+          "breed": "WELSH TERRIER",
+          "count": 1
+        },
+        {
+          "breed": "SCHNAUZER MIX",
+          "count": 1
+        },
+        {
           "breed": "MIX",
-          "count": 1
-        },
-        {
-          "breed": "CHIHUAHUA (SHOR",
-          "count": 1
-        },
-        {
-          "breed": "CORGI-BLUE HEEL",
-          "count": 1
-        },
-        {
-          "breed": "BREED UNKNOWN",
-          "count": 1
-        },
-        {
-          "breed": "DOGGO ARGENTINO",
           "count": 1
         }
       ],
@@ -1775,8 +1775,8 @@
     },
     "signature_breed": {
       "DOG": {
-        "breed": "WHEATEN TERRIER",
-        "ratio": 47.45
+        "breed": "KOMONDOR",
+        "ratio": 30.5
       },
       "CAT": {
         "breed": "NORWGN FOREST",
@@ -1809,7 +1809,7 @@
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 703
+          "count": 706
         },
         {
           "breed": "DOMESTIC MH",
@@ -1824,6 +1824,10 @@
     "rare_breeds": {
       "DOG": [
         {
+          "breed": "AMER FOXHOUND",
+          "count": 1
+        },
+        {
           "breed": "AMERICAN STAFF",
           "count": 1
         },
@@ -1832,11 +1836,7 @@
           "count": 1
         },
         {
-          "breed": "COCKAPOO (COCKE",
-          "count": 1
-        },
-        {
-          "breed": "SHORT HAIRED CH",
+          "breed": "COCKAPOO",
           "count": 1
         },
         {
@@ -1869,12 +1869,12 @@
     },
     "signature_breed": {
       "DOG": {
-        "breed": "MIXED",
-        "ratio": 37.61
+        "breed": "AMER WATER SPAN",
+        "ratio": 32.91
       },
       "CAT": {
-        "breed": "ASH",
-        "ratio": 69.32
+        "breed": "EUROPEAN SH",
+        "ratio": 6.3
       }
     },
     "per_capita_rate": 0.094209
@@ -1934,7 +1934,7 @@
           "count": 1
         },
         {
-          "breed": "STANDARD SCHNAU",
+          "breed": "SCHNAUZER STAND",
           "count": 1
         }
       ],
@@ -1964,7 +1964,7 @@
     "signature_breed": {
       "DOG": {
         "breed": "PRESA CANARIO",
-        "ratio": 7.33
+        "ratio": 7.29
       },
       "CAT": {
         "breed": "KORAT",
@@ -1987,11 +1987,11 @@
         },
         {
           "breed": "GOLDEN RETR",
-          "count": 256
+          "count": 258
         },
         {
-          "breed": "COCKER SPAN",
-          "count": 101
+          "breed": "GERM SHEPHERD",
+          "count": 105
         }
       ],
       "CAT": [
@@ -2012,7 +2012,7 @@
     "rare_breeds": {
       "DOG": [
         {
-          "breed": "PHAROAH HOUND",
+          "breed": "PHARAOH HOUND",
           "count": 1
         },
         {
@@ -2020,7 +2020,7 @@
           "count": 1
         },
         {
-          "breed": "LAGOTTO ROMAGNO",
+          "breed": "LAGOTTO",
           "count": 1
         },
         {
@@ -2046,7 +2046,7 @@
           "count": 1
         },
         {
-          "breed": "DOMESTIC MIXED",
+          "breed": "MIXED",
           "count": 1
         },
         {
@@ -2057,12 +2057,12 @@
     },
     "signature_breed": {
       "DOG": {
-        "breed": "GERMAN SHEPHERD",
-        "ratio": 27.57
+        "breed": "KUVASZ",
+        "ratio": 25.38
       },
       "CAT": {
         "breed": "AMER SH",
-        "ratio": 1.52
+        "ratio": 1.5
       }
     },
     "per_capita_rate": 0.123987
@@ -2081,17 +2081,17 @@
         },
         {
           "breed": "LABRADOR RETR",
-          "count": 148
+          "count": 151
         },
         {
           "breed": "POODLE MIN",
-          "count": 76
+          "count": 80
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 205
+          "count": 208
         },
         {
           "breed": "DOMESTIC MH",
@@ -2106,6 +2106,10 @@
     "rare_breeds": {
       "DOG": [
         {
+          "breed": "WELSH TERRIER",
+          "count": 1
+        },
+        {
           "breed": "WELSH CORGI CAR",
           "count": 1
         },
@@ -2119,10 +2123,6 @@
         },
         {
           "breed": "STAFFORDSHIRE",
-          "count": 1
-        },
-        {
-          "breed": "BREED UNKNOWN",
           "count": 1
         }
       ],
@@ -2155,8 +2155,8 @@
         "ratio": 25.27
       },
       "CAT": {
-        "breed": "DOMESTIC SHORT",
-        "ratio": 173.25
+        "breed": "CORNISH REX",
+        "ratio": 19.8
       }
     },
     "per_capita_rate": 0.110313
@@ -2222,6 +2222,10 @@
       ],
       "CAT": [
         {
+          "breed": "MAINE COON",
+          "count": 4
+        },
+        {
           "breed": "AMER SH",
           "count": 3
         },
@@ -2234,11 +2238,7 @@
           "count": 2
         },
         {
-          "breed": "PERSIAN AND HIM",
-          "count": 2
-        },
-        {
-          "breed": "SIAMESE AND TAB",
+          "breed": "SIAMESE MIX",
           "count": 1
         }
       ]
@@ -2265,11 +2265,11 @@
       "DOG": [
         {
           "breed": "LABRADOR RETR",
-          "count": 254
+          "count": 255
         },
         {
           "breed": "GOLDEN RETR",
-          "count": 151
+          "count": 153
         },
         {
           "breed": "GERM SHEPHERD",
@@ -2279,7 +2279,7 @@
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 900
+          "count": 902
         },
         {
           "breed": "DOMESTIC MH",
@@ -2294,6 +2294,14 @@
     "rare_breeds": {
       "DOG": [
         {
+          "breed": "CHIWEENIE",
+          "count": 1
+        },
+        {
+          "breed": "MIX",
+          "count": 1
+        },
+        {
           "breed": "AMER STAFF MIX",
           "count": 1
         },
@@ -2302,25 +2310,17 @@
           "count": 1
         },
         {
-          "breed": "BREED UNKNOWN",
-          "count": 1
-        },
-        {
           "breed": "CHESA BAY RETR",
-          "count": 1
-        },
-        {
-          "breed": "MINIATURE SCHNA",
           "count": 1
         }
       ],
       "CAT": [
         {
-          "breed": "TURKISH ANGORA",
-          "count": 2
+          "breed": "MUNCHKIN SH",
+          "count": 3
         },
         {
-          "breed": "SNOWSHOE",
+          "breed": "TURKISH ANGORA",
           "count": 2
         },
         {
@@ -2339,7 +2339,7 @@
     },
     "signature_breed": {
       "DOG": {
-        "breed": "KALPIE",
+        "breed": "BRACCO ITALIANO",
         "ratio": 67.87
       },
       "CAT": {
@@ -2388,23 +2388,23 @@
     "rare_breeds": {
       "DOG": [
         {
-          "breed": "CHINESE SHARPEI",
+          "breed": "CHIHUAHUA LH",
           "count": 1
         },
         {
-          "breed": "BEA TZU",
+          "breed": "SCHNAUZER MIN",
           "count": 1
         },
         {
-          "breed": "JACK RUSSELL TE",
+          "breed": "FOX TERR WIRE",
           "count": 1
         },
         {
-          "breed": "BREED UNKNOWN",
+          "breed": "CHINESE SHAR-PE",
           "count": 1
         },
         {
-          "breed": "ENG BULLDOG",
+          "breed": "BEAGLE MIX",
           "count": 1
         }
       ],
@@ -2580,7 +2580,7 @@
           "count": 1
         },
         {
-          "breed": "MALTIPOO (MALTE",
+          "breed": "MALTIPOO",
           "count": 1
         },
         {
@@ -2588,7 +2588,7 @@
           "count": 1
         },
         {
-          "breed": "AM PIT BULL TER",
+          "breed": "PIT BULL",
           "count": 1
         },
         {
@@ -2621,8 +2621,8 @@
     },
     "signature_breed": {
       "DOG": {
-        "breed": "MASTIFF - LAB M",
-        "ratio": 145.3
+        "breed": "POMSKY",
+        "ratio": 62.27
       },
       "CAT": {
         "breed": "TURKISH ANGORA",
@@ -2641,7 +2641,7 @@
       "DOG": [
         {
           "breed": "LABRADOR RETR",
-          "count": 119
+          "count": 120
         },
         {
           "breed": "GOLDEN RETR",
@@ -2670,15 +2670,15 @@
     "rare_breeds": {
       "DOG": [
         {
+          "breed": "STAFFORDSHIRE",
+          "count": 1
+        },
+        {
           "breed": "AUST KELPIE",
           "count": 1
         },
         {
-          "breed": "CAVALIER SPAN",
-          "count": 1
-        },
-        {
-          "breed": "LABRADOR RETRIE",
+          "breed": "CAVALIER SPANIEL",
           "count": 1
         },
         {
@@ -2764,7 +2764,11 @@
     "rare_breeds": {
       "DOG": [
         {
-          "breed": "AMERICAN BULLDO",
+          "breed": "CHIHUAHUA LH",
+          "count": 1
+        },
+        {
+          "breed": "MORKIE",
           "count": 1
         },
         {
@@ -2772,15 +2776,11 @@
           "count": 1
         },
         {
-          "breed": "BASSET LAB MIX",
+          "breed": "BASSET HOUND MI",
           "count": 1
         },
         {
           "breed": "NS DUCK TOLLING",
-          "count": 1
-        },
-        {
-          "breed": "YORKSHIRE TERRI",
           "count": 1
         }
       ],
@@ -2809,8 +2809,8 @@
     },
     "signature_breed": {
       "DOG": {
-        "breed": "PERUVIAN HAIRLE",
-        "ratio": 123.43
+        "breed": "FORMOSAN MOUNTA",
+        "ratio": 11.22
       },
       "CAT": {
         "breed": "NORWGN FOREST",
@@ -2829,11 +2829,11 @@
       "DOG": [
         {
           "breed": "LABRADOR RETR",
-          "count": 217
+          "count": 219
         },
         {
           "breed": "GOLDEN RETR",
-          "count": 142
+          "count": 145
         },
         {
           "breed": "GERM SHEPHERD",
@@ -2858,19 +2858,19 @@
     "rare_breeds": {
       "DOG": [
         {
+          "breed": "FINNISH SPITZ",
+          "count": 1
+        },
+        {
+          "breed": "ALASKAN HUSKY",
+          "count": 1
+        },
+        {
           "breed": "DACHSHUND LH",
           "count": 1
         },
         {
-          "breed": "BLUE CANE CORSO",
-          "count": 1
-        },
-        {
-          "breed": "MAREMMA SHEEPDG",
-          "count": 1
-        },
-        {
-          "breed": "BREED UNKNOWN",
+          "breed": "MAREMMA SHEEPDOG",
           "count": 1
         },
         {
@@ -2903,8 +2903,8 @@
     },
     "signature_breed": {
       "DOG": {
-        "breed": "GOLDEN RETREIVE",
-        "ratio": 40.11
+        "breed": "AFFENPINSCHER",
+        "ratio": 27.77
       },
       "CAT": {
         "breed": "SIBERIAN FOREST",
@@ -2922,16 +2922,16 @@
     "top_breeds": {
       "DOG": [
         {
+          "breed": "GERM SHEPHERD",
+          "count": 74
+        },
+        {
           "breed": "SHIH TZU",
           "count": 72
         },
         {
-          "breed": "GERM SHEPHERD",
-          "count": 72
-        },
-        {
           "breed": "LABRADOR RETR",
-          "count": 48
+          "count": 50
         }
       ],
       "CAT": [
@@ -2952,11 +2952,15 @@
     "rare_breeds": {
       "DOG": [
         {
-          "breed": "CHINESE SHARPEI",
+          "breed": "BULL TERRIER",
           "count": 1
         },
         {
-          "breed": "SHIH TZU - PUG",
+          "breed": "CHINESE SHAR-PE",
+          "count": 1
+        },
+        {
+          "breed": "SHIH TZU MIX",
           "count": 1
         },
         {
@@ -2964,11 +2968,7 @@
           "count": 1
         },
         {
-          "breed": "MALTIPOO (MALTE",
-          "count": 1
-        },
-        {
-          "breed": "CANE CORSO MIX",
+          "breed": "MALTIPOO",
           "count": 1
         }
       ],
@@ -2990,15 +2990,15 @@
           "count": 1
         },
         {
-          "breed": "BREED UNKNOWN",
+          "breed": "UNKNOWN",
           "count": 1
         }
       ]
     },
     "signature_breed": {
       "DOG": {
-        "breed": "PEMBROKE WELSH",
-        "ratio": 50.8
+        "breed": "NORW ELKHOUND",
+        "ratio": 15.16
       },
       "CAT": {
         "breed": "PERSIAN",
@@ -3017,10 +3017,10 @@
       "DOG": [
         {
           "breed": "LABRADOR RETR",
-          "count": 97
+          "count": 98
         },
         {
-          "breed": "COCKER SPAN",
+          "breed": "COCKER SPANIEL",
           "count": 77
         },
         {
@@ -3080,7 +3080,7 @@
           "count": 1
         },
         {
-          "breed": "SIAMESE + DOMES",
+          "breed": "SIAMESE MIX",
           "count": 1
         },
         {
@@ -3091,12 +3091,12 @@
     },
     "signature_breed": {
       "DOG": {
-        "breed": "MIXED RACE",
-        "ratio": 124.56
+        "breed": "FIELD SPANIEL",
+        "ratio": 16.25
       },
       "CAT": {
-        "breed": "SCOTTISH STRAIG",
-        "ratio": 46.22
+        "breed": "SAVANNAH",
+        "ratio": 16.18
       }
     },
     "per_capita_rate": 0.068054
@@ -3140,6 +3140,10 @@
     "rare_breeds": {
       "DOG": [
         {
+          "breed": "CATAHOULA",
+          "count": 1
+        },
+        {
           "breed": "ENG COCKER SPAN",
           "count": 1
         },
@@ -3153,10 +3157,6 @@
         },
         {
           "breed": "PRESA CANARIO",
-          "count": 1
-        },
-        {
-          "breed": "PIT BULL",
           "count": 1
         }
       ],
@@ -3185,7 +3185,7 @@
     },
     "signature_breed": {
       "DOG": {
-        "breed": "MAREMMA SHEEPDG",
+        "breed": "MAREMMA SHEEPDOG",
         "ratio": 7.56
       },
       "CAT": {
@@ -3209,17 +3209,17 @@
         },
         {
           "breed": "LABRADOR RETR",
-          "count": 260
+          "count": 263
         },
         {
-          "breed": "COCKER SPAN",
+          "breed": "COCKER SPANIEL",
           "count": 123
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 264
+          "count": 265
         },
         {
           "breed": "DOMESTIC LH",
@@ -3234,7 +3234,7 @@
     "rare_breeds": {
       "DOG": [
         {
-          "breed": "DOBERMAN PINSCH",
+          "breed": "DOBERMAN PINSCHER",
           "count": 1
         },
         {
@@ -3256,6 +3256,10 @@
       ],
       "CAT": [
         {
+          "breed": "CORNISH REX",
+          "count": 3
+        },
+        {
           "breed": "ABYSSINIAN",
           "count": 3
         },
@@ -3266,10 +3270,6 @@
         {
           "breed": "PERSIAN",
           "count": 2
-        },
-        {
-          "breed": "DOMESTIC SHORT",
-          "count": 1
         },
         {
           "breed": "MAINE COON",
@@ -3306,7 +3306,7 @@
           "count": 225
         },
         {
-          "breed": "GERM SHEPHERD",
+          "breed": "POODLE MIN",
           "count": 132
         }
       ],
@@ -3328,7 +3328,7 @@
     "rare_breeds": {
       "DOG": [
         {
-          "breed": "POODLE (MINIATU",
+          "breed": "BELG SHEEPDOG",
           "count": 1
         },
         {
@@ -3344,7 +3344,7 @@
           "count": 1
         },
         {
-          "breed": "MULITPOO",
+          "breed": "MALTIPOO",
           "count": 1
         }
       ],
@@ -3373,8 +3373,8 @@
     },
     "signature_breed": {
       "DOG": {
-        "breed": "MIX CAROLINA HU",
-        "ratio": 65.5
+        "breed": "IBIZAN HOUND",
+        "ratio": 19.65
       },
       "CAT": {
         "breed": "DEVON REX",
@@ -3401,13 +3401,13 @@
         },
         {
           "breed": "CHIHUAHUA SH",
-          "count": 73
+          "count": 75
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 585
+          "count": 590
         },
         {
           "breed": "DOMESTIC LH",
@@ -3422,15 +3422,15 @@
     "rare_breeds": {
       "DOG": [
         {
+          "breed": "GERMAN PINSCHER",
+          "count": 1
+        },
+        {
           "breed": "AKBASH GREAT PY",
           "count": 1
         },
         {
-          "breed": "RETRIEVER (GOLD",
-          "count": 1
-        },
-        {
-          "breed": "ANATOL SHEPHERD",
+          "breed": "ANATOLIAN SHEPHERD",
           "count": 1
         },
         {
@@ -3456,7 +3456,7 @@
           "count": 1
         },
         {
-          "breed": "UNKOWN",
+          "breed": "UNKNOWN",
           "count": 1
         },
         {
@@ -3467,12 +3467,12 @@
     },
     "signature_breed": {
       "DOG": {
-        "breed": "GERM SHEPHERD -",
-        "ratio": 108.42
+        "breed": "POODLE",
+        "ratio": 39.42
       },
       "CAT": {
-        "breed": "SNOWSHOE",
-        "ratio": 17.77
+        "breed": "BOMBAY",
+        "ratio": 3.53
       }
     },
     "per_capita_rate": 0.053715
@@ -3487,11 +3487,11 @@
       "DOG": [
         {
           "breed": "LABRADOR RETR",
-          "count": 184
+          "count": 188
         },
         {
           "breed": "GOLDEN RETR",
-          "count": 179
+          "count": 181
         },
         {
           "breed": "GERM SHEPHERD",
@@ -3516,19 +3516,19 @@
     "rare_breeds": {
       "DOG": [
         {
+          "breed": "AMERICAN BULLY",
+          "count": 1
+        },
+        {
+          "breed": "NS DUCK TOLLING",
+          "count": 1
+        },
+        {
           "breed": "DOGO ARGENTINO",
           "count": 1
         },
         {
           "breed": "ENG SHEPHERD",
-          "count": 1
-        },
-        {
-          "breed": "BREED UNKNOWN",
-          "count": 1
-        },
-        {
-          "breed": "OLD ENG BULLDOG",
           "count": 1
         },
         {
@@ -3581,7 +3581,7 @@
       "DOG": [
         {
           "breed": "LABRADOR RETR",
-          "count": 362
+          "count": 365
         },
         {
           "breed": "GOLDEN RETR",
@@ -3589,7 +3589,7 @@
         },
         {
           "breed": "POODLE MIN",
-          "count": 124
+          "count": 129
         }
       ],
       "CAT": [
@@ -3610,27 +3610,31 @@
     "rare_breeds": {
       "DOG": [
         {
-          "breed": "AMERICAN STAFFO",
+          "breed": "TIBETAN SPAN",
           "count": 1
         },
         {
-          "breed": "BREED UNKNOWN",
+          "breed": "MALTESE MIX",
           "count": 1
         },
         {
-          "breed": "PATTERDALE TERR",
+          "breed": "FINNISH SPITZ",
           "count": 1
         },
         {
-          "breed": "HAVA - SHI",
+          "breed": "GOLDENDOODLE",
           "count": 1
         },
         {
-          "breed": "SHIPOOJA",
+          "breed": "SHIH POO",
           "count": 1
         }
       ],
       "CAT": [
+        {
+          "breed": "BENGAL",
+          "count": 2
+        },
         {
           "breed": "SPHYNX",
           "count": 2
@@ -3641,10 +3645,6 @@
         },
         {
           "breed": "OCICAT",
-          "count": 1
-        },
-        {
-          "breed": "AMERICAN SHORT",
           "count": 1
         },
         {
@@ -3704,6 +3704,14 @@
     "rare_breeds": {
       "DOG": [
         {
+          "breed": "RHOD RIDGEBACK",
+          "count": 1
+        },
+        {
+          "breed": "SCHNAUZER STAND",
+          "count": 1
+        },
+        {
           "breed": "PULI",
           "count": 1
         },
@@ -3713,14 +3721,6 @@
         },
         {
           "breed": "BULLMASTIFF",
-          "count": 1
-        },
-        {
-          "breed": "MIX CHIHUAHUA A",
-          "count": 1
-        },
-        {
-          "breed": "CHIHUAHUA MIX",
           "count": 1
         }
       ],
@@ -3749,12 +3749,12 @@
     },
     "signature_breed": {
       "DOG": {
-        "breed": "YORKSHIRE TERRI",
-        "ratio": 113.97
+        "breed": "ENTLEBUCHER",
+        "ratio": 12.66
       },
       "CAT": {
         "breed": "AMER SH",
-        "ratio": 3.33
+        "ratio": 3.29
       }
     },
     "per_capita_rate": 0.058713
@@ -3776,7 +3776,7 @@
           "count": 146
         },
         {
-          "breed": "COCKER SPAN",
+          "breed": "COCKER SPANIEL",
           "count": 135
         }
       ],
@@ -3798,11 +3798,15 @@
     "rare_breeds": {
       "DOG": [
         {
+          "breed": "ST BERNARD RGH",
+          "count": 1
+        },
+        {
           "breed": "BELG SHEEPDOG",
           "count": 1
         },
         {
-          "breed": "MAREMMA SHEEPDG",
+          "breed": "MAREMMA SHEEPDOG",
           "count": 1
         },
         {
@@ -3811,10 +3815,6 @@
         },
         {
           "breed": "FLAT COAT RETR",
-          "count": 1
-        },
-        {
-          "breed": "MINIATURE POODL",
           "count": 1
         }
       ],
@@ -3877,7 +3877,7 @@
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 520
+          "count": 522
         },
         {
           "breed": "DOMESTIC MH",
@@ -3892,6 +3892,14 @@
     "rare_breeds": {
       "DOG": [
         {
+          "breed": "RUSSIAN TERRIER",
+          "count": 1
+        },
+        {
+          "breed": "DOGO ARGENTINO",
+          "count": 1
+        },
+        {
           "breed": "SIAMESE MIX",
           "count": 1
         },
@@ -3902,23 +3910,15 @@
         {
           "breed": "BELG SHEEPDOG",
           "count": 1
-        },
-        {
-          "breed": "TIBETAN MASTIFF",
-          "count": 1
-        },
-        {
-          "breed": "PIT BULL",
-          "count": 1
         }
       ],
       "CAT": [
         {
-          "breed": "AMER CURL SH",
-          "count": 2
+          "breed": "SAVANNAH",
+          "count": 3
         },
         {
-          "breed": "SNOWSHOE",
+          "breed": "AMER CURL SH",
           "count": 2
         },
         {
@@ -3990,7 +3990,7 @@
           "count": 1
         },
         {
-          "breed": "GREEK SHEPPARD",
+          "breed": "GREEK SHEPHERD",
           "count": 1
         },
         {
@@ -4020,7 +4020,7 @@
           "count": 1
         },
         {
-          "breed": "BREED UNKNOWN",
+          "breed": "UNKNOWN",
           "count": 1
         },
         {
@@ -4051,7 +4051,7 @@
       "DOG": [
         {
           "breed": "GERM SHEPHERD",
-          "count": 31
+          "count": 32
         },
         {
           "breed": "SHIH TZU",
@@ -4114,7 +4114,7 @@
           "count": 2
         },
         {
-          "breed": "BREED UNKNOWN",
+          "breed": "UNKNOWN",
           "count": 1
         },
         {
@@ -4153,13 +4153,13 @@
         },
         {
           "breed": "POODLE MIN",
-          "count": 131
+          "count": 135
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 756
+          "count": 758
         },
         {
           "breed": "DOMESTIC MH",
@@ -4174,19 +4174,19 @@
     "rare_breeds": {
       "DOG": [
         {
+          "breed": "CHUG",
+          "count": 1
+        },
+        {
+          "breed": "AMERICAN COCKER",
+          "count": 1
+        },
+        {
           "breed": "BLOODHOUND",
           "count": 1
         },
         {
-          "breed": "DACHSHUND (MINI",
-          "count": 1
-        },
-        {
           "breed": "GERM WH POINT",
-          "count": 1
-        },
-        {
-          "breed": "PEMBROKE WELSH",
           "count": 1
         },
         {
@@ -4196,12 +4196,12 @@
       ],
       "CAT": [
         {
-          "breed": "SCOTTISH FOLD",
+          "breed": "SPHYNX",
           "count": 3
         },
         {
-          "breed": "TABY",
-          "count": 2
+          "breed": "SCOTTISH FOLD",
+          "count": 3
         },
         {
           "breed": "BRITISH SH",
@@ -4219,7 +4219,7 @@
     },
     "signature_breed": {
       "DOG": {
-        "breed": "BOUVIER DE FLAN",
+        "breed": "TERRIER X",
         "ratio": 53.82
       },
       "CAT": {
@@ -4239,7 +4239,7 @@
       "DOG": [
         {
           "breed": "LABRADOR RETR",
-          "count": 170
+          "count": 172
         },
         {
           "breed": "SHIH TZU",
@@ -4268,11 +4268,11 @@
     "rare_breeds": {
       "DOG": [
         {
-          "breed": "COCKAPOO (COCKE",
+          "breed": "ANATOLIAN SHEPHERD",
           "count": 1
         },
         {
-          "breed": "PIT BULL",
+          "breed": "COCKAPOO",
           "count": 1
         },
         {
@@ -4333,7 +4333,7 @@
       "DOG": [
         {
           "breed": "LABRADOR RETR",
-          "count": 244
+          "count": 246
         },
         {
           "breed": "GOLDEN RETR",
@@ -4347,7 +4347,7 @@
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 1274
+          "count": 1278
         },
         {
           "breed": "DOMESTIC MH",
@@ -4362,19 +4362,19 @@
     "rare_breeds": {
       "DOG": [
         {
-          "breed": "CHUG (CHIHUAHUA",
+          "breed": "CHUG",
           "count": 1
         },
         {
-          "breed": "SHORKIE (SHIH T",
+          "breed": "SHORKIE",
           "count": 1
         },
         {
-          "breed": "BICHONPOO",
+          "breed": "BICHON POODLE",
           "count": 1
         },
         {
-          "breed": "COOKAPOO",
+          "breed": "COCKAPOO",
           "count": 1
         },
         {
@@ -4384,19 +4384,19 @@
       ],
       "CAT": [
         {
+          "breed": "TIFFANY",
+          "count": 2
+        },
+        {
+          "breed": "MANX",
+          "count": 2
+        },
+        {
           "breed": "AMER WIREHAIR",
           "count": 2
         },
         {
           "breed": "EUROPEAN SH",
-          "count": 1
-        },
-        {
-          "breed": "SNOWSHOE",
-          "count": 1
-        },
-        {
-          "breed": "TUXEDO",
           "count": 1
         },
         {
@@ -4407,8 +4407,8 @@
     },
     "signature_breed": {
       "DOG": {
-        "breed": "CHIHUAHUAS",
-        "ratio": 54.96
+        "breed": "CHIHUAHUA",
+        "ratio": 24.43
       },
       "CAT": {
         "breed": "SPHYNX",
@@ -4427,7 +4427,7 @@
       "DOG": [
         {
           "breed": "LABRADOR RETR",
-          "count": 459
+          "count": 461
         },
         {
           "breed": "GOLDEN RETR",
@@ -4456,7 +4456,7 @@
     "rare_breeds": {
       "DOG": [
         {
-          "breed": "AM PIT BULL TER",
+          "breed": "PIT BULL",
           "count": 1
         },
         {
@@ -4464,7 +4464,7 @@
           "count": 1
         },
         {
-          "breed": "BERNEDOODLE (BE",
+          "breed": "BERNEDOODLE",
           "count": 1
         },
         {
@@ -4501,8 +4501,8 @@
     },
     "signature_breed": {
       "DOG": {
-        "breed": "INDIAN PARIAH D",
-        "ratio": 47.71
+        "breed": "TOSA",
+        "ratio": 35.78
       },
       "CAT": {
         "breed": "BALINESE",
@@ -4554,7 +4554,7 @@
           "count": 1
         },
         {
-          "breed": "SHIH POO (SHIH",
+          "breed": "SHIH POO",
           "count": 1
         },
         {
@@ -4595,8 +4595,8 @@
     },
     "signature_breed": {
       "DOG": {
-        "breed": "SWISS RIDGE DOO",
-        "ratio": 79.05
+        "breed": "PICARDY SHEEPDOG",
+        "ratio": 24.32
       },
       "CAT": {
         "breed": "BALINESE",
@@ -4644,11 +4644,15 @@
     "rare_breeds": {
       "DOG": [
         {
+          "breed": "PLOTT HOUND",
+          "count": 1
+        },
+        {
           "breed": "GORDON SETTER",
           "count": 1
         },
         {
-          "breed": "AM PIT BULL TER",
+          "breed": "PIT BULL",
           "count": 1
         },
         {
@@ -4656,11 +4660,7 @@
           "count": 1
         },
         {
-          "breed": "SHITZU & POODLE",
-          "count": 1
-        },
-        {
-          "breed": "AMERICAN BULLDO",
+          "breed": "SHIH POO",
           "count": 1
         }
       ],
@@ -4689,8 +4689,8 @@
     },
     "signature_breed": {
       "DOG": {
-        "breed": "MINI GOLDEN DOO",
-        "ratio": 70.7
+        "breed": "ICELND SHEEPDOG",
+        "ratio": 20.2
       },
       "CAT": {
         "breed": "BIRMAN",
@@ -4717,7 +4717,7 @@
         },
         {
           "breed": "POODLE MIN",
-          "count": 113
+          "count": 114
         }
       ],
       "CAT": [
@@ -4738,6 +4738,10 @@
     "rare_breeds": {
       "DOG": [
         {
+          "breed": "ALASK MALAMUTE",
+          "count": 1
+        },
+        {
           "breed": "KOREAN JINDO",
           "count": 1
         },
@@ -4747,10 +4751,6 @@
         },
         {
           "breed": "AUST TERRIER",
-          "count": 1
-        },
-        {
-          "breed": "MINIATURE POODL",
           "count": 1
         },
         {
@@ -4783,8 +4783,8 @@
     },
     "signature_breed": {
       "DOG": {
-        "breed": "WHEATON TERRIOR",
-        "ratio": 74.3
+        "breed": "SKYE TERRIER",
+        "ratio": 27.86
       },
       "CAT": {
         "breed": "SPHYNX",
@@ -4811,13 +4811,13 @@
         },
         {
           "breed": "POODLE MIN",
-          "count": 137
+          "count": 141
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 536
+          "count": 538
         },
         {
           "breed": "DOMESTIC MH",
@@ -4832,11 +4832,11 @@
     "rare_breeds": {
       "DOG": [
         {
-          "breed": "POINTER (GERMAN",
+          "breed": "GERMAN PINSCHER",
           "count": 1
         },
         {
-          "breed": "PHAROAH HOUND",
+          "breed": "PHARAOH HOUND",
           "count": 1
         },
         {
@@ -4854,11 +4854,11 @@
       ],
       "CAT": [
         {
-          "breed": "BOMBAY",
+          "breed": "BIRMAN",
           "count": 2
         },
         {
-          "breed": "SNOWSHOE",
+          "breed": "BOMBAY",
           "count": 2
         },
         {
@@ -4905,13 +4905,13 @@
         },
         {
           "breed": "GOLDEN RETR",
-          "count": 92
+          "count": 93
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 421
+          "count": 423
         },
         {
           "breed": "DOMESTIC MH",
@@ -4948,7 +4948,7 @@
       ],
       "CAT": [
         {
-          "breed": "TORTOISESHELL",
+          "breed": "RUSSIAN BLUE",
           "count": 2
         },
         {
@@ -4991,7 +4991,7 @@
       "DOG": [
         {
           "breed": "LABRADOR RETR",
-          "count": 229
+          "count": 232
         },
         {
           "breed": "GOLDEN RETR",
@@ -5020,7 +5020,7 @@
     "rare_breeds": {
       "DOG": [
         {
-          "breed": "MINIATURE SCHNA",
+          "breed": "EURASIER",
           "count": 1
         },
         {
@@ -5065,8 +5065,8 @@
     },
     "signature_breed": {
       "DOG": {
-        "breed": "LAGOTTO ROMANGO",
-        "ratio": 67.12
+        "breed": "LOWCHEN",
+        "ratio": 48.81
       },
       "CAT": {
         "breed": "SPHYNX",
@@ -5114,6 +5114,10 @@
     "rare_breeds": {
       "DOG": [
         {
+          "breed": "CHIHUAHUA LH",
+          "count": 2
+        },
+        {
           "breed": "CANE CORSO",
           "count": 1
         },
@@ -5122,11 +5126,7 @@
           "count": 1
         },
         {
-          "breed": "AMERICAN BULLDO",
-          "count": 1
-        },
-        {
-          "breed": "MINI DOODLE",
+          "breed": "LABRADOODLE",
           "count": 1
         },
         {
@@ -5159,8 +5159,8 @@
     },
     "signature_breed": {
       "DOG": {
-        "breed": "COTON DU TULEAR",
-        "ratio": 100.37
+        "breed": "FIELD SPANIEL",
+        "ratio": 30.55
       },
       "CAT": {
         "breed": "BURMESE",
@@ -5183,7 +5183,7 @@
         },
         {
           "breed": "GOLDEN RETR",
-          "count": 327
+          "count": 328
         },
         {
           "breed": "GERM SHEPHERD",
@@ -5193,7 +5193,7 @@
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 1422
+          "count": 1424
         },
         {
           "breed": "DOMESTIC MH",
@@ -5208,33 +5208,37 @@
     "rare_breeds": {
       "DOG": [
         {
-          "breed": "PITBULL CROSS T",
+          "breed": "SALUKI",
           "count": 1
         },
         {
-          "breed": "TR WALKER HOUND",
+          "breed": "LEONBERGER",
           "count": 1
         },
         {
-          "breed": "AMERICAN  BULLY",
+          "breed": "MIX",
           "count": 1
         },
         {
-          "breed": "MIXED MEDIUM",
+          "breed": "PIT BULL MIX",
           "count": 1
         },
         {
-          "breed": "BREED UNKNOWN",
+          "breed": "TREEING WALKER HOUND",
           "count": 1
         }
       ],
       "CAT": [
         {
-          "breed": "BIRMAN",
-          "count": 1
+          "breed": "EUROPEAN SH",
+          "count": 2
         },
         {
-          "breed": "INDIAN CAT",
+          "breed": "TURKISH ANGORA",
+          "count": 2
+        },
+        {
+          "breed": "BIRMAN",
           "count": 1
         },
         {
@@ -5244,21 +5248,17 @@
         {
           "breed": "EXOTIC SH",
           "count": 1
-        },
-        {
-          "breed": "SNOWSHOE",
-          "count": 1
         }
       ]
     },
     "signature_breed": {
       "DOG": {
-        "breed": "BICHON FRISE MI",
-        "ratio": 42.86
+        "breed": "IBIZAN HOUND",
+        "ratio": 21.43
       },
       "CAT": {
-        "breed": "SCOTTISH STRAIG",
-        "ratio": 10.42
+        "breed": "CORNISH REX",
+        "ratio": 3.13
       }
     },
     "per_capita_rate": 0.141886
@@ -5291,7 +5291,7 @@
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 33
+          "count": 34
         },
         {
           "breed": "DOMESTIC MH",
@@ -5306,7 +5306,7 @@
           "count": 1
         },
         {
-          "breed": "MINI COCKAPOO",
+          "breed": "COCKAPOO",
           "count": 1
         },
         {
@@ -5314,7 +5314,7 @@
           "count": 1
         },
         {
-          "breed": "GOLDENDOODLE (G",
+          "breed": "GOLDENDOODLE",
           "count": 1
         },
         {
@@ -5323,6 +5323,10 @@
         }
       ],
       "CAT": [
+        {
+          "breed": "ABYSSINIAN",
+          "count": 2
+        },
         {
           "breed": "HIMALAYAN",
           "count": 1
@@ -5336,11 +5340,7 @@
           "count": 1
         },
         {
-          "breed": "BENGAL CROSS",
-          "count": 1
-        },
-        {
-          "breed": "DOMESTIC LONGHA",
+          "breed": "BENGAL MIX",
           "count": 1
         }
       ]
@@ -5381,7 +5381,7 @@
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 383
+          "count": 384
         },
         {
           "breed": "DOMESTIC LH",
@@ -5408,7 +5408,7 @@
           "count": 1
         },
         {
-          "breed": "KOREAN JINDO MI",
+          "breed": "KOREAN JINDO",
           "count": 1
         },
         {
@@ -5417,6 +5417,10 @@
         }
       ],
       "CAT": [
+        {
+          "breed": "CHARTREUX",
+          "count": 3
+        },
         {
           "breed": "RUSSIAN BLUE",
           "count": 3
@@ -5430,11 +5434,7 @@
           "count": 2
         },
         {
-          "breed": "CLASSIC SHORT H",
-          "count": 1
-        },
-        {
-          "breed": "BREED UNKNOWN",
+          "breed": "UNKNOWN",
           "count": 1
         }
       ]
@@ -5475,7 +5475,7 @@
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 397
+          "count": 398
         },
         {
           "breed": "DOMESTIC LH",
@@ -5490,7 +5490,7 @@
     "rare_breeds": {
       "DOG": [
         {
-          "breed": "MAREMMA SHEEPDG",
+          "breed": "MAREMMA SHEEPDOG",
           "count": 1
         },
         {
@@ -5506,11 +5506,15 @@
           "count": 1
         },
         {
-          "breed": "YORKIE + BICHON",
+          "breed": "YORKIE MALTESE",
           "count": 1
         }
       ],
       "CAT": [
+        {
+          "breed": "HIMALAYAN",
+          "count": 1
+        },
         {
           "breed": "SAVANNAH",
           "count": 1
@@ -5524,10 +5528,6 @@
           "count": 1
         },
         {
-          "breed": "SNOWSHOE",
-          "count": 1
-        },
-        {
           "breed": "NORWGN FOREST",
           "count": 1
         }
@@ -5536,7 +5536,7 @@
     "signature_breed": {
       "DOG": {
         "breed": "TERRIER MIX",
-        "ratio": 138.63
+        "ratio": 69.32
       },
       "CAT": {
         "breed": "AMER CURL LH",
@@ -5562,14 +5562,14 @@
           "count": 95
         },
         {
-          "breed": "COCKER SPAN",
+          "breed": "COCKER SPANIEL",
           "count": 69
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 449
+          "count": 451
         },
         {
           "breed": "DOMESTIC MH",
@@ -5584,6 +5584,10 @@
     "rare_breeds": {
       "DOG": [
         {
+          "breed": "BULLMASTIFF",
+          "count": 1
+        },
+        {
           "breed": "GREAT DANE",
           "count": 1
         },
@@ -5596,11 +5600,7 @@
           "count": 1
         },
         {
-          "breed": "POMSKY (POMERAN",
-          "count": 1
-        },
-        {
-          "breed": "PIT BULL",
+          "breed": "POMSKY",
           "count": 1
         }
       ],
@@ -5663,11 +5663,11 @@
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 204
+          "count": 207
         },
         {
           "breed": "DOMESTIC MH",
-          "count": 30
+          "count": 33
         },
         {
           "breed": "DOMESTIC LH",
@@ -5678,7 +5678,11 @@
     "rare_breeds": {
       "DOG": [
         {
-          "breed": "SCOTTISH FOLD M",
+          "breed": "BULLMASTIFF",
+          "count": 1
+        },
+        {
+          "breed": "SCOTTISH FOLD",
           "count": 1
         },
         {
@@ -5687,10 +5691,6 @@
         },
         {
           "breed": "JINDO",
-          "count": 1
-        },
-        {
-          "breed": "YORKSHIRE TERRI",
           "count": 1
         },
         {
@@ -5723,12 +5723,12 @@
     },
     "signature_breed": {
       "DOG": {
-        "breed": "BELGIAN GROENEN",
-        "ratio": 138.99
+        "breed": "AUSSIE BERNEDOO",
+        "ratio": 83.39
       },
       "CAT": {
-        "breed": "MEDIUM HAIR DOM",
-        "ratio": 235.84
+        "breed": "DEVON REX",
+        "ratio": 5.95
       }
     },
     "per_capita_rate": 0.137425
@@ -5743,7 +5743,7 @@
       "DOG": [
         {
           "breed": "LABRADOR RETR",
-          "count": 128
+          "count": 131
         },
         {
           "breed": "GERM SHEPHERD",
@@ -5810,15 +5810,15 @@
           "count": 1
         },
         {
-          "breed": "BREED UNKNOWN",
+          "breed": "UNKNOWN",
           "count": 1
         }
       ]
     },
     "signature_breed": {
       "DOG": {
-        "breed": "LAB",
-        "ratio": 121.32
+        "breed": "ENG POINTER",
+        "ratio": 9.48
       },
       "CAT": {
         "breed": "KORAT",
@@ -5841,7 +5841,7 @@
         },
         {
           "breed": "GOLDEN RETR",
-          "count": 155
+          "count": 157
         },
         {
           "breed": "SHIH TZU",
@@ -5866,7 +5866,11 @@
     "rare_breeds": {
       "DOG": [
         {
-          "breed": "AMERICAN BULLY",
+          "breed": "GREAT PYRENEES",
+          "count": 1
+        },
+        {
+          "breed": "RAT TERRIER",
           "count": 1
         },
         {
@@ -5875,10 +5879,6 @@
         },
         {
           "breed": "MIX",
-          "count": 1
-        },
-        {
-          "breed": "MINIATURE AMERI",
           "count": 1
         },
         {
@@ -5960,7 +5960,11 @@
     "rare_breeds": {
       "DOG": [
         {
-          "breed": "CHINESE SHARPEI",
+          "breed": "BEARDED COLLIE",
+          "count": 1
+        },
+        {
+          "breed": "CHINESE SHAR-PE",
           "count": 1
         },
         {
@@ -5972,11 +5976,7 @@
           "count": 1
         },
         {
-          "breed": "MINIATURE POODL",
-          "count": 1
-        },
-        {
-          "breed": "MAREMMA SHEEPDG",
+          "breed": "MAREMMA SHEEPDOG",
           "count": 1
         }
       ],
@@ -6099,8 +6099,8 @@
     },
     "signature_breed": {
       "DOG": {
-        "breed": "BERNEDOODLE",
-        "ratio": 31.99
+        "breed": "PUDELPOINTER",
+        "ratio": 28.63
       },
       "CAT": {
         "breed": "RAGDOLL",
@@ -6133,7 +6133,7 @@
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 886
+          "count": 892
         },
         {
           "breed": "DOMESTIC MH",
@@ -6148,19 +6148,19 @@
     "rare_breeds": {
       "DOG": [
         {
+          "breed": "COLLIE ROUGH",
+          "count": 1
+        },
+        {
+          "breed": "BRITTANY",
+          "count": 1
+        },
+        {
+          "breed": "ENG COONHOUND",
+          "count": 1
+        },
+        {
           "breed": "CHINESE CRESTED",
-          "count": 1
-        },
-        {
-          "breed": "AMERICAN BULL D",
-          "count": 1
-        },
-        {
-          "breed": "POCKET BULLY",
-          "count": 1
-        },
-        {
-          "breed": "BREED UNKNOWN",
           "count": 1
         },
         {
@@ -6193,12 +6193,12 @@
     },
     "signature_breed": {
       "DOG": {
-        "breed": "GOLDEN RETR - P",
-        "ratio": 63.59
+        "breed": "HARRIER",
+        "ratio": 38.15
       },
       "CAT": {
-        "breed": "CALICO",
-        "ratio": 58.5
+        "breed": "BURMESE",
+        "ratio": 2.88
       }
     },
     "per_capita_rate": 0.092393
@@ -6221,13 +6221,13 @@
         },
         {
           "breed": "GERM SHEPHERD",
-          "count": 39
+          "count": 40
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 217
+          "count": 218
         },
         {
           "breed": "DOMESTIC MH",
@@ -6242,7 +6242,7 @@
     "rare_breeds": {
       "DOG": [
         {
-          "breed": "KING SHEPPARD",
+          "breed": "PYREN SHEPHERD",
           "count": 1
         },
         {
@@ -6250,7 +6250,7 @@
           "count": 1
         },
         {
-          "breed": "BELGIAN SHEPHER",
+          "breed": "BELG MALINOIS",
           "count": 1
         },
         {
@@ -6264,15 +6264,15 @@
       ],
       "CAT": [
         {
+          "breed": "BRITISH SH",
+          "count": 1
+        },
+        {
           "breed": "JAPAN BOBTAIL",
           "count": 1
         },
         {
           "breed": "KORAT",
-          "count": 1
-        },
-        {
-          "breed": "TABBY CAT",
           "count": 1
         },
         {
@@ -6307,11 +6307,11 @@
       "DOG": [
         {
           "breed": "LABRADOR RETR",
-          "count": 271
+          "count": 278
         },
         {
           "breed": "GOLDEN RETR",
-          "count": 199
+          "count": 201
         },
         {
           "breed": "POODLE MIN",
@@ -6374,7 +6374,7 @@
           "count": 1
         },
         {
-          "breed": "BREED UNKNOWN",
+          "breed": "UNKNOWN",
           "count": 1
         }
       ]
@@ -6408,7 +6408,7 @@
           "count": 307
         },
         {
-          "breed": "COCKER SPAN",
+          "breed": "COCKER SPANIEL",
           "count": 113
         }
       ],
@@ -6430,23 +6430,23 @@
     "rare_breeds": {
       "DOG": [
         {
+          "breed": "NEWFOUNDLAND",
+          "count": 1
+        },
+        {
+          "breed": "PAPILLON",
+          "count": 1
+        },
+        {
+          "breed": "BELDI",
+          "count": 1
+        },
+        {
           "breed": "STAFFORDSHIRE",
           "count": 1
         },
         {
-          "breed": "ENG COCKER SPAN",
-          "count": 1
-        },
-        {
           "breed": "BICHON POODLE X",
-          "count": 1
-        },
-        {
-          "breed": "BREED UNKNOWN",
-          "count": 1
-        },
-        {
-          "breed": "BAHAMIAN POTCAK",
           "count": 1
         }
       ],
@@ -6495,7 +6495,7 @@
       "DOG": [
         {
           "breed": "LABRADOR RETR",
-          "count": 80
+          "count": 82
         },
         {
           "breed": "GERM SHEPHERD",
@@ -6509,7 +6509,7 @@
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 357
+          "count": 363
         },
         {
           "breed": "DOMESTIC MH",
@@ -6524,7 +6524,11 @@
     "rare_breeds": {
       "DOG": [
         {
-          "breed": "DOGUE DE BORDX",
+          "breed": "BULLDOG",
+          "count": 1
+        },
+        {
+          "breed": "DOGUE DE BORDEA",
           "count": 1
         },
         {
@@ -6536,29 +6540,25 @@
           "count": 1
         },
         {
-          "breed": "AMERICAN BULLDO",
-          "count": 1
-        },
-        {
           "breed": "ENG BULLDOG",
           "count": 1
         }
       ],
       "CAT": [
         {
+          "breed": "AMER SH",
+          "count": 3
+        },
+        {
+          "breed": "HIMALAYAN",
+          "count": 3
+        },
+        {
           "breed": "MAINE COON",
           "count": 1
         },
         {
           "breed": "BOMBAY",
-          "count": 1
-        },
-        {
-          "breed": "ORANGE TABBY",
-          "count": 1
-        },
-        {
-          "breed": "BLACK",
           "count": 1
         },
         {
@@ -6573,8 +6573,8 @@
         "ratio": 69.51
       },
       "CAT": {
-        "breed": "DOMESTIC SHORT-",
-        "ratio": 85.65
+        "breed": "RAGDOLL",
+        "ratio": 2.91
       }
     },
     "per_capita_rate": 0.049557
@@ -6603,7 +6603,7 @@
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 170
+          "count": 172
         },
         {
           "breed": "DOMESTIC LH",
@@ -6622,7 +6622,7 @@
           "count": 1
         },
         {
-          "breed": "CHINESE SHARPEI",
+          "breed": "CHINESE SHAR-PE",
           "count": 1
         },
         {
@@ -6634,17 +6634,17 @@
           "count": 1
         },
         {
-          "breed": "CAVALIER SPAN",
+          "breed": "CAVALIER SPANIEL",
           "count": 1
         }
       ],
       "CAT": [
         {
-          "breed": "AMER SH",
-          "count": 2
+          "breed": "RUSSIAN BLUE",
+          "count": 3
         },
         {
-          "breed": "SHORT HAIRED CA",
+          "breed": "AMER SH",
           "count": 2
         },
         {
@@ -6712,19 +6712,19 @@
     "rare_breeds": {
       "DOG": [
         {
+          "breed": "JINDO",
+          "count": 1
+        },
+        {
+          "breed": "BASENJI",
+          "count": 1
+        },
+        {
+          "breed": "MIX",
+          "count": 1
+        },
+        {
           "breed": "GREAT PYRENEES",
-          "count": 1
-        },
-        {
-          "breed": "AMER BULLDOG",
-          "count": 1
-        },
-        {
-          "breed": "AMERICAN BULLDO",
-          "count": 1
-        },
-        {
-          "breed": "SHORT HAIRED CH",
           "count": 1
         },
         {
@@ -6757,8 +6757,8 @@
     },
     "signature_breed": {
       "DOG": {
-        "breed": "GOLDENDOODLE",
-        "ratio": 124.56
+        "breed": "IRISH WATR SPAN",
+        "ratio": 35.59
       },
       "CAT": {
         "breed": "BOMBAY",
@@ -6806,7 +6806,11 @@
     "rare_breeds": {
       "DOG": [
         {
-          "breed": "STANDARD SCHNAU",
+          "breed": "ENG FOXHOUND",
+          "count": 1
+        },
+        {
+          "breed": "KANGAL",
           "count": 1
         },
         {
@@ -6819,10 +6823,6 @@
         },
         {
           "breed": "BULL TERRIER",
-          "count": 1
-        },
-        {
-          "breed": "SPANISH MASTIFF",
           "count": 1
         }
       ],
@@ -6856,7 +6856,7 @@
       },
       "CAT": {
         "breed": "AMER SH",
-        "ratio": 2.84
+        "ratio": 2.81
       }
     },
     "per_capita_rate": 0.105795
@@ -6871,14 +6871,14 @@
       "DOG": [
         {
           "breed": "LABRADOR RETR",
-          "count": 190
+          "count": 191
         },
         {
           "breed": "GOLDEN RETR",
           "count": 165
         },
         {
-          "breed": "COCKER SPAN",
+          "breed": "COCKER SPANIEL",
           "count": 81
         }
       ],
@@ -6900,15 +6900,15 @@
     "rare_breeds": {
       "DOG": [
         {
-          "breed": "MICRO AMERICAN",
+          "breed": "ROTTWEILER",
           "count": 1
         },
         {
-          "breed": "LAGOTTO ROMAGNO",
+          "breed": "AMERICAN BULLY",
           "count": 1
         },
         {
-          "breed": "LABRADOR RETRIE",
+          "breed": "LAGOTTO",
           "count": 1
         },
         {
@@ -6916,7 +6916,7 @@
           "count": 1
         },
         {
-          "breed": "CAVAPOO (CAVALI",
+          "breed": "CAVAPOO",
           "count": 1
         }
       ],
@@ -6945,8 +6945,8 @@
     },
     "signature_breed": {
       "DOG": {
-        "breed": "MINI GOLDENDOOD",
-        "ratio": 58.69
+        "breed": "GOLDENDOODLE",
+        "ratio": 11.74
       },
       "CAT": {
         "breed": "ABYSSINIAN",
@@ -7010,7 +7010,7 @@
           "count": 1
         },
         {
-          "breed": "CAVALIER SPAN",
+          "breed": "CAVALIER SPANIEL",
           "count": 1
         }
       ],
@@ -7059,7 +7059,7 @@
       "DOG": [
         {
           "breed": "GOLDEN RETR",
-          "count": 315
+          "count": 316
         },
         {
           "breed": "LABRADOR RETR",
@@ -7067,13 +7067,13 @@
         },
         {
           "breed": "POODLE MIN",
-          "count": 159
+          "count": 160
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 1066
+          "count": 1070
         },
         {
           "breed": "DOMESTIC MH",
@@ -7088,19 +7088,19 @@
     "rare_breeds": {
       "DOG": [
         {
+          "breed": "GOLDENDOODLE",
+          "count": 1
+        },
+        {
+          "breed": "IRISH SETTER",
+          "count": 1
+        },
+        {
           "breed": "GERMAN PINSCHER",
           "count": 1
         },
         {
           "breed": "TOY FOX TERRIER",
-          "count": 1
-        },
-        {
-          "breed": "BREED UNKNOWN",
-          "count": 1
-        },
-        {
-          "breed": "MINIATURE POODL",
           "count": 1
         },
         {
@@ -7186,7 +7186,7 @@
           "count": 1
         },
         {
-          "breed": "DSH",
+          "breed": "DOMESTIC SH",
           "count": 1
         },
         {
@@ -7232,7 +7232,7 @@
       },
       "CAT": {
         "breed": "SCOTTISH FOLD",
-        "ratio": 8.24
+        "ratio": 7.96
       }
     },
     "per_capita_rate": 0.025793
@@ -7251,7 +7251,7 @@
         },
         {
           "breed": "GERM SHEPHERD",
-          "count": 77
+          "count": 79
         },
         {
           "breed": "SHIH TZU",
@@ -7261,7 +7261,7 @@
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 760
+          "count": 761
         },
         {
           "breed": "DOMESTIC MH",
@@ -7276,7 +7276,11 @@
     "rare_breeds": {
       "DOG": [
         {
-          "breed": "AM PIT BULL TER",
+          "breed": "LAKELAND TERR",
+          "count": 1
+        },
+        {
+          "breed": "PIT BULL",
           "count": 1
         },
         {
@@ -7288,15 +7292,15 @@
           "count": 1
         },
         {
-          "breed": "BREED UNKNOWN",
-          "count": 1
-        },
-        {
           "breed": "MALTESE MIX",
           "count": 1
         }
       ],
       "CAT": [
+        {
+          "breed": "TURKISH ANGORA",
+          "count": 3
+        },
         {
           "breed": "BRITISH SH",
           "count": 2
@@ -7308,10 +7312,6 @@
         {
           "breed": "PIXIEBOB SH",
           "count": 2
-        },
-        {
-          "breed": "TUXEDO CAT",
-          "count": 1
         },
         {
           "breed": "BENGAL MIX",
@@ -7341,7 +7341,7 @@
       "DOG": [
         {
           "breed": "GOLDEN RETR",
-          "count": 126
+          "count": 128
         },
         {
           "breed": "LABRADOR RETR",
@@ -7370,15 +7370,15 @@
     "rare_breeds": {
       "DOG": [
         {
+          "breed": "RHOD RIDGEBACK",
+          "count": 1
+        },
+        {
           "breed": "DACHSHUND LH",
           "count": 1
         },
         {
           "breed": "AMERICAN STAFF",
-          "count": 1
-        },
-        {
-          "breed": "MINIATURE POODL",
           "count": 1
         },
         {
@@ -7415,8 +7415,8 @@
     },
     "signature_breed": {
       "DOG": {
-        "breed": "NEAPOLITAN MAST",
-        "ratio": 80.16
+        "breed": "NORW BUHUND",
+        "ratio": 13.87
       },
       "CAT": {
         "breed": "EUROPEAN SH",
@@ -7449,7 +7449,7 @@
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 795
+          "count": 797
         },
         {
           "breed": "DOMESTIC MH",
@@ -7464,19 +7464,19 @@
     "rare_breeds": {
       "DOG": [
         {
+          "breed": "YORKIE MALTESE",
+          "count": 1
+        },
+        {
+          "breed": "PYREN SHEPHERD",
+          "count": 1
+        },
+        {
           "breed": "DALMATIAN",
           "count": 1
         },
         {
           "breed": "WELSH TERRIER",
-          "count": 1
-        },
-        {
-          "breed": "SHORT HAIRED CH",
-          "count": 1
-        },
-        {
-          "breed": "MIX DE YORKSHIR",
           "count": 1
         },
         {
@@ -7486,8 +7486,8 @@
       ],
       "CAT": [
         {
-          "breed": "SHORT HAIR DOME",
-          "count": 2
+          "breed": "EGYPTIAN MAU",
+          "count": 4
         },
         {
           "breed": "EXOTIC SH",
@@ -7509,8 +7509,8 @@
     },
     "signature_breed": {
       "DOG": {
-        "breed": "HUNGARIAN VISZL",
-        "ratio": 74.07
+        "breed": "SCHIPPERKE",
+        "ratio": 21.16
       },
       "CAT": {
         "breed": "TURKISH ANGORA",
@@ -7558,11 +7558,11 @@
     "rare_breeds": {
       "DOG": [
         {
-          "breed": "NEWFOUNDLAND",
+          "breed": "GREYHOUND",
           "count": 1
         },
         {
-          "breed": "MIXED - BEAGLE",
+          "breed": "NEWFOUNDLAND",
           "count": 1
         },
         {
@@ -7604,11 +7604,11 @@
     "signature_breed": {
       "DOG": {
         "breed": "ICELND SHEEPDOG",
-        "ratio": 75.75
+        "ratio": 32.46
       },
       "CAT": {
         "breed": "AMER SH",
-        "ratio": 4.58
+        "ratio": 4.53
       }
     },
     "per_capita_rate": 0.150642
@@ -7627,17 +7627,17 @@
         },
         {
           "breed": "GOLDEN RETR",
-          "count": 43
+          "count": 44
         },
         {
           "breed": "CHIHUAHUA SH",
-          "count": 32
+          "count": 33
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 371
+          "count": 375
         },
         {
           "breed": "DOMESTIC MH",
@@ -7678,7 +7678,7 @@
           "count": 2
         },
         {
-          "breed": "BREED UNKNOWN",
+          "breed": "UNKNOWN",
           "count": 2
         },
         {
@@ -7701,8 +7701,8 @@
         "ratio": 204.47
       },
       "CAT": {
-        "breed": "TORTOISE",
-        "ratio": 81.02
+        "breed": "TURKISH VAN",
+        "ratio": 13.02
       }
     },
     "per_capita_rate": 0.07766
@@ -7721,7 +7721,7 @@
         },
         {
           "breed": "GERM SHEPHERD",
-          "count": 85
+          "count": 86
         },
         {
           "breed": "AMER BULLDOG",
@@ -7746,15 +7746,15 @@
     "rare_breeds": {
       "DOG": [
         {
+          "breed": "DOBERMAN PINSCHER",
+          "count": 1
+        },
+        {
           "breed": "AMERICAN STAFF",
           "count": 1
         },
         {
           "breed": "BERNESE MTN DOG",
-          "count": 1
-        },
-        {
-          "breed": "PATTERDALE TERR",
           "count": 1
         },
         {
@@ -7780,7 +7780,7 @@
           "count": 1
         },
         {
-          "breed": "UNSURE",
+          "breed": "UNKNOWN",
           "count": 1
         },
         {
@@ -7811,11 +7811,11 @@
       "DOG": [
         {
           "breed": "LABRADOR RETR",
-          "count": 172
+          "count": 176
         },
         {
           "breed": "CHIHUAHUA SH",
-          "count": 88
+          "count": 89
         },
         {
           "breed": "GOLDEN RETR",
@@ -7840,19 +7840,19 @@
     "rare_breeds": {
       "DOG": [
         {
+          "breed": "KUVASZ",
+          "count": 1
+        },
+        {
+          "breed": "SALUKI",
+          "count": 1
+        },
+        {
           "breed": "PAPILLON",
           "count": 1
         },
         {
-          "breed": "BREED UNKNOWN",
-          "count": 1
-        },
-        {
           "breed": "SCOT TERRIER",
-          "count": 1
-        },
-        {
-          "breed": "SHORT HAIRED CH",
           "count": 1
         },
         {
@@ -7862,11 +7862,11 @@
       ],
       "CAT": [
         {
-          "breed": "DEVON REX",
+          "breed": "NORWGN FOREST",
           "count": 1
         },
         {
-          "breed": "MIX OF MAINE CO",
+          "breed": "DEVON REX",
           "count": 1
         },
         {
@@ -7878,15 +7878,15 @@
           "count": 1
         },
         {
-          "breed": "BREED UNKNOWN",
+          "breed": "UNKNOWN",
           "count": 1
         }
       ]
     },
     "signature_breed": {
       "DOG": {
-        "breed": "WEST HIGHLAND T",
-        "ratio": 24.85
+        "breed": "DACHSHUND WH",
+        "ratio": 14.87
       },
       "CAT": {
         "breed": "MUNCHKIN SH",
@@ -7905,7 +7905,7 @@
       "DOG": [
         {
           "breed": "LABRADOR RETR",
-          "count": 113
+          "count": 114
         },
         {
           "breed": "GERM SHEPHERD",
@@ -7934,15 +7934,15 @@
     "rare_breeds": {
       "DOG": [
         {
+          "breed": "MALTESE MIX",
+          "count": 1
+        },
+        {
           "breed": "PIT BULL MIX",
           "count": 1
         },
         {
-          "breed": "LAGOTTO ROMAGNO",
-          "count": 1
-        },
-        {
-          "breed": "LABRADOR RETRIE",
+          "breed": "LAGOTTO",
           "count": 1
         },
         {
@@ -7979,8 +7979,8 @@
     },
     "signature_breed": {
       "DOG": {
-        "breed": "MCNAB MIX",
-        "ratio": 136.2
+        "breed": "KERRY BLUE TERR",
+        "ratio": 26.58
       },
       "CAT": {
         "breed": "EUROPEAN SH",
@@ -7999,7 +7999,7 @@
       "DOG": [
         {
           "breed": "LABRADOR RETR",
-          "count": 336
+          "count": 338
         },
         {
           "breed": "GOLDEN RETR",
@@ -8007,7 +8007,7 @@
         },
         {
           "breed": "GERM SHEPHERD",
-          "count": 155
+          "count": 158
         }
       ],
       "CAT": [
@@ -8028,23 +8028,23 @@
     "rare_breeds": {
       "DOG": [
         {
+          "breed": "CHINESE SHAR-PE",
+          "count": 1
+        },
+        {
+          "breed": "MORKIE",
+          "count": 1
+        },
+        {
+          "breed": "BERNEDOODLE",
+          "count": 1
+        },
+        {
           "breed": "BASENJI",
           "count": 1
         },
         {
-          "breed": "CANE CORSO MIX",
-          "count": 1
-        },
-        {
-          "breed": "AMERICAN BULLDO",
-          "count": 1
-        },
-        {
-          "breed": "OLD ENG BULLDOG",
-          "count": 1
-        },
-        {
-          "breed": "MAREMMA SHEEPDG",
+          "breed": "MAREMMA SHEEPDOG",
           "count": 1
         }
       ],
@@ -8073,8 +8073,8 @@
     },
     "signature_breed": {
       "DOG": {
-        "breed": "GERMAN SHEPPHER",
-        "ratio": 52.86
+        "breed": "ENG SHEPHERD",
+        "ratio": 21.14
       },
       "CAT": {
         "breed": "OCICAT",
@@ -8111,7 +8111,7 @@
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 31
+          "count": 32
         },
         {
           "breed": "DOMESTIC MH",
@@ -8122,7 +8122,11 @@
     "rare_breeds": {
       "DOG": [
         {
-          "breed": "SC WHEAT TERR",
+          "breed": "MAREMMA SHEEPDOG",
+          "count": 1
+        },
+        {
+          "breed": "WHEATEN TERRIER",
           "count": 1
         },
         {
@@ -8136,13 +8140,13 @@
         {
           "breed": "PAPILLON",
           "count": 1
-        },
-        {
-          "breed": "IRISH SETTER",
-          "count": 1
         }
       ],
       "CAT": [
+        {
+          "breed": "BENGAL",
+          "count": 1
+        },
         {
           "breed": "BALINESE",
           "count": 1
@@ -8153,10 +8157,6 @@
         },
         {
           "breed": "HIMALAYAN",
-          "count": 1
-        },
-        {
-          "breed": "DOMESTIC LONGHA",
           "count": 1
         },
         {
@@ -8216,6 +8216,10 @@
     "rare_breeds": {
       "DOG": [
         {
+          "breed": "ANATOLIAN SHEPHERD",
+          "count": 1
+        },
+        {
           "breed": "CHINESE CRESTED",
           "count": 1
         },
@@ -8230,27 +8234,23 @@
         {
           "breed": "DOGO ARGENTINO",
           "count": 1
-        },
-        {
-          "breed": "BELGIAN MALINOI",
-          "count": 1
         }
       ],
       "CAT": [
+        {
+          "breed": "SCOTTISH FOLD",
+          "count": 2
+        },
+        {
+          "breed": "BALINESE",
+          "count": 1
+        },
         {
           "breed": "BOMBAY",
           "count": 1
         },
         {
           "breed": "ORIENTAL SH",
-          "count": 1
-        },
-        {
-          "breed": "AMER SH",
-          "count": 1
-        },
-        {
-          "breed": "TABBY AMERICAN",
           "count": 1
         },
         {
@@ -8378,12 +8378,12 @@
           "count": 72
         },
         {
-          "breed": "CHIHUAHUA SH",
+          "breed": "LABRADOR RETR",
           "count": 62
         },
         {
-          "breed": "LABRADOR RETR",
-          "count": 61
+          "breed": "CHIHUAHUA SH",
+          "count": 62
         }
       ],
       "CAT": [
@@ -8412,7 +8412,7 @@
           "count": 1
         },
         {
-          "breed": "ANATOL SHEPHERD",
+          "breed": "ANATOLIAN SHEPHERD",
           "count": 1
         },
         {
@@ -8454,7 +8454,7 @@
       },
       "CAT": {
         "breed": "SCOTTISH FOLD",
-        "ratio": 1.48
+        "ratio": 1.43
       }
     },
     "per_capita_rate": 0.037458
@@ -8600,7 +8600,7 @@
           "count": 1
         },
         {
-          "breed": "SPANIEL (AMERIC",
+          "breed": "AMERICAN COCKER",
           "count": 1
         },
         {
@@ -8686,11 +8686,15 @@
     "rare_breeds": {
       "DOG": [
         {
-          "breed": "UKNOWN",
+          "breed": "WHEATEN TERRIER",
           "count": 1
         },
         {
-          "breed": "CHUAHWA",
+          "breed": "ITAL GREYHOUND",
+          "count": 1
+        },
+        {
+          "breed": "CHIHUAHUA",
           "count": 1
         },
         {
@@ -8699,10 +8703,6 @@
         },
         {
           "breed": "NORFOLK TERRIER",
-          "count": 1
-        },
-        {
-          "breed": "MINIATURE SCHNA",
           "count": 1
         }
       ],
@@ -8731,8 +8731,8 @@
     },
     "signature_breed": {
       "DOG": {
-        "breed": "POTCAKE - MIXED",
-        "ratio": 191.74
+        "breed": "CIRNECO",
+        "ratio": 143.8
       },
       "CAT": {
         "breed": "BOMBAY",
@@ -8759,7 +8759,7 @@
         },
         {
           "breed": "POODLE MIN",
-          "count": 43
+          "count": 47
         }
       ],
       "CAT": [
@@ -8780,6 +8780,10 @@
     "rare_breeds": {
       "DOG": [
         {
+          "breed": "ENG COONHOUND",
+          "count": 1
+        },
+        {
           "breed": "ENG SETTER",
           "count": 1
         },
@@ -8793,10 +8797,6 @@
         },
         {
           "breed": "LHASA APSO",
-          "count": 1
-        },
-        {
-          "breed": "MINIATURE SCHNA",
           "count": 1
         }
       ],
@@ -8825,8 +8825,8 @@
     },
     "signature_breed": {
       "DOG": {
-        "breed": "MINIATURE POODL",
-        "ratio": 16.99
+        "breed": "TOY FOX TERRIER",
+        "ratio": 15.43
       },
       "CAT": {
         "breed": "SAVANNAH",
@@ -8874,19 +8874,19 @@
     "rare_breeds": {
       "DOG": [
         {
+          "breed": "AMERICAN BULLY",
+          "count": 1
+        },
+        {
+          "breed": "BELG MALINOIS",
+          "count": 1
+        },
+        {
           "breed": "BULL TERRIER",
           "count": 1
         },
         {
-          "breed": "CAVACHON (CAVAL",
-          "count": 1
-        },
-        {
           "breed": "CHIHUAHUA MIX",
-          "count": 1
-        },
-        {
-          "breed": "PIT BULL",
           "count": 1
         },
         {
@@ -8965,7 +8965,7 @@
     "top_breeds": {
       "DOG": [
         {
-          "breed": "SHIHPOO",
+          "breed": "SHIH POO",
           "count": 2
         },
         {
@@ -8983,7 +8983,7 @@
     "rare_breeds": {
       "DOG": [
         {
-          "breed": "SHIHPOO",
+          "breed": "SHIH POO",
           "count": 2
         },
         {
@@ -9124,8 +9124,8 @@
     "signature_breed": {},
     "per_capita_rate": null
   },
-  "null": {
-    "neighbourhood": null,
+  "": {
+    "neighbourhood": "",
     "dog_count": 265,
     "cat_count": 175,
     "total": 440,
@@ -9142,7 +9142,7 @@
         },
         {
           "breed": "LABRADOR RETR",
-          "count": 17
+          "count": 18
         }
       ],
       "CAT": [
@@ -9163,7 +9163,11 @@
     "rare_breeds": {
       "DOG": [
         {
-          "breed": "COCKAPOO (COCKE",
+          "breed": "LHASA APSO",
+          "count": 1
+        },
+        {
+          "breed": "COCKAPOO",
           "count": 1
         },
         {
@@ -9171,15 +9175,11 @@
           "count": 1
         },
         {
-          "breed": "MINIATURE POODL",
-          "count": 1
-        },
-        {
           "breed": "WEST HIGHLAND",
           "count": 1
         },
         {
-          "breed": "MAREMMA SHEEPDG",
+          "breed": "MAREMMA SHEEPDOG",
           "count": 1
         }
       ],
@@ -9209,7 +9209,7 @@
     "signature_breed": {
       "DOG": {
         "breed": "PRESA CANARIO",
-        "ratio": 16.29
+        "ratio": 16.2
       },
       "CAT": {
         "breed": "RUSSIAN BLUE",
@@ -9265,7 +9265,7 @@
           "count": 1
         },
         {
-          "breed": "SPANIEL (ENGLIS",
+          "breed": "ENG COCKER SPAN",
           "count": 1
         },
         {
@@ -9525,7 +9525,7 @@
     "signature_breed": {
       "DOG": {
         "breed": "GOLDEN RETR",
-        "ratio": 12.68
+        "ratio": 12.64
       }
     },
     "per_capita_rate": null
@@ -9629,7 +9629,7 @@
     "signature_breed": {
       "DOG": {
         "breed": "AUST SHEPHERD",
-        "ratio": 38.5
+        "ratio": 38.44
       }
     },
     "per_capita_rate": null
@@ -9697,7 +9697,7 @@
     "top_breeds": {
       "DOG": [
         {
-          "breed": "PATTERDALE TERR",
+          "breed": "TERRIER",
           "count": 1
         }
       ],
@@ -9706,7 +9706,7 @@
     "rare_breeds": {
       "DOG": [
         {
-          "breed": "PATTERDALE TERR",
+          "breed": "TERRIER",
           "count": 1
         }
       ],
@@ -9724,7 +9724,7 @@
     "top_breeds": {
       "DOG": [
         {
-          "breed": "DOBERMAN PINSCH",
+          "breed": "DOBERMAN PINSCHER",
           "count": 1
         }
       ],
@@ -9733,7 +9733,7 @@
     "rare_breeds": {
       "DOG": [
         {
-          "breed": "DOBERMAN PINSCH",
+          "breed": "DOBERMAN PINSCHER",
           "count": 1
         }
       ],

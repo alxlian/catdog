@@ -12,6 +12,7 @@ from pipeline.pull import pull_license_data
 from pipeline.names import load_names, aggregate_names
 from pipeline.aggregate import aggregate_fsa_summary, aggregate_breed_trends, aggregate_citywide
 from pipeline.rarity import compute_breed_list
+from pipeline.breed_normalize import normalize_records
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CACHE_DIR = os.path.join(PROJECT_ROOT, "pipeline", "cache")
@@ -36,8 +37,14 @@ def main():
 
     print("Pulling license data...")
     cache_path = os.path.join(CACHE_DIR, "licensed-dogs-cats.csv")
-    records = pull_license_data(cache_path)
-    print(f"  {len(records)} records loaded")
+    records_raw = pull_license_data(cache_path)
+    print(f"  {len(records_raw)} records loaded")
+
+    print("Normalizing breed names...")
+    records = normalize_records(records_raw)
+    unique_before = len(set(r["PRIMARY_BREED"] for r in records_raw))
+    unique_after = len(set(r["PRIMARY_BREED"] for r in records))
+    print(f"  {unique_before} unique breeds -> {unique_after} after normalization")
 
     print("Loading names data...")
     name_records_raw = load_names(NAMES_CSV)
