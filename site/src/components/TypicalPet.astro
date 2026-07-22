@@ -65,26 +65,33 @@ const mostDominant = dominanceRanking.slice(0, 5);
 function isCleanBreedName(name: string) {
   if (name.length < 4) return false;
   if (name.endsWith('-') || name.endsWith(' ')) return false;
+  // Skip truncated names with unclosed parentheses
+  if (name.includes('(') && !name.includes(')')) return false;
   // Skip names that look truncated (end with a partial word < 3 chars after last space)
   const parts = name.trim().split(/\s+/);
   const lastPart = parts[parts.length - 1];
   if (parts.length > 1 && lastPart.length <= 2 && !['SH', 'LH', 'MH'].includes(lastPart)) return false;
+  // Skip cat breeds that are likely data entry errors
+  const catBreeds = ['SIAMESE', 'SPHYNX', 'RAGDOLL', 'SCOTTISH FOLD', 'DOMESTIC LH', 'DOMESTIC SH', 'DOMESTIC MH', 'PERSIAN', 'BENGAL', 'MAINE COON', 'BRITISH SH'];
+  if (catBreeds.some(cb => name === cb || name.startsWith(cb + ' '))) return false;
   return true;
 }
-const breedFsaCounts: Record<string, { count: number; fsa: string; neighbourhood: string }> = {};
+// Compute citywide totals per breed (dogs only)
+const breedCitywideTotals: Record<string, number> = {};
 for (const row of (breedList as any[])) {
-  if (row.species !== 'DOG' || !geoFsas.has(row.fsa) || row.count > 1) continue;
-  if (!isCleanBreedName(row.breed)) continue;
-  if (!breedFsaCounts[row.breed]) {
-    const summary = (fsaSummary as any)[row.fsa];
-    breedFsaCounts[row.breed] = { count: 0, fsa: row.fsa, neighbourhood: summary?.neighbourhood || row.fsa };
-  }
-  breedFsaCounts[row.breed].count++;
+  if (row.species !== 'DOG') continue;
+  breedCitywideTotals[row.breed] = (breedCitywideTotals[row.breed] || 0) + row.count;
 }
-const oneOfAKind = Object.entries(breedFsaCounts)
-  .filter(([, v]) => v.count === 1)
-  .map(([breed, v]) => ({ breed, fsa: v.fsa, neighbourhood: v.neighbourhood }))
-  .slice(0, 10);
+// Find breeds with exactly 1 registered dog in all of Toronto
+const oneOfAKind: { breed: string; fsa: string; neighbourhood: string }[] = [];
+for (const row of (breedList as any[])) {
+  if (row.species !== 'DOG' || !geoFsas.has(row.fsa)) continue;
+  if (!isCleanBreedName(row.breed)) continue;
+  if (breedCitywideTotals[row.breed] !== 1) continue;
+  const summary = (fsaSummary as any)[row.fsa];
+  oneOfAKind.push({ breed: row.breed, fsa: row.fsa, neighbourhood: summary?.neighbourhood || row.fsa });
+  if (oneOfAKind.length >= 10) break;
+}
 ---
 
 <section id="typical">
