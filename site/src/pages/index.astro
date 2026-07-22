@@ -181,7 +181,11 @@ const dogRatio = Math.round((yearlyTotals[lastFullYear].DOG / lastTotal) * 100);
     if (body) body.style.maxHeight = body.scrollHeight + 'px';
   }
 
-  // No JS needed for tooltips — handled via CSS :hover on parent .scene-link
+  // On mobile, start scrolled 25% in so scene elements are visible
+  if (window.innerWidth <= 768) {
+    const scrollTarget = (document.body.scrollWidth - window.innerWidth) * 0.25;
+    document.documentElement.scrollLeft = scrollTarget;
+  }
 
   // Info panel toggle
   const infoBtn = document.getElementById('info-btn');
@@ -437,23 +441,26 @@ const dogRatio = Math.round((yearlyTotals[lastFullYear].DOG / lastTotal) * 100);
   @media (max-width: 768px) {
     html {
       height: 100vh;
-      overflow: hidden;
+      overflow-x: auto;
+      overflow-y: hidden;
+      overscroll-behavior-x: none;
       background: transparent;
     }
 
     body {
       min-width: 1200px;
       height: 100vh;
-      overflow-x: scroll;
-      overflow-y: hidden;
-      overscroll-behavior-x: none;
-      -webkit-overflow-scrolling: touch;
+      overflow: visible;
       position: relative;
     }
 
     .preview-content {
+      position: fixed;
+      top: 0;
+      left: 0;
       padding: 20px 0 0 20px;
       max-width: 300px;
+      z-index: 10;
     }
 
     .accordion {
