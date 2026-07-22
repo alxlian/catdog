@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gantari:wght@400;500;600;700;800&display=swap');
 
 :root {
   /* Palette */
@@ -11,7 +11,7 @@
   --text: #252422;
   --text-muted: #403D39;
   --sidebar-border: #CCC5B9;
-  --font: 'Lexend', system-ui, sans-serif;
+  --font: 'Gantari', system-ui, sans-serif;
 
   /* Legacy compat for existing components */
   --navy: #252422;
@@ -20,7 +20,6 @@
   --gray: #403D39;
   --gray-light: #CCC5B9;
 
-  --sidebar-width: 310px;
 }
 
 *, *::before, *::after {
@@ -39,7 +38,7 @@ body {
   font-size: 1rem;
   line-height: 1.6;
   color: var(--text);
-  background: var(--bg);
+  background: transparent;
 }
 
 h1, h2, h3 {
@@ -51,15 +50,14 @@ h1 { font-size: 3rem; }
 h2 { font-size: 2rem; margin-bottom: 1rem; }
 h3 { font-size: 1.25rem; }
 
-/* Sidebar layout */
 body {
   display: flex;
+  flex-direction: column;
   min-height: 100vh;
 }
 
 main {
   flex: 1;
-  margin-left: var(--sidebar-width);
   min-width: 0;
   display: flex;
   flex-direction: column;
@@ -71,7 +69,7 @@ main {
 }
 
 section {
-  padding: 4rem clamp(1rem, 5vw, 175px);
+  padding: 4rem clamp(1rem, 3vw, 3rem);
 }
 
 a {
@@ -86,9 +84,6 @@ strong, b {
 }
 
 @media (max-width: 768px) {
-  :root { --sidebar-width: 0px; }
-  body { flex-direction: column; }
-  main { margin-left: 0; }
   h1 { font-size: 2rem; }
   h2 { font-size: 1.5rem; }
   section { padding: 2rem 1rem; }

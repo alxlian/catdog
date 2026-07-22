@@ -113,7 +113,7 @@ function renderTrendChart(container, legendContainer, data) {
   const svg = d3.select(container)
     .append('svg')
     .attr('viewBox', `0 0 ${width} ${height}`)
-    .style('font-family', "'Lexend', system-ui, sans-serif")
+    .style('font-family', "'Gantari', system-ui, sans-serif")
     .style('overflow', 'visible')
     .append('g')
     .attr('transform', `translate(${margin.left},${margin.top})`);

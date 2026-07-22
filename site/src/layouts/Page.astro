@@ -1,0 +1,66 @@
+---
+import '../styles/global.css';
+import '../styles/components.css';
+
+interface Props {
+  title?: string;
+}
+const { title = 'Pets of Toronto' } = Astro.props;
+---
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{title}</title>
+  <meta name="description" content="Exploring Toronto's licensed dogs and cats. Breeds, names, and neighbourhoods, visualized from City of Toronto open data." />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+</head>
+<body>
+  <main class="page-main">
+    <a href="/" class="go-back">[Go Back]</a>
+    <div class="page-content">
+      <slot />
+    </div>
+  </main>
+</body>
+</html>
+
+<style>
+  body {
+    background: #F9F3EC;
+  }
+
+  .page-main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .go-back {
+    position: fixed;
+    top: 24px;
+    left: 24px;
+    font-family: var(--font);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text);
+    text-decoration: none;
+    z-index: 100;
+    opacity: 0.7;
+    transition: opacity 0.15s;
+  }
+
+  .go-back:hover {
+    opacity: 1;
+    text-decoration: none;
+  }
+
+  .page-content {
+    flex: 1;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 4rem clamp(1rem, 3vw, 3rem);
+  }
+</style>

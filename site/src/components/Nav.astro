@@ -6,7 +6,10 @@ const isHome = currentPath === '/';
 
 <nav id="sidebar-nav">
   <div class="sidebar-inner">
-    <h1 class="sidebar-title">Pets TO</h1>
+    <div class="sidebar-title-row">
+      <h1 class="sidebar-title">Pets TO</h1>
+      <span class="toronto-clock" id="toronto-clock"></span>
+    </div>
 
     <div class="nav-menu">
       <a href="/" class:list={["nav-item", "nav-pill", { active: isHome }]}>
@@ -45,6 +48,13 @@ const isHome = currentPath === '/';
       <span>Adopt!</span>
     </a>
 
+    <div class="bg-toggle" id="bg-toggle">
+      <button class="bg-btn" data-bg="sunrise">Sunrise</button>
+      <button class="bg-btn" data-bg="day">Day</button>
+      <button class="bg-btn" data-bg="sunset">Sunset</button>
+      <button class="bg-btn" data-bg="night">Night</button>
+    </div>
+
     <div class="sidebar-footer">
       <p>Data last processed: {new Date(metadata.generated_at).toLocaleDateString('en-CA')}</p>
       <p>Covering license years {metadata.year_range[0]}&ndash;{metadata.year_range[1]}</p>
@@ -60,28 +70,45 @@ const isHome = currentPath === '/';
 <style>
   #sidebar-nav {
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 25px;
+    left: 27px;
     width: var(--sidebar-width);
-    height: 100vh;
-    background: var(--sidebar-bg);
-    border-right: 1px solid var(--sidebar-border);
+    height: calc(100vh - 50px);
+    background: rgba(255, 252, 242, 0.25);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid #828282;
+    border-radius: 25px;
     z-index: 50;
+    overflow: hidden;
   }
 
   .sidebar-inner {
     display: flex;
     flex-direction: column;
     height: 100%;
-    padding: 48px 28px 32px;
+    padding: 48px 40px 33px;
+  }
+
+  .sidebar-title-row {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin-bottom: 64px;
   }
 
   .sidebar-title {
     font-size: 36px;
     font-weight: 600;
     color: var(--text);
-    margin-bottom: 64px;
     line-height: 1.2;
+  }
+
+  .toronto-clock {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--text-muted);
+    white-space: nowrap;
   }
 
   .nav-menu {
@@ -109,12 +136,13 @@ const isHome = currentPath === '/';
   }
 
   .nav-item:hover {
+    background: rgba(255, 255, 255, 0.3);
     font-weight: 500;
     text-decoration: none;
   }
 
   .nav-item.active {
-    background: var(--nav-active-bg);
+    background: rgba(255, 255, 255, 0.35);
     font-weight: 500;
   }
 
@@ -145,18 +173,47 @@ const isHome = currentPath === '/';
     line-height: 1.5;
   }
 
+  .bg-toggle {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 16px;
+  }
+
+  .bg-btn {
+    padding: 4px 10px;
+    border: 1px solid rgba(130, 130, 130, 0.5);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.2);
+    font-family: var(--font);
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--text);
+    cursor: pointer;
+    transition: background 0.15s;
+  }
+
+  .bg-btn:hover {
+    background: rgba(255, 255, 255, 0.4);
+  }
+
+  .bg-btn.active {
+    background: var(--accent);
+    color: white;
+    border-color: var(--accent);
+  }
+
   .nav-toggle { display: none; }
 
   @media (max-width: 768px) {
     #sidebar-nav {
       position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      width: 100%;
+      top: 10px;
+      left: 10px;
+      right: 10px;
+      width: auto;
       height: auto;
-      border-right: none;
-      border-bottom: 1px solid var(--sidebar-border);
+      border-radius: 20px;
     }
     .sidebar-inner {
       display: none;
