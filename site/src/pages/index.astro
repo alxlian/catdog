@@ -1,96 +1,465 @@
 ---
-import Base from '../layouts/Base.astro';
-import Hero from '../components/Hero.astro';
-import LicensingOverTime from '../components/LicensingOverTime.astro';
-import Chapters from '../components/Chapters.astro';
+import Background from '../components/Background.astro';
+import '../styles/global.css';
+
+import citywide from '../data/citywide.json';
+import breedList from '../data/breed-list.json';
+import names from '../data/names.json';
+import breedTrends from '../data/breed-trends.json';
+import metadata from '../data/metadata.json';
+
+const totalDogs = citywide.species_split.DOG.toLocaleString();
+const totalCats = citywide.species_split.CAT.toLocaleString();
+const uniqueBreeds = 372;
+
+let lunaCount = 0;
+for (const species of Object.values(names) as any[]) {
+  if (species['LUNA']) {
+    for (const entry of species['LUNA']) {
+      lunaCount += entry.count;
+    }
+  }
+}
+
+const yearlyTotals: Record<number, { DOG: number; CAT: number }> = {};
+for (const species of ['DOG', 'CAT'] as const) {
+  const breeds = (breedTrends as any)[species] || {};
+  for (const entries of Object.values(breeds) as any[]) {
+    for (const e of entries) {
+      if (!yearlyTotals[e.year]) yearlyTotals[e.year] = { DOG: 0, CAT: 0 };
+      yearlyTotals[e.year][species] += e.count;
+    }
+  }
+}
+const years = Object.keys(yearlyTotals).map(Number).sort();
+const firstYear = years[0];
+const lastFullYear = years[years.length - 2];
+const firstTotal = yearlyTotals[firstYear].DOG + yearlyTotals[firstYear].CAT;
+const lastTotal = yearlyTotals[lastFullYear].DOG + yearlyTotals[lastFullYear].CAT;
+const growthPct = Math.round(((lastTotal - firstTotal) / firstTotal) * 100);
+const dogRatio = Math.round((yearlyTotals[lastFullYear].DOG / lastTotal) * 100);
 ---
 
-<Base>
-  <Hero />
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pets of Toronto</title>
+  <meta name="description" content="Exploring Toronto's licensed dogs and cats. Breeds, names, and neighbourhoods, visualized from City of Toronto open data." />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link href="https://fonts.googleapis.com/css2?family=Gantari:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <Background />
 
-  <div class="section-divider"></div>
-
-  <section id="glance-exhibits">
-    <div class="exhibits-row">
-      <div class="exhibit-col">
-        <LicensingOverTime />
+  <!-- Glass accordion tabs -->
+  <div class="preview-content">
+    <div class="accordion open" data-default-open>
+      <div class="accordion-header" data-trigger>
+        <span class="accordion-title">Pets of Toronto</span>
       </div>
-      <div class="exhibit-col">
-        <div class="exhibit">
-          <h2>Dog vs Cat Ownership</h2>
-          <p class="exhibit-blurb">
-            Which neighbourhoods lean dog, and which lean cat? Hover to see the breakdown by postal code.
-          </p>
-          <div id="glance-map"></div>
+      <div class="accordion-body">
+        <p class="card-desc">
+          A look at every licensed dog and cat in the city.
+          Who they are, where they live, and what their
+          names say about us.
+        </p>
+        <div class="stats">
+          <p class="stat-row"><span class="stat-num">{totalDogs}</span> Total Dogs</p>
+          <p class="stat-row"><span class="stat-num">{totalCats}</span> Total Cats</p>
+          <p class="stat-row"><span class="stat-num">{uniqueBreeds.toLocaleString()}</span> Unique Breeds</p>
+          <p class="stat-row"><span class="stat-num">{lunaCount.toLocaleString()}</span> Pets Named Luna</p>
         </div>
       </div>
     </div>
-  </section>
 
-  <div class="section-divider"></div>
+    <div class="accordion">
+      <div class="accordion-header" data-trigger>
+        <span class="accordion-title">Licensing Over Time</span>
+      </div>
+      <div class="accordion-body">
+        <p class="card-desc">
+          Toronto's pet licensing has grown <strong>{growthPct}%</strong> from {firstYear} to {lastFullYear},
+          with dogs consistently making up about <strong>{dogRatio}%</strong> of all licenses.
+        </p>
+        <div id="licensing-chart"></div>
+      </div>
+    </div>
 
-  <Chapters />
-</Base>
+    <div class="accordion">
+      <div class="accordion-header" data-trigger>
+        <span class="accordion-title">Dog VS Cat Ownership</span>
+      </div>
+      <div class="accordion-body">
+        <p class="card-desc">
+          Which neighbourhoods lean dog, and which lean cat? Hover to see the breakdown by postal code.
+        </p>
+        <div id="glance-map"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Info button (top right) -->
+  <button class="info-btn" id="info-btn" aria-label="Info">
+    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="10" cy="10" r="9" stroke="#0F1532" stroke-width="1.5"/>
+      <text x="10" y="14.5" text-anchor="middle" fill="#0F1532" font-family="'Gantari', system-ui, sans-serif" font-size="12" font-weight="600">i</text>
+    </svg>
+  </button>
+
+  <div class="info-panel" id="info-panel">
+    <p>Data from <a href="https://open.toronto.ca/" target="_blank" rel="noopener">City of Toronto</a></p>
+    <p>Inspired by <a href="https://thedogsofsf.com/" target="_blank" rel="noopener">Dogs of SF</a></p>
+    <p>Made by <a href="https://x.com/alxlian" target="_blank" rel="noopener">Alex</a></p>
+    <p class="info-meta">Data processed: {new Date(metadata.generated_at).toLocaleDateString('en-CA')}</p>
+    <p class="info-meta">Years {metadata.year_range[0]}&ndash;{metadata.year_range[1]}</p>
+  </div>
+
+  <!-- Clickable asset overlay -->
+  <div class="scene-overlay">
+    <a href="/neighbourhoods" class="scene-link scene-link--sign">
+      <span class="scene-tooltip">Neighbourhoods <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M4.5 2.5H2.5V9.5H9.5V7.5" stroke="#0F1532" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M6.5 2.5H9.5V5.5" stroke="#0F1532" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M9.5 2.5L5.5 6.5" stroke="#0F1532" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+    </a>
+    <a href="/names" class="scene-link scene-link--collar">
+      <span class="scene-tooltip">Names <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M4.5 2.5H2.5V9.5H9.5V7.5" stroke="#0F1532" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M6.5 2.5H9.5V5.5" stroke="#0F1532" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M9.5 2.5L5.5 6.5" stroke="#0F1532" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+    </a>
+    <a href="/breeds" class="scene-link scene-link--dog">
+      <span class="scene-tooltip">Breeds <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M4.5 2.5H2.5V9.5H9.5V7.5" stroke="#0F1532" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M6.5 2.5H9.5V5.5" stroke="#0F1532" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M9.5 2.5L5.5 6.5" stroke="#0F1532" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+    </a>
+    <a href="/explore" class="scene-link scene-link--bush">
+      <span class="scene-tooltip">Explore <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M4.5 2.5H2.5V9.5H9.5V7.5" stroke="#0F1532" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M6.5 2.5H9.5V5.5" stroke="#0F1532" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M9.5 2.5L5.5 6.5" stroke="#0F1532" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+    </a>
+  </div>
+</body>
+</html>
 
 <script>
+  import { renderLicensingOverTime } from '../scripts/licensing-chart.js';
   import { renderMiniMap } from '../scripts/mini-map.js';
+  import breedTrends from '../data/breed-trends.json';
   import fsaSummary from '../data/fsa-summary.json';
   import fsaGeo from '../data/fsa-geo.json';
-  renderMiniMap('#glance-map', fsaGeo, fsaSummary);
+
+  // Accordion logic
+  document.querySelectorAll('[data-trigger]').forEach(header => {
+    header.addEventListener('click', () => {
+      const accordion = header.parentElement;
+      const body = accordion.querySelector('.accordion-body');
+      const isOpen = accordion.classList.contains('open');
+
+      document.querySelectorAll('.accordion').forEach(a => {
+        a.classList.remove('open');
+        const b = a.querySelector('.accordion-body');
+        if (b) b.style.maxHeight = '0';
+      });
+
+      if (!isOpen) {
+        accordion.classList.add('open');
+        body.style.maxHeight = body.scrollHeight + 'px';
+
+        const chartEl = body.querySelector('#licensing-chart');
+        if (chartEl && !chartEl.querySelector('svg')) {
+          renderLicensingOverTime('#licensing-chart', breedTrends);
+        }
+        const mapEl = body.querySelector('#glance-map');
+        if (mapEl && !mapEl.querySelector('svg')) {
+          renderMiniMap('#glance-map', fsaGeo, fsaSummary);
+        }
+
+        requestAnimationFrame(() => {
+          body.style.maxHeight = body.scrollHeight + 'px';
+        });
+      }
+    });
+  });
+
+  // Open default
+  const def = document.querySelector('[data-default-open]');
+  if (def) {
+    def.classList.add('open');
+    const body = def.querySelector('.accordion-body');
+    if (body) body.style.maxHeight = body.scrollHeight + 'px';
+  }
+
+  // No JS needed for tooltips — handled via CSS :hover on parent .scene-link
+
+  // Info panel toggle
+  const infoBtn = document.getElementById('info-btn');
+  const infoPanel = document.getElementById('info-panel');
+  infoBtn?.addEventListener('click', () => {
+    infoPanel?.classList.toggle('visible');
+  });
+
+  // Close info panel on outside click
+  document.addEventListener('click', (e) => {
+    if (!infoBtn?.contains(e.target) && !infoPanel?.contains(e.target)) {
+      infoPanel?.classList.remove('visible');
+    }
+  });
 </script>
 
-<style>
-  .section-divider {
-    border: none;
-    border-top: 1px solid var(--nav-active-bg);
-    margin: 0 clamp(1rem, 5vw, 175px);
+<style is:global>
+  /* ── Glass accordion tabs ── */
+  .preview-content {
+    position: relative;
+    z-index: 1;
+    padding: 59px 0 0 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    max-width: 580px;
+    font-family: 'Gantari', system-ui, sans-serif;
   }
 
-  #glance-exhibits {
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
+  .accordion {
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 15px;
+    transition: border-radius 0.3s ease;
   }
 
-  .exhibits-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-    align-items: start;
+  .accordion.open {
+    border-radius: 25px;
   }
 
-  .exhibit-col {
+  .accordion-header {
+    display: flex;
+    align-items: center;
+    padding: 17px 33px 18px;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .accordion-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #0F1532;
+    text-transform: uppercase;
+    line-height: normal;
+  }
+
+  .accordion-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease;
+    padding: 0 33px;
+  }
+
+  .accordion.open .accordion-body {
+    padding-bottom: 28px;
+  }
+
+  .card-desc {
+    font-size: 14px;
+    font-weight: 400;
+    color: #0F1532;
+    line-height: normal;
+    margin-bottom: 14px;
+  }
+
+  .card-desc strong {
+    color: #0F1532;
+    font-weight: 700;
+  }
+
+  .stats {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .stat-row {
+    font-size: 14px;
+    font-weight: 700;
+    color: #0F1532;
+    line-height: normal;
+  }
+
+  .stat-num {
+    display: inline-block;
+    min-width: 7ch;
+    text-align: right;
+    margin-right: 1ch;
+  }
+
+  #licensing-chart,
+  #glance-map {
     min-width: 0;
+    position: relative;
   }
 
+  #licensing-chart svg,
   #glance-map svg {
     display: block;
     width: 100%;
     height: auto;
   }
 
-  .exhibit-col .exhibit h2 {
-    font-size: 24px;
+  /* ── Info button ── */
+  .info-btn {
+    position: fixed;
+    top: 24px;
+    right: 24px;
+    z-index: 100;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    opacity: 0.6;
+    transition: opacity 0.15s;
+  }
+
+  .info-btn:hover {
+    opacity: 1;
+  }
+
+  .info-panel {
+    position: fixed;
+    top: 24px;
+    right: 56px;
+    z-index: 99;
+    font-family: 'Gantari', system-ui, sans-serif;
+    font-size: 12px;
+    color: #0F1532;
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 15px;
+    padding: 16px 20px;
+    opacity: 0;
+    transform: translateX(10px);
+    pointer-events: none;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+  }
+
+  .info-panel.visible {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+  }
+
+  .info-panel p {
+    margin-bottom: 4px;
+    line-height: 1.5;
+  }
+
+  .info-panel a {
+    color: #0F1532;
+    text-decoration: underline;
+  }
+
+  .info-meta {
+    color: rgba(15, 21, 50, 0.5);
+    font-size: 11px;
+  }
+
+  /* ── Clickable scene overlay ── */
+  .scene-overlay {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    aspect-ratio: 1440 / 500;
+    z-index: 2;
+    pointer-events: none;
+  }
+
+  .scene-link {
+    position: absolute;
+    pointer-events: auto;
+    cursor: pointer;
+  }
+
+  .scene-link::before {
+    content: '';
+    position: absolute;
+    top: -40px;
+    left: -10%;
+    right: -10%;
+    bottom: 0;
+  }
+
+  .scene-link--sign {
+    left: 38.33%;
+    bottom: 27%;
+    width: 12%;
+    aspect-ratio: 254 / 304;
+  }
+
+  .scene-link--collar {
+    left: 28.89%;
+    bottom: 21.49%;
+    width: 5%;
+    aspect-ratio: 101 / 62;
+  }
+
+  .scene-link--dog {
+    left: 55%;
+    bottom: 17%;
+    width: 8.5%;
+    aspect-ratio: 179 / 119;
+  }
+
+  .scene-link--bush {
+    left: 76.94%;
+    bottom: 29%;
+    width: 17%;
+    aspect-ratio: 361 / 161;
+  }
+
+  /* ── Tooltip ── */
+  .scene-tooltip {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(4px);
+    margin-bottom: 8px;
+    font-family: 'Gantari', system-ui, sans-serif;
+    font-size: 13px;
     font-weight: 600;
-    color: var(--text);
-    margin-bottom: 10px;
+    color: #0F1532;
+    background: none;
+    padding: 0;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.15s ease, transform 0.15s ease;
   }
 
-  .exhibit-col .exhibit .exhibit-blurb {
-    font-size: 14px;
-    font-weight: 300;
-    color: var(--text-muted);
-    line-height: 1.7;
-    margin-bottom: 1.5rem;
+  .scene-link:hover .scene-tooltip {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
   }
 
-  @media (max-width: 1200px) {
-    .exhibits-row {
-      grid-template-columns: 1fr;
-    }
-  }
-
+  /* ── Mobile: horizontal scroll, always-visible tooltips ── */
   @media (max-width: 768px) {
-    #glance-exhibits { padding-top: 1.5rem; padding-bottom: 1.5rem; }
-    .exhibits-row { gap: 2rem; }
+    html, body {
+      overflow-x: auto;
+      overflow-y: auto;
+    }
+
+    body {
+      min-width: 1200px;
+    }
+
+    .preview-content {
+      padding: 24px 0 0 24px;
+      max-width: 420px;
+    }
+
+    .scene-tooltip {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+
+    .scene-overlay {
+      position: absolute;
+    }
+
+    .info-btn {
+      position: absolute;
+    }
   }
 </style>

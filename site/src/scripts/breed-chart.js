@@ -82,7 +82,7 @@ function renderLineChart(container, legendContainer, data, searchTerm) {
   const svg = d3.select(container)
     .append('svg')
     .attr('viewBox', `0 0 ${width} ${height}`)
-    .style('font-family', "'Lexend', system-ui, sans-serif")
+    .style('font-family', "'Gantari', system-ui, sans-serif")
     .append('g')
     .attr('transform', `translate(${margin.left},${margin.top})`);
 
@@ -218,7 +218,7 @@ function renderLineChart(container, legendContainer, data, searchTerm) {
     .style('border-radius', '8px')
     .style('padding', '10px 14px')
     .style('font-size', '12px')
-    .style('font-family', "'Lexend', system-ui, sans-serif")
+    .style('font-family', "'Gantari', system-ui, sans-serif")
     .style('box-shadow', '0 4px 16px rgba(0,0,0,0.08)')
     .style('pointer-events', 'none')
     .style('opacity', 0)
@@ -339,7 +339,7 @@ function renderTrendList(items, color) {
         <polyline points="${points}" fill="none" stroke="${color}" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
       <div style="flex:1;min-width:0">
-        <div style="display:flex;justify-content:space-between;align-items:center;font-size:13px;font-family:'Lexend',system-ui,sans-serif">
+        <div style="display:flex;justify-content:space-between;align-items:center;font-size:13px;font-family:'Gantari',system-ui,sans-serif">
           <span style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#000">${toTitleCase(item.breed)}</span>
           <span style="font-weight:600;flex-shrink:0;margin-left:0.75rem;color:${color}">${sign}${pct}%</span>
         </div>

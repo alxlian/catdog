@@ -1,0 +1,19 @@
+---
+import Page from '../layouts/Page.astro';
+import TypicalPet from '../components/TypicalPet.astro';
+import RarityLookup from '../components/RarityLookup.astro';
+---
+
+<Page title="Explore | The Pets of Toronto">
+  <TypicalPet />
+  <div class="section-divider"></div>
+  <RarityLookup />
+</Page>
+
+<style>
+  .section-divider {
+    border: none;
+    border-top: 1px solid var(--nav-active-bg);
+    margin: 0 clamp(1rem, 3vw, 3rem);
+  }
+</style>

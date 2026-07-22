@@ -65,7 +65,7 @@ for (const species of Object.values(names) as any[]) {
 
 <style>
   #hero {
-    padding: 80px 175px calc(2rem + 50px);
+    padding: 80px clamp(1rem, 3vw, 3rem) calc(2rem + 50px);
   }
 
   .hero-title {
@@ -193,11 +193,11 @@ for (const species of Object.values(names) as any[]) {
   }
 
   @media (max-width: 1200px) {
-    #hero { padding: 60px 80px 2.5rem; }
+    #hero { padding: 60px clamp(1rem, 3vw, 3rem) 2.5rem; }
   }
 
   @media (max-width: 1024px) {
-    #hero { padding: 50px 40px 2rem; }
+    #hero { padding: 50px clamp(1rem, 3vw, 3rem) 2rem; }
     .pet-tag-row { gap: 24px; }
     .pet-tag { width: 140px; }
     .tag-body { width: 140px; height: 140px; }

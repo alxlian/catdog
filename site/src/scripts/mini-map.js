@@ -21,7 +21,7 @@ export function renderMiniMap(containerSelector, geoData, fsaSummary) {
   const svg = d3.select(container)
     .append('svg')
     .attr('viewBox', `0 0 ${width} ${height}`)
-    .style('font-family', "'Lexend', system-ui, sans-serif");
+    .style('font-family', "'Gantari', system-ui, sans-serif");
 
   const paths = svg.selectAll('path')
     .data(features)
@@ -48,7 +48,7 @@ export function renderMiniMap(containerSelector, geoData, fsaSummary) {
     .style('border-radius', '10px')
     .style('padding', '14px 18px')
     .style('font-size', '12px')
-    .style('font-family', "'Lexend', system-ui, sans-serif")
+    .style('font-family', "'Gantari', system-ui, sans-serif")
     .style('box-shadow', '0 6px 24px rgba(0,0,0,0.1)')
     .style('pointer-events', 'none')
     .style('opacity', 0)

@@ -37,7 +37,7 @@ export function renderLicensingOverTime(containerSelector, breedTrends) {
   const svg = d3.select(container)
     .append('svg')
     .attr('viewBox', `0 0 ${width} ${height}`)
-    .style('font-family', "'Lexend', system-ui, sans-serif")
+    .style('font-family', "'Gantari', system-ui, sans-serif")
     .append('g')
     .attr('transform', `translate(${margin.left},${margin.top})`);
 
@@ -205,7 +205,7 @@ export function renderLicensingOverTime(containerSelector, breedTrends) {
     .style('border-radius', '8px')
     .style('padding', '10px 14px')
     .style('font-size', '12px')
-    .style('font-family', "'Lexend', system-ui, sans-serif")
+    .style('font-family', "'Gantari', system-ui, sans-serif")
     .style('box-shadow', '0 4px 16px rgba(0,0,0,0.08)')
     .style('pointer-events', 'none')
     .style('opacity', 0)

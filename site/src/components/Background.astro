@@ -1,0 +1,282 @@
+---
+// Time-of-day background based on Toronto's current time
+// Refreshes only on page reload (computed server-side)
+const now = new Date();
+const torontoHour = parseInt(
+  now.toLocaleString('en-US', { timeZone: 'America/Toronto', hour: 'numeric', hour12: false })
+);
+
+type TimeOfDay = 'sunrise' | 'day' | 'sunset' | 'night';
+let timeOfDay: TimeOfDay;
+if (torontoHour >= 5 && torontoHour < 9) timeOfDay = 'sunrise';
+else if (torontoHour >= 9 && torontoHour < 17) timeOfDay = 'day';
+else if (torontoHour >= 17 && torontoHour < 21) timeOfDay = 'sunset';
+else timeOfDay = 'night';
+
+const gradients: Record<TimeOfDay, string> = {
+  sunrise: 'linear-gradient(192.97deg, rgb(251,227,209) 6.52%, rgb(255,251,222) 52.71%, rgb(244,223,165) 72.07%, rgb(143,201,48) 88.3%, rgb(81,128,51) 99.89%)',
+  day:     'linear-gradient(192.97deg, rgb(147,181,255) 6.52%, rgb(213,244,245) 52.71%, rgb(242,227,212) 76.05%, rgb(183,201,48) 88.3%, rgb(57,87,38) 99.89%)',
+  sunset:  'linear-gradient(192.97deg, rgb(147,181,255) 6.52%, rgb(255,201,147) 62.75%, rgb(229,162,95) 81.7%, rgb(201,125,48) 88.3%, rgb(57,87,38) 99.89%)',
+  night:   'linear-gradient(192.97deg, rgb(65,92,150) 6.52%, rgb(185,180,255) 62.75%, rgb(84,85,189) 81.7%, rgb(53,108,41) 88.3%, rgb(22,34,14) 99.89%)',
+};
+
+// Linear gradient overlay within asset group — changes color per time of day
+const assetBlendGradients: Record<TimeOfDay, string> = {
+  sunrise: 'linear-gradient(176.55deg, rgba(205,231,255,0) 12.05%, rgba(205,231,255,0.375) 45.99%, rgba(205,231,255,0.392) 79.96%, rgba(205,231,255,0) 105.83%)',
+  day:     'linear-gradient(176.55deg, rgba(205,231,255,0) 12.05%, rgba(205,231,255,0.375) 45.99%, rgba(205,231,255,0.392) 79.96%, rgba(205,231,255,0) 105.83%)',
+  sunset:  'linear-gradient(176.55deg, rgba(255,228,205,0) 12.05%, rgba(255,228,205,0.375) 45.99%, rgba(255,228,205,0.392) 79.96%, rgba(255,228,205,0) 105.83%)',
+  night:   'linear-gradient(176.55deg, rgba(58,58,58,0) 12.05%, rgba(58,58,58,0.375) 45.99%, rgba(58,58,58,0.392) 79.96%, rgba(58,58,58,0) 105.83%)',
+};
+
+// Night uses hard-light blend, others use overlay
+const assetBlendMode = timeOfDay === 'night' ? 'hard-light' : 'overlay';
+---
+
+<div class="bg-layer" id="bg-layer"
+  data-time={timeOfDay}
+  data-gradient-sunrise={gradients.sunrise}
+  data-gradient-day={gradients.day}
+  data-gradient-sunset={gradients.sunset}
+  data-gradient-night={gradients.night}
+  style={`background: ${gradients[timeOfDay]};`}>
+
+  <!-- Shader layers (above gradient, behind assets) -->
+  <div class="shader shader-1">
+    <svg viewBox="0 0 1355 687" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <radialGradient id="sh1" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stop-color="rgba(255,255,255,0.5)" />
+          <stop offset="100%" stop-color="rgba(255,255,255,0)" />
+        </radialGradient>
+      </defs>
+      <ellipse cx="677" cy="343" rx="677" ry="343" fill="url(#sh1)" />
+    </svg>
+  </div>
+
+  <div class="shader shader-2">
+    <svg viewBox="0 0 1443 660" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <radialGradient id="sh2" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stop-color="rgba(0,0,0,1)" />
+          <stop offset="100%" stop-color="rgba(0,0,0,0)" />
+        </radialGradient>
+      </defs>
+      <ellipse cx="721" cy="330" rx="721" ry="330" fill="url(#sh2)" />
+    </svg>
+  </div>
+
+  <div class="shader shader-3">
+    <svg viewBox="0 0 870 246" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <radialGradient id="sh3" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stop-color="rgba(255,255,255,0.5)" />
+          <stop offset="100%" stop-color="rgba(255,255,255,0)" />
+        </radialGradient>
+      </defs>
+      <ellipse cx="435" cy="123" rx="435" ry="123" fill="url(#sh3)" />
+    </svg>
+  </div>
+
+  <!-- Scene assets -->
+  <div class="scene-assets">
+    <img class="asset asset-bg" src="/bg-1.png" alt="" />
+    <img class="asset asset-tree" src="/tree-2.png" alt="" />
+    <img class="asset asset-sign" src="/sign-1.png" alt="" />
+    <div class="asset asset-collar-wrap">
+      <img class="asset-collar" src="/collar-1.png" alt="" />
+    </div>
+    <img class="asset asset-dog" src="/dog-1.png" alt="" />
+    <img class="asset asset-bush" src="/bush-2.png" alt="" />
+
+    <!-- Time-based blending gradient over assets -->
+    <div class="asset-blend"
+      data-blend-sunrise={assetBlendGradients.sunrise}
+      data-blend-day={assetBlendGradients.day}
+      data-blend-sunset={assetBlendGradients.sunset}
+      data-blend-night={assetBlendGradients.night}
+      style={`background: ${assetBlendGradients[timeOfDay]}; mix-blend-mode: ${assetBlendMode};`}>
+    </div>
+  </div>
+
+  <!-- Noise grain overlay -->
+  <div class="noise"></div>
+
+</div>
+
+<style>
+  .bg-layer {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    overflow: hidden;
+  }
+
+  /* ── Shaders (vw for horizontal, % of viewport height for vertical) ── */
+  .shader-1 {
+    position: absolute;
+    left: -42.29vw;
+    top: 19.92%;
+    width: 94.10vw;
+    height: 67.09%;
+    transform: rotate(9.99deg);
+    pointer-events: none;
+  }
+
+  .shader-2 {
+    position: absolute;
+    left: -43.68vw;
+    top: 66.41%;
+    width: 100.21vw;
+    height: 64.45%;
+    transform: rotate(5.5deg);
+    mix-blend-mode: overlay;
+    pointer-events: none;
+  }
+
+  .shader-3 {
+    position: absolute;
+    left: 69.03vw;
+    top: 67.29%;
+    width: 60.42vw;
+    height: 24.02%;
+    transform: rotate(1.73deg);
+    pointer-events: none;
+  }
+
+  .shader svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  /*
+   * Scene container: aspect-ratio locked, anchored to bottom.
+   * All assets positioned as % within this box.
+   * Matches reference site pattern (chloeyan.me).
+   * Scene spans Figma y=270..1131 → 861px tall, 1440 wide.
+   */
+  .scene-assets {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    aspect-ratio: 1440 / 500;
+    pointer-events: none;
+    overflow: visible;
+  }
+
+  .asset {
+    position: absolute;
+    pointer-events: none;
+  }
+
+
+  /* bg-1: fills full width, anchored to bottom */
+  .asset-bg {
+    left: 0;
+    bottom: 0;
+    width: 110%;
+    height: auto;
+    aspect-ratio: 1630 / 500;
+  }
+
+  /* tree-2 */
+  .asset-tree {
+    left: 67.71%;
+    bottom: 20%;
+    width: 12%;
+    aspect-ratio: 254 / 418;
+  }
+
+  /* sign-1 */
+  .asset-sign {
+    left: 38.33%;
+    bottom: 27%;
+    width: 12%;
+    aspect-ratio: 254 / 304;
+  }
+
+  /* collar-1, rotated 6.18deg */
+  .asset-collar-wrap {
+    position: absolute;
+    left: 28.89%;
+    bottom: 21.49%;
+    width: 5%;
+    aspect-ratio: 101 / 62;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .asset-collar {
+    width: 95%;
+    height: auto;
+    transform: rotate(6.18deg);
+  }
+
+  /* dog-1 */
+  .asset-dog {
+    left: 55%;
+    bottom: 17%;
+    width: 8.5%;
+    aspect-ratio: 179 / 119;
+  }
+
+  /* bush-2 */
+  .asset-bush {
+    left: 76.94%;
+    bottom: 29%;
+    width: 17%;
+    aspect-ratio: 361 / 161;
+  }
+
+  /* ── Asset blend gradient ── */
+  .asset-blend {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+
+  /* ── Noise grain overlay ── */
+  .noise {
+    position: fixed;
+    top: -10rem;
+    left: -10rem;
+    width: calc(200% + 20rem);
+    height: calc(200% + 20rem);
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/5c/Image_gaussian_noise_example.png');
+    opacity: 0.12;
+    pointer-events: none;
+    animation: grain 1s steps(2) infinite;
+  }
+
+  @keyframes grain {
+    0%   { transform: translate3d(0, 2rem, 0); }
+    10%  { transform: translate3d(-1rem, -2rem, 0); }
+    20%  { transform: translate3d(-4rem, 1rem, 0); }
+    30%  { transform: translate3d(4.5rem, -4.5rem, 0); }
+    40%  { transform: translate3d(-1rem, 3.5rem, 0); }
+    50%  { transform: translate3d(-4.5rem, -2rem, 0); }
+    60%  { transform: translate3d(1rem, 3rem, 0); }
+    70%  { transform: translate3d(3.5rem, -4rem, 0); }
+    80%  { transform: translate3d(-4.5rem, 0.5rem, 0); }
+    90%  { transform: translate3d(3rem, -2.5rem, 0); }
+    100% { transform: translate3d(-3.5rem, 0, 0); }
+  }
+
+  @media (max-width: 768px) {
+    .bg-layer {
+      position: absolute;
+      min-width: 1200px;
+      width: 100%;
+      height: 100vh;
+    }
+
+    .noise {
+      position: absolute;
+    }
+  }
+</style>

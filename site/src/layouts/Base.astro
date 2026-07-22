@@ -1,5 +1,5 @@
 ---
-import Nav from '../components/Nav.astro';
+import Background from '../components/Background.astro';
 import Footer from '../components/Footer.astro';
 import '../styles/global.css';
 import '../styles/components.css';
@@ -19,16 +19,12 @@ const { title = 'Pets of Toronto' } = Astro.props;
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 </head>
 <body>
-  <Nav />
+  <Background />
   <main>
     <div class="main-content">
       <slot />
     </div>
     <Footer />
   </main>
-  <script>
-    import { initNav } from '../scripts/nav.js';
-    initNav();
-  </script>
 </body>
 </html>
