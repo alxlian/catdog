@@ -230,7 +230,7 @@ export function initRarityLookup(breedList, fsaSummary, gtaFsaList) {
     const breedDisplay = speciesInfo ? toTitleCase(speciesInfo.displayName) : selectedBreed;
     const speciesLabelPlural = currentSpecies === 'DOG' ? 'dogs' : 'cats';
     const accentColor = currentSpecies === 'DOG' ? 'var(--accent)' : 'var(--blue)';
-    const chipBg = currentSpecies === 'DOG' ? 'rgba(235, 94, 40, 0.12)' : 'rgba(59, 130, 180, 0.12)';
+    const chipBg = currentSpecies === 'DOG' ? 'rgba(50, 116, 201, 0.12)' : 'rgba(59, 130, 180, 0.12)';
 
     const breedKey = `${currentSpecies}|${selectedBreed}`;
     const citywideCount = mergedBreedTotals[breedKey] || 0;

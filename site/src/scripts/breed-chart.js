@@ -38,8 +38,8 @@ export function renderBreedTrends(breedTrends) {
   render();
 }
 
-// Warm palette that matches the site's cream/gold/orange theme
-const CHART_PALETTE = ['#EB5E28', '#3B7EA1', '#D4960A', '#7B6D4E', '#9C4D8B'];
+// Palette that matches the site's cream/blue theme
+const CHART_PALETTE = ['#3274C9', '#3B7EA1', '#D4960A', '#7B6D4E', '#9C4D8B'];
 
 function renderLineChart(container, legendContainer, data, searchTerm) {
   container.innerHTML = '';
@@ -308,7 +308,7 @@ function renderRisingDeclining(risingEl, decliningEl, data) {
   const rising = meaningful.slice(0, 5);
   const declining = meaningful.slice(-5).reverse();
 
-  risingEl.innerHTML = renderTrendList(rising, '#EB5E28');
+  risingEl.innerHTML = renderTrendList(rising, '#3274C9');
   decliningEl.innerHTML = renderTrendList(declining, '#3B7EA1');
 }
 

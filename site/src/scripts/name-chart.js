@@ -1,7 +1,7 @@
 import * as d3 from 'd3';
 import { toTitleCase } from './utils.js';
 
-const PALETTE = ['#EB5E28', '#3B7EA1', '#D4960A', '#7B6D4E', '#9C4D8B'];
+const PALETTE = ['#3274C9', '#3B7EA1', '#D4960A', '#7B6D4E', '#9C4D8B'];
 
 export function renderNamesPage(namesData) {
   const toggleContainer = document.getElementById('names-species-toggle');
@@ -203,7 +203,7 @@ function renderExclusives(dogEl, catEl, namesData) {
     .sort((a, b) => b.total - a.total)
     .slice(0, 8);
 
-  dogEl.innerHTML = renderExclusiveList(dogOnly, '#EB5E28');
+  dogEl.innerHTML = renderExclusiveList(dogOnly, '#3274C9');
   catEl.innerHTML = renderExclusiveList(catOnly, '#3B7EA1');
 }
 
@@ -250,12 +250,12 @@ function renderCrossover(container, namesData) {
   }
 
   container.innerHTML = `<div style="display:flex;justify-content:flex-end;gap:1.5rem;padding-bottom:0.375rem;border-bottom:1px solid #f5f0e8;margin-bottom:0.25rem">
-    <span style="font-size:0.625rem;font-weight:500;color:#EB5E28;width:3.5rem;text-align:right">Dogs</span>
+    <span style="font-size:0.625rem;font-weight:500;color:#3274C9;width:3.5rem;text-align:right">Dogs</span>
     <span style="font-size:0.625rem;font-weight:500;color:#3B7EA1;width:3.5rem;text-align:right">Cats</span>
   </div>` + shared.map(d => {
     return `<div style="display:flex;align-items:center;padding:0.375rem 0;border-bottom:1px solid #f5f0e8">
       <span style="font-size:0.8125rem;font-weight:500;color:var(--text);flex:1">${toTitleCase(d.name)}</span>
-      <span style="font-size:0.8125rem;font-weight:600;color:#EB5E28;width:3.5rem;text-align:right">${d.dogPct.toFixed(1)}%</span>
+      <span style="font-size:0.8125rem;font-weight:600;color:#3274C9;width:3.5rem;text-align:right">${d.dogPct.toFixed(1)}%</span>
       <span style="font-size:0.8125rem;font-weight:600;color:#3B7EA1;width:3.5rem;text-align:right">${d.catPct.toFixed(1)}%</span>
     </div>`;
   }).join('');
