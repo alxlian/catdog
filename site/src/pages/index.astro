@@ -43,7 +43,7 @@ const dogRatio = Math.round((yearlyTotals[lastFullYear].DOG / lastTotal) * 100);
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <title>Pets of Toronto</title>
   <meta name="description" content="Exploring Toronto's licensed dogs and cats. Breeds, names, and neighbourhoods, visualized from City of Toronto open data." />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -435,18 +435,74 @@ const dogRatio = Math.round((yearlyTotals[lastFullYear].DOG / lastTotal) * 100);
 
   /* ── Mobile: horizontal scroll, always-visible tooltips ── */
   @media (max-width: 768px) {
-    html, body {
-      overflow-x: auto;
-      overflow-y: auto;
+    html {
+      height: 100vh;
+      overflow: hidden;
+      background: transparent;
     }
 
     body {
       min-width: 1200px;
+      height: 100vh;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      overscroll-behavior-x: none;
+      -webkit-overflow-scrolling: touch;
+      position: relative;
     }
 
     .preview-content {
-      padding: 24px 0 0 24px;
-      max-width: 420px;
+      padding: 20px 0 0 20px;
+      max-width: 300px;
+    }
+
+    .accordion {
+      border-radius: 12px;
+    }
+
+    .accordion.open {
+      border-radius: 18px;
+    }
+
+    .accordion-header {
+      padding: 12px 20px 13px;
+    }
+
+    .accordion-title {
+      font-size: 14px;
+    }
+
+    .accordion-body {
+      padding: 0 20px;
+    }
+
+    .accordion.open .accordion-body {
+      padding-bottom: 18px;
+    }
+
+    .card-desc {
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+
+    .stat-row {
+      font-size: 12px;
+    }
+
+    .stat-num {
+      min-width: 6ch;
+    }
+
+    #glance-map svg {
+      max-height: 200px;
+      width: auto;
+      margin: 0 auto;
+    }
+
+    #licensing-chart svg {
+      max-height: 180px;
+      width: auto;
+      margin: 0 auto;
     }
 
     .scene-tooltip {
@@ -456,10 +512,21 @@ const dogRatio = Math.round((yearlyTotals[lastFullYear].DOG / lastTotal) * 100);
 
     .scene-overlay {
       position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
     }
 
     .info-btn {
-      position: absolute;
+      position: fixed;
+      top: 16px;
+      right: 16px;
+    }
+
+    .info-panel {
+      position: fixed;
+      top: 16px;
+      right: 48px;
     }
   }
 </style>

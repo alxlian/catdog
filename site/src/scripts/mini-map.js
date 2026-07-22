@@ -40,21 +40,24 @@ export function renderMiniMap(containerSelector, geoData, fsaSummary) {
   // Tooltip
   d3.select(container).style('position', 'relative');
 
+  const isMobile = window.innerWidth <= 768;
+
   const tooltip = d3.select(container).append('div')
     .attr('class', 'mini-map-tooltip')
-    .style('position', 'absolute')
-    .style('background', 'white')
-    .style('border', '1px solid #EFEAE0')
-    .style('border-radius', '10px')
-    .style('padding', '14px 18px')
-    .style('font-size', '12px')
+    .style('position', isMobile ? 'relative' : 'absolute')
+    .style('background', isMobile ? 'rgba(255,255,255,0.6)' : 'white')
+    .style('border', isMobile ? 'none' : '1px solid #EFEAE0')
+    .style('border-radius', isMobile ? '8px' : '10px')
+    .style('padding', isMobile ? '8px 10px' : '14px 18px')
+    .style('font-size', isMobile ? '11px' : '12px')
     .style('font-family', "'Gantari', system-ui, sans-serif")
-    .style('box-shadow', '0 6px 24px rgba(0,0,0,0.1)')
+    .style('box-shadow', isMobile ? 'none' : '0 6px 24px rgba(0,0,0,0.1)')
     .style('pointer-events', 'none')
     .style('opacity', 0)
     .style('transition', 'opacity 0.15s')
-    .style('min-width', '200px')
-    .style('z-index', '10');
+    .style('min-width', isMobile ? '0' : '200px')
+    .style('z-index', '10')
+    .style('margin-top', isMobile ? '6px' : '0');
 
   paths
     .on('mouseenter', (event, d) => {
@@ -70,20 +73,33 @@ export function renderMiniMap(containerSelector, geoData, fsaSummary) {
       const dogPct = Math.round((data.dog_count / total) * 100);
       const catPct = 100 - dogPct;
 
-      tooltip.html(`
-        <div style="font-weight:600;font-size:14px;margin-bottom:2px">${data.neighbourhood}</div>
-        <div style="color:#828282;font-size:11px;margin-bottom:10px">${fsa}</div>
-        <div style="display:flex;border-radius:6px;overflow:hidden;height:24px;margin-bottom:6px">
-          <div style="width:${dogPct}%;background:#3274C9;display:flex;align-items:center;justify-content:center;color:white;font-size:10px;font-weight:500;min-width:30px">${d3.format(',')(data.dog_count)}</div>
-          <div style="width:${catPct}%;background:#3B7EA1;display:flex;align-items:center;justify-content:center;color:white;font-size:10px;font-weight:500;min-width:30px">${d3.format(',')(data.cat_count)}</div>
-        </div>
-        <div style="display:flex;justify-content:space-between;font-size:10px;color:#828282">
-          <span><span style="color:#3274C9;font-weight:500">Dogs</span> ${dogPct}%</span>
-          <span><span style="color:#3B7EA1;font-weight:500">Cats</span> ${catPct}%</span>
-        </div>
-      `).style('opacity', 1);
+      if (isMobile) {
+        tooltip.html(`
+          <div style="display:flex;align-items:center;gap:8px">
+            <strong style="font-size:12px;color:#0F1532">${data.neighbourhood}</strong>
+            <span style="font-size:10px;color:#828282">${dogPct}% dogs · ${catPct}% cats</span>
+          </div>
+        `).style('opacity', 1);
+        // Update accordion max-height to fit tooltip
+        const body = container.closest('.accordion-body');
+        if (body) body.style.maxHeight = body.scrollHeight + 'px';
+      } else {
+        tooltip.html(`
+          <div style="font-weight:600;font-size:14px;margin-bottom:2px">${data.neighbourhood}</div>
+          <div style="color:#828282;font-size:11px;margin-bottom:10px">${fsa}</div>
+          <div style="display:flex;border-radius:6px;overflow:hidden;height:24px;margin-bottom:6px">
+            <div style="width:${dogPct}%;background:#3274C9;display:flex;align-items:center;justify-content:center;color:white;font-size:10px;font-weight:500;min-width:30px">${d3.format(',')(data.dog_count)}</div>
+            <div style="width:${catPct}%;background:#3B7EA1;display:flex;align-items:center;justify-content:center;color:white;font-size:10px;font-weight:500;min-width:30px">${d3.format(',')(data.cat_count)}</div>
+          </div>
+          <div style="display:flex;justify-content:space-between;font-size:10px;color:#828282">
+            <span><span style="color:#3274C9;font-weight:500">Dogs</span> ${dogPct}%</span>
+            <span><span style="color:#3B7EA1;font-weight:500">Cats</span> ${catPct}%</span>
+          </div>
+        `).style('opacity', 1);
+      }
     })
     .on('mousemove', (event) => {
+      if (isMobile) return;
       const rect = container.getBoundingClientRect();
       const x = event.clientX - rect.left;
       const y = event.clientY - rect.top;
