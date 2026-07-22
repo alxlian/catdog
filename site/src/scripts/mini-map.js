@@ -74,11 +74,11 @@ export function renderMiniMap(containerSelector, geoData, fsaSummary) {
         <div style="font-weight:600;font-size:14px;margin-bottom:2px">${data.neighbourhood}</div>
         <div style="color:#828282;font-size:11px;margin-bottom:10px">${fsa}</div>
         <div style="display:flex;border-radius:6px;overflow:hidden;height:24px;margin-bottom:6px">
-          <div style="width:${dogPct}%;background:#EB5E28;display:flex;align-items:center;justify-content:center;color:white;font-size:10px;font-weight:500;min-width:30px">${d3.format(',')(data.dog_count)}</div>
+          <div style="width:${dogPct}%;background:#3274C9;display:flex;align-items:center;justify-content:center;color:white;font-size:10px;font-weight:500;min-width:30px">${d3.format(',')(data.dog_count)}</div>
           <div style="width:${catPct}%;background:#3B7EA1;display:flex;align-items:center;justify-content:center;color:white;font-size:10px;font-weight:500;min-width:30px">${d3.format(',')(data.cat_count)}</div>
         </div>
         <div style="display:flex;justify-content:space-between;font-size:10px;color:#828282">
-          <span><span style="color:#EB5E28;font-weight:500">Dogs</span> ${dogPct}%</span>
+          <span><span style="color:#3274C9;font-weight:500">Dogs</span> ${dogPct}%</span>
           <span><span style="color:#3B7EA1;font-weight:500">Cats</span> ${catPct}%</span>
         </div>
       `).style('opacity', 1);

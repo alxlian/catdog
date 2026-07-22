@@ -12,16 +12,10 @@ export function renderMap(mapSelector, tooltipSelector, listSelector, geoData, f
   let currentMode = 'common';
   let currentSpecies = 'DOG';
 
-  // Vibrant color palette — each unique breed gets a distinct color
+  // Custom palette for breed maps
   const breedColorCache = {};
   let breedHueIndex = 0;
-  const palette = [
-    '#E8913A', '#5DADE2', '#58D68D', '#AF7AC5', '#F1948A',
-    '#F7DC6F', '#85C1E9', '#73C6B6', '#D7BDE2', '#F0B27A',
-    '#AED6F1', '#A3E4D7', '#FADBD8', '#D5F5E3', '#FCF3CF',
-    '#E59866', '#48C9B0', '#7FB3D8', '#C39BD3', '#F5B041',
-    '#76D7C4', '#EB984E', '#82E0AA', '#BB8FCE', '#F4D03F',
-  ];
+  const palette = ['#fb8500','#ffba08','#3f88c5','#032b43','#136f63'];
 
   function getBreedColor(breed) {
     if (!breed) return '#E5E7EB';
@@ -31,7 +25,33 @@ export function renderMap(mapSelector, tooltipSelector, listSelector, geoData, f
     return breedColorCache[breed];
   }
 
-  // Ownership ratio: red/blue diverging (matching the At a Glance mini map)
+  // Signature breed monotone blue scale (dark = high multiplier, light = low)
+  const signatureBlues = ['#b1c5f2','#9eb7eb','#8ca9e4','#789cde','#648ed7','#4e81d0','#3274c9'];
+  let signatureScale = null;
+  let signatureScaleSpecies = null;
+
+  function buildSignatureScale() {
+    if (signatureScaleSpecies === currentSpecies && signatureScale) return;
+    const allRatios = Object.values(fsaSummary)
+      .map(v => v.signature_breed?.[currentSpecies]?.ratio)
+      .filter(r => r != null)
+      .sort((a, b) => a - b);
+    signatureScale = d3.scaleQuantile()
+      .domain(allRatios)
+      .range(signatureBlues);
+    signatureScaleSpecies = currentSpecies;
+  }
+
+  function getSignatureColor(fsa) {
+    const d = fsaSummary[fsa];
+    if (!d) return '#E5E7EB';
+    const s = d.signature_breed?.[currentSpecies];
+    if (!s) return '#E5E7EB';
+    buildSignatureScale();
+    return signatureScale(s.ratio);
+  }
+
+  // Ownership ratio: red/blue diverging (dogs red, cats blue)
   const ownershipScale = d3.scaleDiverging()
     .domain([0.3, 0.5, 0.8])
     .interpolator(d3.interpolateRdBu)
@@ -54,6 +74,7 @@ export function renderMap(mapSelector, tooltipSelector, listSelector, geoData, f
     const d = fsaSummary[fsa];
     if (!d) return '#E5E7EB';
     if (currentMode === 'ratio') return ownershipScale(1 - d.dog_ratio);
+    if (currentMode === 'signature') return getSignatureColor(fsa);
     const breed = getBreedForMode(fsa);
     return getBreedColor(breed);
   }
@@ -189,10 +210,10 @@ export function renderMap(mapSelector, tooltipSelector, listSelector, geoData, f
     .tt-name { font-weight: 600; font-size: 13px; margin-bottom: 1px; }
     .tt-fsa { font-size: 11px; color: #828282; margin-bottom: 8px; }
     .tt-label { font-size: 10px; text-transform: uppercase; letter-spacing: 0.03em; color: #828282; margin-bottom: 2px; }
-    .tt-value { font-size: 14px; font-weight: 600; color: #EB5E28; margin-bottom: 2px; }
+    .tt-value { font-size: 14px; font-weight: 600; color: #3274C9; margin-bottom: 2px; }
     .tt-detail { font-size: 11px; color: #828282; }
     .tt-bar { display: flex; border-radius: 4px; overflow: hidden; height: 20px; margin-bottom: 4px; }
-    .tt-bar-dog { background: #EB5E28; color: white; font-size: 10px; font-weight: 500; display: flex; align-items: center; justify-content: center; min-width: 28px; }
+    .tt-bar-dog { background: #3274C9; color: white; font-size: 10px; font-weight: 500; display: flex; align-items: center; justify-content: center; min-width: 28px; }
     .tt-bar-cat { background: #3B7EA1; color: white; font-size: 10px; font-weight: 500; display: flex; align-items: center; justify-content: center; min-width: 28px; }
   `;
   document.head.appendChild(styleEl);
@@ -218,6 +239,29 @@ export function renderMap(mapSelector, tooltipSelector, listSelector, geoData, f
       .forEach(([breed]) => getBreedColor(breed));
   }
 
+  function sortList() {
+    if (!listEl) return;
+    const scrollContainer = listEl.querySelector('.nbh-list-scroll');
+    if (!scrollContainer) return;
+    const rows = Array.from(scrollContainer.querySelectorAll('.nbh-row'));
+    if (currentMode === 'signature') {
+      rows.sort((a, b) => {
+        const dA = fsaSummary[a.dataset.fsa];
+        const dB = fsaSummary[b.dataset.fsa];
+        const rA = dA?.signature_breed?.[currentSpecies]?.ratio ?? 0;
+        const rB = dB?.signature_breed?.[currentSpecies]?.ratio ?? 0;
+        return rB - rA;
+      });
+    } else {
+      rows.sort((a, b) => {
+        const dA = fsaSummary[a.dataset.fsa];
+        const dB = fsaSummary[b.dataset.fsa];
+        return (dB?.total ?? 0) - (dA?.total ?? 0);
+      });
+    }
+    rows.forEach(row => scrollContainer.appendChild(row));
+  }
+
   function updateFills() {
     resetBreedColors();
     paths.attr('fill', d => {
@@ -226,6 +270,7 @@ export function renderMap(mapSelector, tooltipSelector, listSelector, geoData, f
     });
     updateListStats();
     updateColorDots();
+    sortList();
     updateContextHeader();
   }
 

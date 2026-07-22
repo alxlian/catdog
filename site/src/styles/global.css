@@ -5,8 +5,8 @@
   --bg: #FFFCF2;
   --sidebar-bg: #FFFCF2;
   --nav-active-bg: #EFEAE0;
-  --accent: #EB5E28;
-  --accent-light: #FFE1D5;
+  --accent: #3274C9;
+  --accent-light: #D6E4F5;
   --tag-text: #614814;
   --text: #252422;
   --text-muted: #403D39;
@@ -15,7 +15,7 @@
 
   /* Legacy compat for existing components */
   --navy: #252422;
-  --red: #EB5E28;
+  --red: #3274C9;
   --blue: #3B7EA1;
   --gray: #403D39;
   --gray-light: #CCC5B9;
@@ -80,7 +80,7 @@ a:hover { text-decoration: underline; }
 
 strong, b {
   color: var(--accent);
-  font-weight: 500;
+  font-weight: 600;
 }
 
 @media (max-width: 768px) {

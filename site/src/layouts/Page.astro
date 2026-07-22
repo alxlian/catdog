@@ -18,7 +18,7 @@ const { title = 'Pets of Toronto' } = Astro.props;
 </head>
 <body>
   <main class="page-main">
-    <a href="/" class="go-back">[Go Back]</a>
+    <a href="/" class="go-back"><svg class="go-back-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 12L6 8L10 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Go Back</a>
     <div class="page-content">
       <slot />
     </div>
@@ -49,6 +49,13 @@ const { title = 'Pets of Toronto' } = Astro.props;
     z-index: 100;
     opacity: 0.7;
     transition: opacity 0.15s;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .go-back-icon {
+    flex-shrink: 0;
   }
 
   .go-back:hover {

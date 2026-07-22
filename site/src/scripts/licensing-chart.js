@@ -68,7 +68,7 @@ export function renderLicensingOverTime(containerSelector, breedTrends) {
       .attr('fill', '#828282')
       .attr('font-size', '11px'));
 
-  const dogColor = '#EB5E28';
+  const dogColor = '#3274C9';
   const catColor = '#3B7EA1';
 
   // Split data into complete years vs partial (current year)
