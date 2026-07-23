@@ -1,44 +1,30 @@
 ---
-// Time-of-day background based on Toronto's current time
-// Refreshes only on page reload (computed server-side)
-const now = new Date();
-const torontoHour = parseInt(
-  now.toLocaleString('en-US', { timeZone: 'America/Toronto', hour: 'numeric', hour12: false })
-);
+// Time-of-day background — detected client-side so it always matches the visitor's clock.
+// Server-side defaults to 'day' to avoid a flash; client script overrides immediately.
+const defaultTime = 'day';
 
-type TimeOfDay = 'sunrise' | 'day' | 'sunset' | 'night';
-let timeOfDay: TimeOfDay;
-if (torontoHour >= 5 && torontoHour < 9) timeOfDay = 'sunrise';
-else if (torontoHour >= 9 && torontoHour < 17) timeOfDay = 'day';
-else if (torontoHour >= 17 && torontoHour < 21) timeOfDay = 'sunset';
-else timeOfDay = 'night';
-
-const gradients: Record<TimeOfDay, string> = {
+const gradients: Record<string, string> = {
   sunrise: 'linear-gradient(192.97deg, rgb(251,227,209) 6.52%, rgb(255,251,222) 52.71%, rgb(244,223,165) 72.07%, rgb(143,201,48) 88.3%, rgb(81,128,51) 99.89%)',
   day:     'linear-gradient(192.97deg, rgb(147,181,255) 6.52%, rgb(213,244,245) 52.71%, rgb(242,227,212) 76.05%, rgb(183,201,48) 88.3%, rgb(57,87,38) 99.89%)',
   sunset:  'linear-gradient(192.97deg, rgb(147,181,255) 6.52%, rgb(255,201,147) 62.75%, rgb(229,162,95) 81.7%, rgb(201,125,48) 88.3%, rgb(57,87,38) 99.89%)',
   night:   'linear-gradient(192.97deg, rgb(65,92,150) 6.52%, rgb(185,180,255) 62.75%, rgb(84,85,189) 81.7%, rgb(53,108,41) 88.3%, rgb(22,34,14) 99.89%)',
 };
 
-// Linear gradient overlay within asset group — changes color per time of day
-const assetBlendGradients: Record<TimeOfDay, string> = {
+const assetBlendGradients: Record<string, string> = {
   sunrise: 'linear-gradient(176.55deg, rgba(205,231,255,0) 12.05%, rgba(205,231,255,0.375) 45.99%, rgba(205,231,255,0.392) 79.96%, rgba(205,231,255,0) 105.83%)',
   day:     'linear-gradient(176.55deg, rgba(205,231,255,0) 12.05%, rgba(205,231,255,0.375) 45.99%, rgba(205,231,255,0.392) 79.96%, rgba(205,231,255,0) 105.83%)',
   sunset:  'linear-gradient(176.55deg, rgba(255,228,205,0) 12.05%, rgba(255,228,205,0.375) 45.99%, rgba(255,228,205,0.392) 79.96%, rgba(255,228,205,0) 105.83%)',
   night:   'linear-gradient(176.55deg, rgba(58,58,58,0) 12.05%, rgba(58,58,58,0.375) 45.99%, rgba(58,58,58,0.392) 79.96%, rgba(58,58,58,0) 105.83%)',
 };
-
-// Night uses hard-light blend, others use overlay
-const assetBlendMode = timeOfDay === 'night' ? 'hard-light' : 'overlay';
 ---
 
 <div class="bg-layer" id="bg-layer"
-  data-time={timeOfDay}
+  data-time={defaultTime}
   data-gradient-sunrise={gradients.sunrise}
   data-gradient-day={gradients.day}
   data-gradient-sunset={gradients.sunset}
   data-gradient-night={gradients.night}
-  style={`background: ${gradients[timeOfDay]};`}>
+  style={`background: ${gradients[defaultTime]};`}>
 
   <!-- Shader layers (above gradient, behind assets) -->
   <div class="shader shader-1">
@@ -94,7 +80,7 @@ const assetBlendMode = timeOfDay === 'night' ? 'hard-light' : 'overlay';
       data-blend-day={assetBlendGradients.day}
       data-blend-sunset={assetBlendGradients.sunset}
       data-blend-night={assetBlendGradients.night}
-      style={`background: ${assetBlendGradients[timeOfDay]}; mix-blend-mode: ${assetBlendMode};`}>
+      style={`background: ${assetBlendGradients[defaultTime]}; mix-blend-mode: overlay;`}>
     </div>
   </div>
 
@@ -102,6 +88,32 @@ const assetBlendMode = timeOfDay === 'night' ? 'hard-light' : 'overlay';
   <div class="noise"></div>
 
 </div>
+
+<script>
+  // Detect time-of-day client-side using Toronto timezone
+  const hour = parseInt(
+    new Date().toLocaleString('en-US', { timeZone: 'America/Toronto', hour: 'numeric', hour12: false })
+  );
+  let time: string;
+  if (hour >= 5 && hour < 9) time = 'sunrise';
+  else if (hour >= 9 && hour < 17) time = 'day';
+  else if (hour >= 17 && hour < 21) time = 'sunset';
+  else time = 'night';
+
+  const bg = document.getElementById('bg-layer');
+  if (bg) {
+    bg.dataset.time = time;
+    const gradient = bg.dataset[`gradient${time.charAt(0).toUpperCase() + time.slice(1)}`];
+    if (gradient) bg.style.background = gradient;
+
+    const blend = bg.querySelector<HTMLElement>('.asset-blend');
+    if (blend) {
+      const blendGrad = blend.dataset[`blend${time.charAt(0).toUpperCase() + time.slice(1)}`];
+      if (blendGrad) blend.style.background = blendGrad;
+      blend.style.mixBlendMode = time === 'night' ? 'hard-light' : 'overlay';
+    }
+  }
+</script>
 
 <style>
   .bg-layer {
