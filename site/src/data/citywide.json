@@ -1,17 +1,17 @@
 {
-  "total_licenses": 230845,
+  "total_licenses": 231322,
   "species_split": {
-    "DOG": 163333,
-    "CAT": 67512
+    "DOG": 163684,
+    "CAT": 67638
   },
   "top_breed": {
     "DOG": {
       "breed": "LABRADOR RETR",
-      "count": 15903
+      "count": 15942
     },
     "CAT": {
       "breed": "DOMESTIC SH",
-      "count": 49625
+      "count": 49720
     }
   },
   "top_name": {
