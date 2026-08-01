@@ -1,8 +1,8 @@
 {
-  "total_licenses": 233318,
+  "total_licenses": 233327,
   "species_split": {
-    "DOG": 165055,
-    "CAT": 68263
+    "DOG": 165060,
+    "CAT": 68267
   },
   "top_breed": {
     "DOG": {
@@ -11,7 +11,7 @@
     },
     "CAT": {
       "breed": "DOMESTIC SH",
-      "count": 50127
+      "count": 50134
     }
   },
   "top_name": {
