@@ -1,15 +1,15 @@
 {
   "M4T": {
     "neighbourhood": "Central Toronto - Moore Park / Summerhill East",
-    "dog_count": 1382,
-    "cat_count": 323,
-    "total": 1705,
-    "dog_ratio": 0.811,
+    "dog_count": 1424,
+    "cat_count": 338,
+    "total": 1762,
+    "dog_ratio": 0.808,
     "top_breeds": {
       "DOG": [
         {
           "breed": "LABRADOR RETR",
-          "count": 163
+          "count": 172
         },
         {
           "breed": "GOLDEN RETR",
@@ -17,13 +17,13 @@
         },
         {
           "breed": "POODLE MIN",
-          "count": 72
+          "count": 73
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 244
+          "count": 258
         },
         {
           "breed": "DOMESTIC LH",
@@ -38,11 +38,11 @@
     "rare_breeds": {
       "DOG": [
         {
-          "breed": "CANE CORSO",
+          "breed": "WEIMARANER",
           "count": 1
         },
         {
-          "breed": "JINDO",
+          "breed": "CANE CORSO",
           "count": 1
         },
         {
@@ -84,61 +84,53 @@
     "signature_breed": {
       "DOG": {
         "breed": "IRISH WATR SPAN",
-        "ratio": 30.76
+        "ratio": 30.73
       },
       "CAT": {
         "breed": "BOMBAY",
-        "ratio": 5.09
+        "ratio": 4.66
       }
     },
-    "per_capita_rate": 0.165021
+    "per_capita_rate": 0.170538
   },
   "M3A": {
     "neighbourhood": "North York - Parkway East / Victoria Village",
-    "dog_count": 1834,
-    "cat_count": 819,
-    "total": 2653,
-    "dog_ratio": 0.691,
+    "dog_count": 1894,
+    "cat_count": 861,
+    "total": 2755,
+    "dog_ratio": 0.687,
     "top_breeds": {
       "DOG": [
         {
           "breed": "LABRADOR RETR",
-          "count": 176
+          "count": 184
         },
         {
           "breed": "GERM SHEPHERD",
-          "count": 131
+          "count": 135
         },
         {
           "breed": "GOLDEN RETR",
-          "count": 121
+          "count": 132
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 616
+          "count": 648
         },
         {
           "breed": "DOMESTIC MH",
-          "count": 58
+          "count": 60
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 40
+          "count": 44
         }
       ]
     },
     "rare_breeds": {
       "DOG": [
-        {
-          "breed": "SIAMESE",
-          "count": 1
-        },
-        {
-          "breed": "WEIMARANER",
-          "count": 1
-        },
         {
           "breed": "ENG COCKER SPAN",
           "count": 1
@@ -149,6 +141,14 @@
         },
         {
           "breed": "AUST KELPIE",
+          "count": 1
+        },
+        {
+          "breed": "GREYHOUND",
+          "count": 1
+        },
+        {
+          "breed": "DOGO ARGENTINO",
           "count": 1
         }
       ],
@@ -178,40 +178,40 @@
     "signature_breed": {
       "DOG": {
         "breed": "BORZOI",
-        "ratio": 11.13
+        "ratio": 11.09
       },
       "CAT": {
         "breed": "KORAT",
-        "ratio": 26.27
+        "ratio": 26.15
       }
     },
-    "per_capita_rate": 0.07721
+    "per_capita_rate": 0.080178
   },
   "M6G": {
     "neighbourhood": "Downtown Toronto - Christie",
-    "dog_count": 2793,
-    "cat_count": 1221,
-    "total": 4014,
-    "dog_ratio": 0.696,
+    "dog_count": 2848,
+    "cat_count": 1267,
+    "total": 4115,
+    "dog_ratio": 0.692,
     "top_breeds": {
       "DOG": [
         {
           "breed": "LABRADOR RETR",
-          "count": 376
+          "count": 379
         },
         {
           "breed": "GOLDEN RETR",
-          "count": 272
+          "count": 274
         },
         {
           "breed": "GERM SHEPHERD",
-          "count": 112
+          "count": 115
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 913
+          "count": 937
         },
         {
           "breed": "DOMESTIC MH",
@@ -219,16 +219,12 @@
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 79
+          "count": 91
         }
       ]
     },
     "rare_breeds": {
       "DOG": [
-        {
-          "breed": "SILKEN WINDHOUN",
-          "count": 1
-        },
         {
           "breed": "BOERBOEL",
           "count": 1
@@ -243,6 +239,10 @@
         },
         {
           "breed": "PHARAOH HOUND",
+          "count": 1
+        },
+        {
+          "breed": "CHIHUAHUA LH",
           "count": 1
         }
       ],
@@ -272,30 +272,30 @@
     "signature_breed": {
       "DOG": {
         "breed": "KUVASZ",
-        "ratio": 26.79
+        "ratio": 27.04
       },
       "CAT": {
         "breed": "BURMESE",
         "ratio": 1.76
       }
     },
-    "per_capita_rate": 0.131176
+    "per_capita_rate": 0.134477
   },
   "M6E": {
     "neighbourhood": "York - Caledonia-Fairbank",
-    "dog_count": 2245,
-    "cat_count": 1086,
-    "total": 3331,
-    "dog_ratio": 0.674,
+    "dog_count": 2315,
+    "cat_count": 1149,
+    "total": 3464,
+    "dog_ratio": 0.668,
     "top_breeds": {
       "DOG": [
         {
           "breed": "LABRADOR RETR",
-          "count": 175
+          "count": 180
         },
         {
           "breed": "SHIH TZU",
-          "count": 139
+          "count": 141
         },
         {
           "breed": "GOLDEN RETR",
@@ -305,24 +305,20 @@
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 797
+          "count": 836
         },
         {
           "breed": "DOMESTIC MH",
-          "count": 112
+          "count": 117
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 79
+          "count": 85
         }
       ]
     },
     "rare_breeds": {
       "DOG": [
-        {
-          "breed": "BELG MALINOIS",
-          "count": 1
-        },
         {
           "breed": "BULL TERRIER",
           "count": 1
@@ -338,12 +334,16 @@
         {
           "breed": "SALUKI",
           "count": 1
+        },
+        {
+          "breed": "COCKAPOO",
+          "count": 1
         }
       ],
       "CAT": [
         {
-          "breed": "SPHYNX",
-          "count": 1
+          "breed": "EUROPEAN SH",
+          "count": 2
         },
         {
           "breed": "SIBERIAN HUSKY",
@@ -366,59 +366,63 @@
     "signature_breed": {
       "DOG": {
         "breed": "SWISS HOUND",
-        "ratio": 32.47
+        "ratio": 32.4
       },
       "CAT": {
         "breed": "ORIENTAL SH",
-        "ratio": 8.94
+        "ratio": 8.85
       }
     },
-    "per_capita_rate": 0.088393
+    "per_capita_rate": 0.091922
   },
   "M4E": {
     "neighbourhood": "East Toronto - The Beaches",
-    "dog_count": 3623,
-    "cat_count": 1079,
-    "total": 4702,
-    "dog_ratio": 0.771,
+    "dog_count": 3714,
+    "cat_count": 1109,
+    "total": 4823,
+    "dog_ratio": 0.77,
     "top_breeds": {
       "DOG": [
         {
           "breed": "LABRADOR RETR",
-          "count": 462
+          "count": 474
         },
         {
           "breed": "GOLDEN RETR",
-          "count": 416
+          "count": 430
         },
         {
-          "breed": "SIBERIAN HUSKY",
-          "count": 129
+          "breed": "GERM SHEPHERD",
+          "count": 130
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 817
+          "count": 840
         },
         {
           "breed": "DOMESTIC MH",
-          "count": 83
+          "count": 84
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 80
+          "count": 82
         }
       ]
     },
     "rare_breeds": {
       "DOG": [
         {
-          "breed": "PIT BULL",
+          "breed": "ST BERNARD SMTH",
           "count": 1
         },
         {
-          "breed": "GORDON SETTER",
+          "breed": "SILKEN WINDHOUN",
+          "count": 1
+        },
+        {
+          "breed": "PIT BULL",
           "count": 1
         },
         {
@@ -427,10 +431,6 @@
         },
         {
           "breed": "SCHNAUZER MIX",
-          "count": 1
-        },
-        {
-          "breed": "MIX",
           "count": 1
         }
       ],
@@ -460,57 +460,53 @@
     "signature_breed": {
       "DOG": {
         "breed": "KOMONDOR",
-        "ratio": 30.18
+        "ratio": 30.3
       },
       "CAT": {
         "breed": "NORWGN FOREST",
-        "ratio": 6.91
+        "ratio": 6.86
       }
     },
-    "per_capita_rate": 0.184588
+    "per_capita_rate": 0.189338
   },
   "M6P": {
     "neighbourhood": "West Toronto - High Park / The Junction South",
-    "dog_count": 3980,
-    "cat_count": 1919,
-    "total": 5899,
-    "dog_ratio": 0.675,
+    "dog_count": 4089,
+    "cat_count": 1989,
+    "total": 6078,
+    "dog_ratio": 0.673,
     "top_breeds": {
       "DOG": [
         {
           "breed": "LABRADOR RETR",
-          "count": 458
+          "count": 462
         },
         {
           "breed": "GOLDEN RETR",
-          "count": 347
+          "count": 356
         },
         {
           "breed": "GERM SHEPHERD",
-          "count": 162
+          "count": 164
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 1484
+          "count": 1538
         },
         {
           "breed": "DOMESTIC MH",
-          "count": 147
+          "count": 150
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 135
+          "count": 141
         }
       ]
     },
     "rare_breeds": {
       "DOG": [
-        {
-          "breed": "SALUKI",
-          "count": 1
-        },
         {
           "breed": "LEONBERGER",
           "count": 1
@@ -526,13 +522,13 @@
         {
           "breed": "PIT BULL MIX",
           "count": 1
+        },
+        {
+          "breed": "MIX",
+          "count": 1
         }
       ],
       "CAT": [
-        {
-          "breed": "EUROPEAN SH",
-          "count": 3
-        },
         {
           "breed": "MUNCHKIN SH",
           "count": 3
@@ -547,6 +543,10 @@
         },
         {
           "breed": "EXOTIC SH",
+          "count": 2
+        },
+        {
+          "breed": "BOMBAY",
           "count": 1
         }
       ]
@@ -554,48 +554,48 @@
     "signature_breed": {
       "DOG": {
         "breed": "IBIZAN HOUND",
-        "ratio": 21.36
+        "ratio": 21.4
       },
       "CAT": {
         "breed": "CORNISH REX",
-        "ratio": 3.12
+        "ratio": 2.98
       }
     },
-    "per_capita_rate": 0.147956
+    "per_capita_rate": 0.152445
   },
   "M4V": {
     "neighbourhood": "Central Toronto - Summerhill West / Deer Park",
-    "dog_count": 2322,
-    "cat_count": 551,
-    "total": 2873,
-    "dog_ratio": 0.808,
+    "dog_count": 2374,
+    "cat_count": 577,
+    "total": 2951,
+    "dog_ratio": 0.804,
     "top_breeds": {
       "DOG": [
         {
           "breed": "LABRADOR RETR",
-          "count": 252
+          "count": 256
         },
         {
           "breed": "GOLDEN RETR",
-          "count": 223
+          "count": 225
         },
         {
           "breed": "POODLE MIN",
-          "count": 123
+          "count": 125
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 394
+          "count": 416
         },
         {
           "breed": "DOMESTIC MH",
-          "count": 49
+          "count": 51
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 38
+          "count": 39
         }
       ]
     },
@@ -618,7 +618,7 @@
           "count": 1
         },
         {
-          "breed": "LHASA APSO",
+          "breed": "ENG SETTER",
           "count": 1
         }
       ],
@@ -648,44 +648,44 @@
     "signature_breed": {
       "DOG": {
         "breed": "SKYE TERRIER",
-        "ratio": 26.63
+        "ratio": 26.81
       },
       "CAT": {
         "breed": "AMER CURL SH",
-        "ratio": 15.23
+        "ratio": 14.63
       }
     },
-    "per_capita_rate": 0.149069
+    "per_capita_rate": 0.153116
   },
   "M4S": {
     "neighbourhood": "Central Toronto - Davisville",
-    "dog_count": 3109,
-    "cat_count": 1066,
-    "total": 4175,
-    "dog_ratio": 0.745,
+    "dog_count": 3202,
+    "cat_count": 1116,
+    "total": 4318,
+    "dog_ratio": 0.742,
     "top_breeds": {
       "DOG": [
         {
           "breed": "LABRADOR RETR",
-          "count": 392
+          "count": 395
         },
         {
           "breed": "GOLDEN RETR",
-          "count": 300
+          "count": 306
         },
         {
           "breed": "POODLE MIN",
-          "count": 138
+          "count": 143
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 798
+          "count": 831
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 69
+          "count": 74
         },
         {
           "breed": "DOMESTIC MH",
@@ -695,10 +695,6 @@
     },
     "rare_breeds": {
       "DOG": [
-        {
-          "breed": "RAT TERRIER",
-          "count": 1
-        },
         {
           "breed": "GOLDENDOODLE",
           "count": 1
@@ -714,6 +710,10 @@
         {
           "breed": "FINNISH SPITZ",
           "count": 1
+        },
+        {
+          "breed": "GERM SH POINT",
+          "count": 1
         }
       ],
       "CAT": [
@@ -722,11 +722,11 @@
           "count": 3
         },
         {
-          "breed": "RAGDOLL",
+          "breed": "BENGAL",
           "count": 2
         },
         {
-          "breed": "BENGAL",
+          "breed": "NORWGN FOREST",
           "count": 2
         },
         {
@@ -742,55 +742,55 @@
     "signature_breed": {
       "DOG": {
         "breed": "SCHAPENDOES",
-        "ratio": 54.7
+        "ratio": 54.66
       },
       "CAT": {
         "breed": "HAVANA BROWN",
-        "ratio": 39.36
+        "ratio": 39.34
       }
     },
-    "per_capita_rate": 0.135755
+    "per_capita_rate": 0.140405
   },
   "M8V": {
     "neighbourhood": "Etobicoke - New Toronto / Mimico South",
-    "dog_count": 3454,
-    "cat_count": 1398,
-    "total": 4852,
-    "dog_ratio": 0.712,
+    "dog_count": 3540,
+    "cat_count": 1448,
+    "total": 4988,
+    "dog_ratio": 0.71,
     "top_breeds": {
       "DOG": [
         {
           "breed": "LABRADOR RETR",
-          "count": 304
+          "count": 308
         },
         {
           "breed": "GOLDEN RETR",
-          "count": 232
+          "count": 239
         },
         {
           "breed": "GERM SHEPHERD",
-          "count": 161
+          "count": 163
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 1008
+          "count": 1036
         },
         {
           "breed": "DOMESTIC MH",
-          "count": 136
+          "count": 142
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 110
+          "count": 112
         }
       ]
     },
     "rare_breeds": {
       "DOG": [
         {
-          "breed": "CAIRN TERRIER",
+          "breed": "AKITA",
           "count": 1
         },
         {
@@ -812,7 +812,7 @@
       ],
       "CAT": [
         {
-          "breed": "BALINESE",
+          "breed": "RUSSIAN BLUE",
           "count": 2
         },
         {
@@ -824,11 +824,11 @@
           "count": 1
         },
         {
-          "breed": "RUSSIAN BLUE",
+          "breed": "EUROPEAN SH",
           "count": 1
         },
         {
-          "breed": "EUROPEAN SH",
+          "breed": "EGYPTIAN MAU",
           "count": 1
         }
       ]
@@ -836,55 +836,55 @@
     "signature_breed": {
       "DOG": {
         "breed": "SHEEPADOODLE",
-        "ratio": 49.24
+        "ratio": 32.96
       },
       "CAT": {
         "breed": "CHARTREUX",
-        "ratio": 10.01
+        "ratio": 10.11
       }
     },
-    "per_capita_rate": 0.109913
+    "per_capita_rate": 0.112994
   },
   "M1K": {
     "neighbourhood": "Scarborough - Kennedy Park / Ionview",
-    "dog_count": 1464,
-    "cat_count": 1006,
-    "total": 2470,
-    "dog_ratio": 0.593,
+    "dog_count": 1506,
+    "cat_count": 1057,
+    "total": 2563,
+    "dog_ratio": 0.588,
     "top_breeds": {
       "DOG": [
         {
           "breed": "LABRADOR RETR",
-          "count": 114
+          "count": 117
         },
         {
           "breed": "SHIH TZU",
-          "count": 83
+          "count": 86
         },
         {
           "breed": "GERM SHEPHERD",
-          "count": 82
+          "count": 85
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 791
+          "count": 824
         },
         {
           "breed": "DOMESTIC MH",
-          "count": 75
+          "count": 76
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 61
+          "count": 66
         }
       ]
     },
     "rare_breeds": {
       "DOG": [
         {
-          "breed": "MIN PINSCHER",
+          "breed": "SHIH POO",
           "count": 1
         },
         {
@@ -900,15 +900,11 @@
           "count": 1
         },
         {
-          "breed": "POINTER",
+          "breed": "KEESHOND",
           "count": 1
         }
       ],
       "CAT": [
-        {
-          "breed": "PERSIAN",
-          "count": 4
-        },
         {
           "breed": "TURKISH ANGORA",
           "count": 3
@@ -922,6 +918,10 @@
           "count": 2
         },
         {
+          "breed": "PIXIEBOB SH",
+          "count": 2
+        },
+        {
           "breed": "BENGAL MIX",
           "count": 1
         }
@@ -930,59 +930,59 @@
     "signature_breed": {
       "DOG": {
         "breed": "SILKY TERRIER",
-        "ratio": 21.51
+        "ratio": 21.52
       },
       "CAT": {
         "breed": "TURKISH ANGORA",
-        "ratio": 3.66
+        "ratio": 3.64
       }
     },
-    "per_capita_rate": 0.051271
+    "per_capita_rate": 0.053202
   },
   "M2M": {
     "neighbourhood": "North York - Newtonbrook",
-    "dog_count": 1033,
-    "cat_count": 525,
-    "total": 1558,
-    "dog_ratio": 0.663,
+    "dog_count": 1069,
+    "cat_count": 549,
+    "total": 1618,
+    "dog_ratio": 0.661,
     "top_breeds": {
       "DOG": [
         {
           "breed": "GOLDEN RETR",
-          "count": 80
+          "count": 82
         },
         {
           "breed": "POODLE MIN",
-          "count": 68
+          "count": 73
         },
         {
-          "breed": "GERM SHEPHERD",
-          "count": 68
+          "breed": "SHIH TZU",
+          "count": 69
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 330
+          "count": 343
         },
         {
           "breed": "DOMESTIC MH",
-          "count": 52
+          "count": 53
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 29
+          "count": 31
         }
       ]
     },
     "rare_breeds": {
       "DOG": [
         {
-          "breed": "CHOW CHOW",
+          "breed": "ITAL GREYHOUND",
           "count": 1
         },
         {
-          "breed": "PORT WATER DOG",
+          "breed": "CHOW CHOW",
           "count": 1
         },
         {
@@ -1008,73 +1008,69 @@
           "count": 3
         },
         {
+          "breed": "AMER SH",
+          "count": 3
+        },
+        {
           "breed": "BURMESE",
           "count": 2
         },
         {
           "breed": "EUROPEAN SH",
           "count": 2
-        },
-        {
-          "breed": "AMER SH",
-          "count": 1
         }
       ]
     },
     "signature_breed": {
       "DOG": {
         "breed": "AMERICAN COCKER",
-        "ratio": 164.63
+        "ratio": 65.49
       },
       "CAT": {
         "breed": "MANX",
-        "ratio": 20.18
+        "ratio": 19.6
       }
     },
-    "per_capita_rate": 0.048817
+    "per_capita_rate": 0.050697
   },
   "M6K": {
     "neighbourhood": "West Toronto - Brockton / Parkdale Village",
-    "dog_count": 3090,
-    "cat_count": 1817,
-    "total": 4907,
-    "dog_ratio": 0.63,
+    "dog_count": 3186,
+    "cat_count": 1907,
+    "total": 5093,
+    "dog_ratio": 0.626,
     "top_breeds": {
       "DOG": [
         {
           "breed": "LABRADOR RETR",
-          "count": 257
+          "count": 266
         },
         {
           "breed": "GOLDEN RETR",
-          "count": 179
+          "count": 183
         },
         {
           "breed": "CHIHUAHUA SH",
-          "count": 162
+          "count": 169
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 1340
+          "count": 1406
         },
         {
           "breed": "DOMESTIC MH",
-          "count": 158
+          "count": 162
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 124
+          "count": 129
         }
       ]
     },
     "rare_breeds": {
       "DOG": [
-        {
-          "breed": "CHUG",
-          "count": 1
-        },
         {
           "breed": "SHORKIE",
           "count": 1
@@ -1089,6 +1085,10 @@
         },
         {
           "breed": "ENG FOXHOUND",
+          "count": 1
+        },
+        {
+          "breed": "JAPANESE CHIN",
           "count": 1
         }
       ],
@@ -1118,48 +1118,48 @@
     "signature_breed": {
       "DOG": {
         "breed": "CHIHUAHUA",
-        "ratio": 24.46
+        "ratio": 24.42
       },
       "CAT": {
         "breed": "TIFFANY",
-        "ratio": 8.25
+        "ratio": 8.22
       }
     },
-    "per_capita_rate": 0.116528
+    "per_capita_rate": 0.120945
   },
   "M1B": {
     "neighbourhood": "Scarborough - Malvern / Rouge",
-    "dog_count": 1692,
-    "cat_count": 814,
-    "total": 2506,
-    "dog_ratio": 0.675,
+    "dog_count": 1739,
+    "cat_count": 849,
+    "total": 2588,
+    "dog_ratio": 0.672,
     "top_breeds": {
       "DOG": [
         {
           "breed": "SHIH TZU",
-          "count": 158
-        },
-        {
-          "breed": "LABRADOR RETR",
-          "count": 108
+          "count": 159
         },
         {
           "breed": "GERM SHEPHERD",
-          "count": 107
+          "count": 109
+        },
+        {
+          "breed": "LABRADOR RETR",
+          "count": 109
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 583
+          "count": 607
         },
         {
           "breed": "DOMESTIC MH",
-          "count": 74
+          "count": 78
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 67
+          "count": 68
         }
       ]
     },
@@ -1212,30 +1212,30 @@
     "signature_breed": {
       "DOG": {
         "breed": "TREEING WALKER HOUND",
-        "ratio": 6.0
+        "ratio": 5.92
       },
       "CAT": {
         "breed": "OCICAT",
-        "ratio": 21.48
+        "ratio": 21.55
       }
     },
-    "per_capita_rate": 0.038227
+    "per_capita_rate": 0.039478
   },
   "M2H": {
     "neighbourhood": "North York - Hillcrest Village",
-    "dog_count": 994,
-    "cat_count": 515,
-    "total": 1509,
-    "dog_ratio": 0.659,
+    "dog_count": 1018,
+    "cat_count": 523,
+    "total": 1541,
+    "dog_ratio": 0.661,
     "top_breeds": {
       "DOG": [
         {
           "breed": "GERM SHEPHERD",
-          "count": 109
+          "count": 110
         },
         {
           "breed": "LABRADOR RETR",
-          "count": 87
+          "count": 88
         },
         {
           "breed": "GOLDEN RETR",
@@ -1245,14 +1245,14 @@
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 383
+          "count": 385
         },
         {
           "breed": "DOMESTIC MH",
           "count": 40
         },
         {
-          "breed": "PERSIAN",
+          "breed": "DOMESTIC LH",
           "count": 27
         }
       ]
@@ -1286,16 +1286,16 @@
           "count": 4
         },
         {
+          "breed": "BENGAL",
+          "count": 3
+        },
+        {
           "breed": "SIAMESE",
           "count": 3
         },
         {
-          "breed": "BENGAL",
-          "count": 2
-        },
-        {
           "breed": "ABYSSINIAN",
-          "count": 1
+          "count": 3
         },
         {
           "breed": "SAVANNAH",
@@ -1306,30 +1306,30 @@
     "signature_breed": {
       "DOG": {
         "breed": "MAREMMA SHEEPDOG",
-        "ratio": 16.21
+        "ratio": 16.12
       },
       "CAT": {
         "breed": "EXOTIC SH",
-        "ratio": 9.21
+        "ratio": 9.17
       }
     },
-    "per_capita_rate": 0.064498
+    "per_capita_rate": 0.065866
   },
   "M8Y": {
     "neighbourhood": "Etobicoke - Mimico / Humber Bay / Old Mill South",
-    "dog_count": 1887,
-    "cat_count": 542,
-    "total": 2429,
+    "dog_count": 1953,
+    "cat_count": 560,
+    "total": 2513,
     "dog_ratio": 0.777,
     "top_breeds": {
       "DOG": [
         {
           "breed": "GOLDEN RETR",
-          "count": 188
+          "count": 192
         },
         {
           "breed": "LABRADOR RETR",
-          "count": 185
+          "count": 189
         },
         {
           "breed": "CHIHUAHUA SH",
@@ -1339,20 +1339,28 @@
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 416
+          "count": 429
         },
         {
           "breed": "DOMESTIC MH",
-          "count": 36
+          "count": 37
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 27
+          "count": 29
         }
       ]
     },
     "rare_breeds": {
       "DOG": [
+        {
+          "breed": "ENG COCKER SPAN",
+          "count": 1
+        },
+        {
+          "breed": "AMERICAN STAFF",
+          "count": 1
+        },
         {
           "breed": "ENG FOXHOUND",
           "count": 1
@@ -1362,22 +1370,14 @@
           "count": 1
         },
         {
-          "breed": "BULL TERRIER",
-          "count": 1
-        },
-        {
           "breed": "GREAT PYRENEES",
-          "count": 1
-        },
-        {
-          "breed": "SCHNAUZER GIANT",
           "count": 1
         }
       ],
       "CAT": [
         {
           "breed": "RAGDOLL",
-          "count": 3
+          "count": 4
         },
         {
           "breed": "RUSSIAN BLUE",
@@ -1400,26 +1400,26 @@
     "signature_breed": {
       "DOG": {
         "breed": "PUDELPOINTER",
-        "ratio": 15.02
+        "ratio": 13.44
       },
       "CAT": {
         "breed": "AMER SH",
-        "ratio": 3.03
+        "ratio": 2.89
       }
     },
-    "per_capita_rate": 0.110479
+    "per_capita_rate": 0.1143
   },
   "M4C": {
     "neighbourhood": "East York - Woodbine Heights",
-    "dog_count": 3676,
-    "cat_count": 1775,
-    "total": 5451,
-    "dog_ratio": 0.674,
+    "dog_count": 3773,
+    "cat_count": 1841,
+    "total": 5614,
+    "dog_ratio": 0.672,
     "top_breeds": {
       "DOG": [
         {
           "breed": "LABRADOR RETR",
-          "count": 388
+          "count": 399
         },
         {
           "breed": "GOLDEN RETR",
@@ -1427,26 +1427,34 @@
         },
         {
           "breed": "GERM SHEPHERD",
-          "count": 218
+          "count": 219
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 1349
+          "count": 1396
         },
         {
           "breed": "DOMESTIC MH",
-          "count": 152
+          "count": 155
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 119
+          "count": 121
         }
       ]
     },
     "rare_breeds": {
       "DOG": [
+        {
+          "breed": "DALMATIAN",
+          "count": 1
+        },
+        {
+          "breed": "ST BERNARD RGH",
+          "count": 1
+        },
         {
           "breed": "DANDIE DINMONT",
           "count": 1
@@ -1457,14 +1465,6 @@
         },
         {
           "breed": "COCKAPOO",
-          "count": 1
-        },
-        {
-          "breed": "PUDELPOINTER",
-          "count": 1
-        },
-        {
-          "breed": "TREEING WALKER HOUND",
           "count": 1
         }
       ],
@@ -1494,30 +1494,30 @@
     "signature_breed": {
       "DOG": {
         "breed": "PYREN SHEPHERD",
-        "ratio": 7.71
+        "ratio": 7.73
       },
       "CAT": {
         "breed": "ANGORA",
-        "ratio": 8.44
+        "ratio": 8.52
       }
     },
-    "per_capita_rate": 0.117377
+    "per_capita_rate": 0.120887
   },
   "M4B": {
     "neighbourhood": "East York - Parkview Hill / Woodbine Gardens",
-    "dog_count": 1405,
-    "cat_count": 611,
-    "total": 2016,
-    "dog_ratio": 0.697,
+    "dog_count": 1446,
+    "cat_count": 632,
+    "total": 2078,
+    "dog_ratio": 0.696,
     "top_breeds": {
       "DOG": [
         {
           "breed": "GERM SHEPHERD",
-          "count": 108
+          "count": 112
         },
         {
           "breed": "LABRADOR RETR",
-          "count": 102
+          "count": 103
         },
         {
           "breed": "COCKER SPANIEL",
@@ -1527,7 +1527,7 @@
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 460
+          "count": 476
         },
         {
           "breed": "DOMESTIC MH",
@@ -1535,7 +1535,7 @@
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 41
+          "count": 42
         }
       ]
     },
@@ -1564,10 +1564,6 @@
       ],
       "CAT": [
         {
-          "breed": "BENGAL",
-          "count": 2
-        },
-        {
           "breed": "EGYPTIAN MAU",
           "count": 1
         },
@@ -1582,6 +1578,10 @@
         {
           "breed": "BRITISH SH",
           "count": 1
+        },
+        {
+          "breed": "BOMBAY",
+          "count": 1
         }
       ]
     },
@@ -1592,17 +1592,17 @@
       },
       "CAT": {
         "breed": "CORNISH REX",
-        "ratio": 26.16
+        "ratio": 25.03
       }
     },
-    "per_capita_rate": 0.108317
+    "per_capita_rate": 0.111648
   },
   "M9L": {
     "neighbourhood": "North York - Humber Summit",
-    "dog_count": 295,
-    "cat_count": 137,
-    "total": 432,
-    "dog_ratio": 0.683,
+    "dog_count": 303,
+    "cat_count": 143,
+    "total": 446,
+    "dog_ratio": 0.679,
     "top_breeds": {
       "DOG": [
         {
@@ -1621,7 +1621,7 @@
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 117
+          "count": 121
         },
         {
           "breed": "DOMESTIC MH",
@@ -1629,12 +1629,16 @@
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 6
+          "count": 7
         }
       ]
     },
     "rare_breeds": {
       "DOG": [
+        {
+          "breed": "MIN PINSCHER",
+          "count": 1
+        },
         {
           "breed": "GERM SH POINT",
           "count": 1
@@ -1648,22 +1652,14 @@
           "count": 1
         },
         {
-          "breed": "AIREDALE TERR",
-          "count": 1
-        },
-        {
           "breed": "PUG",
           "count": 1
         }
       ],
       "CAT": [
         {
-          "breed": "DOMESTIC MH",
-          "count": 10
-        },
-        {
           "breed": "DOMESTIC LH",
-          "count": 6
+          "count": 7
         },
         {
           "breed": "MAINE COON",
@@ -1676,32 +1672,36 @@
         {
           "breed": "AMER SH",
           "count": 1
+        },
+        {
+          "breed": "SIAMESE",
+          "count": 1
         }
       ]
     },
     "signature_breed": {
       "DOG": {
         "breed": "ENG SETTER",
-        "ratio": 12.09
+        "ratio": 11.63
       },
       "CAT": {
         "breed": "DOMESTIC SH",
-        "ratio": 1.16
+        "ratio": 1.15
       }
     },
-    "per_capita_rate": 0.036807
+    "per_capita_rate": 0.037999
   },
   "M8Z": {
     "neighbourhood": "Etobicoke - Mimico NW / Queensway West",
-    "dog_count": 1797,
-    "cat_count": 581,
-    "total": 2378,
-    "dog_ratio": 0.756,
+    "dog_count": 1829,
+    "cat_count": 594,
+    "total": 2423,
+    "dog_ratio": 0.755,
     "top_breeds": {
       "DOG": [
         {
           "breed": "LABRADOR RETR",
-          "count": 192
+          "count": 195
         },
         {
           "breed": "GOLDEN RETR",
@@ -1709,17 +1709,17 @@
         },
         {
           "breed": "GERM SHEPHERD",
-          "count": 99
+          "count": 100
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 423
+          "count": 432
         },
         {
           "breed": "DOMESTIC MH",
-          "count": 71
+          "count": 73
         },
         {
           "breed": "DOMESTIC LH",
@@ -1729,10 +1729,6 @@
     },
     "rare_breeds": {
       "DOG": [
-        {
-          "breed": "FEIST",
-          "count": 1
-        },
         {
           "breed": "LHASA APSO",
           "count": 1
@@ -1747,6 +1743,10 @@
         },
         {
           "breed": "CHINESE CRESTED",
+          "count": 1
+        },
+        {
+          "breed": "DOGO ARGENTINO",
           "count": 1
         }
       ],
@@ -1776,53 +1776,57 @@
     "signature_breed": {
       "DOG": {
         "breed": "PBGV",
-        "ratio": 21.03
+        "ratio": 21.27
       },
       "CAT": {
         "breed": "PIXIEBOB LH",
-        "ratio": 120.37
+        "ratio": 123.19
       }
     },
-    "per_capita_rate": 0.123136
+    "per_capita_rate": 0.125466
   },
   "M2N": {
     "neighbourhood": "North York - Willowdale South",
-    "dog_count": 3268,
-    "cat_count": 1709,
-    "total": 4977,
-    "dog_ratio": 0.657,
+    "dog_count": 3375,
+    "cat_count": 1787,
+    "total": 5162,
+    "dog_ratio": 0.654,
     "top_breeds": {
       "DOG": [
         {
           "breed": "GOLDEN RETR",
-          "count": 260
+          "count": 267
         },
         {
           "breed": "LABRADOR RETR",
-          "count": 229
+          "count": 234
         },
         {
           "breed": "POODLE MIN",
-          "count": 183
+          "count": 187
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 1170
+          "count": 1215
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 152
+          "count": 157
         },
         {
           "breed": "DOMESTIC MH",
-          "count": 118
+          "count": 120
         }
       ]
     },
     "rare_breeds": {
       "DOG": [
+        {
+          "breed": "ENG SETTER",
+          "count": 1
+        },
         {
           "breed": "NEWFOUNDLAND",
           "count": 1
@@ -1837,10 +1841,6 @@
         },
         {
           "breed": "NS DUCK TOLLING",
-          "count": 1
-        },
-        {
-          "breed": "POODLE",
           "count": 1
         }
       ],
@@ -1870,40 +1870,40 @@
     "signature_breed": {
       "DOG": {
         "breed": "BARBET- FRENCH",
-        "ratio": 52.04
+        "ratio": 51.86
       },
       "CAT": {
         "breed": "UNKNOWN",
-        "ratio": 12.28
+        "ratio": 9.83
       }
     },
-    "per_capita_rate": 0.066272
+    "per_capita_rate": 0.068735
   },
   "M5M": {
     "neighbourhood": "North York - Bedford Park / Lawrence Manor",
-    "dog_count": 3080,
-    "cat_count": 673,
-    "total": 3753,
+    "dog_count": 3138,
+    "cat_count": 683,
+    "total": 3821,
     "dog_ratio": 0.821,
     "top_breeds": {
       "DOG": [
         {
           "breed": "GOLDEN RETR",
-          "count": 386
+          "count": 391
         },
         {
           "breed": "LABRADOR RETR",
-          "count": 383
+          "count": 389
         },
         {
           "breed": "POODLE MIN",
-          "count": 186
+          "count": 191
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 470
+          "count": 480
         },
         {
           "breed": "DOMESTIC MH",
@@ -1964,30 +1964,30 @@
     "signature_breed": {
       "DOG": {
         "breed": "BERNESE HOUND",
-        "ratio": 17.67
+        "ratio": 17.85
       },
       "CAT": {
         "breed": "SAVANNAH",
-        "ratio": 9.67
+        "ratio": 9.74
       }
     },
-    "per_capita_rate": 0.147205
+    "per_capita_rate": 0.149873
   },
   "M1L": {
     "neighbourhood": "Scarborough - Golden Mile / Oakridge",
-    "dog_count": 1375,
-    "cat_count": 781,
-    "total": 2156,
-    "dog_ratio": 0.638,
+    "dog_count": 1402,
+    "cat_count": 821,
+    "total": 2223,
+    "dog_ratio": 0.631,
     "top_breeds": {
       "DOG": [
         {
           "breed": "LABRADOR RETR",
-          "count": 140
+          "count": 141
         },
         {
           "breed": "GERM SHEPHERD",
-          "count": 96
+          "count": 99
         },
         {
           "breed": "GOLDEN RETR",
@@ -1997,15 +1997,15 @@
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 593
+          "count": 620
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 56
+          "count": 57
         },
         {
           "breed": "DOMESTIC MH",
-          "count": 46
+          "count": 48
         }
       ]
     },
@@ -2034,7 +2034,7 @@
       ],
       "CAT": [
         {
-          "breed": "BENGAL",
+          "breed": "EGYPTIAN MAU",
           "count": 1
         },
         {
@@ -2058,30 +2058,30 @@
     "signature_breed": {
       "DOG": {
         "breed": "TOY FOX TERRIER",
-        "ratio": 12.69
+        "ratio": 12.18
       },
       "CAT": {
         "breed": "NORWGN FOREST",
-        "ratio": 3.58
+        "ratio": 3.47
       }
     },
-    "per_capita_rate": 0.060168
+    "per_capita_rate": 0.062038
   },
   "M3K": {
     "neighbourhood": "North York - Downsview East (CFB Toronto)",
-    "dog_count": 403,
-    "cat_count": 205,
-    "total": 608,
-    "dog_ratio": 0.663,
+    "dog_count": 412,
+    "cat_count": 214,
+    "total": 626,
+    "dog_ratio": 0.658,
     "top_breeds": {
       "DOG": [
         {
-          "breed": "LABRADOR RETR",
+          "breed": "SHIH TZU",
           "count": 34
         },
         {
-          "breed": "SHIH TZU",
-          "count": 33
+          "breed": "LABRADOR RETR",
+          "count": 34
         },
         {
           "breed": "MALTESE",
@@ -2091,7 +2091,7 @@
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 161
+          "count": 167
         },
         {
           "breed": "DOMESTIC LH",
@@ -2105,10 +2105,6 @@
     },
     "rare_breeds": {
       "DOG": [
-        {
-          "breed": "AMER ESKIMO",
-          "count": 1
-        },
         {
           "breed": "BULLMASTIFF",
           "count": 1
@@ -2124,13 +2120,13 @@
         {
           "breed": "AUST CATTLE DOG",
           "count": 1
+        },
+        {
+          "breed": "GREAT PYRENEES",
+          "count": 1
         }
       ],
       "CAT": [
-        {
-          "breed": "ABYSSINIAN",
-          "count": 3
-        },
         {
           "breed": "BRITISH SH",
           "count": 2
@@ -2146,27 +2142,31 @@
         {
           "breed": "MAINE COON",
           "count": 1
+        },
+        {
+          "breed": "UNKNOWN",
+          "count": 1
         }
       ]
     },
     "signature_breed": {
       "DOG": {
         "breed": "PEKINGESE",
-        "ratio": 13.37
+        "ratio": 13.1
       },
       "CAT": {
         "breed": "NORWGN FOREST",
-        "ratio": 18.19
+        "ratio": 17.76
       }
     },
-    "per_capita_rate": 0.077305
+    "per_capita_rate": 0.079593
   },
   "M1H": {
     "neighbourhood": "Scarborough - Cedarbrae",
-    "dog_count": 753,
-    "cat_count": 376,
-    "total": 1129,
-    "dog_ratio": 0.667,
+    "dog_count": 773,
+    "cat_count": 396,
+    "total": 1169,
+    "dog_ratio": 0.661,
     "top_breeds": {
       "DOG": [
         {
@@ -2179,13 +2179,13 @@
         },
         {
           "breed": "SHIH TZU",
-          "count": 50
+          "count": 51
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 262
+          "count": 276
         },
         {
           "breed": "DOMESTIC MH",
@@ -2208,15 +2208,15 @@
           "count": 1
         },
         {
-          "breed": "POODLE STND",
-          "count": 1
-        },
-        {
           "breed": "PRESA CANARIO",
           "count": 1
         },
         {
           "breed": "WELSH CORGI CAR",
+          "count": 1
+        },
+        {
+          "breed": "AMERICAN STAFF",
           "count": 1
         }
       ],
@@ -2246,30 +2246,30 @@
     "signature_breed": {
       "DOG": {
         "breed": "GR SWISS MTN",
-        "ratio": 13.29
+        "ratio": 12.82
       },
       "CAT": {
         "breed": "CORNISH REX",
-        "ratio": 15.94
+        "ratio": 14.98
       }
     },
-    "per_capita_rate": 0.047112
+    "per_capita_rate": 0.048782
   },
   "M4J": {
     "neighbourhood": "East Toronto - The Danforth East",
-    "dog_count": 3577,
-    "cat_count": 1423,
-    "total": 5000,
+    "dog_count": 3672,
+    "cat_count": 1467,
+    "total": 5139,
     "dog_ratio": 0.715,
     "top_breeds": {
       "DOG": [
         {
           "breed": "LABRADOR RETR",
-          "count": 485
+          "count": 491
         },
         {
           "breed": "GOLDEN RETR",
-          "count": 313
+          "count": 320
         },
         {
           "breed": "GERM SHEPHERD",
@@ -2279,7 +2279,7 @@
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 1093
+          "count": 1128
         },
         {
           "breed": "DOMESTIC MH",
@@ -2294,14 +2294,6 @@
     "rare_breeds": {
       "DOG": [
         {
-          "breed": "PIT BULL",
-          "count": 1
-        },
-        {
-          "breed": "DALMATIAN",
-          "count": 1
-        },
-        {
           "breed": "KANGAL",
           "count": 1
         },
@@ -2311,6 +2303,14 @@
         },
         {
           "breed": "PODENGO PEQUENO",
+          "count": 1
+        },
+        {
+          "breed": "BERNEDOODLE",
+          "count": 1
+        },
+        {
+          "breed": "IRISH WOLFHOUND",
           "count": 1
         }
       ],
@@ -2339,56 +2339,56 @@
     },
     "signature_breed": {
       "DOG": {
-        "breed": "CHIWEENIE",
-        "ratio": 47.54
+        "breed": "TOSA",
+        "ratio": 38.13
       },
       "CAT": {
         "breed": "BALINESE",
-        "ratio": 15.02
+        "ratio": 14.07
       }
     },
-    "per_capita_rate": 0.142337
+    "per_capita_rate": 0.146294
   },
   "M1G": {
     "neighbourhood": "Scarborough - Woburn",
-    "dog_count": 1020,
-    "cat_count": 527,
-    "total": 1547,
-    "dog_ratio": 0.659,
+    "dog_count": 1060,
+    "cat_count": 565,
+    "total": 1625,
+    "dog_ratio": 0.652,
     "top_breeds": {
       "DOG": [
         {
           "breed": "LABRADOR RETR",
-          "count": 83
+          "count": 85
         },
         {
           "breed": "GERM SHEPHERD",
-          "count": 74
+          "count": 78
         },
         {
           "breed": "GOLDEN RETR",
-          "count": 59
+          "count": 61
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 365
+          "count": 394
         },
         {
           "breed": "DOMESTIC MH",
-          "count": 49
+          "count": 50
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 42
+          "count": 44
         }
       ]
     },
     "rare_breeds": {
       "DOG": [
         {
-          "breed": "BULLDOG",
+          "breed": "JAPANESE CHIN",
           "count": 1
         },
         {
@@ -2410,15 +2410,15 @@
       ],
       "CAT": [
         {
+          "breed": "AMER SH",
+          "count": 3
+        },
+        {
           "breed": "HIMALAYAN",
           "count": 3
         },
         {
           "breed": "MAINE COON",
-          "count": 2
-        },
-        {
-          "breed": "AMER SH",
           "count": 2
         },
         {
@@ -2434,55 +2434,63 @@
     "signature_breed": {
       "DOG": {
         "breed": "SWED VALLHUND",
-        "ratio": 83.36
+        "ratio": 70.77
       },
       "CAT": {
         "breed": "RAGDOLL",
-        "ratio": 2.94
+        "ratio": 2.91
       }
     },
-    "per_capita_rate": 0.050074
+    "per_capita_rate": 0.052599
   },
   "M3J": {
     "neighbourhood": "North York - York University / Northwood Park",
-    "dog_count": 747,
-    "cat_count": 552,
-    "total": 1299,
-    "dog_ratio": 0.575,
+    "dog_count": 779,
+    "cat_count": 580,
+    "total": 1359,
+    "dog_ratio": 0.573,
     "top_breeds": {
       "DOG": [
         {
           "breed": "SHIH TZU",
-          "count": 63
+          "count": 65
+        },
+        {
+          "breed": "GERM SHEPHERD",
+          "count": 55
         },
         {
           "breed": "MALTESE",
           "count": 55
-        },
-        {
-          "breed": "GERM SHEPHERD",
-          "count": 54
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 386
+          "count": 399
         },
         {
           "breed": "DOMESTIC MH",
-          "count": 50
+          "count": 52
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 39
+          "count": 42
         }
       ]
     },
     "rare_breeds": {
       "DOG": [
         {
-          "breed": "TERRIER",
+          "breed": "AUST CATTLE DOG",
+          "count": 1
+        },
+        {
+          "breed": "WEIMARANER",
+          "count": 1
+        },
+        {
+          "breed": "GREYHOUND",
           "count": 1
         },
         {
@@ -2491,14 +2499,6 @@
         },
         {
           "breed": "BERNESE MTN DOG",
-          "count": 1
-        },
-        {
-          "breed": "COLLIE SMOOTH",
-          "count": 1
-        },
-        {
-          "breed": "NEWFOUNDLAND",
           "count": 1
         }
       ],
@@ -2528,57 +2528,53 @@
     "signature_breed": {
       "DOG": {
         "breed": "EURASIER",
-        "ratio": 15.18
+        "ratio": 14.73
       },
       "CAT": {
         "breed": "EUROPEAN SH",
-        "ratio": 11.79
+        "ratio": 11.21
       }
     },
-    "per_capita_rate": 0.048835
+    "per_capita_rate": 0.05109
   },
   "M5V": {
     "neighbourhood": "Downtown Toronto - King West / CityPlace",
-    "dog_count": 4103,
-    "cat_count": 1593,
-    "total": 5696,
-    "dog_ratio": 0.72,
+    "dog_count": 4288,
+    "cat_count": 1714,
+    "total": 6002,
+    "dog_ratio": 0.714,
     "top_breeds": {
       "DOG": [
         {
           "breed": "GOLDEN RETR",
-          "count": 309
+          "count": 330
         },
         {
           "breed": "LABRADOR RETR",
-          "count": 292
+          "count": 299
         },
         {
           "breed": "POODLE MIN",
-          "count": 166
+          "count": 169
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 1090
+          "count": 1161
         },
         {
           "breed": "DOMESTIC MH",
-          "count": 133
+          "count": 140
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 111
+          "count": 122
         }
       ]
     },
     "rare_breeds": {
       "DOG": [
-        {
-          "breed": "TOY FOX TERRIER",
-          "count": 1
-        },
         {
           "breed": "DALMATIAN",
           "count": 1
@@ -2594,15 +2590,19 @@
         {
           "breed": "GERMAN PINSCHER",
           "count": 1
+        },
+        {
+          "breed": "GOLDENDOODLE",
+          "count": 1
         }
       ],
       "CAT": [
         {
-          "breed": "EUROPEAN SH",
+          "breed": "NORWGN FOREST",
           "count": 2
         },
         {
-          "breed": "NORWGN FOREST",
+          "breed": "RUSSIAN BLUE",
           "count": 2
         },
         {
@@ -2622,61 +2622,53 @@
     "signature_breed": {
       "DOG": {
         "breed": "PUG-POO",
-        "ratio": 41.45
+        "ratio": 40.82
       },
       "CAT": {
         "breed": "TOYBOB",
-        "ratio": 43.9
+        "ratio": 42.69
       }
     },
-    "per_capita_rate": 0.095073
+    "per_capita_rate": 0.10018
   },
   "M9N": {
     "neighbourhood": "York - Weston",
-    "dog_count": 1240,
-    "cat_count": 567,
-    "total": 1807,
-    "dog_ratio": 0.686,
+    "dog_count": 1285,
+    "cat_count": 608,
+    "total": 1893,
+    "dog_ratio": 0.679,
     "top_breeds": {
       "DOG": [
         {
           "breed": "LABRADOR RETR",
-          "count": 120
+          "count": 124
         },
         {
           "breed": "GERM SHEPHERD",
-          "count": 72
+          "count": 74
         },
         {
           "breed": "GOLDEN RETR",
-          "count": 59
+          "count": 63
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 461
+          "count": 482
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 34
+          "count": 38
         },
         {
           "breed": "DOMESTIC MH",
-          "count": 31
+          "count": 32
         }
       ]
     },
     "rare_breeds": {
       "DOG": [
-        {
-          "breed": "PIT BULL",
-          "count": 1
-        },
-        {
-          "breed": "BASENJI",
-          "count": 1
-        },
         {
           "breed": "PIT BULL MIX",
           "count": 1
@@ -2688,17 +2680,17 @@
         {
           "breed": "ALASK MALAMUTE",
           "count": 1
+        },
+        {
+          "breed": "MALTESE MIX",
+          "count": 1
+        },
+        {
+          "breed": "LAGOTTO",
+          "count": 1
         }
       ],
       "CAT": [
-        {
-          "breed": "AMER SH",
-          "count": 2
-        },
-        {
-          "breed": "ORIENTAL SH",
-          "count": 2
-        },
         {
           "breed": "BRITISH SH",
           "count": 1
@@ -2710,32 +2702,40 @@
         {
           "breed": "CHARTREUX",
           "count": 1
+        },
+        {
+          "breed": "BOMBAY",
+          "count": 1
+        },
+        {
+          "breed": "RAGDOLL",
+          "count": 1
         }
       ]
     },
     "signature_breed": {
       "DOG": {
         "breed": "KERRY BLUE TERR",
-        "ratio": 26.12
+        "ratio": 25.94
       },
       "CAT": {
-        "breed": "MAINE COON",
-        "ratio": 1.82
+        "breed": "ABYSSINIAN",
+        "ratio": 2.1
       }
     },
-    "per_capita_rate": 0.069343
+    "per_capita_rate": 0.072643
   },
   "M4W": {
     "neighbourhood": "Downtown Toronto - Rosedale",
-    "dog_count": 1833,
-    "cat_count": 426,
-    "total": 2259,
-    "dog_ratio": 0.811,
+    "dog_count": 1882,
+    "cat_count": 447,
+    "total": 2329,
+    "dog_ratio": 0.808,
     "top_breeds": {
       "DOG": [
         {
           "breed": "LABRADOR RETR",
-          "count": 222
+          "count": 226
         },
         {
           "breed": "GOLDEN RETR",
@@ -2749,15 +2749,15 @@
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 312
+          "count": 322
         },
         {
           "breed": "DOMESTIC MH",
-          "count": 30
+          "count": 32
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 22
+          "count": 23
         }
       ]
     },
@@ -2810,21 +2810,21 @@
     "signature_breed": {
       "DOG": {
         "breed": "PUMI",
-        "ratio": 92.78
+        "ratio": 93.0
       },
       "CAT": {
         "breed": "BURMESE",
-        "ratio": 10.1
+        "ratio": 10.0
       }
     },
-    "per_capita_rate": 0.147686
+    "per_capita_rate": 0.152262
   },
   "M1S": {
     "neighbourhood": "Scarborough - Agincourt",
-    "dog_count": 1160,
-    "cat_count": 561,
-    "total": 1721,
-    "dog_ratio": 0.674,
+    "dog_count": 1197,
+    "cat_count": 585,
+    "total": 1782,
+    "dog_ratio": 0.672,
     "top_breeds": {
       "DOG": [
         {
@@ -2833,25 +2833,25 @@
         },
         {
           "breed": "GOLDEN RETR",
-          "count": 97
+          "count": 99
         },
         {
           "breed": "GERM SHEPHERD",
-          "count": 73
+          "count": 75
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 423
+          "count": 437
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 41
+          "count": 42
         },
         {
           "breed": "DOMESTIC MH",
-          "count": 31
+          "count": 34
         }
       ]
     },
@@ -2859,10 +2859,6 @@
       "DOG": [
         {
           "breed": "KOREAN JINDO",
-          "count": 1
-        },
-        {
-          "breed": "GREAT PYRENEES",
           "count": 1
         },
         {
@@ -2876,15 +2872,19 @@
         {
           "breed": "NORW ELKHOUND",
           "count": 1
+        },
+        {
+          "breed": "MALTIPOO",
+          "count": 1
         }
       ],
       "CAT": [
         {
-          "breed": "SCOTTISH FOLD",
-          "count": 4
+          "breed": "HIMALAYAN",
+          "count": 3
         },
         {
-          "breed": "HIMALAYAN",
+          "breed": "RUSSIAN BLUE",
           "count": 3
         },
         {
@@ -2892,11 +2892,11 @@
           "count": 2
         },
         {
-          "breed": "RUSSIAN BLUE",
-          "count": 2
+          "breed": "SAVANNAH",
+          "count": 1
         },
         {
-          "breed": "SAVANNAH",
+          "breed": "BENGAL",
           "count": 1
         }
       ]
@@ -2904,48 +2904,48 @@
     "signature_breed": {
       "DOG": {
         "breed": "POMSKY",
-        "ratio": 73.3
+        "ratio": 73.11
       },
       "CAT": {
         "breed": "TURKISH ANGORA",
-        "ratio": 8.75
+        "ratio": 8.78
       }
     },
-    "per_capita_rate": 0.045695
+    "per_capita_rate": 0.047314
   },
   "M1N": {
     "neighbourhood": "Scarborough - Birch Cliff / Cliffside West",
-    "dog_count": 2417,
-    "cat_count": 792,
-    "total": 3209,
-    "dog_ratio": 0.753,
+    "dog_count": 2481,
+    "cat_count": 827,
+    "total": 3308,
+    "dog_ratio": 0.75,
     "top_breeds": {
       "DOG": [
         {
           "breed": "LABRADOR RETR",
-          "count": 266
+          "count": 270
         },
         {
           "breed": "GOLDEN RETR",
-          "count": 190
+          "count": 194
         },
         {
           "breed": "GERM SHEPHERD",
-          "count": 141
+          "count": 148
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 564
+          "count": 585
         },
         {
           "breed": "DOMESTIC MH",
-          "count": 85
+          "count": 86
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 69
+          "count": 70
         }
       ]
     },
@@ -2974,14 +2974,6 @@
       ],
       "CAT": [
         {
-          "breed": "BURMESE",
-          "count": 1
-        },
-        {
-          "breed": "EUROPEAN SH",
-          "count": 1
-        },
-        {
           "breed": "RUSSIAN BLUE",
           "count": 1
         },
@@ -2990,7 +2982,15 @@
           "count": 1
         },
         {
-          "breed": "SCOTTISH FOLD",
+          "breed": "PERSIAN",
+          "count": 1
+        },
+        {
+          "breed": "SPHYNX",
+          "count": 1
+        },
+        {
+          "breed": "SAVANNAH",
           "count": 1
         }
       ]
@@ -2998,21 +2998,21 @@
     "signature_breed": {
       "DOG": {
         "breed": "ICELND SHEEPDOG",
-        "ratio": 15.64
+        "ratio": 15.68
       },
       "CAT": {
         "breed": "BIRMAN",
-        "ratio": 10.19
+        "ratio": 10.21
       }
     },
-    "per_capita_rate": 0.139667
+    "per_capita_rate": 0.143976
   },
   "M6B": {
     "neighbourhood": "North York - Glencairn",
-    "dog_count": 1429,
-    "cat_count": 538,
-    "total": 1967,
-    "dog_ratio": 0.726,
+    "dog_count": 1458,
+    "cat_count": 572,
+    "total": 2030,
+    "dog_ratio": 0.718,
     "top_breeds": {
       "DOG": [
         {
@@ -3021,34 +3021,30 @@
         },
         {
           "breed": "LABRADOR RETR",
-          "count": 124
+          "count": 127
         },
         {
           "breed": "GERM SHEPHERD",
-          "count": 78
+          "count": 80
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 407
+          "count": 425
         },
         {
           "breed": "DOMESTIC MH",
-          "count": 32
+          "count": 33
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 23
+          "count": 26
         }
       ]
     },
     "rare_breeds": {
       "DOG": [
-        {
-          "breed": "PRESA CANARIO",
-          "count": 1
-        },
         {
           "breed": "CHIHUAHUA LH",
           "count": 1
@@ -3064,6 +3060,10 @@
         {
           "breed": "GERM SH POINT",
           "count": 1
+        },
+        {
+          "breed": "COLLIE ROUGH",
+          "count": 1
         }
       ],
       "CAT": [
@@ -3076,11 +3076,11 @@
           "count": 2
         },
         {
-          "breed": "ORIENTAL SH",
-          "count": 1
+          "breed": "SCOTTISH FOLD",
+          "count": 2
         },
         {
-          "breed": "SCOTTISH FOLD",
+          "breed": "ORIENTAL SH",
           "count": 1
         },
         {
@@ -3092,40 +3092,40 @@
     "signature_breed": {
       "DOG": {
         "breed": "NORW BUHUND",
-        "ratio": 14.28
+        "ratio": 14.41
       },
       "CAT": {
         "breed": "EUROPEAN SH",
-        "ratio": 12.09
+        "ratio": 11.37
       }
     },
-    "per_capita_rate": 0.068935
+    "per_capita_rate": 0.071143
   },
   "M2J": {
     "neighbourhood": "North York - Fairview / Henry Farm",
-    "dog_count": 2286,
-    "cat_count": 1140,
-    "total": 3426,
-    "dog_ratio": 0.667,
+    "dog_count": 2362,
+    "cat_count": 1185,
+    "total": 3547,
+    "dog_ratio": 0.666,
     "top_breeds": {
       "DOG": [
         {
           "breed": "LABRADOR RETR",
-          "count": 174
+          "count": 177
         },
         {
           "breed": "SHIH TZU",
-          "count": 140
+          "count": 146
         },
         {
           "breed": "GOLDEN RETR",
-          "count": 125
+          "count": 129
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 828
+          "count": 856
         },
         {
           "breed": "DOMESTIC MH",
@@ -3133,7 +3133,7 @@
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 59
+          "count": 63
         }
       ]
     },
@@ -3186,61 +3186,53 @@
     "signature_breed": {
       "DOG": {
         "breed": "SCHIPPERKE",
-        "ratio": 20.29
+        "ratio": 20.21
       },
       "CAT": {
         "breed": "TURKISH ANGORA",
-        "ratio": 7.53
+        "ratio": 7.58
       }
     },
-    "per_capita_rate": 0.055472
+    "per_capita_rate": 0.057431
   },
   "M4M": {
     "neighbourhood": "East Toronto - Studio District",
-    "dog_count": 2530,
-    "cat_count": 895,
-    "total": 3425,
-    "dog_ratio": 0.739,
+    "dog_count": 2616,
+    "cat_count": 928,
+    "total": 3544,
+    "dog_ratio": 0.738,
     "top_breeds": {
       "DOG": [
         {
           "breed": "LABRADOR RETR",
-          "count": 239
+          "count": 242
         },
         {
           "breed": "GOLDEN RETR",
-          "count": 214
+          "count": 221
         },
         {
           "breed": "GERM SHEPHERD",
-          "count": 124
+          "count": 127
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 646
+          "count": 666
         },
         {
           "breed": "DOMESTIC MH",
-          "count": 97
+          "count": 99
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 71
+          "count": 75
         }
       ]
     },
     "rare_breeds": {
       "DOG": [
-        {
-          "breed": "CHOW CHOW",
-          "count": 1
-        },
-        {
-          "breed": "SEALYHAM TERR",
-          "count": 1
-        },
         {
           "breed": "MAREMMA SHEEPDOG",
           "count": 1
@@ -3252,9 +3244,21 @@
         {
           "breed": "BASENJI",
           "count": 1
+        },
+        {
+          "breed": "STAFFORDSHIRE",
+          "count": 1
+        },
+        {
+          "breed": "EURASIER",
+          "count": 1
         }
       ],
       "CAT": [
+        {
+          "breed": "SCOTTISH FOLD",
+          "count": 1
+        },
         {
           "breed": "ANGORA",
           "count": 1
@@ -3268,10 +3272,6 @@
           "count": 1
         },
         {
-          "breed": "BENGAL",
-          "count": 1
-        },
-        {
           "breed": "NORWGN FOREST",
           "count": 1
         }
@@ -3280,21 +3280,21 @@
     "signature_breed": {
       "DOG": {
         "breed": "LOWCHEN",
-        "ratio": 48.89
+        "ratio": 48.66
       },
       "CAT": {
         "breed": "SPHYNX",
-        "ratio": 4.34
+        "ratio": 4.11
       }
     },
-    "per_capita_rate": 0.136716
+    "per_capita_rate": 0.141466
   },
   "M3M": {
     "neighbourhood": "North York - Downsview Central",
-    "dog_count": 817,
-    "cat_count": 479,
-    "total": 1296,
-    "dog_ratio": 0.63,
+    "dog_count": 856,
+    "cat_count": 498,
+    "total": 1354,
+    "dog_ratio": 0.632,
     "top_breeds": {
       "DOG": [
         {
@@ -3303,38 +3303,30 @@
         },
         {
           "breed": "GERM SHEPHERD",
-          "count": 75
+          "count": 76
         },
         {
           "breed": "LABRADOR RETR",
-          "count": 50
+          "count": 52
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 384
+          "count": 394
         },
         {
           "breed": "DOMESTIC MH",
-          "count": 33
+          "count": 35
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 17
+          "count": 19
         }
       ]
     },
     "rare_breeds": {
       "DOG": [
-        {
-          "breed": "CHIHUAHUA LH",
-          "count": 1
-        },
-        {
-          "breed": "KOOLIE",
-          "count": 1
-        },
         {
           "breed": "BULL TERRIER",
           "count": 1
@@ -3345,6 +3337,14 @@
         },
         {
           "breed": "SHIH TZU MIX",
+          "count": 1
+        },
+        {
+          "breed": "ENG SPRNGR SPAN",
+          "count": 1
+        },
+        {
+          "breed": "MALTIPOO",
           "count": 1
         }
       ],
@@ -3374,48 +3374,48 @@
     "signature_breed": {
       "DOG": {
         "breed": "NORW ELKHOUND",
-        "ratio": 14.66
+        "ratio": 14.4
       },
       "CAT": {
         "breed": "PERSIAN",
-        "ratio": 1.77
+        "ratio": 1.68
       }
     },
-    "per_capita_rate": 0.052036
+    "per_capita_rate": 0.054364
   },
   "M9W": {
     "neighbourhood": "Etobicoke - Humberwood / Rexdale",
-    "dog_count": 1409,
-    "cat_count": 575,
-    "total": 1984,
-    "dog_ratio": 0.71,
+    "dog_count": 1451,
+    "cat_count": 600,
+    "total": 2051,
+    "dog_ratio": 0.707,
     "top_breeds": {
       "DOG": [
         {
           "breed": "GERM SHEPHERD",
-          "count": 143
+          "count": 145
         },
         {
           "breed": "LABRADOR RETR",
-          "count": 120
+          "count": 123
         },
         {
           "breed": "SHIH TZU",
-          "count": 90
+          "count": 98
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 431
+          "count": 449
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 47
+          "count": 49
         },
         {
           "breed": "DOMESTIC MH",
-          "count": 44
+          "count": 45
         }
       ]
     },
@@ -3423,10 +3423,6 @@
       "DOG": [
         {
           "breed": "PRESA CANARIO",
-          "count": 1
-        },
-        {
-          "breed": "COLLIE SMOOTH",
           "count": 1
         },
         {
@@ -3440,15 +3436,19 @@
         {
           "breed": "BOERBOEL",
           "count": 1
+        },
+        {
+          "breed": "RUSSIAN TERRIER",
+          "count": 1
         }
       ],
       "CAT": [
         {
-          "breed": "PERSIAN",
+          "breed": "RAGDOLL",
           "count": 4
         },
         {
-          "breed": "ABYSSINIAN",
+          "breed": "PERSIAN",
           "count": 4
         },
         {
@@ -3468,44 +3468,44 @@
     "signature_breed": {
       "DOG": {
         "breed": "MAREMMA SHEEPDOG",
-        "ratio": 7.62
+        "ratio": 7.54
       },
       "CAT": {
         "breed": "AMER CURL SH",
-        "ratio": 29.19
+        "ratio": 28.14
       }
     },
-    "per_capita_rate": 0.048417
+    "per_capita_rate": 0.050052
   },
   "M9C": {
     "neighbourhood": "Etobicoke - Eringate / Markland Wood",
-    "dog_count": 2761,
-    "cat_count": 896,
-    "total": 3657,
+    "dog_count": 2823,
+    "cat_count": 917,
+    "total": 3740,
     "dog_ratio": 0.755,
     "top_breeds": {
       "DOG": [
         {
           "breed": "LABRADOR RETR",
-          "count": 247
+          "count": 250
         },
         {
           "breed": "GOLDEN RETR",
-          "count": 202
+          "count": 205
         },
         {
           "breed": "GERM SHEPHERD",
-          "count": 156
+          "count": 158
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 639
+          "count": 654
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 92
+          "count": 95
         },
         {
           "breed": "DOMESTIC MH",
@@ -3520,10 +3520,6 @@
           "count": 1
         },
         {
-          "breed": "DALMATIAN",
-          "count": 1
-        },
-        {
           "breed": "GOLDENDOODLE",
           "count": 1
         },
@@ -3534,13 +3530,13 @@
         {
           "breed": "FLAT COAT RETR",
           "count": 1
+        },
+        {
+          "breed": "STAFFORDSHIRE",
+          "count": 1
         }
       ],
       "CAT": [
-        {
-          "breed": "TURKISH VAN",
-          "count": 1
-        },
         {
           "breed": "HIMALAYAN",
           "count": 1
@@ -3556,32 +3552,36 @@
         {
           "breed": "EUROPEAN SH",
           "count": 1
+        },
+        {
+          "breed": "AMER WIREHAIR",
+          "count": 1
         }
       ]
     },
     "signature_breed": {
       "DOG": {
         "breed": "KOOIKERHONJE",
-        "ratio": 61.59
+        "ratio": 62.0
       },
       "CAT": {
         "breed": "TIFFANY",
-        "ratio": 16.73
+        "ratio": 17.1
       }
     },
-    "per_capita_rate": 0.094435
+    "per_capita_rate": 0.096578
   },
   "M3B": {
     "neighbourhood": "North York - Don Mills North",
-    "dog_count": 952,
-    "cat_count": 237,
-    "total": 1189,
-    "dog_ratio": 0.801,
+    "dog_count": 981,
+    "cat_count": 247,
+    "total": 1228,
+    "dog_ratio": 0.799,
     "top_breeds": {
       "DOG": [
         {
           "breed": "GOLDEN RETR",
-          "count": 101
+          "count": 105
         },
         {
           "breed": "LABRADOR RETR",
@@ -3589,13 +3589,13 @@
         },
         {
           "breed": "GERM SHEPHERD",
-          "count": 50
+          "count": 56
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 158
+          "count": 165
         },
         {
           "breed": "DOMESTIC LH",
@@ -3610,14 +3610,6 @@
     "rare_breeds": {
       "DOG": [
         {
-          "breed": "CHOW CHOW",
-          "count": 2
-        },
-        {
-          "breed": "CHIHUAHUA MIX",
-          "count": 2
-        },
-        {
           "breed": "CANE CORSO",
           "count": 1
         },
@@ -3628,19 +3620,27 @@
         {
           "breed": "LABRADOODLE",
           "count": 1
+        },
+        {
+          "breed": "JINDO",
+          "count": 1
+        },
+        {
+          "breed": "DACHSHUND MIN",
+          "count": 1
         }
       ],
       "CAT": [
-        {
-          "breed": "RUSSIAN BLUE",
-          "count": 3
-        },
         {
           "breed": "BURMESE",
           "count": 3
         },
         {
           "breed": "SCOTTISH FOLD",
+          "count": 3
+        },
+        {
+          "breed": "ABYSSINIAN",
           "count": 3
         },
         {
@@ -3656,40 +3656,40 @@
     "signature_breed": {
       "DOG": {
         "breed": "FIELD SPANIEL",
-        "ratio": 35.73
+        "ratio": 29.74
       },
       "CAT": {
         "breed": "BURMESE",
-        "ratio": 6.81
+        "ratio": 6.78
       }
     },
-    "per_capita_rate": 0.092314
+    "per_capita_rate": 0.095342
   },
   "M8W": {
     "neighbourhood": "Etobicoke - Alderwood / Long Branch",
-    "dog_count": 2121,
-    "cat_count": 766,
-    "total": 2887,
-    "dog_ratio": 0.735,
+    "dog_count": 2175,
+    "cat_count": 789,
+    "total": 2964,
+    "dog_ratio": 0.734,
     "top_breeds": {
       "DOG": [
         {
           "breed": "LABRADOR RETR",
-          "count": 226
+          "count": 230
         },
         {
           "breed": "GOLDEN RETR",
-          "count": 153
+          "count": 157
         },
         {
-          "breed": "SHIH TZU",
-          "count": 98
+          "breed": "GERM SHEPHERD",
+          "count": 101
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 579
+          "count": 595
         },
         {
           "breed": "DOMESTIC MH",
@@ -3697,7 +3697,7 @@
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 46
+          "count": 48
         }
       ]
     },
@@ -3726,8 +3726,8 @@
       ],
       "CAT": [
         {
-          "breed": "SIBERIAN FOREST",
-          "count": 3
+          "breed": "HIMALAYAN",
+          "count": 2
         },
         {
           "breed": "PERSIAN",
@@ -3750,57 +3750,53 @@
     "signature_breed": {
       "DOG": {
         "breed": "AFFENPINSCHER",
-        "ratio": 27.75
+        "ratio": 27.86
       },
       "CAT": {
         "breed": "SIBERIAN FOREST",
-        "ratio": 91.3
+        "ratio": 92.74
       }
     },
-    "per_capita_rate": 0.128993
+    "per_capita_rate": 0.132434
   },
   "M1E": {
     "neighbourhood": "Scarborough - Guildwood / Morningside",
-    "dog_count": 2550,
-    "cat_count": 1414,
-    "total": 3964,
-    "dog_ratio": 0.643,
+    "dog_count": 2616,
+    "cat_count": 1480,
+    "total": 4096,
+    "dog_ratio": 0.639,
     "top_breeds": {
       "DOG": [
         {
           "breed": "GOLDEN RETR",
-          "count": 200
+          "count": 206
         },
         {
           "breed": "LABRADOR RETR",
-          "count": 199
+          "count": 206
         },
         {
           "breed": "GERM SHEPHERD",
-          "count": 181
+          "count": 188
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 1080
+          "count": 1128
         },
         {
           "breed": "DOMESTIC MH",
-          "count": 145
+          "count": 146
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 62
+          "count": 63
         }
       ]
     },
     "rare_breeds": {
       "DOG": [
-        {
-          "breed": "POMERANIAN MIX",
-          "count": 1
-        },
         {
           "breed": "CHIHUAHUA MIX",
           "count": 1
@@ -3816,15 +3812,19 @@
         {
           "breed": "ITAL GREYHOUND",
           "count": 1
+        },
+        {
+          "breed": "POTCAKE MIX",
+          "count": 1
         }
       ],
       "CAT": [
         {
-          "breed": "EGYPTIAN MAU",
-          "count": 2
+          "breed": "PERSIAN",
+          "count": 3
         },
         {
-          "breed": "PERSIAN",
+          "breed": "EGYPTIAN MAU",
           "count": 2
         },
         {
@@ -3844,61 +3844,53 @@
     "signature_breed": {
       "DOG": {
         "breed": "BULLY",
-        "ratio": 53.35
+        "ratio": 53.53
       },
       "CAT": {
         "breed": "SAVANNAH",
-        "ratio": 3.45
+        "ratio": 3.37
       }
     },
-    "per_capita_rate": 0.082527
+    "per_capita_rate": 0.085275
   },
   "M4G": {
     "neighbourhood": "East York - Leaside",
-    "dog_count": 2392,
-    "cat_count": 571,
-    "total": 2963,
-    "dog_ratio": 0.807,
+    "dog_count": 2447,
+    "cat_count": 597,
+    "total": 3044,
+    "dog_ratio": 0.804,
     "top_breeds": {
       "DOG": [
         {
           "breed": "GOLDEN RETR",
-          "count": 347
+          "count": 355
         },
         {
           "breed": "LABRADOR RETR",
-          "count": 318
+          "count": 323
         },
         {
           "breed": "COCKER SPANIEL",
-          "count": 117
+          "count": 122
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 463
-        },
-        {
-          "breed": "DOMESTIC MH",
-          "count": 31
+          "count": 478
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 31
+          "count": 33
+        },
+        {
+          "breed": "DOMESTIC MH",
+          "count": 32
         }
       ]
     },
     "rare_breeds": {
       "DOG": [
-        {
-          "breed": "LEONBERGER",
-          "count": 1
-        },
-        {
-          "breed": "BULLDOG",
-          "count": 1
-        },
         {
           "breed": "PAPILLON",
           "count": 1
@@ -3909,6 +3901,14 @@
         },
         {
           "breed": "STAFFORDSHIRE",
+          "count": 1
+        },
+        {
+          "breed": "BICHON POODLE X",
+          "count": 1
+        },
+        {
+          "breed": "CHOW CHOW",
           "count": 1
         }
       ],
@@ -3922,11 +3922,11 @@
           "count": 3
         },
         {
-          "breed": "BALINESE",
-          "count": 1
+          "breed": "BENGAL",
+          "count": 2
         },
         {
-          "breed": "BENGAL",
+          "breed": "BALINESE",
           "count": 1
         },
         {
@@ -3938,82 +3938,82 @@
     "signature_breed": {
       "DOG": {
         "breed": "SLOVENSKY KOPOV",
-        "ratio": 71.1
+        "ratio": 71.53
       },
       "CAT": {
         "breed": "BURMESE",
-        "ratio": 6.6
+        "ratio": 6.55
       }
     },
-    "per_capita_rate": 0.151189
+    "per_capita_rate": 0.155322
   },
   "M6J": {
     "neighbourhood": "West Toronto - Trinity / Little Portugal",
-    "dog_count": 2516,
-    "cat_count": 1262,
-    "total": 3778,
+    "dog_count": 2596,
+    "cat_count": 1303,
+    "total": 3899,
     "dog_ratio": 0.666,
     "top_breeds": {
       "DOG": [
         {
           "breed": "LABRADOR RETR",
-          "count": 265
+          "count": 273
         },
         {
           "breed": "GOLDEN RETR",
-          "count": 163
+          "count": 165
         },
         {
           "breed": "GERM SHEPHERD",
-          "count": 131
+          "count": 134
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 941
+          "count": 965
         },
         {
           "breed": "DOMESTIC MH",
-          "count": 102
+          "count": 104
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 88
+          "count": 91
         }
       ]
     },
     "rare_breeds": {
       "DOG": [
         {
-          "breed": "TIBETAN SPAN",
-          "count": 1
-        },
-        {
-          "breed": "AMER FOXHOUND",
-          "count": 1
-        },
-        {
-          "breed": "BOERBOEL",
-          "count": 1
-        },
-        {
-          "breed": "PEKINGESE",
-          "count": 1
-        },
-        {
           "breed": "CHESA BAY RETR",
+          "count": 1
+        },
+        {
+          "breed": "CHIWEENIE",
+          "count": 1
+        },
+        {
+          "breed": "MIX",
+          "count": 1
+        },
+        {
+          "breed": "AMER STAFF MIX",
+          "count": 1
+        },
+        {
+          "breed": "PIT BULL",
           "count": 1
         }
       ],
       "CAT": [
         {
-          "breed": "TURKISH ANGORA",
-          "count": 2
+          "breed": "MUNCHKIN SH",
+          "count": 3
         },
         {
-          "breed": "MUNCHKIN SH",
-          "count": 1
+          "breed": "TURKISH ANGORA",
+          "count": 2
         },
         {
           "breed": "MANX",
@@ -4032,48 +4032,48 @@
     "signature_breed": {
       "DOG": {
         "breed": "CHINOOK",
-        "ratio": 67.59
+        "ratio": 67.42
       },
       "CAT": {
-        "breed": "EGYPTIAN MAU",
-        "ratio": 3.96
+        "breed": "MUNCHKIN SH",
+        "ratio": 4.55
       }
     },
-    "per_capita_rate": 0.117654
+    "per_capita_rate": 0.121423
   },
   "M6S": {
     "neighbourhood": "West Toronto - Bloor West Village / Swansea",
-    "dog_count": 3486,
-    "cat_count": 1331,
-    "total": 4817,
-    "dog_ratio": 0.724,
+    "dog_count": 3580,
+    "cat_count": 1373,
+    "total": 4953,
+    "dog_ratio": 0.723,
     "top_breeds": {
       "DOG": [
         {
           "breed": "LABRADOR RETR",
-          "count": 451
+          "count": 465
         },
         {
           "breed": "GOLDEN RETR",
-          "count": 367
+          "count": 372
         },
         {
           "breed": "POODLE MIN",
-          "count": 143
+          "count": 145
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 1045
+          "count": 1075
         },
         {
           "breed": "DOMESTIC MH",
-          "count": 118
+          "count": 120
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 78
+          "count": 81
         }
       ]
     },
@@ -4126,21 +4126,21 @@
     "signature_breed": {
       "DOG": {
         "breed": "PORTUGUESE CATTLE DOG",
-        "ratio": 29.27
+        "ratio": 29.33
       },
       "CAT": {
         "breed": "BIRMAN",
-        "ratio": 6.06
+        "ratio": 6.15
       }
     },
-    "per_capita_rate": 0.141556
+    "per_capita_rate": 0.145552
   },
   "M3L": {
     "neighbourhood": "North York - Downsview West",
-    "dog_count": 626,
-    "cat_count": 243,
-    "total": 869,
-    "dog_ratio": 0.72,
+    "dog_count": 638,
+    "cat_count": 251,
+    "total": 889,
+    "dog_ratio": 0.718,
     "top_breeds": {
       "DOG": [
         {
@@ -4152,18 +4152,18 @@
           "count": 43
         },
         {
-          "breed": "GERM SHEPHERD",
+          "breed": "CHIHUAHUA SH",
           "count": 41
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 182
+          "count": 187
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 22
+          "count": 23
         },
         {
           "breed": "DOMESTIC MH",
@@ -4204,15 +4204,15 @@
           "count": 2
         },
         {
+          "breed": "BENGAL",
+          "count": 2
+        },
+        {
           "breed": "BOMBAY",
           "count": 1
         },
         {
           "breed": "SCOTTISH FOLD",
-          "count": 1
-        },
-        {
-          "breed": "BENGAL",
           "count": 1
         }
       ]
@@ -4220,44 +4220,44 @@
     "signature_breed": {
       "DOG": {
         "breed": "GERMAN PINSCHER",
-        "ratio": 25.87
+        "ratio": 26.13
       },
       "CAT": {
-        "breed": "ABYSSINIAN",
-        "ratio": 2.31
+        "breed": "RUSSIAN BLUE",
+        "ratio": 1.96
       }
     },
-    "per_capita_rate": 0.045112
+    "per_capita_rate": 0.046151
   },
   "M5R": {
     "neighbourhood": "Central Toronto - The Annex / Yorkville",
-    "dog_count": 2562,
-    "cat_count": 822,
-    "total": 3384,
-    "dog_ratio": 0.757,
+    "dog_count": 2648,
+    "cat_count": 856,
+    "total": 3504,
+    "dog_ratio": 0.756,
     "top_breeds": {
       "DOG": [
         {
           "breed": "GOLDEN RETR",
-          "count": 225
+          "count": 236
         },
         {
           "breed": "LABRADOR RETR",
-          "count": 197
+          "count": 205
         },
         {
           "breed": "POODLE MIN",
-          "count": 152
+          "count": 155
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 565
+          "count": 584
         },
         {
           "breed": "DOMESTIC MH",
-          "count": 85
+          "count": 87
         },
         {
           "breed": "DOMESTIC LH",
@@ -4267,10 +4267,6 @@
     },
     "rare_breeds": {
       "DOG": [
-        {
-          "breed": "DUTCH SHEPHERD",
-          "count": 1
-        },
         {
           "breed": "BASSET HOUND",
           "count": 1
@@ -4286,13 +4282,13 @@
         {
           "breed": "MIX",
           "count": 1
+        },
+        {
+          "breed": "PHARAOH HOUND",
+          "count": 1
         }
       ],
       "CAT": [
-        {
-          "breed": "RUSSIAN BLUE",
-          "count": 3
-        },
         {
           "breed": "BIRMAN",
           "count": 2
@@ -4306,6 +4302,10 @@
           "count": 2
         },
         {
+          "breed": "CORNISH REX",
+          "count": 2
+        },
+        {
           "breed": "TURKISH ANGORA",
           "count": 1
         }
@@ -4314,21 +4314,21 @@
     "signature_breed": {
       "DOG": {
         "breed": "HOVAWART",
-        "ratio": 37.93
+        "ratio": 37.77
       },
       "CAT": {
         "breed": "BENGAL",
-        "ratio": 2.66
+        "ratio": 2.56
       }
     },
-    "per_capita_rate": 0.129175
+    "per_capita_rate": 0.133756
   },
   "M1C": {
     "neighbourhood": "Scarborough - Rouge Hill / Highland Creek",
-    "dog_count": 2140,
-    "cat_count": 692,
-    "total": 2832,
-    "dog_ratio": 0.756,
+    "dog_count": 2192,
+    "cat_count": 715,
+    "total": 2907,
+    "dog_ratio": 0.754,
     "top_breeds": {
       "DOG": [
         {
@@ -4337,17 +4337,17 @@
         },
         {
           "breed": "GOLDEN RETR",
-          "count": 166
+          "count": 169
         },
         {
           "breed": "SHIH TZU",
-          "count": 150
+          "count": 152
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 534
+          "count": 548
         },
         {
           "breed": "DOMESTIC MH",
@@ -4362,10 +4362,6 @@
     "rare_breeds": {
       "DOG": [
         {
-          "breed": "ALASK MALAMUTE",
-          "count": 1
-        },
-        {
           "breed": "ANATOLIAN SHEPHERD",
           "count": 1
         },
@@ -4379,6 +4375,10 @@
         },
         {
           "breed": "AUST KELPIE",
+          "count": 1
+        },
+        {
+          "breed": "MIX",
           "count": 1
         }
       ],
@@ -4408,21 +4408,21 @@
     "signature_breed": {
       "DOG": {
         "breed": "KEESHOND",
-        "ratio": 11.5
+        "ratio": 11.41
       },
       "CAT": {
-        "breed": "ABYSSINIAN",
-        "ratio": 1.95
+        "breed": "HIMALAYAN",
+        "ratio": 2.23
       }
     },
-    "per_capita_rate": 0.079457
+    "per_capita_rate": 0.081561
   },
   "M1J": {
     "neighbourhood": "Scarborough - Eglinton East",
-    "dog_count": 1080,
-    "cat_count": 727,
-    "total": 1807,
-    "dog_ratio": 0.598,
+    "dog_count": 1109,
+    "cat_count": 773,
+    "total": 1882,
+    "dog_ratio": 0.589,
     "top_breeds": {
       "DOG": [
         {
@@ -4431,34 +4431,30 @@
         },
         {
           "breed": "LABRADOR RETR",
-          "count": 80
+          "count": 81
         },
         {
           "breed": "GOLDEN RETR",
-          "count": 79
+          "count": 81
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 543
+          "count": 574
         },
         {
           "breed": "DOMESTIC MH",
-          "count": 65
+          "count": 66
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 34
+          "count": 38
         }
       ]
     },
     "rare_breeds": {
       "DOG": [
-        {
-          "breed": "RUSSIAN TERRIER",
-          "count": 1
-        },
         {
           "breed": "DOGO ARGENTINO",
           "count": 1
@@ -4474,13 +4470,13 @@
         {
           "breed": "BELG SHEEPDOG",
           "count": 1
+        },
+        {
+          "breed": "PEKINGESE",
+          "count": 1
         }
       ],
       "CAT": [
-        {
-          "breed": "RAGDOLL",
-          "count": 2
-        },
         {
           "breed": "AMER CURL SH",
           "count": 2
@@ -4496,71 +4492,63 @@
         {
           "breed": "TURKISH VAN",
           "count": 1
+        },
+        {
+          "breed": "BALINESE",
+          "count": 1
         }
       ]
     },
     "signature_breed": {
       "DOG": {
         "breed": "GERMAN PINSCHER",
-        "ratio": 26.24
+        "ratio": 26.3
       },
       "CAT": {
         "breed": "SAVANNAH",
-        "ratio": 8.95
+        "ratio": 8.61
       }
     },
-    "per_capita_rate": 0.048835
+    "per_capita_rate": 0.050862
   },
   "M4L": {
     "neighbourhood": "East Toronto - India Bazaar / The Beaches West",
-    "dog_count": 4394,
-    "cat_count": 1185,
-    "total": 5579,
-    "dog_ratio": 0.788,
+    "dog_count": 4511,
+    "cat_count": 1235,
+    "total": 5746,
+    "dog_ratio": 0.785,
     "top_breeds": {
       "DOG": [
         {
           "breed": "LABRADOR RETR",
-          "count": 591
+          "count": 606
         },
         {
           "breed": "GOLDEN RETR",
-          "count": 325
+          "count": 337
         },
         {
           "breed": "GERM SHEPHERD",
-          "count": 217
+          "count": 221
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 893
+          "count": 931
         },
         {
           "breed": "DOMESTIC MH",
-          "count": 92
+          "count": 93
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 81
+          "count": 87
         }
       ]
     },
     "rare_breeds": {
       "DOG": [
-        {
-          "breed": "MEX HAIRLESS",
-          "count": 1
-        },
-        {
-          "breed": "STAFFORDSHIRE",
-          "count": 1
-        },
-        {
-          "breed": "ALASKAN HUSKY",
-          "count": 1
-        },
         {
           "breed": "BLACK MOUTH CUR",
           "count": 1
@@ -4568,11 +4556,23 @@
         {
           "breed": "CHIHUAHUA LH",
           "count": 1
+        },
+        {
+          "breed": "DACHSHUND MIX",
+          "count": 1
+        },
+        {
+          "breed": "CHIHUAHUA MIX",
+          "count": 1
+        },
+        {
+          "breed": "BELG SHEEPDOG",
+          "count": 1
         }
       ],
       "CAT": [
         {
-          "breed": "MAINE COON",
+          "breed": "SPHYNX",
           "count": 4
         },
         {
@@ -4596,48 +4596,48 @@
     "signature_breed": {
       "DOG": {
         "breed": "AUSTRALIAN LABR",
-        "ratio": 22.12
+        "ratio": 19.4
       },
       "CAT": {
         "breed": "DEVON REX",
-        "ratio": 4.96
+        "ratio": 4.78
       }
     },
-    "per_capita_rate": 0.173164
+    "per_capita_rate": 0.178348
   },
   "M6N": {
     "neighbourhood": "York - Runnymede / The Junction North",
-    "dog_count": 2655,
-    "cat_count": 1166,
-    "total": 3821,
-    "dog_ratio": 0.695,
+    "dog_count": 2734,
+    "cat_count": 1231,
+    "total": 3965,
+    "dog_ratio": 0.69,
     "top_breeds": {
       "DOG": [
         {
           "breed": "LABRADOR RETR",
-          "count": 221
+          "count": 223
         },
         {
           "breed": "SHIH TZU",
-          "count": 152
+          "count": 155
         },
         {
           "breed": "CHIHUAHUA SH",
-          "count": 142
+          "count": 148
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 906
+          "count": 946
         },
         {
           "breed": "DOMESTIC MH",
-          "count": 92
+          "count": 94
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 60
+          "count": 65
         }
       ]
     },
@@ -4666,7 +4666,7 @@
       ],
       "CAT": [
         {
-          "breed": "BOMBAY",
+          "breed": "BIRMAN",
           "count": 1
         },
         {
@@ -4690,40 +4690,40 @@
     "signature_breed": {
       "DOG": {
         "breed": "HARRIER",
-        "ratio": 38.43
+        "ratio": 38.41
       },
       "CAT": {
         "breed": "BURMESE",
-        "ratio": 2.77
+        "ratio": 2.72
       }
     },
-    "per_capita_rate": 0.094927
+    "per_capita_rate": 0.098504
   },
   "M9R": {
     "neighbourhood": "Etobicoke - Kingsview Village / Richview",
-    "dog_count": 1401,
-    "cat_count": 594,
-    "total": 1995,
-    "dog_ratio": 0.702,
+    "dog_count": 1437,
+    "cat_count": 612,
+    "total": 2049,
+    "dog_ratio": 0.701,
     "top_breeds": {
       "DOG": [
         {
           "breed": "GERM SHEPHERD",
-          "count": 107
+          "count": 108
         },
         {
           "breed": "LABRADOR RETR",
-          "count": 97
+          "count": 99
         },
         {
           "breed": "GOLDEN RETR",
-          "count": 94
+          "count": 98
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 439
+          "count": 456
         },
         {
           "breed": "DOMESTIC MH",
@@ -4731,16 +4731,12 @@
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 33
+          "count": 34
         }
       ]
     },
     "rare_breeds": {
       "DOG": [
-        {
-          "breed": "CATAHOULA",
-          "count": 1
-        },
         {
           "breed": "KANGAL",
           "count": 1
@@ -4755,6 +4751,10 @@
         },
         {
           "breed": "AUST CATTLE DOG",
+          "count": 1
+        },
+        {
+          "breed": "BULLMASTIFF",
           "count": 1
         }
       ],
@@ -4784,48 +4784,48 @@
     "signature_breed": {
       "DOG": {
         "breed": "ENTLEBUCHER",
-        "ratio": 10.56
+        "ratio": 10.59
       },
       "CAT": {
         "breed": "TURKISH ANGORA",
-        "ratio": 8.26
+        "ratio": 8.39
       }
     },
-    "per_capita_rate": 0.059053
+    "per_capita_rate": 0.060652
   },
   "M4P": {
     "neighbourhood": "Central Toronto - Davisville North",
-    "dog_count": 2167,
-    "cat_count": 911,
-    "total": 3078,
-    "dog_ratio": 0.704,
+    "dog_count": 2236,
+    "cat_count": 972,
+    "total": 3208,
+    "dog_ratio": 0.697,
     "top_breeds": {
       "DOG": [
         {
           "breed": "LABRADOR RETR",
-          "count": 189
+          "count": 199
         },
         {
           "breed": "GOLDEN RETR",
-          "count": 171
+          "count": 174
         },
         {
           "breed": "COCKER SPANIEL",
-          "count": 86
+          "count": 88
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 653
-        },
-        {
-          "breed": "DOMESTIC MH",
-          "count": 78
+          "count": 695
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 76
+          "count": 81
+        },
+        {
+          "breed": "DOMESTIC MH",
+          "count": 80
         }
       ]
     },
@@ -4854,8 +4854,8 @@
       ],
       "CAT": [
         {
-          "breed": "BOMBAY",
-          "count": 1
+          "breed": "RAGDOLL MIX",
+          "count": 2
         },
         {
           "breed": "RUSSIAN BLUE MI",
@@ -4878,40 +4878,40 @@
     "signature_breed": {
       "DOG": {
         "breed": "GOLDENDOODLE",
-        "ratio": 14.95
+        "ratio": 14.23
       },
       "CAT": {
         "breed": "ABYSSINIAN",
-        "ratio": 2.72
+        "ratio": 2.01
       }
     },
-    "per_capita_rate": 0.12284
+    "per_capita_rate": 0.128028
   },
   "M9P": {
     "neighbourhood": "Etobicoke - Westmount",
-    "dog_count": 1183,
-    "cat_count": 449,
-    "total": 1632,
-    "dog_ratio": 0.725,
+    "dog_count": 1209,
+    "cat_count": 456,
+    "total": 1665,
+    "dog_ratio": 0.726,
     "top_breeds": {
       "DOG": [
         {
           "breed": "LABRADOR RETR",
-          "count": 125
+          "count": 127
         },
         {
           "breed": "SHIH TZU",
-          "count": 69
+          "count": 70
         },
         {
           "breed": "GERM SHEPHERD",
-          "count": 64
+          "count": 65
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 336
+          "count": 340
         },
         {
           "breed": "DOMESTIC MH",
@@ -4919,7 +4919,7 @@
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 21
+          "count": 22
         }
       ]
     },
@@ -4938,11 +4938,11 @@
           "count": 1
         },
         {
-          "breed": "CHIHUAHUA MIX",
+          "breed": "PRESA CANARIO",
           "count": 1
         },
         {
-          "breed": "PRESA CANARIO",
+          "breed": "AUSTRALIAN LABR",
           "count": 1
         }
       ],
@@ -4952,11 +4952,11 @@
           "count": 3
         },
         {
-          "breed": "TURKISH ANGORA",
-          "count": 1
+          "breed": "ABYSSINIAN",
+          "count": 2
         },
         {
-          "breed": "ABYSSINIAN",
+          "breed": "TURKISH ANGORA",
           "count": 1
         },
         {
@@ -4972,26 +4972,26 @@
     "signature_breed": {
       "DOG": {
         "breed": "INDIAN PARIAH D",
-        "ratio": 71.88
+        "ratio": 72.39
       },
       "CAT": {
         "breed": "RAGDOLL",
-        "ratio": 2.64
+        "ratio": 2.6
       }
     },
-    "per_capita_rate": 0.079051
+    "per_capita_rate": 0.080649
   },
   "M9M": {
     "neighbourhood": "North York - Humberlea / Emery",
-    "dog_count": 595,
-    "cat_count": 259,
-    "total": 854,
-    "dog_ratio": 0.697,
+    "dog_count": 616,
+    "cat_count": 286,
+    "total": 902,
+    "dog_ratio": 0.683,
     "top_breeds": {
       "DOG": [
         {
           "breed": "SHIH TZU",
-          "count": 52
+          "count": 54
         },
         {
           "breed": "LABRADOR RETR",
@@ -4999,13 +4999,13 @@
         },
         {
           "breed": "MALTESE",
-          "count": 36
+          "count": 37
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 206
+          "count": 227
         },
         {
           "breed": "DOMESTIC MH",
@@ -5013,7 +5013,7 @@
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 11
+          "count": 15
         }
       ]
     },
@@ -5066,71 +5066,71 @@
     "signature_breed": {
       "DOG": {
         "breed": "KANGAL",
-        "ratio": 45.73
+        "ratio": 45.46
       },
       "CAT": {
-        "breed": "AMER SH",
-        "ratio": 1.95
+        "breed": "BOMBAY",
+        "ratio": 4.13
       }
     },
-    "per_capita_rate": 0.035224
+    "per_capita_rate": 0.037204
   },
   "M1W": {
     "neighbourhood": "Scarborough - Steeles West / L'Amoreaux",
-    "dog_count": 1338,
-    "cat_count": 698,
-    "total": 2036,
-    "dog_ratio": 0.657,
+    "dog_count": 1380,
+    "cat_count": 737,
+    "total": 2117,
+    "dog_ratio": 0.652,
     "top_breeds": {
       "DOG": [
         {
-          "breed": "SHIH TZU",
-          "count": 94
+          "breed": "LABRADOR RETR",
+          "count": 100
         },
         {
-          "breed": "LABRADOR RETR",
-          "count": 93
+          "breed": "SHIH TZU",
+          "count": 96
         },
         {
           "breed": "POODLE MIN",
-          "count": 79
+          "count": 80
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 519
+          "count": 547
         },
         {
           "breed": "DOMESTIC MH",
-          "count": 54
+          "count": 57
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 37
+          "count": 41
         }
       ]
     },
     "rare_breeds": {
       "DOG": [
         {
-          "breed": "BENGAL",
-          "count": 1
-        },
-        {
-          "breed": "AMERICAN DIRUS",
-          "count": 1
-        },
-        {
-          "breed": "COCKAPOO",
-          "count": 1
-        },
-        {
           "breed": "PRESA CANARIO",
           "count": 1
         },
         {
           "breed": "KANGAL",
+          "count": 1
+        },
+        {
+          "breed": "FOX TERR WIRE",
+          "count": 1
+        },
+        {
+          "breed": "ALASKAN HUSKY",
+          "count": 1
+        },
+        {
+          "breed": "SMOOTH COLLIE",
           "count": 1
         }
       ],
@@ -5160,30 +5160,30 @@
     "signature_breed": {
       "DOG": {
         "breed": "FILA",
-        "ratio": 21.91
+        "ratio": 21.87
       },
       "CAT": {
         "breed": "MUNCHKIN SH",
-        "ratio": 11.45
+        "ratio": 10.73
       }
     },
-    "per_capita_rate": 0.043255
+    "per_capita_rate": 0.044976
   },
   "M5P": {
     "neighbourhood": "Central Toronto - Forest Hill",
-    "dog_count": 2142,
-    "cat_count": 597,
-    "total": 2739,
-    "dog_ratio": 0.782,
+    "dog_count": 2191,
+    "cat_count": 620,
+    "total": 2811,
+    "dog_ratio": 0.779,
     "top_breeds": {
       "DOG": [
         {
           "breed": "GOLDEN RETR",
-          "count": 234
+          "count": 239
         },
         {
           "breed": "LABRADOR RETR",
-          "count": 212
+          "count": 220
         },
         {
           "breed": "POODLE MIN",
@@ -5193,24 +5193,20 @@
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 410
+          "count": 425
         },
         {
           "breed": "DOMESTIC MH",
-          "count": 65
+          "count": 67
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 48
+          "count": 50
         }
       ]
     },
     "rare_breeds": {
       "DOG": [
-        {
-          "breed": "SHIH POO",
-          "count": 1
-        },
         {
           "breed": "STAFFORDSHIRE",
           "count": 1
@@ -5226,15 +5222,19 @@
         {
           "breed": "BULL TERRIER",
           "count": 1
+        },
+        {
+          "breed": "BRIARD",
+          "count": 1
         }
       ],
       "CAT": [
         {
-          "breed": "SPHYNX",
-          "count": 3
+          "breed": "HIMALAYAN",
+          "count": 4
         },
         {
-          "breed": "BURMESE",
+          "breed": "SPHYNX",
           "count": 3
         },
         {
@@ -5254,44 +5254,44 @@
     "signature_breed": {
       "DOG": {
         "breed": "BOYKIN SPAN",
-        "ratio": 28.87
+        "ratio": 29.05
       },
       "CAT": {
         "breed": "BALINESE",
-        "ratio": 9.76
+        "ratio": 9.08
       }
     },
-    "per_capita_rate": 0.138396
+    "per_capita_rate": 0.142034
   },
   "M6M": {
     "neighbourhood": "York - Del Ray / Mount Dennis / Silverthorn",
-    "dog_count": 1551,
-    "cat_count": 782,
-    "total": 2333,
-    "dog_ratio": 0.665,
+    "dog_count": 1598,
+    "cat_count": 836,
+    "total": 2434,
+    "dog_ratio": 0.657,
     "top_breeds": {
       "DOG": [
         {
           "breed": "SHIH TZU",
-          "count": 108
+          "count": 111
         },
         {
           "breed": "MALTESE",
-          "count": 84
+          "count": 85
         },
         {
           "breed": "CHIHUAHUA SH",
-          "count": 79
+          "count": 84
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 601
+          "count": 647
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 55
+          "count": 59
         },
         {
           "breed": "DOMESTIC MH",
@@ -5302,11 +5302,11 @@
     "rare_breeds": {
       "DOG": [
         {
-          "breed": "BULL TERR MIN",
+          "breed": "GERMAN PINSCHER",
           "count": 1
         },
         {
-          "breed": "CHIHUAHUA MIX",
+          "breed": "BULL TERR MIN",
           "count": 1
         },
         {
@@ -5324,15 +5324,15 @@
       ],
       "CAT": [
         {
-          "breed": "SCOTTISH FOLD",
-          "count": 2
-        },
-        {
           "breed": "PERSIAN MIX",
           "count": 2
         },
         {
           "breed": "UNKNOWN",
+          "count": 2
+        },
+        {
+          "breed": "HIMALAYAN",
           "count": 2
         },
         {
@@ -5348,44 +5348,44 @@
     "signature_breed": {
       "DOG": {
         "breed": "POODLE",
-        "ratio": 43.86
+        "ratio": 39.83
       },
       "CAT": {
         "breed": "BOMBAY",
-        "ratio": 4.21
+        "ratio": 3.76
       }
     },
-    "per_capita_rate": 0.055353
+    "per_capita_rate": 0.057749
   },
   "M9A": {
     "neighbourhood": "Etobicoke - Islington",
-    "dog_count": 2592,
-    "cat_count": 1014,
-    "total": 3606,
-    "dog_ratio": 0.719,
+    "dog_count": 2647,
+    "cat_count": 1041,
+    "total": 3688,
+    "dog_ratio": 0.718,
     "top_breeds": {
       "DOG": [
         {
           "breed": "LABRADOR RETR",
-          "count": 325
+          "count": 327
         },
         {
           "breed": "GOLDEN RETR",
-          "count": 213
+          "count": 217
         },
         {
           "breed": "GERM SHEPHERD",
-          "count": 124
+          "count": 129
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 734
+          "count": 752
         },
         {
           "breed": "DOMESTIC MH",
-          "count": 79
+          "count": 80
         },
         {
           "breed": "DOMESTIC LH",
@@ -5442,40 +5442,40 @@
     "signature_breed": {
       "DOG": {
         "breed": "AMER WATER SPAN",
-        "ratio": 32.81
+        "ratio": 33.06
       },
       "CAT": {
         "breed": "EUROPEAN SH",
-        "ratio": 6.42
+        "ratio": 6.25
       }
     },
-    "per_capita_rate": 0.098412
+    "per_capita_rate": 0.10065
   },
   "M2K": {
     "neighbourhood": "North York - Bayview Village",
-    "dog_count": 1346,
-    "cat_count": 439,
-    "total": 1785,
-    "dog_ratio": 0.754,
+    "dog_count": 1414,
+    "cat_count": 465,
+    "total": 1879,
+    "dog_ratio": 0.753,
     "top_breeds": {
       "DOG": [
         {
           "breed": "LABRADOR RETR",
-          "count": 99
-        },
-        {
-          "breed": "COCKER SPANIEL",
-          "count": 78
+          "count": 102
         },
         {
           "breed": "GOLDEN RETR",
-          "count": 78
+          "count": 82
+        },
+        {
+          "breed": "COCKER SPANIEL",
+          "count": 81
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 296
+          "count": 309
         },
         {
           "breed": "DOMESTIC LH",
@@ -5490,14 +5490,6 @@
     "rare_breeds": {
       "DOG": [
         {
-          "breed": "WELSH TERRIER",
-          "count": 1
-        },
-        {
-          "breed": "COLLIE SMOOTH",
-          "count": 1
-        },
-        {
           "breed": "OLDENG SHEEPDOG",
           "count": 1
         },
@@ -5508,11 +5500,19 @@
         {
           "breed": "CHOW CHOW",
           "count": 1
+        },
+        {
+          "breed": "ENG COCKER SPAN",
+          "count": 1
+        },
+        {
+          "breed": "AUST CATTLE DOG",
+          "count": 1
         }
       ],
       "CAT": [
         {
-          "breed": "CORNISH REX",
+          "breed": "BOMBAY",
           "count": 2
         },
         {
@@ -5536,40 +5536,40 @@
     "signature_breed": {
       "DOG": {
         "breed": "FIELD SPANIEL",
-        "ratio": 18.95
+        "ratio": 15.47
       },
       "CAT": {
         "breed": "SAVANNAH",
-        "ratio": 14.82
+        "ratio": 14.31
       }
     },
-    "per_capita_rate": 0.070339
+    "per_capita_rate": 0.074043
   },
   "M5N": {
     "neighbourhood": "Central Toronto - Roselawn",
-    "dog_count": 1575,
-    "cat_count": 305,
-    "total": 1880,
-    "dog_ratio": 0.838,
+    "dog_count": 1602,
+    "cat_count": 316,
+    "total": 1918,
+    "dog_ratio": 0.835,
     "top_breeds": {
       "DOG": [
         {
           "breed": "GOLDEN RETR",
-          "count": 217
+          "count": 221
         },
         {
           "breed": "LABRADOR RETR",
-          "count": 162
+          "count": 164
         },
         {
-          "breed": "COCKER SPANIEL",
-          "count": 80
+          "breed": "POODLE MIN",
+          "count": 81
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 219
+          "count": 225
         },
         {
           "breed": "DOMESTIC MH",
@@ -5577,7 +5577,7 @@
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 17
+          "count": 20
         }
       ]
     },
@@ -5618,11 +5618,11 @@
           "count": 2
         },
         {
-          "breed": "HIMALAYAN",
-          "count": 1
+          "breed": "ABYSSINIAN",
+          "count": 2
         },
         {
-          "breed": "ABYSSINIAN",
+          "breed": "HIMALAYAN",
           "count": 1
         }
       ]
@@ -5630,65 +5630,53 @@
     "signature_breed": {
       "DOG": {
         "breed": "GLEN OF IMAAL",
-        "ratio": 21.6
+        "ratio": 21.85
       },
       "CAT": {
         "breed": "CORNISH REX",
-        "ratio": 26.21
+        "ratio": 25.03
       }
     },
-    "per_capita_rate": 0.11638
+    "per_capita_rate": 0.118732
   },
   "M5A": {
     "neighbourhood": "Downtown Toronto - Regent Park",
-    "dog_count": 3837,
-    "cat_count": 1552,
-    "total": 5389,
-    "dog_ratio": 0.712,
+    "dog_count": 4003,
+    "cat_count": 1646,
+    "total": 5649,
+    "dog_ratio": 0.709,
     "top_breeds": {
       "DOG": [
         {
           "breed": "LABRADOR RETR",
-          "count": 320
+          "count": 334
         },
         {
           "breed": "GOLDEN RETR",
-          "count": 207
+          "count": 214
         },
         {
           "breed": "CHIHUAHUA SH",
-          "count": 148
+          "count": 159
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 1059
+          "count": 1119
         },
         {
           "breed": "DOMESTIC MH",
-          "count": 133
+          "count": 138
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 127
+          "count": 134
         }
       ]
     },
     "rare_breeds": {
       "DOG": [
-        {
-          "breed": "KEESHOND",
-          "count": 1
-        },
-        {
-          "breed": "DANDIE DINMONT",
-          "count": 1
-        },
-        {
-          "breed": "FINNISH SPITZ",
-          "count": 1
-        },
         {
           "breed": "GERMAN PINSCHER",
           "count": 1
@@ -5696,13 +5684,21 @@
         {
           "breed": "CHINESE CRESTED",
           "count": 1
+        },
+        {
+          "breed": "AUSSIE DOODLE",
+          "count": 1
+        },
+        {
+          "breed": "MORKIE",
+          "count": 1
+        },
+        {
+          "breed": "SWED VALLHUND",
+          "count": 1
         }
       ],
       "CAT": [
-        {
-          "breed": "MUNCHKIN SH",
-          "count": 2
-        },
         {
           "breed": "MANX",
           "count": 2
@@ -5718,53 +5714,57 @@
         {
           "breed": "AMER CURL SH",
           "count": 1
+        },
+        {
+          "breed": "BENGAL MIX",
+          "count": 1
         }
       ]
     },
     "signature_breed": {
       "DOG": {
         "breed": "SCOT DEERHOUND",
-        "ratio": 21.27
+        "ratio": 20.99
       },
       "CAT": {
         "breed": "MIXED",
-        "ratio": 36.05
+        "ratio": 35.57
       }
     },
-    "per_capita_rate": 0.110029
+    "per_capita_rate": 0.115337
   },
   "M6R": {
     "neighbourhood": "West Toronto - Parkdale / Roncesvalles",
-    "dog_count": 2251,
-    "cat_count": 1077,
-    "total": 3328,
-    "dog_ratio": 0.676,
+    "dog_count": 2302,
+    "cat_count": 1114,
+    "total": 3416,
+    "dog_ratio": 0.674,
     "top_breeds": {
       "DOG": [
         {
           "breed": "LABRADOR RETR",
-          "count": 281
+          "count": 284
         },
         {
           "breed": "GOLDEN RETR",
-          "count": 163
+          "count": 165
         },
         {
           "breed": "POODLE MIN",
-          "count": 112
+          "count": 113
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 827
-        },
-        {
-          "breed": "DOMESTIC MH",
-          "count": 77
+          "count": 856
         },
         {
           "breed": "DOMESTIC LH",
+          "count": 79
+        },
+        {
+          "breed": "DOMESTIC MH",
           "count": 77
         }
       ]
@@ -5794,6 +5794,10 @@
       ],
       "CAT": [
         {
+          "breed": "EUROPEAN SH",
+          "count": 3
+        },
+        {
           "breed": "SAVANNAH",
           "count": 2
         },
@@ -5808,40 +5812,36 @@
         {
           "breed": "MAINE COON",
           "count": 1
-        },
-        {
-          "breed": "ABYSSINIAN",
-          "count": 1
         }
       ]
     },
     "signature_breed": {
       "DOG": {
         "breed": "IRISH WATR SPAN",
-        "ratio": 33.05
+        "ratio": 33.26
       },
       "CAT": {
         "breed": "ORIENTAL SH",
-        "ratio": 5.41
+        "ratio": 5.47
       }
     },
-    "per_capita_rate": 0.171999
+    "per_capita_rate": 0.176547
   },
   "M4R": {
     "neighbourhood": "Central Toronto - North Toronto West",
-    "dog_count": 1533,
-    "cat_count": 368,
-    "total": 1901,
-    "dog_ratio": 0.806,
+    "dog_count": 1559,
+    "cat_count": 387,
+    "total": 1946,
+    "dog_ratio": 0.801,
     "top_breeds": {
       "DOG": [
         {
           "breed": "GOLDEN RETR",
-          "count": 237
+          "count": 242
         },
         {
           "breed": "LABRADOR RETR",
-          "count": 160
+          "count": 161
         },
         {
           "breed": "POODLE MIN",
@@ -5851,34 +5851,34 @@
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 277
+          "count": 283
         },
         {
           "breed": "DOMESTIC MH",
-          "count": 32
+          "count": 40
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 23
+          "count": 26
         }
       ]
     },
     "rare_breeds": {
       "DOG": [
         {
+          "breed": "POTCAKE",
+          "count": 1
+        },
+        {
+          "breed": "CATAHOULA",
+          "count": 1
+        },
+        {
           "breed": "RHOD RIDGEBACK",
           "count": 1
         },
         {
           "breed": "WELSH CORGI CAR",
-          "count": 1
-        },
-        {
-          "breed": "MAREMMA SHEEPDOG",
-          "count": 1
-        },
-        {
-          "breed": "JINDO",
           "count": 1
         },
         {
@@ -5892,15 +5892,15 @@
           "count": 4
         },
         {
+          "breed": "BRITISH SH",
+          "count": 4
+        },
+        {
           "breed": "RUSSIAN BLUE",
           "count": 2
         },
         {
           "breed": "BENGAL",
-          "count": 2
-        },
-        {
-          "breed": "BRITISH SH",
           "count": 2
         },
         {
@@ -5912,20 +5912,20 @@
     "signature_breed": {
       "DOG": {
         "breed": "PICARDY SHEEPDOG",
-        "ratio": 31.7
+        "ratio": 32.08
       },
       "CAT": {
         "breed": "AMER SH",
-        "ratio": 4.47
+        "ratio": 4.18
       }
     },
-    "per_capita_rate": 0.159627
+    "per_capita_rate": 0.163406
   },
   "M4A": {
     "neighbourhood": "North York - Sweeney Park / Victoria Village",
-    "dog_count": 603,
-    "cat_count": 317,
-    "total": 920,
+    "dog_count": 618,
+    "cat_count": 326,
+    "total": 944,
     "dog_ratio": 0.655,
     "top_breeds": {
       "DOG": [
@@ -5939,30 +5939,26 @@
         },
         {
           "breed": "LABRADOR RETR",
-          "count": 38
+          "count": 40
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 223
+          "count": 230
         },
         {
           "breed": "DOMESTIC MH",
-          "count": 35
+          "count": 36
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 27
+          "count": 28
         }
       ]
     },
     "rare_breeds": {
       "DOG": [
-        {
-          "breed": "ALASKAN HUSKY",
-          "count": 1
-        },
         {
           "breed": "BULL TERR MIN",
           "count": 1
@@ -5972,11 +5968,15 @@
           "count": 1
         },
         {
-          "breed": "DOBERMAN PINSCHER",
+          "breed": "AKITA",
           "count": 1
         },
         {
-          "breed": "AKITA",
+          "breed": "BELG MALINOIS",
+          "count": 1
+        },
+        {
+          "breed": "AMERICAN STAFF",
           "count": 1
         }
       ],
@@ -6006,30 +6006,30 @@
     "signature_breed": {
       "DOG": {
         "breed": "KARELIAN BEAR",
-        "ratio": 80.58
+        "ratio": 80.92
       },
       "CAT": {
         "breed": "MANX",
-        "ratio": 20.06
+        "ratio": 19.81
       }
     },
-    "per_capita_rate": 0.063061
+    "per_capita_rate": 0.064706
   },
   "M6C": {
     "neighbourhood": "York - Humewood-Cedarvale",
-    "dog_count": 2210,
-    "cat_count": 714,
-    "total": 2924,
-    "dog_ratio": 0.756,
+    "dog_count": 2258,
+    "cat_count": 741,
+    "total": 2999,
+    "dog_ratio": 0.753,
     "top_breeds": {
       "DOG": [
         {
           "breed": "LABRADOR RETR",
-          "count": 294
+          "count": 298
         },
         {
           "breed": "GOLDEN RETR",
-          "count": 212
+          "count": 214
         },
         {
           "breed": "POODLE MIN",
@@ -6039,11 +6039,11 @@
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 476
+          "count": 494
         },
         {
           "breed": "DOMESTIC MH",
-          "count": 83
+          "count": 85
         },
         {
           "breed": "SIAMESE",
@@ -6076,6 +6076,10 @@
       ],
       "CAT": [
         {
+          "breed": "BALINESE",
+          "count": 3
+        },
+        {
           "breed": "BRITISH SH",
           "count": 2
         },
@@ -6090,50 +6094,46 @@
         {
           "breed": "UNKNOWN",
           "count": 1
-        },
-        {
-          "breed": "ABYSSINIAN",
-          "count": 1
         }
       ]
     },
     "signature_breed": {
       "DOG": {
         "breed": "SEALYHAM TERR",
-        "ratio": 17.76
+        "ratio": 17.89
       },
       "CAT": {
         "breed": "TURKISH VAN",
-        "ratio": 19.59
+        "ratio": 19.75
       }
     },
-    "per_capita_rate": 0.121849
+    "per_capita_rate": 0.124974
   },
   "M9B": {
     "neighbourhood": "Etobicoke - West Deane Park / Princess Gardens",
-    "dog_count": 2603,
-    "cat_count": 735,
-    "total": 3338,
-    "dog_ratio": 0.78,
+    "dog_count": 2662,
+    "cat_count": 759,
+    "total": 3421,
+    "dog_ratio": 0.778,
     "top_breeds": {
       "DOG": [
         {
           "breed": "LABRADOR RETR",
-          "count": 294
+          "count": 295
         },
         {
           "breed": "GOLDEN RETR",
-          "count": 236
+          "count": 243
         },
         {
-          "breed": "POODLE MIN",
-          "count": 138
+          "breed": "GERM SHEPHERD",
+          "count": 142
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 555
+          "count": 575
         },
         {
           "breed": "DOMESTIC MH",
@@ -6141,12 +6141,16 @@
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 40
+          "count": 42
         }
       ]
     },
     "rare_breeds": {
       "DOG": [
+        {
+          "breed": "STAFFORDSHIRE",
+          "count": 1
+        },
         {
           "breed": "CHOW CHOW",
           "count": 1
@@ -6160,21 +6164,17 @@
           "count": 1
         },
         {
-          "breed": "PHARAOH HOUND",
-          "count": 1
-        },
-        {
           "breed": "MOUNTAIN CUR",
           "count": 1
         }
       ],
       "CAT": [
         {
-          "breed": "SCOTTISH FOLD",
+          "breed": "RUSSIAN BLUE",
           "count": 3
         },
         {
-          "breed": "DEVON REX",
+          "breed": "SCOTTISH FOLD",
           "count": 3
         },
         {
@@ -6194,79 +6194,75 @@
     "signature_breed": {
       "DOG": {
         "breed": "IBIZAN HOUND",
-        "ratio": 19.6
+        "ratio": 19.73
       },
       "CAT": {
         "breed": "DEVON REX",
-        "ratio": 2.4
+        "ratio": 3.11
       }
     },
-    "per_capita_rate": 0.100433
+    "per_capita_rate": 0.102931
   },
   "M1R": {
     "neighbourhood": "Scarborough - Wexford / Maryvale",
-    "dog_count": 1409,
-    "cat_count": 485,
-    "total": 1894,
-    "dog_ratio": 0.744,
+    "dog_count": 1445,
+    "cat_count": 550,
+    "total": 1995,
+    "dog_ratio": 0.724,
     "top_breeds": {
       "DOG": [
         {
           "breed": "LABRADOR RETR",
-          "count": 139
+          "count": 141
         },
         {
           "breed": "GERM SHEPHERD",
-          "count": 113
+          "count": 117
         },
         {
           "breed": "SHIH TZU",
-          "count": 85
+          "count": 86
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 318
+          "count": 360
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 54
+          "count": 55
         },
         {
           "breed": "DOMESTIC MH",
-          "count": 36
+          "count": 43
         }
       ]
     },
     "rare_breeds": {
       "DOG": [
         {
-          "breed": "RAT TERRIER",
-          "count": 1
-        },
-        {
-          "breed": "WELSH CORGI CAR",
-          "count": 1
-        },
-        {
-          "breed": "JAPANESE CHIN",
-          "count": 1
-        },
-        {
-          "breed": "SHIH TZU MIX",
-          "count": 1
-        },
-        {
           "breed": "KANGAL",
+          "count": 1
+        },
+        {
+          "breed": "STAFFORDSHIRE",
+          "count": 1
+        },
+        {
+          "breed": "FLAT COAT RETR",
+          "count": 1
+        },
+        {
+          "breed": "BLOODHOUND",
+          "count": 1
+        },
+        {
+          "breed": "CIRNECO",
           "count": 1
         }
       ],
       "CAT": [
-        {
-          "breed": "ABYSSINIAN",
-          "count": 3
-        },
         {
           "breed": "EXOTIC SH",
           "count": 1
@@ -6282,36 +6278,40 @@
         {
           "breed": "UNKNOWN",
           "count": 1
+        },
+        {
+          "breed": "SPHYNX",
+          "count": 1
         }
       ]
     },
     "signature_breed": {
       "DOG": {
         "breed": "ENG POINTER",
-        "ratio": 9.14
+        "ratio": 9.18
       },
       "CAT": {
         "breed": "KORAT",
-        "ratio": 55.46
+        "ratio": 51.17
       }
     },
-    "per_capita_rate": 0.062166
+    "per_capita_rate": 0.065481
   },
   "M1P": {
     "neighbourhood": "Scarborough - Dorset Park / Scarborough Town Centre",
-    "dog_count": 1370,
-    "cat_count": 866,
-    "total": 2236,
-    "dog_ratio": 0.613,
+    "dog_count": 1415,
+    "cat_count": 913,
+    "total": 2328,
+    "dog_ratio": 0.608,
     "top_breeds": {
       "DOG": [
         {
           "breed": "SHIH TZU",
-          "count": 121
+          "count": 122
         },
         {
           "breed": "GOLDEN RETR",
-          "count": 104
+          "count": 106
         },
         {
           "breed": "LABRADOR RETR",
@@ -6321,11 +6321,11 @@
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 613
+          "count": 646
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 59
+          "count": 62
         },
         {
           "breed": "DOMESTIC MH",
@@ -6336,37 +6336,37 @@
     "rare_breeds": {
       "DOG": [
         {
-          "breed": "BELG SHEEPDOG",
-          "count": 1
-        },
-        {
-          "breed": "GREAT DANE",
-          "count": 1
-        },
-        {
-          "breed": "WHIPPET",
-          "count": 1
-        },
-        {
           "breed": "KANGAL",
           "count": 1
         },
         {
           "breed": "TREEING CUR",
           "count": 1
+        },
+        {
+          "breed": "BEARDED COLLIE",
+          "count": 1
+        },
+        {
+          "breed": "CHINESE SHAR-PE",
+          "count": 1
+        },
+        {
+          "breed": "KOREAN JINDO",
+          "count": 1
         }
       ],
       "CAT": [
+        {
+          "breed": "MUNCHKIN SH",
+          "count": 4
+        },
         {
           "breed": "DEVON REX",
           "count": 2
         },
         {
           "breed": "TURKISH VAN",
-          "count": 2
-        },
-        {
-          "breed": "ABYSSINIAN",
           "count": 2
         },
         {
@@ -6382,26 +6382,26 @@
     "signature_breed": {
       "DOG": {
         "breed": "DACHSHUND WH",
-        "ratio": 18.17
+        "ratio": 18.1
       },
       "CAT": {
         "breed": "MUNCHKIN SH",
-        "ratio": 9.23
+        "ratio": 8.66
       }
     },
-    "per_capita_rate": 0.049502
+    "per_capita_rate": 0.051539
   },
   "M4K": {
     "neighbourhood": "East Toronto - The Danforth West / Riverdale",
-    "dog_count": 3160,
-    "cat_count": 1051,
-    "total": 4211,
-    "dog_ratio": 0.75,
+    "dog_count": 3249,
+    "cat_count": 1097,
+    "total": 4346,
+    "dog_ratio": 0.748,
     "top_breeds": {
       "DOG": [
         {
           "breed": "LABRADOR RETR",
-          "count": 364
+          "count": 372
         },
         {
           "breed": "GOLDEN RETR",
@@ -6409,21 +6409,21 @@
         },
         {
           "breed": "POODLE MIN",
-          "count": 145
+          "count": 148
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 800
+          "count": 831
         },
         {
           "breed": "DOMESTIC MH",
-          "count": 99
+          "count": 100
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 37
+          "count": 40
         }
       ]
     },
@@ -6442,18 +6442,22 @@
           "count": 1
         },
         {
-          "breed": "BRUSS GRIFFON",
+          "breed": "CHUG",
           "count": 1
         },
         {
-          "breed": "CHUG",
+          "breed": "AMERICAN COCKER",
           "count": 1
         }
       ],
       "CAT": [
         {
-          "breed": "EUROPEAN SH",
-          "count": 2
+          "breed": "SCOTTISH FOLD",
+          "count": 3
+        },
+        {
+          "breed": "SPHYNX",
+          "count": 3
         },
         {
           "breed": "BRITISH SH",
@@ -6461,10 +6465,6 @@
         },
         {
           "breed": "BURMESE",
-          "count": 1
-        },
-        {
-          "breed": "AMER SH",
           "count": 1
         },
         {
@@ -6476,21 +6476,21 @@
     "signature_breed": {
       "DOG": {
         "breed": "TERRIER X",
-        "ratio": 53.82
+        "ratio": 53.87
       },
       "CAT": {
         "breed": "DEVON REX",
-        "ratio": 6.71
+        "ratio": 6.46
       }
     },
-    "per_capita_rate": 0.136221
+    "per_capita_rate": 0.140588
   },
   "M5C": {
     "neighbourhood": "Downtown Toronto - St. James Town",
-    "dog_count": 230,
-    "cat_count": 97,
-    "total": 327,
-    "dog_ratio": 0.703,
+    "dog_count": 239,
+    "cat_count": 105,
+    "total": 344,
+    "dog_ratio": 0.695,
     "top_breeds": {
       "DOG": [
         {
@@ -6509,7 +6509,7 @@
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 61
+          "count": 67
         },
         {
           "breed": "DOMESTIC MH",
@@ -6546,19 +6546,19 @@
       ],
       "CAT": [
         {
+          "breed": "PERSIAN",
+          "count": 2
+        },
+        {
           "breed": "AMER SH",
           "count": 2
         },
         {
-          "breed": "RAGDOLL",
+          "breed": "ABYSSINIAN",
           "count": 2
         },
         {
           "breed": "RUSSIAN BLUE",
-          "count": 1
-        },
-        {
-          "breed": "ABYSSINIAN",
           "count": 1
         },
         {
@@ -6570,30 +6570,30 @@
     "signature_breed": {
       "DOG": {
         "breed": "BERNEDOODLE",
-        "ratio": 203.97
+        "ratio": 177.54
       },
       "CAT": {
         "breed": "BRITISH SH",
-        "ratio": 3.55
+        "ratio": 3.25
       }
     },
-    "per_capita_rate": 0.103842
+    "per_capita_rate": 0.109241
   },
   "M4X": {
     "neighbourhood": "Downtown Toronto - St. James Town / Cabbagetown",
-    "dog_count": 1125,
-    "cat_count": 611,
-    "total": 1736,
-    "dog_ratio": 0.648,
+    "dog_count": 1149,
+    "cat_count": 640,
+    "total": 1789,
+    "dog_ratio": 0.642,
     "top_breeds": {
       "DOG": [
         {
           "breed": "LABRADOR RETR",
-          "count": 131
+          "count": 133
         },
         {
           "breed": "GOLDEN RETR",
-          "count": 64
+          "count": 67
         },
         {
           "breed": "CHIHUAHUA SH",
@@ -6603,7 +6603,7 @@
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 443
+          "count": 463
         },
         {
           "breed": "DOMESTIC MH",
@@ -6611,7 +6611,7 @@
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 25
+          "count": 28
         }
       ]
     },
@@ -6640,11 +6640,11 @@
       ],
       "CAT": [
         {
-          "breed": "SCOTTISH",
-          "count": 3
+          "breed": "SCOTTISH FOLD",
+          "count": 4
         },
         {
-          "breed": "AMER SH",
+          "breed": "SCOTTISH",
           "count": 3
         },
         {
@@ -6664,30 +6664,30 @@
     "signature_breed": {
       "DOG": {
         "breed": "BIEWER TERRIER",
-        "ratio": 56.69
+        "ratio": 57.12
       },
       "CAT": {
         "breed": "SCOTTISH",
-        "ratio": 114.46
+        "ratio": 114.34
       }
     },
-    "per_capita_rate": 0.087254
+    "per_capita_rate": 0.089918
   },
   "M4N": {
     "neighbourhood": "Central Toronto - Lawrence Park",
-    "dog_count": 2114,
-    "cat_count": 365,
-    "total": 2479,
-    "dog_ratio": 0.853,
+    "dog_count": 2146,
+    "cat_count": 378,
+    "total": 2524,
+    "dog_ratio": 0.85,
     "top_breeds": {
       "DOG": [
         {
           "breed": "GOLDEN RETR",
-          "count": 315
+          "count": 319
         },
         {
           "breed": "LABRADOR RETR",
-          "count": 289
+          "count": 295
         },
         {
           "breed": "COCKER SPANIEL",
@@ -6697,7 +6697,7 @@
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 267
+          "count": 278
         },
         {
           "breed": "DOMESTIC LH",
@@ -6734,12 +6734,12 @@
       ],
       "CAT": [
         {
-          "breed": "CORNISH REX",
-          "count": 4
+          "breed": "ABYSSINIAN",
+          "count": 5
         },
         {
-          "breed": "ABYSSINIAN",
-          "count": 3
+          "breed": "CORNISH REX",
+          "count": 4
         },
         {
           "breed": "PERSIAN",
@@ -6758,40 +6758,40 @@
     "signature_breed": {
       "DOG": {
         "breed": "CLUMBER SPAN",
-        "ratio": 80.45
+        "ratio": 81.56
       },
       "CAT": {
         "breed": "CORNISH REX",
-        "ratio": 21.9
+        "ratio": 20.93
       }
     },
-    "per_capita_rate": 0.154378
+    "per_capita_rate": 0.15718
   },
   "M1T": {
     "neighbourhood": "Scarborough - Clarks Corners / Sullivan",
-    "dog_count": 1207,
-    "cat_count": 576,
-    "total": 1783,
-    "dog_ratio": 0.677,
+    "dog_count": 1250,
+    "cat_count": 598,
+    "total": 1848,
+    "dog_ratio": 0.676,
     "top_breeds": {
       "DOG": [
         {
           "breed": "SHIH TZU",
-          "count": 101
+          "count": 103
         },
         {
           "breed": "LABRADOR RETR",
-          "count": 87
+          "count": 91
         },
         {
           "breed": "GOLDEN RETR",
-          "count": 76
+          "count": 79
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 406
+          "count": 424
         },
         {
           "breed": "DOMESTIC LH",
@@ -6799,7 +6799,7 @@
         },
         {
           "breed": "DOMESTIC MH",
-          "count": 47
+          "count": 48
         }
       ]
     },
@@ -6852,30 +6852,30 @@
     "signature_breed": {
       "DOG": {
         "breed": "TERRIER MIX",
-        "ratio": 70.45
+        "ratio": 70.01
       },
       "CAT": {
         "breed": "AMER CURL LH",
-        "ratio": 121.42
+        "ratio": 122.37
       }
     },
-    "per_capita_rate": 0.051521
+    "per_capita_rate": 0.0534
   },
   "M8X": {
     "neighbourhood": "Etobicoke - The Kingsway / Old Mill North",
-    "dog_count": 1228,
-    "cat_count": 301,
-    "total": 1529,
+    "dog_count": 1261,
+    "cat_count": 310,
+    "total": 1571,
     "dog_ratio": 0.803,
     "top_breeds": {
       "DOG": [
         {
           "breed": "LABRADOR RETR",
-          "count": 172
+          "count": 177
         },
         {
           "breed": "GOLDEN RETR",
-          "count": 143
+          "count": 148
         },
         {
           "breed": "POODLE MIN",
@@ -6885,11 +6885,11 @@
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 221
+          "count": 224
         },
         {
           "breed": "DOMESTIC MH",
-          "count": 38
+          "count": 39
         },
         {
           "breed": "DOMESTIC LH",
@@ -6899,14 +6899,6 @@
     },
     "rare_breeds": {
       "DOG": [
-        {
-          "breed": "BULLMASTIFF",
-          "count": 1
-        },
-        {
-          "breed": "ENG SETTER",
-          "count": 1
-        },
         {
           "breed": "AMER BULLDOG",
           "count": 1
@@ -6918,9 +6910,21 @@
         {
           "breed": "RHOD RIDGEBACK",
           "count": 1
+        },
+        {
+          "breed": "JINDO",
+          "count": 1
+        },
+        {
+          "breed": "GREAT DANE",
+          "count": 1
         }
       ],
       "CAT": [
+        {
+          "breed": "MAINE COON",
+          "count": 2
+        },
         {
           "breed": "BALINESE",
           "count": 1
@@ -6936,40 +6940,36 @@
         {
           "breed": "EXOTIC SH",
           "count": 1
-        },
-        {
-          "breed": "BENGAL",
-          "count": 1
         }
       ]
     },
     "signature_breed": {
       "DOG": {
         "breed": "AUSSIE BERNEDOO",
-        "ratio": 92.33
+        "ratio": 92.53
       },
       "CAT": {
         "breed": "DEVON REX",
-        "ratio": 5.86
+        "ratio": 5.71
       }
     },
-    "per_capita_rate": 0.143919
+    "per_capita_rate": 0.147873
   },
   "M1V": {
     "neighbourhood": "Scarborough - Milliken / Agincourt North",
-    "dog_count": 1206,
-    "cat_count": 546,
-    "total": 1752,
-    "dog_ratio": 0.688,
+    "dog_count": 1232,
+    "cat_count": 571,
+    "total": 1803,
+    "dog_ratio": 0.683,
     "top_breeds": {
       "DOG": [
         {
           "breed": "GERM SHEPHERD",
-          "count": 92
+          "count": 95
         },
         {
           "breed": "GOLDEN RETR",
-          "count": 89
+          "count": 93
         },
         {
           "breed": "SHIH TZU",
@@ -6979,14 +6979,14 @@
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 408
-        },
-        {
-          "breed": "DOMESTIC LH",
-          "count": 41
+          "count": 422
         },
         {
           "breed": "DOMESTIC MH",
+          "count": 43
+        },
+        {
+          "breed": "DOMESTIC LH",
           "count": 41
         }
       ]
@@ -7016,8 +7016,8 @@
       ],
       "CAT": [
         {
-          "breed": "ABYSSINIAN",
-          "count": 5
+          "breed": "RUSSIAN BLUE",
+          "count": 4
         },
         {
           "breed": "CHARTREUX",
@@ -7032,34 +7032,34 @@
           "count": 2
         },
         {
-          "breed": "RUSSIAN BLUE",
-          "count": 2
+          "breed": "UNKNOWN",
+          "count": 1
         }
       ]
     },
     "signature_breed": {
       "DOG": {
         "breed": "NORW ELKHOUND",
-        "ratio": 7.94
+        "ratio": 8.0
       },
       "CAT": {
         "breed": "CHARTREUX",
-        "ratio": 25.62
+        "ratio": 25.63
       }
     },
-    "per_capita_rate": 0.034471
+    "per_capita_rate": 0.035475
   },
   "M3H": {
     "neighbourhood": "North York - Wilson Heights / Downsview North",
-    "dog_count": 2265,
-    "cat_count": 795,
-    "total": 3060,
-    "dog_ratio": 0.74,
+    "dog_count": 2326,
+    "cat_count": 831,
+    "total": 3157,
+    "dog_ratio": 0.737,
     "top_breeds": {
       "DOG": [
         {
           "breed": "GOLDEN RETR",
-          "count": 219
+          "count": 227
         },
         {
           "breed": "LABRADOR RETR",
@@ -7067,34 +7067,26 @@
         },
         {
           "breed": "COCKER SPANIEL",
-          "count": 141
+          "count": 143
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 560
+          "count": 580
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 49
+          "count": 55
         },
         {
           "breed": "DOMESTIC MH",
-          "count": 43
+          "count": 44
         }
       ]
     },
     "rare_breeds": {
       "DOG": [
-        {
-          "breed": "AUSSIE DOODLE",
-          "count": 1
-        },
-        {
-          "breed": "MAREMMA SHEEPDOG",
-          "count": 1
-        },
         {
           "breed": "KOREAN JINDO",
           "count": 1
@@ -7106,13 +7098,17 @@
         {
           "breed": "IRISH SETTER",
           "count": 1
+        },
+        {
+          "breed": "ST BERNARD RGH",
+          "count": 1
+        },
+        {
+          "breed": "BELG SHEEPDOG",
+          "count": 1
         }
       ],
       "CAT": [
-        {
-          "breed": "BOMBAY",
-          "count": 2
-        },
         {
           "breed": "TURKISH ANGORA",
           "count": 1
@@ -7128,27 +7124,31 @@
         {
           "breed": "BENGAL",
           "count": 1
+        },
+        {
+          "breed": "EXOTIC SH",
+          "count": 1
         }
       ]
     },
     "signature_breed": {
       "DOG": {
         "breed": "LANDSEER",
-        "ratio": 18.77
+        "ratio": 18.81
       },
       "CAT": {
         "breed": "TIFFANY",
-        "ratio": 50.27
+        "ratio": 50.32
       }
     },
-    "per_capita_rate": 0.079654
+    "per_capita_rate": 0.082179
   },
   "M6L": {
     "neighbourhood": "North York - North Park / Maple Leaf Park",
-    "dog_count": 705,
-    "cat_count": 302,
-    "total": 1007,
-    "dog_ratio": 0.7,
+    "dog_count": 722,
+    "cat_count": 315,
+    "total": 1037,
+    "dog_ratio": 0.696,
     "top_breeds": {
       "DOG": [
         {
@@ -7160,14 +7160,14 @@
           "count": 51
         },
         {
-          "breed": "LABRADOR RETR",
-          "count": 39
+          "breed": "YORKSHIRE TERR",
+          "count": 41
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 214
+          "count": 222
         },
         {
           "breed": "DOMESTIC LH",
@@ -7182,14 +7182,6 @@
     "rare_breeds": {
       "DOG": [
         {
-          "breed": "PODENGO PEQUENO",
-          "count": 1
-        },
-        {
-          "breed": "TERRIER",
-          "count": 1
-        },
-        {
           "breed": "MASTIFF",
           "count": 1
         },
@@ -7200,11 +7192,19 @@
         {
           "breed": "BORZOI",
           "count": 1
+        },
+        {
+          "breed": "COCKAPOO",
+          "count": 1
+        },
+        {
+          "breed": "UNKNOWN",
+          "count": 1
         }
       ],
       "CAT": [
         {
-          "breed": "ABYSSINIAN",
+          "breed": "NORWGN FOREST",
           "count": 2
         },
         {
@@ -7228,21 +7228,21 @@
     "signature_breed": {
       "DOG": {
         "breed": "TIBETAN SPAN",
-        "ratio": 18.56
+        "ratio": 18.41
       },
       "CAT": {
         "breed": "BENGAL",
-        "ratio": 3.62
+        "ratio": 3.48
       }
     },
-    "per_capita_rate": 0.04996
+    "per_capita_rate": 0.051449
   },
   "null": {
     "neighbourhood": null,
-    "dog_count": 297,
-    "cat_count": 189,
-    "total": 486,
-    "dog_ratio": 0.611,
+    "dog_count": 319,
+    "cat_count": 195,
+    "total": 514,
+    "dog_ratio": 0.621,
     "top_breeds": {
       "DOG": [
         {
@@ -7251,17 +7251,17 @@
         },
         {
           "breed": "AMER BULLDOG",
-          "count": 20
+          "count": 22
         },
         {
           "breed": "LABRADOR RETR",
-          "count": 19
+          "count": 21
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 139
+          "count": 143
         },
         {
           "breed": "DOMESTIC MH",
@@ -7269,7 +7269,7 @@
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 10
+          "count": 11
         }
       ]
     },
@@ -7298,6 +7298,10 @@
       ],
       "CAT": [
         {
+          "breed": "SIAMESE",
+          "count": 1
+        },
+        {
           "breed": "AMER SH",
           "count": 1
         },
@@ -7312,65 +7316,65 @@
         {
           "breed": "MAINE COON",
           "count": 1
-        },
-        {
-          "breed": "ABYSSINIAN",
-          "count": 1
         }
       ]
     },
     "signature_breed": {
       "DOG": {
         "breed": "PRESA CANARIO",
-        "ratio": 14.32
+        "ratio": 13.45
       },
       "CAT": {
         "breed": "RUSSIAN BLUE",
-        "ratio": 2.59
+        "ratio": 2.52
       }
     },
     "per_capita_rate": null
   },
   "M3C": {
     "neighbourhood": "Don Mills - Flemingdon Park",
-    "dog_count": 1118,
-    "cat_count": 724,
-    "total": 1842,
-    "dog_ratio": 0.607,
+    "dog_count": 1170,
+    "cat_count": 761,
+    "total": 1931,
+    "dog_ratio": 0.606,
     "top_breeds": {
       "DOG": [
         {
           "breed": "LABRADOR RETR",
-          "count": 114
+          "count": 118
         },
         {
           "breed": "GOLDEN RETR",
-          "count": 91
+          "count": 95
         },
         {
           "breed": "GERM SHEPHERD",
-          "count": 77
+          "count": 80
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 549
+          "count": 571
         },
         {
           "breed": "DOMESTIC MH",
-          "count": 52
+          "count": 56
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 29
+          "count": 33
         }
       ]
     },
     "rare_breeds": {
       "DOG": [
         {
-          "breed": "VIZSLA",
+          "breed": "MIN PINSCHER",
+          "count": 1
+        },
+        {
+          "breed": "AUST CATTLE DOG",
           "count": 1
         },
         {
@@ -7384,13 +7388,13 @@
         {
           "breed": "AMER ESKIMO",
           "count": 1
-        },
-        {
-          "breed": "DACHSHUND MIN",
-          "count": 1
         }
       ],
       "CAT": [
+        {
+          "breed": "BRITISH SH",
+          "count": 4
+        },
         {
           "breed": "RAGDOLL",
           "count": 3
@@ -7404,10 +7408,6 @@
           "count": 1
         },
         {
-          "breed": "BRITISH SH",
-          "count": 1
-        },
-        {
           "breed": "HIMALAYAN",
           "count": 1
         }
@@ -7416,57 +7416,53 @@
     "signature_breed": {
       "DOG": {
         "breed": "ENTLEBUCHER",
-        "ratio": 9.92
+        "ratio": 9.76
       },
       "CAT": {
         "breed": "DEVON REX",
-        "ratio": 5.68
+        "ratio": 5.43
       }
     },
-    "per_capita_rate": 0.046496
+    "per_capita_rate": 0.048743
   },
   "M4Y": {
     "neighbourhood": "Downtown Toronto - Church and Wellesley",
-    "dog_count": 2010,
-    "cat_count": 1183,
-    "total": 3193,
-    "dog_ratio": 0.63,
+    "dog_count": 2109,
+    "cat_count": 1256,
+    "total": 3365,
+    "dog_ratio": 0.627,
     "top_breeds": {
       "DOG": [
         {
           "breed": "LABRADOR RETR",
-          "count": 183
+          "count": 190
         },
         {
           "breed": "CHIHUAHUA SH",
-          "count": 90
+          "count": 95
         },
         {
           "breed": "GERM SHEPHERD",
-          "count": 88
+          "count": 90
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 842
+          "count": 887
         },
         {
           "breed": "DOMESTIC MH",
-          "count": 97
+          "count": 100
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 70
+          "count": 76
         }
       ]
     },
     "rare_breeds": {
       "DOG": [
-        {
-          "breed": "SCHNAUZER STAND",
-          "count": 1
-        },
         {
           "breed": "KOREAN JINDO",
           "count": 1
@@ -7481,6 +7477,10 @@
         },
         {
           "breed": "SCOT TERRIER",
+          "count": 1
+        },
+        {
+          "breed": "SALUKI",
           "count": 1
         }
       ],
@@ -7510,21 +7510,21 @@
     "signature_breed": {
       "DOG": {
         "breed": "DACHSHUND WH",
-        "ratio": 14.45
+        "ratio": 14.17
       },
       "CAT": {
         "breed": "MUNCHKIN SH",
-        "ratio": 6.76
+        "ratio": 6.3
       }
     },
-    "per_capita_rate": 0.087915
+    "per_capita_rate": 0.092651
   },
   "M1X": {
     "neighbourhood": "Scarborough - Upper Rouge",
-    "dog_count": 324,
-    "cat_count": 85,
-    "total": 409,
-    "dog_ratio": 0.792,
+    "dog_count": 335,
+    "cat_count": 94,
+    "total": 429,
+    "dog_ratio": 0.781,
     "top_breeds": {
       "DOG": [
         {
@@ -7543,7 +7543,7 @@
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 68
+          "count": 70
         },
         {
           "breed": "DOMESTIC MH",
@@ -7580,15 +7580,7 @@
       ],
       "CAT": [
         {
-          "breed": "DOMESTIC MH",
-          "count": 9
-        },
-        {
-          "breed": "SCOTTISH FOLD",
-          "count": 4
-        },
-        {
-          "breed": "SIAMESE",
+          "breed": "ABYSSINIAN",
           "count": 2
         },
         {
@@ -7598,46 +7590,54 @@
         {
           "breed": "RAGDOLL",
           "count": 1
+        },
+        {
+          "breed": "BRITISH SH",
+          "count": 1
+        },
+        {
+          "breed": "BOMBAY",
+          "count": 1
         }
       ]
     },
     "signature_breed": {
       "DOG": {
         "breed": "DUTCH SHEPHERD",
-        "ratio": 21.69
+        "ratio": 21.24
       },
       "CAT": {
         "breed": "SCOTTISH FOLD",
-        "ratio": 8.21
+        "ratio": 7.24
       }
     },
-    "per_capita_rate": 0.027616
+    "per_capita_rate": 0.028967
   },
   "M2R": {
     "neighbourhood": "North York - Willowdale West",
-    "dog_count": 1492,
-    "cat_count": 672,
-    "total": 2164,
-    "dog_ratio": 0.689,
+    "dog_count": 1531,
+    "cat_count": 709,
+    "total": 2240,
+    "dog_ratio": 0.683,
     "top_breeds": {
       "DOG": [
+        {
+          "breed": "GOLDEN RETR",
+          "count": 139
+        },
         {
           "breed": "LABRADOR RETR",
           "count": 136
         },
         {
-          "breed": "GOLDEN RETR",
-          "count": 133
-        },
-        {
           "breed": "SHIH TZU",
-          "count": 111
+          "count": 113
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 494
+          "count": 523
         },
         {
           "breed": "DOMESTIC MH",
@@ -7645,16 +7645,12 @@
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 31
+          "count": 36
         }
       ]
     },
     "rare_breeds": {
       "DOG": [
-        {
-          "breed": "KEESHOND",
-          "count": 1
-        },
         {
           "breed": "GERMAN PINSCHER",
           "count": 1
@@ -7670,13 +7666,13 @@
         {
           "breed": "DOMESTIC SH",
           "count": 1
+        },
+        {
+          "breed": "ST BERNARD SMTH",
+          "count": 1
         }
       ],
       "CAT": [
-        {
-          "breed": "SCOTTISH FOLD",
-          "count": 5
-        },
         {
           "breed": "MAINE COON",
           "count": 4
@@ -7692,50 +7688,54 @@
         {
           "breed": "AMER WIREHAIR",
           "count": 2
+        },
+        {
+          "breed": "SIAMESE MIX",
+          "count": 1
         }
       ]
     },
     "signature_breed": {
       "DOG": {
         "breed": "BOERBOEL",
-        "ratio": 20.72
+        "ratio": 20.79
       },
       "CAT": {
         "breed": "BURMESE",
-        "ratio": 6.4
+        "ratio": 6.3
       }
     },
-    "per_capita_rate": 0.053325
+    "per_capita_rate": 0.055198
   },
   "M9V": {
     "neighbourhood": "Etobicoke - Thistletown / Albion Gardens",
-    "dog_count": 1052,
-    "cat_count": 469,
-    "total": 1521,
-    "dog_ratio": 0.692,
+    "dog_count": 1087,
+    "cat_count": 502,
+    "total": 1589,
+    "dog_ratio": 0.684,
     "top_breeds": {
       "DOG": [
         {
           "breed": "SHIH TZU",
-          "count": 92
+          "count": 93
         },
         {
           "breed": "GERM SHEPHERD",
-          "count": 89
+          "count": 90
         },
         {
           "breed": "AMER BULLDOG",
-          "count": 78
+          "count": 79
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 350
+          "count": 371
         },
         {
           "breed": "DOMESTIC MH",
-          "count": 45
+          "count": 48
         },
         {
           "breed": "DOMESTIC LH",
@@ -7754,27 +7754,19 @@
           "count": 1
         },
         {
-          "breed": "BULLMASTIFF",
-          "count": 1
-        },
-        {
           "breed": "HOUND",
           "count": 1
         },
         {
           "breed": "MIX",
           "count": 1
+        },
+        {
+          "breed": "AKITA",
+          "count": 1
         }
       ],
       "CAT": [
-        {
-          "breed": "PERSIAN",
-          "count": 2
-        },
-        {
-          "breed": "ABYSSINIAN",
-          "count": 2
-        },
         {
           "breed": "NORWGN FOREST",
           "count": 1
@@ -7786,54 +7778,62 @@
         {
           "breed": "UNKNOWN",
           "count": 1
+        },
+        {
+          "breed": "SCOTTISH FOLD",
+          "count": 1
+        },
+        {
+          "breed": "SIAMESE",
+          "count": 1
         }
       ]
     },
     "signature_breed": {
       "DOG": {
-        "breed": "TREEING WALKER HOUND",
-        "ratio": 9.65
+        "breed": "BULL TERR MIN",
+        "ratio": 12.15
       },
       "CAT": {
         "breed": "RAGDOLL",
-        "ratio": 3.11
+        "ratio": 2.91
       }
     },
-    "per_capita_rate": 0.02823
+    "per_capita_rate": 0.029493
   },
   "M6A": {
     "neighbourhood": "North York - Lawrence Heights / Lawrence Manor",
-    "dog_count": 871,
-    "cat_count": 467,
-    "total": 1338,
-    "dog_ratio": 0.651,
+    "dog_count": 915,
+    "cat_count": 482,
+    "total": 1397,
+    "dog_ratio": 0.655,
     "top_breeds": {
       "DOG": [
         {
           "breed": "GOLDEN RETR",
-          "count": 73
+          "count": 77
         },
         {
           "breed": "LABRADOR RETR",
-          "count": 68
+          "count": 69
         },
         {
           "breed": "SHIH TZU",
-          "count": 65
+          "count": 68
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 378
+          "count": 386
         },
         {
           "breed": "DOMESTIC MH",
-          "count": 26
+          "count": 27
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 23
+          "count": 27
         }
       ]
     },
@@ -7886,21 +7886,21 @@
     "signature_breed": {
       "DOG": {
         "breed": "WELSH TERRIER",
-        "ratio": 14.7
+        "ratio": 14.4
       },
       "CAT": {
         "breed": "AMER SH",
-        "ratio": 3.25
+        "ratio": 3.1
       }
     },
-    "per_capita_rate": 0.059786
+    "per_capita_rate": 0.062422
   },
   "M2L": {
     "neighbourhood": "North York - York Mills / Silver Hills",
-    "dog_count": 936,
-    "cat_count": 191,
-    "total": 1127,
-    "dog_ratio": 0.831,
+    "dog_count": 969,
+    "cat_count": 202,
+    "total": 1171,
+    "dog_ratio": 0.827,
     "top_breeds": {
       "DOG": [
         {
@@ -7909,17 +7909,17 @@
         },
         {
           "breed": "LABRADOR RETR",
-          "count": 83
+          "count": 85
         },
         {
           "breed": "GERM SHEPHERD",
-          "count": 53
+          "count": 55
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 128
+          "count": 132
         },
         {
           "breed": "DOMESTIC MH",
@@ -7956,15 +7956,7 @@
       ],
       "CAT": [
         {
-          "breed": "BENGAL",
-          "count": 4
-        },
-        {
-          "breed": "HIMALAYAN",
-          "count": 2
-        },
-        {
-          "breed": "ABYSSINIAN",
+          "breed": "DEVON REX",
           "count": 2
         },
         {
@@ -7974,27 +7966,35 @@
         {
           "breed": "PERSIAN",
           "count": 1
+        },
+        {
+          "breed": "MAINE COON",
+          "count": 1
+        },
+        {
+          "breed": "AMER SH",
+          "count": 1
         }
       ]
     },
     "signature_breed": {
       "DOG": {
         "breed": "PUDELPOINTER",
-        "ratio": 40.38
+        "ratio": 36.13
       },
       "CAT": {
         "breed": "RAGDOLL",
-        "ratio": 6.21
+        "ratio": 5.88
       }
     },
-    "per_capita_rate": 0.099965
+    "per_capita_rate": 0.103867
   },
   "M4H": {
     "neighbourhood": "East York - Thorncliffe Park",
-    "dog_count": 150,
-    "cat_count": 201,
-    "total": 351,
-    "dog_ratio": 0.427,
+    "dog_count": 158,
+    "cat_count": 207,
+    "total": 365,
+    "dog_ratio": 0.433,
     "top_breeds": {
       "DOG": [
         {
@@ -8007,13 +8007,13 @@
         },
         {
           "breed": "YORKSHIRE TERR",
-          "count": 12
+          "count": 13
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 147
+          "count": 149
         },
         {
           "breed": "DOMESTIC MH",
@@ -8021,7 +8021,7 @@
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 14
+          "count": 15
         }
       ]
     },
@@ -8050,11 +8050,15 @@
       ],
       "CAT": [
         {
-          "breed": "PERSIAN",
+          "breed": "SIAMESE",
           "count": 2
         },
         {
-          "breed": "BRITISH SH",
+          "breed": "ABYSSINIAN",
+          "count": 2
+        },
+        {
+          "breed": "PERSIAN",
           "count": 2
         },
         {
@@ -8064,58 +8068,54 @@
         {
           "breed": "DEVON REX",
           "count": 1
-        },
-        {
-          "breed": "ABYSSINIAN",
-          "count": 1
         }
       ]
     },
     "signature_breed": {
       "DOG": {
         "breed": "BORZOI",
-        "ratio": 136.05
+        "ratio": 132.93
       },
       "CAT": {
         "breed": "RUSSIAN BLUE",
-        "ratio": 3.24
+        "ratio": 3.17
       }
     },
-    "per_capita_rate": 0.018772
+    "per_capita_rate": 0.019521
   },
   "M6H": {
     "neighbourhood": "West Toronto - Dufferin / Dovercourt Village",
-    "dog_count": 3212,
-    "cat_count": 1849,
-    "total": 5061,
-    "dog_ratio": 0.635,
+    "dog_count": 3307,
+    "cat_count": 1942,
+    "total": 5249,
+    "dog_ratio": 0.63,
     "top_breeds": {
       "DOG": [
         {
           "breed": "LABRADOR RETR",
-          "count": 352
+          "count": 359
         },
         {
           "breed": "GOLDEN RETR",
-          "count": 196
+          "count": 202
         },
         {
           "breed": "GERM SHEPHERD",
-          "count": 170
+          "count": 173
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 1449
+          "count": 1506
         },
         {
           "breed": "DOMESTIC MH",
-          "count": 138
+          "count": 143
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 112
+          "count": 122
         }
       ]
     },
@@ -8130,25 +8130,25 @@
           "count": 1
         },
         {
-          "breed": "ENG COCKER SPAN",
-          "count": 1
-        },
-        {
           "breed": "BASENJI",
           "count": 1
         },
         {
           "breed": "MORKIE",
           "count": 1
+        },
+        {
+          "breed": "BERNEDOODLE",
+          "count": 1
         }
       ],
       "CAT": [
         {
-          "breed": "CHARTREUX",
+          "breed": "TURKISH VAN",
           "count": 2
         },
         {
-          "breed": "PERSIAN",
+          "breed": "CHARTREUX",
           "count": 2
         },
         {
@@ -8172,44 +8172,44 @@
       },
       "CAT": {
         "breed": "OCICAT",
-        "ratio": 9.46
+        "ratio": 9.42
       }
     },
-    "per_capita_rate": 0.115733
+    "per_capita_rate": 0.120032
   },
   "M5J": {
     "neighbourhood": "Downtown Toronto - Harbourfront East / Union Station",
-    "dog_count": 718,
-    "cat_count": 330,
-    "total": 1048,
-    "dog_ratio": 0.685,
+    "dog_count": 767,
+    "cat_count": 368,
+    "total": 1135,
+    "dog_ratio": 0.676,
     "top_breeds": {
       "DOG": [
         {
           "breed": "LABRADOR RETR",
-          "count": 63
+          "count": 66
         },
         {
           "breed": "GOLDEN RETR",
-          "count": 50
+          "count": 54
         },
         {
           "breed": "POMERANIAN",
-          "count": 38
+          "count": 41
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 229
+          "count": 253
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 25
+          "count": 32
         },
         {
           "breed": "DOMESTIC MH",
-          "count": 17
+          "count": 18
         }
       ]
     },
@@ -8262,26 +8262,26 @@
     "signature_breed": {
       "DOG": {
         "breed": "TOY FOX TERRIER",
-        "ratio": 24.29
+        "ratio": 22.26
       },
       "CAT": {
         "breed": "SAVANNAH",
-        "ratio": 14.79
+        "ratio": 13.56
       }
     },
-    "per_capita_rate": 0.062089
+    "per_capita_rate": 0.067243
   },
   "M5B": {
     "neighbourhood": "Downtown Toronto - Ryerson / Garden District",
-    "dog_count": 832,
-    "cat_count": 572,
-    "total": 1404,
-    "dog_ratio": 0.593,
+    "dog_count": 867,
+    "cat_count": 612,
+    "total": 1479,
+    "dog_ratio": 0.586,
     "top_breeds": {
       "DOG": [
         {
           "breed": "LABRADOR RETR",
-          "count": 91
+          "count": 92
         },
         {
           "breed": "GOLDEN RETR",
@@ -8289,30 +8289,26 @@
         },
         {
           "breed": "CHIHUAHUA SH",
-          "count": 33
+          "count": 34
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 391
+          "count": 416
         },
         {
           "breed": "DOMESTIC MH",
-          "count": 37
+          "count": 39
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 33
+          "count": 35
         }
       ]
     },
     "rare_breeds": {
       "DOG": [
-        {
-          "breed": "AUST KELPIE",
-          "count": 1
-        },
         {
           "breed": "BULL TERR MIN",
           "count": 1
@@ -8328,19 +8324,19 @@
         {
           "breed": "XL BULLY",
           "count": 1
+        },
+        {
+          "breed": "DACHSHUND MIN",
+          "count": 1
         }
       ],
       "CAT": [
         {
-          "breed": "BURMESE",
-          "count": 2
-        },
-        {
-          "breed": "EXOTIC SH",
-          "count": 2
-        },
-        {
           "breed": "DEVON REX",
+          "count": 2
+        },
+        {
+          "breed": "UNKNOWN",
           "count": 2
         },
         {
@@ -8350,36 +8346,40 @@
         {
           "breed": "MANX",
           "count": 1
+        },
+        {
+          "breed": "AMER CURL SH",
+          "count": 1
         }
       ]
     },
     "signature_breed": {
       "DOG": {
         "breed": "SCHNAUZER",
-        "ratio": 204.4
+        "ratio": 201.88
       },
       "CAT": {
         "breed": "TURKISH VAN",
-        "ratio": 12.23
+        "ratio": 11.96
       }
     },
-    "per_capita_rate": 0.080588
+    "per_capita_rate": 0.084893
   },
   "M1M": {
     "neighbourhood": "Scarborough - Cliffside / Cliffcrest",
-    "dog_count": 1776,
-    "cat_count": 729,
-    "total": 2505,
+    "dog_count": 1834,
+    "cat_count": 751,
+    "total": 2585,
     "dog_ratio": 0.709,
     "top_breeds": {
       "DOG": [
         {
           "breed": "LABRADOR RETR",
-          "count": 185
+          "count": 189
         },
         {
           "breed": "GOLDEN RETR",
-          "count": 149
+          "count": 153
         },
         {
           "breed": "GERM SHEPHERD",
@@ -8389,22 +8389,22 @@
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 537
+          "count": 553
         },
         {
           "breed": "DOMESTIC MH",
-          "count": 68
+          "count": 70
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 42
+          "count": 43
         }
       ]
     },
     "rare_breeds": {
       "DOG": [
         {
-          "breed": "DOGO ARGENTINO",
+          "breed": "DUTCH SHEPHERD",
           "count": 2
         },
         {
@@ -8450,21 +8450,21 @@
     "signature_breed": {
       "DOG": {
         "breed": "LANDSEER",
-        "ratio": 23.94
+        "ratio": 23.86
       },
       "CAT": {
         "breed": "BIRMAN",
-        "ratio": 14.76
+        "ratio": 14.99
       }
     },
-    "per_capita_rate": 0.107705
+    "per_capita_rate": 0.111145
   },
   "M2P": {
     "neighbourhood": "North York - York Mills West",
-    "dog_count": 675,
-    "cat_count": 146,
-    "total": 821,
-    "dog_ratio": 0.822,
+    "dog_count": 697,
+    "cat_count": 154,
+    "total": 851,
+    "dog_ratio": 0.819,
     "top_breeds": {
       "DOG": [
         {
@@ -8473,7 +8473,7 @@
         },
         {
           "breed": "LABRADOR RETR",
-          "count": 55
+          "count": 57
         },
         {
           "breed": "GERM SHEPHERD",
@@ -8483,7 +8483,7 @@
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 95
+          "count": 102
         },
         {
           "breed": "DOMESTIC LH",
@@ -8498,19 +8498,19 @@
     "rare_breeds": {
       "DOG": [
         {
+          "breed": "PIT BULL",
+          "count": 2
+        },
+        {
+          "breed": "CHOW CHOW",
+          "count": 1
+        },
+        {
           "breed": "WELSH CORGI CAR",
           "count": 1
         },
         {
-          "breed": "AKITA",
-          "count": 1
-        },
-        {
           "breed": "BEARDED COLLIE",
-          "count": 1
-        },
-        {
-          "breed": "SHETLD SHEEPDOG",
           "count": 1
         },
         {
@@ -8528,11 +8528,11 @@
           "count": 4
         },
         {
-          "breed": "CHARTREUX",
-          "count": 2
+          "breed": "SCOTTISH FOLD",
+          "count": 3
         },
         {
-          "breed": "SCOTTISH FOLD",
+          "breed": "CHARTREUX",
           "count": 2
         },
         {
@@ -8544,57 +8544,53 @@
     "signature_breed": {
       "DOG": {
         "breed": "PBGV",
-        "ratio": 55.99
+        "ratio": 55.8
       },
       "CAT": {
         "breed": "BURMESE",
-        "ratio": 14.74
+        "ratio": 14.51
       }
     },
-    "per_capita_rate": 0.108799
+    "per_capita_rate": 0.112775
   },
   "M3N": {
     "neighbourhood": "North York - Downsview",
-    "dog_count": 853,
-    "cat_count": 716,
-    "total": 1569,
-    "dog_ratio": 0.544,
+    "dog_count": 882,
+    "cat_count": 759,
+    "total": 1641,
+    "dog_ratio": 0.537,
     "top_breeds": {
       "DOG": [
         {
           "breed": "SHIH TZU",
-          "count": 74
+          "count": 76
+        },
+        {
+          "breed": "LABRADOR RETR",
+          "count": 65
         },
         {
           "breed": "GERM SHEPHERD",
           "count": 65
-        },
-        {
-          "breed": "LABRADOR RETR",
-          "count": 64
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 559
+          "count": 589
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 61
+          "count": 63
         },
         {
           "breed": "DOMESTIC MH",
-          "count": 34
+          "count": 35
         }
       ]
     },
     "rare_breeds": {
       "DOG": [
-        {
-          "breed": "MEX HAIRLESS",
-          "count": 1
-        },
         {
           "breed": "AUST KELPIE",
           "count": 1
@@ -8610,13 +8606,13 @@
         {
           "breed": "MIN PINSCHER",
           "count": 1
+        },
+        {
+          "breed": "GREAT PYRENEES",
+          "count": 1
         }
       ],
       "CAT": [
-        {
-          "breed": "MAINE COON",
-          "count": 3
-        },
         {
           "breed": "MUNCHKIN SH",
           "count": 2
@@ -8632,36 +8628,40 @@
         {
           "breed": "EUROPEAN SH",
           "count": 1
+        },
+        {
+          "breed": "RAGDOLL",
+          "count": 1
         }
       ]
     },
     "signature_breed": {
       "DOG": {
         "breed": "SCHIPPERKE",
-        "ratio": 27.19
+        "ratio": 27.06
       },
       "CAT": {
-        "breed": "SCOTTISH FOLD",
-        "ratio": 1.46
+        "breed": "ABYSSINIAN",
+        "ratio": 1.39
       }
     },
-    "per_capita_rate": 0.038413
+    "per_capita_rate": 0.040175
   },
   "M5T": {
     "neighbourhood": "Downtown Toronto - Kensington Market / Chinatown",
-    "dog_count": 860,
-    "cat_count": 488,
-    "total": 1348,
-    "dog_ratio": 0.638,
+    "dog_count": 899,
+    "cat_count": 534,
+    "total": 1433,
+    "dog_ratio": 0.627,
     "top_breeds": {
       "DOG": [
         {
           "breed": "LABRADOR RETR",
-          "count": 80
+          "count": 81
         },
         {
           "breed": "CHIHUAHUA SH",
-          "count": 62
+          "count": 65
         },
         {
           "breed": "GOLDEN RETR",
@@ -8671,15 +8671,15 @@
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 355
+          "count": 383
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 33
+          "count": 35
         },
         {
           "breed": "DOMESTIC MH",
-          "count": 24
+          "count": 26
         }
       ]
     },
@@ -8708,8 +8708,8 @@
       ],
       "CAT": [
         {
-          "breed": "SCOTTISH FOLD",
-          "count": 2
+          "breed": "AMER SH",
+          "count": 3
         },
         {
           "breed": "MUNCHKIN SH",
@@ -8724,7 +8724,7 @@
           "count": 1
         },
         {
-          "breed": "AMER SH",
+          "breed": "MANX",
           "count": 1
         }
       ]
@@ -8732,30 +8732,30 @@
     "signature_breed": {
       "DOG": {
         "breed": "CIRNECO",
-        "ratio": 197.75
+        "ratio": 146.02
       },
       "CAT": {
-        "breed": "BOMBAY",
-        "ratio": 3.37
+        "breed": "BENGAL",
+        "ratio": 2.99
       }
     },
-    "per_capita_rate": 0.075295
+    "per_capita_rate": 0.080042
   },
   "M5S": {
     "neighbourhood": "Downtown Toronto - University of Toronto / Harbord",
-    "dog_count": 862,
-    "cat_count": 451,
-    "total": 1313,
-    "dog_ratio": 0.657,
+    "dog_count": 891,
+    "cat_count": 469,
+    "total": 1360,
+    "dog_ratio": 0.655,
     "top_breeds": {
       "DOG": [
         {
           "breed": "LABRADOR RETR",
-          "count": 91
+          "count": 92
         },
         {
           "breed": "GOLDEN RETR",
-          "count": 56
+          "count": 58
         },
         {
           "breed": "POODLE MIN",
@@ -8765,28 +8765,20 @@
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 331
+          "count": 342
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 25
+          "count": 26
         },
         {
           "breed": "DOMESTIC MH",
-          "count": 19
+          "count": 20
         }
       ]
     },
     "rare_breeds": {
       "DOG": [
-        {
-          "breed": "MEX HAIRLESS",
-          "count": 1
-        },
-        {
-          "breed": "AMERICAN STAFF",
-          "count": 1
-        },
         {
           "breed": "BEAGLE MIX",
           "count": 1
@@ -8798,9 +8790,21 @@
         {
           "breed": "ENG SETTER",
           "count": 1
+        },
+        {
+          "breed": "ENG COONHOUND",
+          "count": 1
+        },
+        {
+          "breed": "PRESA CANARIO",
+          "count": 1
         }
       ],
       "CAT": [
+        {
+          "breed": "HIMALAYAN",
+          "count": 2
+        },
         {
           "breed": "AMER CURL SH",
           "count": 2
@@ -8814,10 +8818,6 @@
           "count": 2
         },
         {
-          "breed": "ABYSSINIAN",
-          "count": 2
-        },
-        {
           "breed": "MIX",
           "count": 1
         }
@@ -8826,21 +8826,21 @@
     "signature_breed": {
       "DOG": {
         "breed": "TOY FOX TERRIER",
-        "ratio": 15.18
+        "ratio": 14.37
       },
       "CAT": {
         "breed": "SAVANNAH",
-        "ratio": 25.24
+        "ratio": 24.82
       }
     },
-    "per_capita_rate": 0.076901
+    "per_capita_rate": 0.079653
   },
   "M5E": {
     "neighbourhood": "Downtown Toronto - Berczy Park",
-    "dog_count": 779,
-    "cat_count": 311,
-    "total": 1090,
-    "dog_ratio": 0.715,
+    "dog_count": 803,
+    "cat_count": 324,
+    "total": 1127,
+    "dog_ratio": 0.713,
     "top_breeds": {
       "DOG": [
         {
@@ -8849,17 +8849,17 @@
         },
         {
           "breed": "LABRADOR RETR",
-          "count": 51
+          "count": 54
         },
         {
           "breed": "GOLDEN RETR",
-          "count": 47
+          "count": 49
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 222
+          "count": 234
         },
         {
           "breed": "DOMESTIC MH",
@@ -8874,10 +8874,6 @@
     "rare_breeds": {
       "DOG": [
         {
-          "breed": "COLLIE ROUGH",
-          "count": 1
-        },
-        {
           "breed": "BLACK MOUTH CUR",
           "count": 1
         },
@@ -8891,6 +8887,10 @@
         },
         {
           "breed": "DACHSHUND",
+          "count": 1
+        },
+        {
+          "breed": "AMERICAN COCKER",
           "count": 1
         }
       ],
@@ -8920,21 +8920,21 @@
     "signature_breed": {
       "DOG": {
         "breed": "TOY FOX TERRIER",
-        "ratio": 16.79
+        "ratio": 15.95
       },
       "CAT": {
         "breed": "TURKISH VAN",
-        "ratio": 22.49
+        "ratio": 22.58
       }
     },
-    "per_capita_rate": 0.092538
+    "per_capita_rate": 0.095679
   },
   "M5G": {
     "neighbourhood": "Downtown Toronto - Central Bay Street",
-    "dog_count": 328,
-    "cat_count": 326,
-    "total": 654,
-    "dog_ratio": 0.502,
+    "dog_count": 345,
+    "cat_count": 349,
+    "total": 694,
+    "dog_ratio": 0.497,
     "top_breeds": {
       "DOG": [
         {
@@ -8953,11 +8953,11 @@
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 220
+          "count": 234
         },
         {
           "breed": "DOMESTIC LH",
-          "count": 32
+          "count": 33
         },
         {
           "breed": "DOMESTIC MH",
@@ -8998,7 +8998,7 @@
           "count": 2
         },
         {
-          "breed": "ABYSSINIAN",
+          "breed": "SPHYNX",
           "count": 2
         },
         {
@@ -9006,7 +9006,7 @@
           "count": 1
         },
         {
-          "breed": "SPHYNX",
+          "breed": "BRITISH SH",
           "count": 1
         }
       ]
@@ -9014,14 +9014,14 @@
     "signature_breed": {
       "DOG": {
         "breed": "KOMONDOR",
-        "ratio": 148.14
+        "ratio": 144.95
       },
       "CAT": {
         "breed": "AMER CURL SH",
-        "ratio": 34.32
+        "ratio": 32.26
       }
     },
-    "per_capita_rate": 0.06707
+    "per_capita_rate": 0.071172
   },
   "L6B": {
     "neighbourhood": "L6B",
@@ -9220,10 +9220,10 @@
   },
   "M5H": {
     "neighbourhood": "Downtown Toronto - Richmond / Adelaide / King",
-    "dog_count": 144,
-    "cat_count": 82,
-    "total": 226,
-    "dog_ratio": 0.637,
+    "dog_count": 147,
+    "cat_count": 89,
+    "total": 236,
+    "dog_ratio": 0.623,
     "top_breeds": {
       "DOG": [
         {
@@ -9236,30 +9236,26 @@
         },
         {
           "breed": "MALTESE",
-          "count": 10
+          "count": 11
         }
       ],
       "CAT": [
         {
           "breed": "DOMESTIC SH",
-          "count": 46
+          "count": 47
         },
         {
           "breed": "DOMESTIC LH",
           "count": 12
         },
         {
-          "breed": "ANGORA",
-          "count": 4
+          "breed": "BRITISH SH",
+          "count": 5
         }
       ]
     },
     "rare_breeds": {
       "DOG": [
-        {
-          "breed": "HAVANESE",
-          "count": 1
-        },
         {
           "breed": "AMER BULLDOG",
           "count": 1
@@ -9275,13 +9271,13 @@
         {
           "breed": "AMERICAN BULLY",
           "count": 1
+        },
+        {
+          "breed": "UNKNOWN",
+          "count": 1
         }
       ],
       "CAT": [
-        {
-          "breed": "RAGDOLL",
-          "count": 3
-        },
         {
           "breed": "SCOTTISH FOLD",
           "count": 2
@@ -9295,6 +9291,10 @@
           "count": 2
         },
         {
+          "breed": "ABYSSINIAN",
+          "count": 2
+        },
+        {
           "breed": "AMER SH",
           "count": 1
         }
@@ -9303,14 +9303,14 @@
     "signature_breed": {
       "DOG": {
         "breed": "BULLDOG",
-        "ratio": 10.18
+        "ratio": 10.05
       },
       "CAT": {
         "breed": "ANGORA",
-        "ratio": 243.68
+        "ratio": 234.91
       }
     },
-    "per_capita_rate": 0.069581
+    "per_capita_rate": 0.07266
   },
   "L5E": {
     "neighbourhood": "L5E",
@@ -9409,7 +9409,7 @@
     "signature_breed": {
       "DOG": {
         "breed": "ALASK MALAMUTE",
-        "ratio": 345.83
+        "ratio": 349.71
       }
     },
     "per_capita_rate": null
@@ -9602,7 +9602,7 @@
     "signature_breed": {
       "DOG": {
         "breed": "AUST SHEPHERD",
-        "ratio": 38.39
+        "ratio": 38.64
       }
     },
     "per_capita_rate": null
@@ -9696,7 +9696,7 @@
     "signature_breed": {
       "DOG": {
         "breed": "GOLDEN RETR",
-        "ratio": 12.59
+        "ratio": 12.65
       }
     },
     "per_capita_rate": null
@@ -9886,7 +9886,7 @@
     "signature_breed": {
       "DOG": {
         "breed": "BULLMASTIFF",
-        "ratio": 766.05
+        "ratio": 726.26
       }
     },
     "per_capita_rate": null
