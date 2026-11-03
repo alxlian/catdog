@@ -1,5 +1,57 @@
 {
   "DOG": {
+    "GOLDEN RETR": [
+      {
+        "year": 2023,
+        "count": 3516,
+        "share": 0.079152,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 3475,
+        "share": 0.078437,
+        "yoy_change": -0.000715
+      },
+      {
+        "year": 2025,
+        "count": 3827,
+        "share": 0.081007,
+        "yoy_change": 0.00257
+      },
+      {
+        "year": 2026,
+        "count": 3271,
+        "share": 0.077257,
+        "yoy_change": -0.00375
+      }
+    ],
+    "DACHSHUND": [
+      {
+        "year": 2023,
+        "count": 329,
+        "share": 0.007406,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 309,
+        "share": 0.006975,
+        "yoy_change": -0.000431
+      },
+      {
+        "year": 2025,
+        "count": 331,
+        "share": 0.007006,
+        "yoy_change": 3.1e-05
+      },
+      {
+        "year": 2026,
+        "count": 267,
+        "share": 0.006306,
+        "yoy_change": -0.0007
+      }
+    ],
     "SHIH TZU": [
       {
         "year": 2023,
@@ -26,30 +78,82 @@
         "yoy_change": -0.000914
       }
     ],
-    "GERM SHEPHERD": [
+    "JACK RUSSELL TE": [
       {
         "year": 2023,
-        "count": 2176,
-        "share": 0.048986,
+        "count": 756,
+        "share": 0.017019,
         "yoy_change": null
       },
       {
         "year": 2024,
-        "count": 2139,
-        "share": 0.048281,
-        "yoy_change": -0.000705
+        "count": 691,
+        "share": 0.015597,
+        "yoy_change": -0.001422
       },
       {
         "year": 2025,
-        "count": 2183,
-        "share": 0.046208,
-        "yoy_change": -0.002073
+        "count": 683,
+        "share": 0.014457,
+        "yoy_change": -0.00114
       },
       {
         "year": 2026,
-        "count": 1935,
-        "share": 0.045703,
-        "yoy_change": -0.000505
+        "count": 589,
+        "share": 0.013912,
+        "yoy_change": -0.000545
+      }
+    ],
+    "POODLE MIN": [
+      {
+        "year": 2023,
+        "count": 1772,
+        "share": 0.039891,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 1715,
+        "share": 0.038711,
+        "yoy_change": -0.00118
+      },
+      {
+        "year": 2025,
+        "count": 1743,
+        "share": 0.036894,
+        "yoy_change": -0.001817
+      },
+      {
+        "year": 2026,
+        "count": 1515,
+        "share": 0.035783,
+        "yoy_change": -0.001111
+      }
+    ],
+    "WEST HIGHLAND": [
+      {
+        "year": 2023,
+        "count": 337,
+        "share": 0.007587,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 304,
+        "share": 0.006862,
+        "yoy_change": -0.000725
+      },
+      {
+        "year": 2025,
+        "count": 328,
+        "share": 0.006943,
+        "yoy_change": 8.1e-05
+      },
+      {
+        "year": 2026,
+        "count": 280,
+        "share": 0.006613,
+        "yoy_change": -0.00033
       }
     ],
     "YORKSHIRE TERR": [
@@ -104,160 +208,160 @@
         "yoy_change": -0.000163
       }
     ],
-    "POODLE STND": [
+    "AUST SHEPHERD": [
       {
         "year": 2023,
-        "count": 1129,
-        "share": 0.025416,
+        "count": 1104,
+        "share": 0.024853,
         "yoy_change": null
       },
       {
         "year": 2024,
-        "count": 1049,
-        "share": 0.023678,
-        "yoy_change": -0.001738
+        "count": 1146,
+        "share": 0.025867,
+        "yoy_change": 0.001014
       },
       {
         "year": 2025,
-        "count": 1119,
-        "share": 0.023686,
-        "yoy_change": 8e-06
+        "count": 1264,
+        "share": 0.026755,
+        "yoy_change": 0.000888
       },
       {
         "year": 2026,
-        "count": 950,
-        "share": 0.022438,
-        "yoy_change": -0.001248
+        "count": 1105,
+        "share": 0.026099,
+        "yoy_change": -0.000656
       }
     ],
-    "BEARDED COLLIE": [
+    "COCKER SPANIEL": [
       {
         "year": 2023,
-        "count": 28,
-        "share": 0.00063,
+        "count": 1618,
+        "share": 0.036424,
         "yoy_change": null
       },
       {
         "year": 2024,
-        "count": 23,
-        "share": 0.000519,
-        "yoy_change": -0.000111
+        "count": 1654,
+        "share": 0.037334,
+        "yoy_change": 0.00091
       },
       {
         "year": 2025,
-        "count": 22,
-        "share": 0.000466,
-        "yoy_change": -5.3e-05
+        "count": 1809,
+        "share": 0.038291,
+        "yoy_change": 0.000957
       },
       {
         "year": 2026,
-        "count": 15,
-        "share": 0.000354,
-        "yoy_change": -0.000112
+        "count": 1456,
+        "share": 0.034389,
+        "yoy_change": -0.003902
       }
     ],
-    "POODLE MIN": [
+    "POMERANIAN": [
       {
         "year": 2023,
-        "count": 1772,
-        "share": 0.039891,
+        "count": 685,
+        "share": 0.015421,
         "yoy_change": null
       },
       {
         "year": 2024,
-        "count": 1715,
-        "share": 0.038711,
-        "yoy_change": -0.00118
+        "count": 672,
+        "share": 0.015168,
+        "yoy_change": -0.000253
       },
       {
         "year": 2025,
-        "count": 1743,
-        "share": 0.036894,
-        "yoy_change": -0.001817
+        "count": 733,
+        "share": 0.015516,
+        "yoy_change": 0.000348
       },
       {
         "year": 2026,
-        "count": 1515,
-        "share": 0.035783,
-        "yoy_change": -0.001111
+        "count": 665,
+        "share": 0.015707,
+        "yoy_change": 0.000191
       }
     ],
-    "JACK RUSSELL TE": [
+    "CAIRN TERRIER": [
       {
         "year": 2023,
-        "count": 756,
-        "share": 0.017019,
+        "count": 137,
+        "share": 0.003084,
         "yoy_change": null
       },
       {
         "year": 2024,
-        "count": 691,
-        "share": 0.015597,
-        "yoy_change": -0.001422
+        "count": 128,
+        "share": 0.002889,
+        "yoy_change": -0.000195
       },
       {
         "year": 2025,
-        "count": 683,
-        "share": 0.014457,
-        "yoy_change": -0.00114
+        "count": 123,
+        "share": 0.002604,
+        "yoy_change": -0.000285
       },
       {
         "year": 2026,
-        "count": 589,
-        "share": 0.013912,
-        "yoy_change": -0.000545
+        "count": 107,
+        "share": 0.002527,
+        "yoy_change": -7.7e-05
       }
     ],
-    "AMER ESKIMO": [
+    "GERM SHEPHERD": [
       {
         "year": 2023,
-        "count": 148,
-        "share": 0.003332,
+        "count": 2176,
+        "share": 0.048986,
         "yoy_change": null
       },
       {
         "year": 2024,
-        "count": 141,
-        "share": 0.003183,
-        "yoy_change": -0.000149
+        "count": 2139,
+        "share": 0.048281,
+        "yoy_change": -0.000705
       },
       {
         "year": 2025,
-        "count": 135,
-        "share": 0.002858,
-        "yoy_change": -0.000325
+        "count": 2183,
+        "share": 0.046208,
+        "yoy_change": -0.002073
       },
       {
         "year": 2026,
-        "count": 117,
-        "share": 0.002763,
-        "yoy_change": -9.5e-05
+        "count": 1935,
+        "share": 0.045703,
+        "yoy_change": -0.000505
       }
     ],
-    "RAT TERRIER": [
+    "NS DUCK TOLLING": [
       {
         "year": 2023,
-        "count": 84,
-        "share": 0.001891,
+        "count": 86,
+        "share": 0.001936,
         "yoy_change": null
       },
       {
         "year": 2024,
-        "count": 89,
-        "share": 0.002009,
-        "yoy_change": 0.000118
-      },
-      {
-        "year": 2025,
-        "count": 95,
-        "share": 0.002011,
-        "yoy_change": 2e-06
-      },
-      {
-        "year": 2026,
         "count": 81,
-        "share": 0.001913,
-        "yoy_change": -9.8e-05
+        "share": 0.001828,
+        "yoy_change": -0.000108
+      },
+      {
+        "year": 2025,
+        "count": 88,
+        "share": 0.001863,
+        "yoy_change": 3.5e-05
+      },
+      {
+        "year": 2026,
+        "count": 62,
+        "share": 0.001464,
+        "yoy_change": -0.000399
       }
     ],
     "MALTESE": [
@@ -312,160 +416,30 @@
         "yoy_change": 0.001499
       }
     ],
-    "COCKER SPANIEL": [
+    "POODLE TOY": [
       {
         "year": 2023,
-        "count": 1618,
-        "share": 0.036424,
+        "count": 515,
+        "share": 0.011594,
         "yoy_change": null
       },
       {
         "year": 2024,
-        "count": 1654,
-        "share": 0.037334,
-        "yoy_change": 0.00091
+        "count": 517,
+        "share": 0.01167,
+        "yoy_change": 7.6e-05
       },
       {
         "year": 2025,
-        "count": 1809,
-        "share": 0.038291,
-        "yoy_change": 0.000957
+        "count": 580,
+        "share": 0.012277,
+        "yoy_change": 0.000607
       },
       {
         "year": 2026,
-        "count": 1456,
-        "share": 0.034389,
-        "yoy_change": -0.003902
-      }
-    ],
-    "CHIHUAHUA LH": [
-      {
-        "year": 2023,
-        "count": 82,
-        "share": 0.001846,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 118,
-        "share": 0.002663,
-        "yoy_change": 0.000817
-      },
-      {
-        "year": 2025,
-        "count": 118,
-        "share": 0.002498,
-        "yoy_change": -0.000165
-      },
-      {
-        "year": 2026,
-        "count": 87,
-        "share": 0.002055,
-        "yoy_change": -0.000443
-      }
-    ],
-    "GOLDEN RETR": [
-      {
-        "year": 2023,
-        "count": 3516,
-        "share": 0.079152,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 3475,
-        "share": 0.078437,
-        "yoy_change": -0.000715
-      },
-      {
-        "year": 2025,
-        "count": 3827,
-        "share": 0.081007,
-        "yoy_change": 0.00257
-      },
-      {
-        "year": 2026,
-        "count": 3271,
-        "share": 0.077257,
-        "yoy_change": -0.00375
-      }
-    ],
-    "WHEATEN TERRIER": [
-      {
-        "year": 2023,
-        "count": 319,
-        "share": 0.007181,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 286,
-        "share": 0.006456,
-        "yoy_change": -0.000725
-      },
-      {
-        "year": 2025,
-        "count": 289,
-        "share": 0.006117,
-        "yoy_change": -0.000339
-      },
-      {
-        "year": 2026,
-        "count": 223,
-        "share": 0.005267,
-        "yoy_change": -0.00085
-      }
-    ],
-    "WEST HIGHLAND": [
-      {
-        "year": 2023,
-        "count": 337,
-        "share": 0.007587,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 304,
-        "share": 0.006862,
-        "yoy_change": -0.000725
-      },
-      {
-        "year": 2025,
-        "count": 328,
-        "share": 0.006943,
-        "yoy_change": 8.1e-05
-      },
-      {
-        "year": 2026,
-        "count": 280,
-        "share": 0.006613,
-        "yoy_change": -0.00033
-      }
-    ],
-    "PUG": [
-      {
-        "year": 2023,
-        "count": 475,
-        "share": 0.010693,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 457,
-        "share": 0.010315,
-        "yoy_change": -0.000378
-      },
-      {
-        "year": 2025,
-        "count": 438,
-        "share": 0.009271,
-        "yoy_change": -0.001044
-      },
-      {
-        "year": 2026,
-        "count": 399,
-        "share": 0.009424,
-        "yoy_change": 0.000153
+        "count": 544,
+        "share": 0.012849,
+        "yoy_change": 0.000572
       }
     ],
     "AFFENPINSCHER": [
@@ -520,396 +494,6 @@
         "yoy_change": -0.000281
       }
     ],
-    "SCHNAUZER MIN": [
-      {
-        "year": 2023,
-        "count": 547,
-        "share": 0.012314,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 547,
-        "share": 0.012347,
-        "yoy_change": 3.3e-05
-      },
-      {
-        "year": 2025,
-        "count": 565,
-        "share": 0.011959,
-        "yoy_change": -0.000388
-      },
-      {
-        "year": 2026,
-        "count": 494,
-        "share": 0.011668,
-        "yoy_change": -0.000291
-      }
-    ],
-    "AUST SHEPHERD": [
-      {
-        "year": 2023,
-        "count": 1104,
-        "share": 0.024853,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 1146,
-        "share": 0.025867,
-        "yoy_change": 0.001014
-      },
-      {
-        "year": 2025,
-        "count": 1264,
-        "share": 0.026755,
-        "yoy_change": 0.000888
-      },
-      {
-        "year": 2026,
-        "count": 1105,
-        "share": 0.026099,
-        "yoy_change": -0.000656
-      }
-    ],
-    "LABRADOR RETR": [
-      {
-        "year": 2023,
-        "count": 4564,
-        "share": 0.102744,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 4371,
-        "share": 0.098661,
-        "yoy_change": -0.004083
-      },
-      {
-        "year": 2025,
-        "count": 4525,
-        "share": 0.095781,
-        "yoy_change": -0.00288
-      },
-      {
-        "year": 2026,
-        "count": 3817,
-        "share": 0.090153,
-        "yoy_change": -0.005628
-      }
-    ],
-    "BORDER COLLIE": [
-      {
-        "year": 2023,
-        "count": 924,
-        "share": 0.020801,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 927,
-        "share": 0.020924,
-        "yoy_change": 0.000123
-      },
-      {
-        "year": 2025,
-        "count": 966,
-        "share": 0.020447,
-        "yoy_change": -0.000477
-      },
-      {
-        "year": 2026,
-        "count": 849,
-        "share": 0.020052,
-        "yoy_change": -0.000395
-      }
-    ],
-    "CHINESE CRESTED": [
-      {
-        "year": 2023,
-        "count": 43,
-        "share": 0.000968,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 47,
-        "share": 0.001061,
-        "yoy_change": 9.3e-05
-      },
-      {
-        "year": 2025,
-        "count": 39,
-        "share": 0.000826,
-        "yoy_change": -0.000235
-      },
-      {
-        "year": 2026,
-        "count": 26,
-        "share": 0.000614,
-        "yoy_change": -0.000212
-      }
-    ],
-    "DACHSHUND": [
-      {
-        "year": 2023,
-        "count": 329,
-        "share": 0.007406,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 309,
-        "share": 0.006975,
-        "yoy_change": -0.000431
-      },
-      {
-        "year": 2025,
-        "count": 331,
-        "share": 0.007006,
-        "yoy_change": 3.1e-05
-      },
-      {
-        "year": 2026,
-        "count": 267,
-        "share": 0.006306,
-        "yoy_change": -0.0007
-      }
-    ],
-    "PORT WATER DOG": [
-      {
-        "year": 2023,
-        "count": 421,
-        "share": 0.009477,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 382,
-        "share": 0.008622,
-        "yoy_change": -0.000855
-      },
-      {
-        "year": 2025,
-        "count": 412,
-        "share": 0.008721,
-        "yoy_change": 9.9e-05
-      },
-      {
-        "year": 2026,
-        "count": 347,
-        "share": 0.008196,
-        "yoy_change": -0.000525
-      }
-    ],
-    "COTON DE TULEAR": [
-      {
-        "year": 2023,
-        "count": 187,
-        "share": 0.00421,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 187,
-        "share": 0.004221,
-        "yoy_change": 1.1e-05
-      },
-      {
-        "year": 2025,
-        "count": 188,
-        "share": 0.003979,
-        "yoy_change": -0.000242
-      },
-      {
-        "year": 2026,
-        "count": 142,
-        "share": 0.003354,
-        "yoy_change": -0.000625
-      }
-    ],
-    "POMERANIAN": [
-      {
-        "year": 2023,
-        "count": 685,
-        "share": 0.015421,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 672,
-        "share": 0.015168,
-        "yoy_change": -0.000253
-      },
-      {
-        "year": 2025,
-        "count": 733,
-        "share": 0.015516,
-        "yoy_change": 0.000348
-      },
-      {
-        "year": 2026,
-        "count": 665,
-        "share": 0.015707,
-        "yoy_change": 0.000191
-      }
-    ],
-    "BEAGLE": [
-      {
-        "year": 2023,
-        "count": 860,
-        "share": 0.01936,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 782,
-        "share": 0.017651,
-        "yoy_change": -0.001709
-      },
-      {
-        "year": 2025,
-        "count": 778,
-        "share": 0.016468,
-        "yoy_change": -0.001183
-      },
-      {
-        "year": 2026,
-        "count": 694,
-        "share": 0.016392,
-        "yoy_change": -7.6e-05
-      }
-    ],
-    "WHIPPET": [
-      {
-        "year": 2023,
-        "count": 160,
-        "share": 0.003602,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 183,
-        "share": 0.004131,
-        "yoy_change": 0.000529
-      },
-      {
-        "year": 2025,
-        "count": 193,
-        "share": 0.004085,
-        "yoy_change": -4.6e-05
-      },
-      {
-        "year": 2026,
-        "count": 167,
-        "share": 0.003944,
-        "yoy_change": -0.000141
-      }
-    ],
-    "BASSET HOUND": [
-      {
-        "year": 2023,
-        "count": 80,
-        "share": 0.001801,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 76,
-        "share": 0.001715,
-        "yoy_change": -8.6e-05
-      },
-      {
-        "year": 2025,
-        "count": 79,
-        "share": 0.001672,
-        "yoy_change": -4.3e-05
-      },
-      {
-        "year": 2026,
-        "count": 64,
-        "share": 0.001512,
-        "yoy_change": -0.00016
-      }
-    ],
-    "POODLE TOY": [
-      {
-        "year": 2023,
-        "count": 515,
-        "share": 0.011594,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 517,
-        "share": 0.01167,
-        "yoy_change": 7.6e-05
-      },
-      {
-        "year": 2025,
-        "count": 580,
-        "share": 0.012277,
-        "yoy_change": 0.000607
-      },
-      {
-        "year": 2026,
-        "count": 544,
-        "share": 0.012849,
-        "yoy_change": 0.000572
-      }
-    ],
-    "CAIRN TERRIER": [
-      {
-        "year": 2023,
-        "count": 137,
-        "share": 0.003084,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 128,
-        "share": 0.002889,
-        "yoy_change": -0.000195
-      },
-      {
-        "year": 2025,
-        "count": 123,
-        "share": 0.002604,
-        "yoy_change": -0.000285
-      },
-      {
-        "year": 2026,
-        "count": 107,
-        "share": 0.002527,
-        "yoy_change": -7.7e-05
-      }
-    ],
-    "NS DUCK TOLLING": [
-      {
-        "year": 2023,
-        "count": 86,
-        "share": 0.001936,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 81,
-        "share": 0.001828,
-        "yoy_change": -0.000108
-      },
-      {
-        "year": 2025,
-        "count": 88,
-        "share": 0.001863,
-        "yoy_change": 3.5e-05
-      },
-      {
-        "year": 2026,
-        "count": 62,
-        "share": 0.001464,
-        "yoy_change": -0.000399
-      }
-    ],
     "SIBERIAN HUSKY": [
       {
         "year": 2023,
@@ -934,58 +518,6 @@
         "count": 1131,
         "share": 0.026713,
         "yoy_change": -0.000783
-      }
-    ],
-    "LHASA APSO": [
-      {
-        "year": 2023,
-        "count": 101,
-        "share": 0.002274,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 89,
-        "share": 0.002009,
-        "yoy_change": -0.000265
-      },
-      {
-        "year": 2025,
-        "count": 77,
-        "share": 0.00163,
-        "yoy_change": -0.000379
-      },
-      {
-        "year": 2026,
-        "count": 66,
-        "share": 0.001559,
-        "yoy_change": -7.1e-05
-      }
-    ],
-    "HAVANESE": [
-      {
-        "year": 2023,
-        "count": 573,
-        "share": 0.012899,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 586,
-        "share": 0.013227,
-        "yoy_change": 0.000328
-      },
-      {
-        "year": 2025,
-        "count": 658,
-        "share": 0.013928,
-        "yoy_change": 0.000701
-      },
-      {
-        "year": 2026,
-        "count": 524,
-        "share": 0.012376,
-        "yoy_change": -0.001552
       }
     ],
     "OLDENG SHEEPDOG": [
@@ -1040,108 +572,186 @@
         "yoy_change": -0.000998
       }
     ],
-    "BOXER": [
+    "WHEATEN TERRIER": [
       {
         "year": 2023,
-        "count": 512,
-        "share": 0.011526,
+        "count": 319,
+        "share": 0.007181,
         "yoy_change": null
       },
       {
         "year": 2024,
-        "count": 513,
-        "share": 0.011579,
-        "yoy_change": 5.3e-05
+        "count": 286,
+        "share": 0.006456,
+        "yoy_change": -0.000725
       },
       {
         "year": 2025,
-        "count": 492,
-        "share": 0.010414,
-        "yoy_change": -0.001165
+        "count": 289,
+        "share": 0.006117,
+        "yoy_change": -0.000339
       },
       {
         "year": 2026,
-        "count": 436,
-        "share": 0.010298,
-        "yoy_change": -0.000116
+        "count": 223,
+        "share": 0.005267,
+        "yoy_change": -0.00085
       }
     ],
-    "BASENJI": [
+    "PUG": [
       {
         "year": 2023,
-        "count": 49,
-        "share": 0.001103,
+        "count": 475,
+        "share": 0.010693,
         "yoy_change": null
       },
       {
         "year": 2024,
-        "count": 43,
-        "share": 0.000971,
-        "yoy_change": -0.000132
+        "count": 457,
+        "share": 0.010315,
+        "yoy_change": -0.000378
       },
       {
         "year": 2025,
-        "count": 47,
-        "share": 0.000995,
-        "yoy_change": 2.4e-05
+        "count": 438,
+        "share": 0.009271,
+        "yoy_change": -0.001044
       },
       {
         "year": 2026,
-        "count": 37,
-        "share": 0.000874,
-        "yoy_change": -0.000121
+        "count": 399,
+        "share": 0.009424,
+        "yoy_change": 0.000153
       }
     ],
-    "BRITTANY": [
+    "PORT WATER DOG": [
       {
         "year": 2023,
-        "count": 111,
-        "share": 0.002499,
+        "count": 421,
+        "share": 0.009477,
         "yoy_change": null
       },
       {
         "year": 2024,
-        "count": 118,
-        "share": 0.002663,
-        "yoy_change": 0.000164
+        "count": 382,
+        "share": 0.008622,
+        "yoy_change": -0.000855
       },
       {
         "year": 2025,
-        "count": 123,
-        "share": 0.002604,
-        "yoy_change": -5.9e-05
+        "count": 412,
+        "share": 0.008721,
+        "yoy_change": 9.9e-05
       },
       {
         "year": 2026,
-        "count": 102,
-        "share": 0.002409,
-        "yoy_change": -0.000195
+        "count": 347,
+        "share": 0.008196,
+        "yoy_change": -0.000525
       }
     ],
-    "SCOT TERRIER": [
+    "COTON DE TULEAR": [
       {
         "year": 2023,
-        "count": 58,
-        "share": 0.001306,
+        "count": 187,
+        "share": 0.00421,
         "yoy_change": null
       },
       {
         "year": 2024,
-        "count": 56,
-        "share": 0.001264,
-        "yoy_change": -4.2e-05
+        "count": 187,
+        "share": 0.004221,
+        "yoy_change": 1.1e-05
       },
       {
         "year": 2025,
-        "count": 61,
-        "share": 0.001291,
-        "yoy_change": 2.7e-05
+        "count": 188,
+        "share": 0.003979,
+        "yoy_change": -0.000242
       },
       {
         "year": 2026,
-        "count": 57,
-        "share": 0.001346,
-        "yoy_change": 5.5e-05
+        "count": 142,
+        "share": 0.003354,
+        "yoy_change": -0.000625
+      }
+    ],
+    "BEAGLE": [
+      {
+        "year": 2023,
+        "count": 860,
+        "share": 0.01936,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 782,
+        "share": 0.017651,
+        "yoy_change": -0.001709
+      },
+      {
+        "year": 2025,
+        "count": 778,
+        "share": 0.016468,
+        "yoy_change": -0.001183
+      },
+      {
+        "year": 2026,
+        "count": 694,
+        "share": 0.016392,
+        "yoy_change": -7.6e-05
+      }
+    ],
+    "SCHNAUZER MIN": [
+      {
+        "year": 2023,
+        "count": 547,
+        "share": 0.012314,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 547,
+        "share": 0.012347,
+        "yoy_change": 3.3e-05
+      },
+      {
+        "year": 2025,
+        "count": 565,
+        "share": 0.011959,
+        "yoy_change": -0.000388
+      },
+      {
+        "year": 2026,
+        "count": 494,
+        "share": 0.011668,
+        "yoy_change": -0.000291
+      }
+    ],
+    "HAVANESE": [
+      {
+        "year": 2023,
+        "count": 573,
+        "share": 0.012899,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 586,
+        "share": 0.013227,
+        "yoy_change": 0.000328
+      },
+      {
+        "year": 2025,
+        "count": 658,
+        "share": 0.013928,
+        "yoy_change": 0.000701
+      },
+      {
+        "year": 2026,
+        "count": 524,
+        "share": 0.012376,
+        "yoy_change": -0.001552
       }
     ],
     "BOSTON TERRIER": [
@@ -1196,30 +806,264 @@
         "yoy_change": -0.000136
       }
     ],
-    "MIN PINSCHER": [
+    "LABRADOR RETR": [
       {
         "year": 2023,
-        "count": 170,
-        "share": 0.003827,
+        "count": 4564,
+        "share": 0.102744,
         "yoy_change": null
       },
       {
         "year": 2024,
-        "count": 165,
-        "share": 0.003724,
-        "yoy_change": -0.000103
+        "count": 4371,
+        "share": 0.098661,
+        "yoy_change": -0.004083
       },
       {
         "year": 2025,
-        "count": 165,
-        "share": 0.003493,
-        "yoy_change": -0.000231
+        "count": 4525,
+        "share": 0.095781,
+        "yoy_change": -0.00288
       },
       {
         "year": 2026,
-        "count": 128,
-        "share": 0.003023,
-        "yoy_change": -0.00047
+        "count": 3817,
+        "share": 0.090153,
+        "yoy_change": -0.005628
+      }
+    ],
+    "BORDER COLLIE": [
+      {
+        "year": 2023,
+        "count": 924,
+        "share": 0.020801,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 927,
+        "share": 0.020924,
+        "yoy_change": 0.000123
+      },
+      {
+        "year": 2025,
+        "count": 966,
+        "share": 0.020447,
+        "yoy_change": -0.000477
+      },
+      {
+        "year": 2026,
+        "count": 849,
+        "share": 0.020052,
+        "yoy_change": -0.000395
+      }
+    ],
+    "BOXER": [
+      {
+        "year": 2023,
+        "count": 512,
+        "share": 0.011526,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 513,
+        "share": 0.011579,
+        "yoy_change": 5.3e-05
+      },
+      {
+        "year": 2025,
+        "count": 492,
+        "share": 0.010414,
+        "yoy_change": -0.001165
+      },
+      {
+        "year": 2026,
+        "count": 436,
+        "share": 0.010298,
+        "yoy_change": -0.000116
+      }
+    ],
+    "CHINESE CRESTED": [
+      {
+        "year": 2023,
+        "count": 43,
+        "share": 0.000968,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 47,
+        "share": 0.001061,
+        "yoy_change": 9.3e-05
+      },
+      {
+        "year": 2025,
+        "count": 39,
+        "share": 0.000826,
+        "yoy_change": -0.000235
+      },
+      {
+        "year": 2026,
+        "count": 26,
+        "share": 0.000614,
+        "yoy_change": -0.000212
+      }
+    ],
+    "BASENJI": [
+      {
+        "year": 2023,
+        "count": 49,
+        "share": 0.001103,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 43,
+        "share": 0.000971,
+        "yoy_change": -0.000132
+      },
+      {
+        "year": 2025,
+        "count": 47,
+        "share": 0.000995,
+        "yoy_change": 2.4e-05
+      },
+      {
+        "year": 2026,
+        "count": 37,
+        "share": 0.000874,
+        "yoy_change": -0.000121
+      }
+    ],
+    "CHIHUAHUA LH": [
+      {
+        "year": 2023,
+        "count": 82,
+        "share": 0.001846,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 118,
+        "share": 0.002663,
+        "yoy_change": 0.000817
+      },
+      {
+        "year": 2025,
+        "count": 118,
+        "share": 0.002498,
+        "yoy_change": -0.000165
+      },
+      {
+        "year": 2026,
+        "count": 87,
+        "share": 0.002055,
+        "yoy_change": -0.000443
+      }
+    ],
+    "BRITTANY": [
+      {
+        "year": 2023,
+        "count": 111,
+        "share": 0.002499,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 118,
+        "share": 0.002663,
+        "yoy_change": 0.000164
+      },
+      {
+        "year": 2025,
+        "count": 123,
+        "share": 0.002604,
+        "yoy_change": -5.9e-05
+      },
+      {
+        "year": 2026,
+        "count": 102,
+        "share": 0.002409,
+        "yoy_change": -0.000195
+      }
+    ],
+    "SCOT TERRIER": [
+      {
+        "year": 2023,
+        "count": 58,
+        "share": 0.001306,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 56,
+        "share": 0.001264,
+        "yoy_change": -4.2e-05
+      },
+      {
+        "year": 2025,
+        "count": 61,
+        "share": 0.001291,
+        "yoy_change": 2.7e-05
+      },
+      {
+        "year": 2026,
+        "count": 57,
+        "share": 0.001346,
+        "yoy_change": 5.5e-05
+      }
+    ],
+    "AMER ESKIMO": [
+      {
+        "year": 2023,
+        "count": 148,
+        "share": 0.003332,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 141,
+        "share": 0.003183,
+        "yoy_change": -0.000149
+      },
+      {
+        "year": 2025,
+        "count": 135,
+        "share": 0.002858,
+        "yoy_change": -0.000325
+      },
+      {
+        "year": 2026,
+        "count": 117,
+        "share": 0.002763,
+        "yoy_change": -9.5e-05
+      }
+    ],
+    "BASSET HOUND": [
+      {
+        "year": 2023,
+        "count": 80,
+        "share": 0.001801,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 76,
+        "share": 0.001715,
+        "yoy_change": -8.6e-05
+      },
+      {
+        "year": 2025,
+        "count": 79,
+        "share": 0.001672,
+        "yoy_change": -4.3e-05
+      },
+      {
+        "year": 2026,
+        "count": 64,
+        "share": 0.001512,
+        "yoy_change": -0.00016
       }
     ],
     "TIBETAN TERR": [
@@ -1248,290 +1092,134 @@
         "yoy_change": -0.000254
       }
     ],
-    "CANE CORSO": [
+    "POODLE STND": [
       {
         "year": 2023,
-        "count": 271,
-        "share": 0.006101,
+        "count": 1129,
+        "share": 0.025416,
         "yoy_change": null
       },
       {
         "year": 2024,
-        "count": 285,
-        "share": 0.006433,
-        "yoy_change": 0.000332
+        "count": 1049,
+        "share": 0.023678,
+        "yoy_change": -0.001738
       },
       {
         "year": 2025,
-        "count": 285,
-        "share": 0.006033,
-        "yoy_change": -0.0004
+        "count": 1119,
+        "share": 0.023686,
+        "yoy_change": 8e-06
       },
       {
         "year": 2026,
-        "count": 219,
-        "share": 0.005173,
-        "yoy_change": -0.00086
+        "count": 950,
+        "share": 0.022438,
+        "yoy_change": -0.001248
       }
     ],
-    "NORW BUHUND": [
+    "BEARDED COLLIE": [
       {
         "year": 2023,
-        "count": 6,
-        "share": 0.000135,
+        "count": 28,
+        "share": 0.00063,
         "yoy_change": null
       },
       {
         "year": 2024,
-        "count": 9,
-        "share": 0.000203,
-        "yoy_change": 6.8e-05
+        "count": 23,
+        "share": 0.000519,
+        "yoy_change": -0.000111
       },
       {
         "year": 2025,
-        "count": 5,
-        "share": 0.000106,
-        "yoy_change": -9.7e-05
+        "count": 22,
+        "share": 0.000466,
+        "yoy_change": -5.3e-05
       },
       {
         "year": 2026,
-        "count": 5,
-        "share": 0.000118,
-        "yoy_change": 1.2e-05
+        "count": 15,
+        "share": 0.000354,
+        "yoy_change": -0.000112
       }
     ],
-    "WELSH TERRIER": [
+    "RAT TERRIER": [
       {
         "year": 2023,
-        "count": 26,
-        "share": 0.000585,
+        "count": 84,
+        "share": 0.001891,
         "yoy_change": null
       },
       {
         "year": 2024,
-        "count": 25,
-        "share": 0.000564,
-        "yoy_change": -2.1e-05
-      },
-      {
-        "year": 2025,
-        "count": 25,
-        "share": 0.000529,
-        "yoy_change": -3.5e-05
-      },
-      {
-        "year": 2026,
-        "count": 18,
-        "share": 0.000425,
-        "yoy_change": -0.000104
-      }
-    ],
-    "BULLDOG": [
-      {
-        "year": 2023,
-        "count": 137,
-        "share": 0.003084,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 117,
-        "share": 0.002641,
-        "yoy_change": -0.000443
-      },
-      {
-        "year": 2025,
-        "count": 131,
-        "share": 0.002773,
-        "yoy_change": 0.000132
-      },
-      {
-        "year": 2026,
-        "count": 95,
-        "share": 0.002244,
-        "yoy_change": -0.000529
-      }
-    ],
-    "PAPILLON": [
-      {
-        "year": 2023,
-        "count": 86,
-        "share": 0.001936,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 92,
-        "share": 0.002077,
-        "yoy_change": 0.000141
-      },
-      {
-        "year": 2025,
-        "count": 91,
-        "share": 0.001926,
-        "yoy_change": -0.000151
-      },
-      {
-        "year": 2026,
-        "count": 73,
-        "share": 0.001724,
-        "yoy_change": -0.000202
-      }
-    ],
-    "SHIBA INU": [
-      {
-        "year": 2023,
-        "count": 295,
-        "share": 0.006641,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 303,
-        "share": 0.006839,
-        "yoy_change": 0.000198
-      },
-      {
-        "year": 2025,
-        "count": 335,
-        "share": 0.007091,
-        "yoy_change": 0.000252
-      },
-      {
-        "year": 2026,
-        "count": 256,
-        "share": 0.006046,
-        "yoy_change": -0.001045
-      }
-    ],
-    "BORDER TERRIER": [
-      {
-        "year": 2023,
-        "count": 99,
-        "share": 0.002229,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 87,
-        "share": 0.001964,
-        "yoy_change": -0.000265
+        "count": 89,
+        "share": 0.002009,
+        "yoy_change": 0.000118
       },
       {
         "year": 2025,
         "count": 95,
         "share": 0.002011,
-        "yoy_change": 4.7e-05
+        "yoy_change": 2e-06
       },
       {
         "year": 2026,
-        "count": 76,
-        "share": 0.001795,
-        "yoy_change": -0.000216
+        "count": 81,
+        "share": 0.001913,
+        "yoy_change": -9.8e-05
       }
     ],
-    "PEKINGESE": [
+    "WHIPPET": [
       {
         "year": 2023,
-        "count": 60,
-        "share": 0.001351,
+        "count": 160,
+        "share": 0.003602,
         "yoy_change": null
       },
       {
         "year": 2024,
-        "count": 60,
-        "share": 0.001354,
-        "yoy_change": 3e-06
+        "count": 183,
+        "share": 0.004131,
+        "yoy_change": 0.000529
       },
       {
         "year": 2025,
-        "count": 59,
-        "share": 0.001249,
-        "yoy_change": -0.000105
+        "count": 193,
+        "share": 0.004085,
+        "yoy_change": -4.6e-05
       },
       {
         "year": 2026,
-        "count": 49,
-        "share": 0.001157,
-        "yoy_change": -9.2e-05
+        "count": 167,
+        "share": 0.003944,
+        "yoy_change": -0.000141
       }
     ],
-    "TIBETAN SPAN": [
+    "LHASA APSO": [
       {
         "year": 2023,
-        "count": 19,
-        "share": 0.000428,
+        "count": 101,
+        "share": 0.002274,
         "yoy_change": null
       },
       {
         "year": 2024,
-        "count": 26,
-        "share": 0.000587,
-        "yoy_change": 0.000159
+        "count": 89,
+        "share": 0.002009,
+        "yoy_change": -0.000265
       },
       {
         "year": 2025,
-        "count": 19,
-        "share": 0.000402,
-        "yoy_change": -0.000185
+        "count": 77,
+        "share": 0.00163,
+        "yoy_change": -0.000379
       },
       {
         "year": 2026,
-        "count": 17,
-        "share": 0.000402,
-        "yoy_change": 0.0
-      }
-    ],
-    "ENG BULLDOG": [
-      {
-        "year": 2023,
-        "count": 210,
-        "share": 0.004727,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 213,
-        "share": 0.004808,
-        "yoy_change": 8.1e-05
-      },
-      {
-        "year": 2025,
-        "count": 248,
-        "share": 0.005249,
-        "yoy_change": 0.000441
-      },
-      {
-        "year": 2026,
-        "count": 208,
-        "share": 0.004913,
-        "yoy_change": -0.000336
-      }
-    ],
-    "CHINESE SHAR-PE": [
-      {
-        "year": 2023,
-        "count": 88,
-        "share": 0.001981,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 96,
-        "share": 0.002167,
-        "yoy_change": 0.000186
-      },
-      {
-        "year": 2025,
-        "count": 82,
-        "share": 0.001736,
-        "yoy_change": -0.000431
-      },
-      {
-        "year": 2026,
-        "count": 60,
-        "share": 0.001417,
-        "yoy_change": -0.000319
+        "count": 66,
+        "share": 0.001559,
+        "yoy_change": -7.1e-05
       }
     ],
     "VIZSLA": [
@@ -1558,6 +1246,84 @@
         "count": 145,
         "share": 0.003425,
         "yoy_change": -0.000427
+      }
+    ],
+    "TOY FOX TERRIER": [
+      {
+        "year": 2023,
+        "count": 8,
+        "share": 0.00018,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 9,
+        "share": 0.000203,
+        "yoy_change": 2.3e-05
+      },
+      {
+        "year": 2025,
+        "count": 13,
+        "share": 0.000275,
+        "yoy_change": 7.2e-05
+      },
+      {
+        "year": 2026,
+        "count": 11,
+        "share": 0.00026,
+        "yoy_change": -1.5e-05
+      }
+    ],
+    "SCHNAUZER GIANT": [
+      {
+        "year": 2023,
+        "count": 20,
+        "share": 0.00045,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 14,
+        "share": 0.000316,
+        "yoy_change": -0.000134
+      },
+      {
+        "year": 2025,
+        "count": 21,
+        "share": 0.000445,
+        "yoy_change": 0.000129
+      },
+      {
+        "year": 2026,
+        "count": 16,
+        "share": 0.000378,
+        "yoy_change": -6.7e-05
+      }
+    ],
+    "PAPILLON": [
+      {
+        "year": 2023,
+        "count": 86,
+        "share": 0.001936,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 92,
+        "share": 0.002077,
+        "yoy_change": 0.000141
+      },
+      {
+        "year": 2025,
+        "count": 91,
+        "share": 0.001926,
+        "yoy_change": -0.000151
+      },
+      {
+        "year": 2026,
+        "count": 73,
+        "share": 0.001724,
+        "yoy_change": -0.000202
       }
     ],
     "CHOW CHOW": [
@@ -1638,108 +1404,290 @@
         "yoy_change": -5.5e-05
       }
     ],
-    "MIXED": [
+    "PEKINGESE": [
       {
         "year": 2023,
-        "count": 59,
-        "share": 0.001328,
+        "count": 60,
+        "share": 0.001351,
         "yoy_change": null
       },
       {
         "year": 2024,
-        "count": 66,
-        "share": 0.00149,
-        "yoy_change": 0.000162
+        "count": 60,
+        "share": 0.001354,
+        "yoy_change": 3e-06
       },
       {
         "year": 2025,
-        "count": 55,
-        "share": 0.001164,
-        "yoy_change": -0.000326
+        "count": 59,
+        "share": 0.001249,
+        "yoy_change": -0.000105
       },
       {
         "year": 2026,
-        "count": 45,
-        "share": 0.001063,
-        "yoy_change": -0.000101
+        "count": 49,
+        "share": 0.001157,
+        "yoy_change": -9.2e-05
       }
     ],
-    "TOY FOX TERRIER": [
+    "SHIBA INU": [
       {
         "year": 2023,
-        "count": 8,
-        "share": 0.00018,
+        "count": 295,
+        "share": 0.006641,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 303,
+        "share": 0.006839,
+        "yoy_change": 0.000198
+      },
+      {
+        "year": 2025,
+        "count": 335,
+        "share": 0.007091,
+        "yoy_change": 0.000252
+      },
+      {
+        "year": 2026,
+        "count": 256,
+        "share": 0.006046,
+        "yoy_change": -0.001045
+      }
+    ],
+    "BORDER TERRIER": [
+      {
+        "year": 2023,
+        "count": 99,
+        "share": 0.002229,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 87,
+        "share": 0.001964,
+        "yoy_change": -0.000265
+      },
+      {
+        "year": 2025,
+        "count": 95,
+        "share": 0.002011,
+        "yoy_change": 4.7e-05
+      },
+      {
+        "year": 2026,
+        "count": 76,
+        "share": 0.001795,
+        "yoy_change": -0.000216
+      }
+    ],
+    "NORW BUHUND": [
+      {
+        "year": 2023,
+        "count": 6,
+        "share": 0.000135,
         "yoy_change": null
       },
       {
         "year": 2024,
         "count": 9,
         "share": 0.000203,
-        "yoy_change": 2.3e-05
+        "yoy_change": 6.8e-05
       },
       {
         "year": 2025,
-        "count": 13,
-        "share": 0.000275,
-        "yoy_change": 7.2e-05
+        "count": 5,
+        "share": 0.000106,
+        "yoy_change": -9.7e-05
       },
       {
         "year": 2026,
-        "count": 11,
-        "share": 0.00026,
-        "yoy_change": -1.5e-05
+        "count": 5,
+        "share": 0.000118,
+        "yoy_change": 1.2e-05
       }
     ],
-    "SCHNAUZER GIANT": [
+    "WELSH TERRIER": [
       {
         "year": 2023,
-        "count": 20,
-        "share": 0.00045,
+        "count": 26,
+        "share": 0.000585,
         "yoy_change": null
       },
       {
         "year": 2024,
-        "count": 14,
-        "share": 0.000316,
-        "yoy_change": -0.000134
-      },
-      {
-        "year": 2025,
-        "count": 21,
-        "share": 0.000445,
-        "yoy_change": 0.000129
-      },
-      {
-        "year": 2026,
-        "count": 16,
-        "share": 0.000378,
-        "yoy_change": -6.7e-05
-      }
-    ],
-    "NORWICH TERRIER": [
-      {
-        "year": 2023,
-        "count": 21,
-        "share": 0.000473,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 24,
-        "share": 0.000542,
-        "yoy_change": 6.9e-05
+        "count": 25,
+        "share": 0.000564,
+        "yoy_change": -2.1e-05
       },
       {
         "year": 2025,
         "count": 25,
         "share": 0.000529,
-        "yoy_change": -1.3e-05
+        "yoy_change": -3.5e-05
       },
       {
         "year": 2026,
         "count": 18,
         "share": 0.000425,
         "yoy_change": -0.000104
+      }
+    ],
+    "BULLDOG": [
+      {
+        "year": 2023,
+        "count": 137,
+        "share": 0.003084,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 117,
+        "share": 0.002641,
+        "yoy_change": -0.000443
+      },
+      {
+        "year": 2025,
+        "count": 131,
+        "share": 0.002773,
+        "yoy_change": 0.000132
+      },
+      {
+        "year": 2026,
+        "count": 95,
+        "share": 0.002244,
+        "yoy_change": -0.000529
+      }
+    ],
+    "MIN PINSCHER": [
+      {
+        "year": 2023,
+        "count": 170,
+        "share": 0.003827,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 165,
+        "share": 0.003724,
+        "yoy_change": -0.000103
+      },
+      {
+        "year": 2025,
+        "count": 165,
+        "share": 0.003493,
+        "yoy_change": -0.000231
+      },
+      {
+        "year": 2026,
+        "count": 128,
+        "share": 0.003023,
+        "yoy_change": -0.00047
+      }
+    ],
+    "CANE CORSO": [
+      {
+        "year": 2023,
+        "count": 271,
+        "share": 0.006101,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 285,
+        "share": 0.006433,
+        "yoy_change": 0.000332
+      },
+      {
+        "year": 2025,
+        "count": 285,
+        "share": 0.006033,
+        "yoy_change": -0.0004
+      },
+      {
+        "year": 2026,
+        "count": 219,
+        "share": 0.005173,
+        "yoy_change": -0.00086
+      }
+    ],
+    "TIBETAN SPAN": [
+      {
+        "year": 2023,
+        "count": 19,
+        "share": 0.000428,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 26,
+        "share": 0.000587,
+        "yoy_change": 0.000159
+      },
+      {
+        "year": 2025,
+        "count": 19,
+        "share": 0.000402,
+        "yoy_change": -0.000185
+      },
+      {
+        "year": 2026,
+        "count": 17,
+        "share": 0.000402,
+        "yoy_change": 0.0
+      }
+    ],
+    "ENG BULLDOG": [
+      {
+        "year": 2023,
+        "count": 210,
+        "share": 0.004727,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 213,
+        "share": 0.004808,
+        "yoy_change": 8.1e-05
+      },
+      {
+        "year": 2025,
+        "count": 248,
+        "share": 0.005249,
+        "yoy_change": 0.000441
+      },
+      {
+        "year": 2026,
+        "count": 208,
+        "share": 0.004913,
+        "yoy_change": -0.000336
+      }
+    ],
+    "CHINESE SHAR-PE": [
+      {
+        "year": 2023,
+        "count": 88,
+        "share": 0.001981,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 96,
+        "share": 0.002167,
+        "yoy_change": 0.000186
+      },
+      {
+        "year": 2025,
+        "count": 82,
+        "share": 0.001736,
+        "yoy_change": -0.000431
+      },
+      {
+        "year": 2026,
+        "count": 60,
+        "share": 0.001417,
+        "yoy_change": -0.000319
       }
     ],
     "AMER BULLDOG": [
@@ -1768,30 +1716,56 @@
         "yoy_change": 0.000108
       }
     ],
-    "TERRIER": [
+    "NORWICH TERRIER": [
       {
         "year": 2023,
-        "count": 554,
-        "share": 0.012472,
+        "count": 21,
+        "share": 0.000473,
         "yoy_change": null
       },
       {
         "year": 2024,
-        "count": 540,
-        "share": 0.012189,
-        "yoy_change": -0.000283
+        "count": 24,
+        "share": 0.000542,
+        "yoy_change": 6.9e-05
       },
       {
         "year": 2025,
-        "count": 561,
-        "share": 0.011875,
-        "yoy_change": -0.000314
+        "count": 25,
+        "share": 0.000529,
+        "yoy_change": -1.3e-05
       },
       {
         "year": 2026,
-        "count": 452,
-        "share": 0.010676,
-        "yoy_change": -0.001199
+        "count": 18,
+        "share": 0.000425,
+        "yoy_change": -0.000104
+      }
+    ],
+    "MIXED": [
+      {
+        "year": 2023,
+        "count": 59,
+        "share": 0.001328,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 66,
+        "share": 0.00149,
+        "yoy_change": 0.000162
+      },
+      {
+        "year": 2025,
+        "count": 55,
+        "share": 0.001164,
+        "yoy_change": -0.000326
+      },
+      {
+        "year": 2026,
+        "count": 45,
+        "share": 0.001063,
+        "yoy_change": -0.000101
       }
     ],
     "DACHSHUND LH": [
@@ -1846,6 +1820,162 @@
         "yoy_change": -0.000412
       }
     ],
+    "TERRIER": [
+      {
+        "year": 2023,
+        "count": 554,
+        "share": 0.012472,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 540,
+        "share": 0.012189,
+        "yoy_change": -0.000283
+      },
+      {
+        "year": 2025,
+        "count": 561,
+        "share": 0.011875,
+        "yoy_change": -0.000314
+      },
+      {
+        "year": 2026,
+        "count": 452,
+        "share": 0.010676,
+        "yoy_change": -0.001199
+      }
+    ],
+    "PUG-POO": [
+      {
+        "year": 2023,
+        "count": 1,
+        "share": 2.3e-05,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 1,
+        "share": 2.3e-05,
+        "yoy_change": 0.0
+      },
+      {
+        "year": 2025,
+        "count": 1,
+        "share": 2.1e-05,
+        "yoy_change": -2e-06
+      },
+      {
+        "year": 2026,
+        "count": 1,
+        "share": 2.4e-05,
+        "yoy_change": 3e-06
+      }
+    ],
+    "BELG MALINOIS": [
+      {
+        "year": 2023,
+        "count": 99,
+        "share": 0.002229,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 108,
+        "share": 0.002438,
+        "yoy_change": 0.000209
+      },
+      {
+        "year": 2025,
+        "count": 107,
+        "share": 0.002265,
+        "yoy_change": -0.000173
+      },
+      {
+        "year": 2026,
+        "count": 88,
+        "share": 0.002078,
+        "yoy_change": -0.000187
+      }
+    ],
+    "SHIH POO": [
+      {
+        "year": 2023,
+        "count": 2,
+        "share": 4.5e-05,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 4,
+        "share": 9e-05,
+        "yoy_change": 4.5e-05
+      },
+      {
+        "year": 2025,
+        "count": 10,
+        "share": 0.000212,
+        "yoy_change": 0.000122
+      },
+      {
+        "year": 2026,
+        "count": 9,
+        "share": 0.000213,
+        "yoy_change": 1e-06
+      }
+    ],
+    "COLLIE SMOOTH": [
+      {
+        "year": 2023,
+        "count": 82,
+        "share": 0.001846,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 76,
+        "share": 0.001715,
+        "yoy_change": -0.000131
+      },
+      {
+        "year": 2025,
+        "count": 81,
+        "share": 0.001715,
+        "yoy_change": 0.0
+      },
+      {
+        "year": 2026,
+        "count": 63,
+        "share": 0.001488,
+        "yoy_change": -0.000227
+      }
+    ],
+    "JINDO": [
+      {
+        "year": 2023,
+        "count": 117,
+        "share": 0.002634,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 150,
+        "share": 0.003386,
+        "yoy_change": 0.000752
+      },
+      {
+        "year": 2025,
+        "count": 195,
+        "share": 0.004128,
+        "yoy_change": 0.000742
+      },
+      {
+        "year": 2026,
+        "count": 158,
+        "share": 0.003732,
+        "yoy_change": -0.000396
+      }
+    ],
     "WELSH CORGI PEM": [
       {
         "year": 2023,
@@ -1898,134 +2028,30 @@
         "yoy_change": -0.001298
       }
     ],
-    "PUG-POO": [
+    "ITAL GREYHOUND": [
       {
         "year": 2023,
-        "count": 1,
-        "share": 2.3e-05,
+        "count": 58,
+        "share": 0.001306,
         "yoy_change": null
       },
       {
         "year": 2024,
-        "count": 1,
-        "share": 2.3e-05,
-        "yoy_change": 0.0
+        "count": 40,
+        "share": 0.000903,
+        "yoy_change": -0.000403
       },
       {
         "year": 2025,
-        "count": 1,
-        "share": 2.1e-05,
-        "yoy_change": -2e-06
+        "count": 50,
+        "share": 0.001058,
+        "yoy_change": 0.000155
       },
       {
         "year": 2026,
-        "count": 1,
-        "share": 2.4e-05,
-        "yoy_change": 3e-06
-      }
-    ],
-    "JINDO": [
-      {
-        "year": 2023,
-        "count": 117,
-        "share": 0.002634,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 150,
-        "share": 0.003386,
-        "yoy_change": 0.000752
-      },
-      {
-        "year": 2025,
-        "count": 195,
-        "share": 0.004128,
-        "yoy_change": 0.000742
-      },
-      {
-        "year": 2026,
-        "count": 158,
-        "share": 0.003732,
-        "yoy_change": -0.000396
-      }
-    ],
-    "BELG MALINOIS": [
-      {
-        "year": 2023,
-        "count": 99,
-        "share": 0.002229,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 108,
-        "share": 0.002438,
-        "yoy_change": 0.000209
-      },
-      {
-        "year": 2025,
-        "count": 107,
-        "share": 0.002265,
-        "yoy_change": -0.000173
-      },
-      {
-        "year": 2026,
-        "count": 88,
-        "share": 0.002078,
-        "yoy_change": -0.000187
-      }
-    ],
-    "DUTCH SHEEPDOG": [
-      {
-        "year": 2023,
-        "count": 19,
-        "share": 0.000428,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 14,
-        "share": 0.000316,
-        "yoy_change": -0.000112
-      },
-      {
-        "year": 2025,
-        "count": 14,
-        "share": 0.000296,
-        "yoy_change": -2e-05
-      },
-      {
-        "year": 2026,
-        "count": 10,
-        "share": 0.000236,
-        "yoy_change": -6e-05
-      }
-    ],
-    "COLLIE SMOOTH": [
-      {
-        "year": 2023,
-        "count": 82,
-        "share": 0.001846,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 76,
-        "share": 0.001715,
-        "yoy_change": -0.000131
-      },
-      {
-        "year": 2025,
-        "count": 81,
-        "share": 0.001715,
-        "yoy_change": 0.0
-      },
-      {
-        "year": 2026,
-        "count": 63,
-        "share": 0.001488,
-        "yoy_change": -0.000227
+        "count": 40,
+        "share": 0.000945,
+        "yoy_change": -0.000113
       }
     ],
     "POLISH LOWLAND": [
@@ -2080,30 +2106,82 @@
         "yoy_change": -0.000125
       }
     ],
-    "ITAL GREYHOUND": [
+    "DUTCH SHEEPDOG": [
       {
         "year": 2023,
-        "count": 58,
-        "share": 0.001306,
+        "count": 19,
+        "share": 0.000428,
         "yoy_change": null
       },
       {
         "year": 2024,
-        "count": 40,
-        "share": 0.000903,
-        "yoy_change": -0.000403
+        "count": 14,
+        "share": 0.000316,
+        "yoy_change": -0.000112
       },
       {
         "year": 2025,
-        "count": 50,
-        "share": 0.001058,
-        "yoy_change": 0.000155
+        "count": 14,
+        "share": 0.000296,
+        "yoy_change": -2e-05
       },
       {
         "year": 2026,
-        "count": 40,
-        "share": 0.000945,
-        "yoy_change": -0.000113
+        "count": 10,
+        "share": 0.000236,
+        "yoy_change": -6e-05
+      }
+    ],
+    "DOBERMAN PINSCHER": [
+      {
+        "year": 2023,
+        "count": 279,
+        "share": 0.006281,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 268,
+        "share": 0.006049,
+        "yoy_change": -0.000232
+      },
+      {
+        "year": 2025,
+        "count": 270,
+        "share": 0.005715,
+        "yoy_change": -0.000334
+      },
+      {
+        "year": 2026,
+        "count": 256,
+        "share": 0.006046,
+        "yoy_change": 0.000331
+      }
+    ],
+    "IRISH TERRIER": [
+      {
+        "year": 2023,
+        "count": 28,
+        "share": 0.00063,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 28,
+        "share": 0.000632,
+        "yoy_change": 2e-06
+      },
+      {
+        "year": 2025,
+        "count": 24,
+        "share": 0.000508,
+        "yoy_change": -0.000124
+      },
+      {
+        "year": 2026,
+        "count": 18,
+        "share": 0.000425,
+        "yoy_change": -8.3e-05
       }
     ],
     "ENG COONHOUND": [
@@ -2184,160 +2262,82 @@
         "yoy_change": -0.000395
       }
     ],
-    "SHIH POO": [
+    "ROTTWEILER": [
       {
         "year": 2023,
-        "count": 2,
-        "share": 4.5e-05,
+        "count": 422,
+        "share": 0.0095,
         "yoy_change": null
       },
       {
         "year": 2024,
-        "count": 4,
-        "share": 9e-05,
-        "yoy_change": 4.5e-05
+        "count": 402,
+        "share": 0.009074,
+        "yoy_change": -0.000426
       },
       {
         "year": 2025,
+        "count": 391,
+        "share": 0.008276,
+        "yoy_change": -0.000798
+      },
+      {
+        "year": 2026,
+        "count": 347,
+        "share": 0.008196,
+        "yoy_change": -8e-05
+      }
+    ],
+    "KERRY BLUE TERR": [
+      {
+        "year": 2023,
         "count": 10,
-        "share": 0.000212,
-        "yoy_change": 0.000122
-      },
-      {
-        "year": 2026,
-        "count": 9,
-        "share": 0.000213,
-        "yoy_change": 1e-06
-      }
-    ],
-    "IRISH TERRIER": [
-      {
-        "year": 2023,
-        "count": 28,
-        "share": 0.00063,
+        "share": 0.000225,
         "yoy_change": null
       },
       {
         "year": 2024,
-        "count": 28,
-        "share": 0.000632,
-        "yoy_change": 2e-06
+        "count": 16,
+        "share": 0.000361,
+        "yoy_change": 0.000136
       },
       {
         "year": 2025,
-        "count": 24,
-        "share": 0.000508,
-        "yoy_change": -0.000124
+        "count": 11,
+        "share": 0.000233,
+        "yoy_change": -0.000128
       },
       {
         "year": 2026,
-        "count": 18,
-        "share": 0.000425,
-        "yoy_change": -8.3e-05
-      }
-    ],
-    "DOBERMAN PINSCHER": [
-      {
-        "year": 2023,
-        "count": 279,
-        "share": 0.006281,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 268,
-        "share": 0.006049,
-        "yoy_change": -0.000232
-      },
-      {
-        "year": 2025,
-        "count": 270,
-        "share": 0.005715,
-        "yoy_change": -0.000334
-      },
-      {
-        "year": 2026,
-        "count": 256,
-        "share": 0.006046,
-        "yoy_change": 0.000331
-      }
-    ],
-    "KARELIAN BEAR": [
-      {
-        "year": 2023,
         "count": 6,
-        "share": 0.000135,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 3,
-        "share": 6.8e-05,
-        "yoy_change": -6.7e-05
-      },
-      {
-        "year": 2025,
-        "count": 3,
-        "share": 6.4e-05,
-        "yoy_change": -4e-06
-      },
-      {
-        "year": 2026,
-        "count": 2,
-        "share": 4.7e-05,
-        "yoy_change": -1.7e-05
+        "share": 0.000142,
+        "yoy_change": -9.1e-05
       }
     ],
-    "ALASK MALAMUTE": [
+    "EURASIER": [
       {
         "year": 2023,
-        "count": 72,
-        "share": 0.001621,
+        "count": 13,
+        "share": 0.000293,
         "yoy_change": null
       },
       {
         "year": 2024,
-        "count": 77,
-        "share": 0.001738,
-        "yoy_change": 0.000117
+        "count": 14,
+        "share": 0.000316,
+        "yoy_change": 2.3e-05
       },
       {
         "year": 2025,
-        "count": 79,
-        "share": 0.001672,
-        "yoy_change": -6.6e-05
+        "count": 21,
+        "share": 0.000445,
+        "yoy_change": 0.000129
       },
       {
         "year": 2026,
-        "count": 65,
-        "share": 0.001535,
-        "yoy_change": -0.000137
-      }
-    ],
-    "IRISH SETTER": [
-      {
-        "year": 2023,
-        "count": 50,
-        "share": 0.001126,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 49,
-        "share": 0.001106,
-        "yoy_change": -2e-05
-      },
-      {
-        "year": 2025,
-        "count": 50,
-        "share": 0.001058,
-        "yoy_change": -4.8e-05
-      },
-      {
-        "year": 2026,
-        "count": 43,
-        "share": 0.001016,
-        "yoy_change": -4.2e-05
+        "count": 13,
+        "share": 0.000307,
+        "yoy_change": -0.000138
       }
     ],
     "ALASKAN HUSKY": [
@@ -2444,134 +2444,108 @@
         "yoy_change": -0.000335
       }
     ],
-    "KERRY BLUE TERR": [
+    "AUST CATTLE DOG": [
       {
         "year": 2023,
-        "count": 10,
-        "share": 0.000225,
+        "count": 199,
+        "share": 0.00448,
         "yoy_change": null
       },
       {
         "year": 2024,
-        "count": 16,
-        "share": 0.000361,
-        "yoy_change": 0.000136
+        "count": 205,
+        "share": 0.004627,
+        "yoy_change": 0.000147
       },
       {
         "year": 2025,
-        "count": 11,
-        "share": 0.000233,
-        "yoy_change": -0.000128
+        "count": 219,
+        "share": 0.004636,
+        "yoy_change": 9e-06
       },
       {
         "year": 2026,
+        "count": 187,
+        "share": 0.004417,
+        "yoy_change": -0.000219
+      }
+    ],
+    "KARELIAN BEAR": [
+      {
+        "year": 2023,
         "count": 6,
-        "share": 0.000142,
-        "yoy_change": -9.1e-05
-      }
-    ],
-    "EURASIER": [
-      {
-        "year": 2023,
-        "count": 13,
-        "share": 0.000293,
+        "share": 0.000135,
         "yoy_change": null
       },
       {
         "year": 2024,
-        "count": 14,
-        "share": 0.000316,
-        "yoy_change": 2.3e-05
+        "count": 3,
+        "share": 6.8e-05,
+        "yoy_change": -6.7e-05
       },
       {
         "year": 2025,
-        "count": 21,
-        "share": 0.000445,
-        "yoy_change": 0.000129
+        "count": 3,
+        "share": 6.4e-05,
+        "yoy_change": -4e-06
       },
       {
         "year": 2026,
-        "count": 13,
-        "share": 0.000307,
-        "yoy_change": -0.000138
+        "count": 2,
+        "share": 4.7e-05,
+        "yoy_change": -1.7e-05
       }
     ],
-    "ROTTWEILER": [
+    "ALASK MALAMUTE": [
       {
         "year": 2023,
-        "count": 422,
-        "share": 0.0095,
+        "count": 72,
+        "share": 0.001621,
         "yoy_change": null
       },
       {
         "year": 2024,
-        "count": 402,
-        "share": 0.009074,
-        "yoy_change": -0.000426
+        "count": 77,
+        "share": 0.001738,
+        "yoy_change": 0.000117
       },
       {
         "year": 2025,
-        "count": 391,
-        "share": 0.008276,
-        "yoy_change": -0.000798
+        "count": 79,
+        "share": 0.001672,
+        "yoy_change": -6.6e-05
       },
       {
         "year": 2026,
-        "count": 347,
-        "share": 0.008196,
-        "yoy_change": -8e-05
+        "count": 65,
+        "share": 0.001535,
+        "yoy_change": -0.000137
       }
     ],
-    "DANDIE DINMONT": [
+    "IRISH SETTER": [
       {
         "year": 2023,
-        "count": 5,
-        "share": 0.000113,
+        "count": 50,
+        "share": 0.001126,
         "yoy_change": null
       },
       {
         "year": 2024,
-        "count": 4,
-        "share": 9e-05,
-        "yoy_change": -2.3e-05
+        "count": 49,
+        "share": 0.001106,
+        "yoy_change": -2e-05
       },
       {
         "year": 2025,
-        "count": 4,
-        "share": 8.5e-05,
-        "yoy_change": -5e-06
+        "count": 50,
+        "share": 0.001058,
+        "yoy_change": -4.8e-05
       },
       {
         "year": 2026,
-        "count": 5,
-        "share": 0.000118,
-        "yoy_change": 3.3e-05
-      }
-    ],
-    "DUTCH SHEPHERD": [
-      {
-        "year": 2023,
-        "count": 35,
-        "share": 0.000788,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 33,
-        "share": 0.000745,
-        "yoy_change": -4.3e-05
-      },
-      {
-        "year": 2025,
-        "count": 30,
-        "share": 0.000635,
-        "yoy_change": -0.00011
-      },
-      {
-        "year": 2026,
-        "count": 25,
-        "share": 0.00059,
-        "yoy_change": -4.5e-05
+        "count": 43,
+        "share": 0.001016,
+        "yoy_change": -4.2e-05
       }
     ],
     "WH PT GRIFFON": [
@@ -2624,6 +2598,32 @@
         "count": 10,
         "share": 0.000236,
         "yoy_change": -0.000187
+      }
+    ],
+    "DUTCH SHEPHERD": [
+      {
+        "year": 2023,
+        "count": 35,
+        "share": 0.000788,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 33,
+        "share": 0.000745,
+        "yoy_change": -4.3e-05
+      },
+      {
+        "year": 2025,
+        "count": 30,
+        "share": 0.000635,
+        "yoy_change": -0.00011
+      },
+      {
+        "year": 2026,
+        "count": 25,
+        "share": 0.00059,
+        "yoy_change": -4.5e-05
       }
     ],
     "GERM SH POINT": [
@@ -2704,30 +2704,108 @@
         "yoy_change": -0.000202
       }
     ],
-    "AUST CATTLE DOG": [
+    "BERNESE MTN DOG": [
       {
         "year": 2023,
-        "count": 199,
-        "share": 0.00448,
+        "count": 663,
+        "share": 0.014925,
         "yoy_change": null
       },
       {
         "year": 2024,
-        "count": 205,
-        "share": 0.004627,
-        "yoy_change": 0.000147
+        "count": 683,
+        "share": 0.015417,
+        "yoy_change": 0.000492
       },
       {
         "year": 2025,
-        "count": 219,
-        "share": 0.004636,
-        "yoy_change": 9e-06
+        "count": 763,
+        "share": 0.016151,
+        "yoy_change": 0.000734
       },
       {
         "year": 2026,
-        "count": 187,
-        "share": 0.004417,
-        "yoy_change": -0.000219
+        "count": 625,
+        "share": 0.014762,
+        "yoy_change": -0.001389
+      }
+    ],
+    "WEIMARANER": [
+      {
+        "year": 2023,
+        "count": 69,
+        "share": 0.001553,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 69,
+        "share": 0.001557,
+        "yoy_change": 4e-06
+      },
+      {
+        "year": 2025,
+        "count": 68,
+        "share": 0.001439,
+        "yoy_change": -0.000118
+      },
+      {
+        "year": 2026,
+        "count": 56,
+        "share": 0.001323,
+        "yoy_change": -0.000116
+      }
+    ],
+    "POINTER": [
+      {
+        "year": 2023,
+        "count": 57,
+        "share": 0.001283,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 72,
+        "share": 0.001625,
+        "yoy_change": 0.000342
+      },
+      {
+        "year": 2025,
+        "count": 83,
+        "share": 0.001757,
+        "yoy_change": 0.000132
+      },
+      {
+        "year": 2026,
+        "count": 69,
+        "share": 0.00163,
+        "yoy_change": -0.000127
+      }
+    ],
+    "AMER FOXHOUND": [
+      {
+        "year": 2023,
+        "count": 23,
+        "share": 0.000518,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 20,
+        "share": 0.000451,
+        "yoy_change": -6.7e-05
+      },
+      {
+        "year": 2025,
+        "count": 16,
+        "share": 0.000339,
+        "yoy_change": -0.000112
+      },
+      {
+        "year": 2026,
+        "count": 10,
+        "share": 0.000236,
+        "yoy_change": -0.000103
       }
     ],
     "FINNISH SPITZ": [
@@ -2808,56 +2886,82 @@
         "yoy_change": -0.000243
       }
     ],
-    "POINTER": [
+    "DACHSHUND MIN": [
       {
         "year": 2023,
-        "count": 57,
-        "share": 0.001283,
+        "count": 254,
+        "share": 0.005718,
         "yoy_change": null
       },
       {
         "year": 2024,
-        "count": 72,
-        "share": 0.001625,
-        "yoy_change": 0.000342
+        "count": 272,
+        "share": 0.00614,
+        "yoy_change": 0.000422
       },
       {
         "year": 2025,
-        "count": 83,
-        "share": 0.001757,
-        "yoy_change": 0.000132
+        "count": 312,
+        "share": 0.006604,
+        "yoy_change": 0.000464
       },
       {
         "year": 2026,
-        "count": 69,
-        "share": 0.00163,
-        "yoy_change": -0.000127
+        "count": 303,
+        "share": 0.007157,
+        "yoy_change": 0.000553
       }
     ],
-    "AMER FOXHOUND": [
+    "DALMATIAN": [
       {
         "year": 2023,
-        "count": 23,
-        "share": 0.000518,
+        "count": 53,
+        "share": 0.001193,
         "yoy_change": null
       },
       {
         "year": 2024,
-        "count": 20,
-        "share": 0.000451,
-        "yoy_change": -6.7e-05
+        "count": 52,
+        "share": 0.001174,
+        "yoy_change": -1.9e-05
       },
       {
         "year": 2025,
-        "count": 16,
-        "share": 0.000339,
-        "yoy_change": -0.000112
+        "count": 48,
+        "share": 0.001016,
+        "yoy_change": -0.000158
       },
       {
         "year": 2026,
-        "count": 10,
-        "share": 0.000236,
-        "yoy_change": -0.000103
+        "count": 34,
+        "share": 0.000803,
+        "yoy_change": -0.000213
+      }
+    ],
+    "DANDIE DINMONT": [
+      {
+        "year": 2023,
+        "count": 5,
+        "share": 0.000113,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 4,
+        "share": 9e-05,
+        "yoy_change": -2.3e-05
+      },
+      {
+        "year": 2025,
+        "count": 4,
+        "share": 8.5e-05,
+        "yoy_change": -5e-06
+      },
+      {
+        "year": 2026,
+        "count": 5,
+        "share": 0.000118,
+        "yoy_change": 3.3e-05
       }
     ],
     "PRESA CANARIO": [
@@ -2884,136 +2988,6 @@
         "count": 41,
         "share": 0.000968,
         "yoy_change": -0.000133
-      }
-    ],
-    "BERNESE MTN DOG": [
-      {
-        "year": 2023,
-        "count": 663,
-        "share": 0.014925,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 683,
-        "share": 0.015417,
-        "yoy_change": 0.000492
-      },
-      {
-        "year": 2025,
-        "count": 763,
-        "share": 0.016151,
-        "yoy_change": 0.000734
-      },
-      {
-        "year": 2026,
-        "count": 625,
-        "share": 0.014762,
-        "yoy_change": -0.001389
-      }
-    ],
-    "WEIMARANER": [
-      {
-        "year": 2023,
-        "count": 69,
-        "share": 0.001553,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 69,
-        "share": 0.001557,
-        "yoy_change": 4e-06
-      },
-      {
-        "year": 2025,
-        "count": 68,
-        "share": 0.001439,
-        "yoy_change": -0.000118
-      },
-      {
-        "year": 2026,
-        "count": 56,
-        "share": 0.001323,
-        "yoy_change": -0.000116
-      }
-    ],
-    "AUST TERRIER": [
-      {
-        "year": 2023,
-        "count": 12,
-        "share": 0.00027,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 9,
-        "share": 0.000203,
-        "yoy_change": -6.7e-05
-      },
-      {
-        "year": 2025,
-        "count": 11,
-        "share": 0.000233,
-        "yoy_change": 3e-05
-      },
-      {
-        "year": 2026,
-        "count": 5,
-        "share": 0.000118,
-        "yoy_change": -0.000115
-      }
-    ],
-    "CAROLINA DOG": [
-      {
-        "year": 2023,
-        "count": 18,
-        "share": 0.000405,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 14,
-        "share": 0.000316,
-        "yoy_change": -8.9e-05
-      },
-      {
-        "year": 2025,
-        "count": 15,
-        "share": 0.000318,
-        "yoy_change": 2e-06
-      },
-      {
-        "year": 2026,
-        "count": 12,
-        "share": 0.000283,
-        "yoy_change": -3.5e-05
-      }
-    ],
-    "DACHSHUND MIN": [
-      {
-        "year": 2023,
-        "count": 254,
-        "share": 0.005718,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 272,
-        "share": 0.00614,
-        "yoy_change": 0.000422
-      },
-      {
-        "year": 2025,
-        "count": 312,
-        "share": 0.006604,
-        "yoy_change": 0.000464
-      },
-      {
-        "year": 2026,
-        "count": 303,
-        "share": 0.007157,
-        "yoy_change": 0.000553
       }
     ],
     "FOX TERR SMOOTH": [
@@ -3068,30 +3042,56 @@
         "yoy_change": -0.000364
       }
     ],
-    "DALMATIAN": [
+    "AUST TERRIER": [
       {
         "year": 2023,
-        "count": 53,
-        "share": 0.001193,
+        "count": 12,
+        "share": 0.00027,
         "yoy_change": null
       },
       {
         "year": 2024,
-        "count": 52,
-        "share": 0.001174,
-        "yoy_change": -1.9e-05
+        "count": 9,
+        "share": 0.000203,
+        "yoy_change": -6.7e-05
       },
       {
         "year": 2025,
-        "count": 48,
-        "share": 0.001016,
-        "yoy_change": -0.000158
+        "count": 11,
+        "share": 0.000233,
+        "yoy_change": 3e-05
       },
       {
         "year": 2026,
-        "count": 34,
-        "share": 0.000803,
-        "yoy_change": -0.000213
+        "count": 5,
+        "share": 0.000118,
+        "yoy_change": -0.000115
+      }
+    ],
+    "CAROLINA DOG": [
+      {
+        "year": 2023,
+        "count": 18,
+        "share": 0.000405,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 14,
+        "share": 0.000316,
+        "yoy_change": -8.9e-05
+      },
+      {
+        "year": 2025,
+        "count": 15,
+        "share": 0.000318,
+        "yoy_change": 2e-06
+      },
+      {
+        "year": 2026,
+        "count": 12,
+        "share": 0.000283,
+        "yoy_change": -3.5e-05
       }
     ],
     "GREYHOUND": [
@@ -3224,110 +3224,6 @@
         "yoy_change": -8.3e-05
       }
     ],
-    "AKITA": [
-      {
-        "year": 2023,
-        "count": 66,
-        "share": 0.001486,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 76,
-        "share": 0.001715,
-        "yoy_change": 0.000229
-      },
-      {
-        "year": 2025,
-        "count": 90,
-        "share": 0.001905,
-        "yoy_change": 0.00019
-      },
-      {
-        "year": 2026,
-        "count": 75,
-        "share": 0.001771,
-        "yoy_change": -0.000134
-      }
-    ],
-    "COLLIE ROUGH": [
-      {
-        "year": 2023,
-        "count": 111,
-        "share": 0.002499,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 101,
-        "share": 0.00228,
-        "yoy_change": -0.000219
-      },
-      {
-        "year": 2025,
-        "count": 103,
-        "share": 0.00218,
-        "yoy_change": -0.0001
-      },
-      {
-        "year": 2026,
-        "count": 84,
-        "share": 0.001984,
-        "yoy_change": -0.000196
-      }
-    ],
-    "ICELND SHEEPDOG": [
-      {
-        "year": 2023,
-        "count": 6,
-        "share": 0.000135,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 5,
-        "share": 0.000113,
-        "yoy_change": -2.2e-05
-      },
-      {
-        "year": 2025,
-        "count": 4,
-        "share": 8.5e-05,
-        "yoy_change": -2.8e-05
-      },
-      {
-        "year": 2026,
-        "count": 5,
-        "share": 0.000118,
-        "yoy_change": 3.3e-05
-      }
-    ],
-    "GBGV": [
-      {
-        "year": 2023,
-        "count": 2,
-        "share": 4.5e-05,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 1,
-        "share": 2.3e-05,
-        "yoy_change": -2.2e-05
-      },
-      {
-        "year": 2025,
-        "count": 3,
-        "share": 6.4e-05,
-        "yoy_change": 4.1e-05
-      },
-      {
-        "year": 2026,
-        "count": 1,
-        "share": 2.4e-05,
-        "yoy_change": -4e-05
-      }
-    ],
     "BELG SHEEPDOG": [
       {
         "year": 2023,
@@ -3352,14 +3248,6 @@
         "count": 17,
         "share": 0.000402,
         "yoy_change": -4.3e-05
-      }
-    ],
-    "SPANIEL": [
-      {
-        "year": 2023,
-        "count": 1,
-        "share": 2.3e-05,
-        "yoy_change": null
       }
     ],
     "ENG POINTER": [
@@ -3412,6 +3300,118 @@
         "count": 135,
         "share": 0.003189,
         "yoy_change": -0.000685
+      }
+    ],
+    "COLLIE ROUGH": [
+      {
+        "year": 2023,
+        "count": 111,
+        "share": 0.002499,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 101,
+        "share": 0.00228,
+        "yoy_change": -0.000219
+      },
+      {
+        "year": 2025,
+        "count": 103,
+        "share": 0.00218,
+        "yoy_change": -0.0001
+      },
+      {
+        "year": 2026,
+        "count": 84,
+        "share": 0.001984,
+        "yoy_change": -0.000196
+      }
+    ],
+    "GBGV": [
+      {
+        "year": 2023,
+        "count": 2,
+        "share": 4.5e-05,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 1,
+        "share": 2.3e-05,
+        "yoy_change": -2.2e-05
+      },
+      {
+        "year": 2025,
+        "count": 3,
+        "share": 6.4e-05,
+        "yoy_change": 4.1e-05
+      },
+      {
+        "year": 2026,
+        "count": 1,
+        "share": 2.4e-05,
+        "yoy_change": -4e-05
+      }
+    ],
+    "ICELND SHEEPDOG": [
+      {
+        "year": 2023,
+        "count": 6,
+        "share": 0.000135,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 5,
+        "share": 0.000113,
+        "yoy_change": -2.2e-05
+      },
+      {
+        "year": 2025,
+        "count": 4,
+        "share": 8.5e-05,
+        "yoy_change": -2.8e-05
+      },
+      {
+        "year": 2026,
+        "count": 5,
+        "share": 0.000118,
+        "yoy_change": 3.3e-05
+      }
+    ],
+    "SPANIEL": [
+      {
+        "year": 2023,
+        "count": 1,
+        "share": 2.3e-05,
+        "yoy_change": null
+      }
+    ],
+    "AKITA": [
+      {
+        "year": 2023,
+        "count": 66,
+        "share": 0.001486,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 76,
+        "share": 0.001715,
+        "yoy_change": 0.000229
+      },
+      {
+        "year": 2025,
+        "count": 90,
+        "share": 0.001905,
+        "yoy_change": 0.00019
+      },
+      {
+        "year": 2026,
+        "count": 75,
+        "share": 0.001771,
+        "yoy_change": -0.000134
       }
     ],
     "FLAT COAT RETR": [
@@ -3492,58 +3492,6 @@
         "yoy_change": -3.3e-05
       }
     ],
-    "PODENGO PEQUENO": [
-      {
-        "year": 2023,
-        "count": 32,
-        "share": 0.00072,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 37,
-        "share": 0.000835,
-        "yoy_change": 0.000115
-      },
-      {
-        "year": 2025,
-        "count": 33,
-        "share": 0.000699,
-        "yoy_change": -0.000136
-      },
-      {
-        "year": 2026,
-        "count": 32,
-        "share": 0.000756,
-        "yoy_change": 5.7e-05
-      }
-    ],
-    "AIREDALE TERR": [
-      {
-        "year": 2023,
-        "count": 71,
-        "share": 0.001598,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 61,
-        "share": 0.001377,
-        "yoy_change": -0.000221
-      },
-      {
-        "year": 2025,
-        "count": 68,
-        "share": 0.001439,
-        "yoy_change": 6.2e-05
-      },
-      {
-        "year": 2026,
-        "count": 2214,
-        "share": 0.052292,
-        "yoy_change": 0.050853
-      }
-    ],
     "WELSH SPR SPAN": [
       {
         "year": 2023,
@@ -3568,6 +3516,32 @@
         "count": 30,
         "share": 0.000709,
         "yoy_change": -7.4e-05
+      }
+    ],
+    "PODENGO PEQUENO": [
+      {
+        "year": 2023,
+        "count": 32,
+        "share": 0.00072,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 37,
+        "share": 0.000835,
+        "yoy_change": 0.000115
+      },
+      {
+        "year": 2025,
+        "count": 33,
+        "share": 0.000699,
+        "yoy_change": -0.000136
+      },
+      {
+        "year": 2026,
+        "count": 32,
+        "share": 0.000756,
+        "yoy_change": 5.7e-05
       }
     ],
     "AUST KELPIE": [
@@ -3648,6 +3622,32 @@
         "yoy_change": 3e-06
       }
     ],
+    "AIREDALE TERR": [
+      {
+        "year": 2023,
+        "count": 71,
+        "share": 0.001598,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 61,
+        "share": 0.001377,
+        "yoy_change": -0.000221
+      },
+      {
+        "year": 2025,
+        "count": 68,
+        "share": 0.001439,
+        "yoy_change": 6.2e-05
+      },
+      {
+        "year": 2026,
+        "count": 2214,
+        "share": 0.052292,
+        "yoy_change": 0.050853
+      }
+    ],
     "ST BERNARD SMTH": [
       {
         "year": 2023,
@@ -3700,6 +3700,32 @@
         "yoy_change": 2.7e-05
       }
     ],
+    "NEWFOUNDLAND": [
+      {
+        "year": 2023,
+        "count": 65,
+        "share": 0.001463,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 63,
+        "share": 0.001422,
+        "yoy_change": -4.1e-05
+      },
+      {
+        "year": 2025,
+        "count": 66,
+        "share": 0.001397,
+        "yoy_change": -2.5e-05
+      },
+      {
+        "year": 2026,
+        "count": 56,
+        "share": 0.001323,
+        "yoy_change": -7.4e-05
+      }
+    ],
     "LEONBERGER": [
       {
         "year": 2023,
@@ -3724,6 +3750,110 @@
         "count": 22,
         "share": 0.00052,
         "yoy_change": 5.4e-05
+      }
+    ],
+    "LAGOTTO": [
+      {
+        "year": 2023,
+        "count": 35,
+        "share": 0.000788,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 37,
+        "share": 0.000835,
+        "yoy_change": 4.7e-05
+      },
+      {
+        "year": 2025,
+        "count": 45,
+        "share": 0.000953,
+        "yoy_change": 0.000118
+      },
+      {
+        "year": 2026,
+        "count": 33,
+        "share": 0.000779,
+        "yoy_change": -0.000174
+      }
+    ],
+    "MANCHESTER TERR": [
+      {
+        "year": 2023,
+        "count": 9,
+        "share": 0.000203,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 12,
+        "share": 0.000271,
+        "yoy_change": 6.8e-05
+      },
+      {
+        "year": 2025,
+        "count": 10,
+        "share": 0.000212,
+        "yoy_change": -5.9e-05
+      },
+      {
+        "year": 2026,
+        "count": 11,
+        "share": 0.00026,
+        "yoy_change": 4.8e-05
+      }
+    ],
+    "BLOODHOUND": [
+      {
+        "year": 2023,
+        "count": 8,
+        "share": 0.00018,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 12,
+        "share": 0.000271,
+        "yoy_change": 9.1e-05
+      },
+      {
+        "year": 2025,
+        "count": 12,
+        "share": 0.000254,
+        "yoy_change": -1.7e-05
+      },
+      {
+        "year": 2026,
+        "count": 6,
+        "share": 0.000142,
+        "yoy_change": -0.000112
+      }
+    ],
+    "GREAT DANE": [
+      {
+        "year": 2023,
+        "count": 125,
+        "share": 0.002814,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 132,
+        "share": 0.002979,
+        "yoy_change": 0.000165
+      },
+      {
+        "year": 2025,
+        "count": 127,
+        "share": 0.002688,
+        "yoy_change": -0.000291
+      },
+      {
+        "year": 2026,
+        "count": 95,
+        "share": 0.002244,
+        "yoy_change": -0.000444
       }
     ],
     "BULLMASTIFF": [
@@ -3830,136 +3960,6 @@
         "yoy_change": -1.8e-05
       }
     ],
-    "NEWFOUNDLAND": [
-      {
-        "year": 2023,
-        "count": 65,
-        "share": 0.001463,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 63,
-        "share": 0.001422,
-        "yoy_change": -4.1e-05
-      },
-      {
-        "year": 2025,
-        "count": 66,
-        "share": 0.001397,
-        "yoy_change": -2.5e-05
-      },
-      {
-        "year": 2026,
-        "count": 56,
-        "share": 0.001323,
-        "yoy_change": -7.4e-05
-      }
-    ],
-    "GREAT DANE": [
-      {
-        "year": 2023,
-        "count": 125,
-        "share": 0.002814,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 132,
-        "share": 0.002979,
-        "yoy_change": 0.000165
-      },
-      {
-        "year": 2025,
-        "count": 127,
-        "share": 0.002688,
-        "yoy_change": -0.000291
-      },
-      {
-        "year": 2026,
-        "count": 95,
-        "share": 0.002244,
-        "yoy_change": -0.000444
-      }
-    ],
-    "LAGOTTO": [
-      {
-        "year": 2023,
-        "count": 35,
-        "share": 0.000788,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 37,
-        "share": 0.000835,
-        "yoy_change": 4.7e-05
-      },
-      {
-        "year": 2025,
-        "count": 45,
-        "share": 0.000953,
-        "yoy_change": 0.000118
-      },
-      {
-        "year": 2026,
-        "count": 33,
-        "share": 0.000779,
-        "yoy_change": -0.000174
-      }
-    ],
-    "MANCHESTER TERR": [
-      {
-        "year": 2023,
-        "count": 9,
-        "share": 0.000203,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 12,
-        "share": 0.000271,
-        "yoy_change": 6.8e-05
-      },
-      {
-        "year": 2025,
-        "count": 10,
-        "share": 0.000212,
-        "yoy_change": -5.9e-05
-      },
-      {
-        "year": 2026,
-        "count": 11,
-        "share": 0.00026,
-        "yoy_change": 4.8e-05
-      }
-    ],
-    "BLOODHOUND": [
-      {
-        "year": 2023,
-        "count": 8,
-        "share": 0.00018,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 12,
-        "share": 0.000271,
-        "yoy_change": 9.1e-05
-      },
-      {
-        "year": 2025,
-        "count": 12,
-        "share": 0.000254,
-        "yoy_change": -1.7e-05
-      },
-      {
-        "year": 2026,
-        "count": 6,
-        "share": 0.000142,
-        "yoy_change": -0.000112
-      }
-    ],
     "BLUETICK HOUND": [
       {
         "year": 2023,
@@ -4038,32 +4038,6 @@
         "yoy_change": -1.7e-05
       }
     ],
-    "MAREMMA SHEEPDOG": [
-      {
-        "year": 2023,
-        "count": 25,
-        "share": 0.000563,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 20,
-        "share": 0.000451,
-        "yoy_change": -0.000112
-      },
-      {
-        "year": 2025,
-        "count": 25,
-        "share": 0.000529,
-        "yoy_change": 7.8e-05
-      },
-      {
-        "year": 2026,
-        "count": 27,
-        "share": 0.000638,
-        "yoy_change": 0.000109
-      }
-    ],
     "BOUV FLANDRES": [
       {
         "year": 2023,
@@ -4116,30 +4090,30 @@
         "yoy_change": 5.7e-05
       }
     ],
-    "JAPANESE CHIN": [
+    "MAREMMA SHEEPDOG": [
       {
         "year": 2023,
-        "count": 11,
-        "share": 0.000248,
+        "count": 25,
+        "share": 0.000563,
         "yoy_change": null
       },
       {
         "year": 2024,
-        "count": 15,
-        "share": 0.000339,
-        "yoy_change": 9.1e-05
+        "count": 20,
+        "share": 0.000451,
+        "yoy_change": -0.000112
       },
       {
         "year": 2025,
-        "count": 17,
-        "share": 0.00036,
-        "yoy_change": 2.1e-05
+        "count": 25,
+        "share": 0.000529,
+        "yoy_change": 7.8e-05
       },
       {
         "year": 2026,
-        "count": 8,
-        "share": 0.000189,
-        "yoy_change": -0.000171
+        "count": 27,
+        "share": 0.000638,
+        "yoy_change": 0.000109
       }
     ],
     "GERM WH POINT": [
@@ -4166,6 +4140,32 @@
         "count": 6,
         "share": 0.000142,
         "yoy_change": -7e-05
+      }
+    ],
+    "JAPANESE CHIN": [
+      {
+        "year": 2023,
+        "count": 11,
+        "share": 0.000248,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 15,
+        "share": 0.000339,
+        "yoy_change": 9.1e-05
+      },
+      {
+        "year": 2025,
+        "count": 17,
+        "share": 0.00036,
+        "yoy_change": 2.1e-05
+      },
+      {
+        "year": 2026,
+        "count": 8,
+        "share": 0.000189,
+        "yoy_change": -0.000171
       }
     ],
     "AMERICAN STAFF": [
@@ -4246,6 +4246,58 @@
         "yoy_change": -4e-06
       }
     ],
+    "TREEING WALKER HOUND": [
+      {
+        "year": 2023,
+        "count": 18,
+        "share": 0.000405,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 19,
+        "share": 0.000429,
+        "yoy_change": 2.4e-05
+      },
+      {
+        "year": 2025,
+        "count": 19,
+        "share": 0.000402,
+        "yoy_change": -2.7e-05
+      },
+      {
+        "year": 2026,
+        "count": 13,
+        "share": 0.000307,
+        "yoy_change": -9.5e-05
+      }
+    ],
+    "KEESHOND": [
+      {
+        "year": 2023,
+        "count": 18,
+        "share": 0.000405,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 22,
+        "share": 0.000497,
+        "yoy_change": 9.2e-05
+      },
+      {
+        "year": 2025,
+        "count": 19,
+        "share": 0.000402,
+        "yoy_change": -9.5e-05
+      },
+      {
+        "year": 2026,
+        "count": 19,
+        "share": 0.000449,
+        "yoy_change": 4.7e-05
+      }
+    ],
     "LANDSEER": [
       {
         "year": 2023,
@@ -4264,6 +4316,32 @@
         "count": 4,
         "share": 8.5e-05,
         "yoy_change": -5e-06
+      }
+    ],
+    "SPINONE ITAL": [
+      {
+        "year": 2023,
+        "count": 15,
+        "share": 0.000338,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 11,
+        "share": 0.000248,
+        "yoy_change": -9e-05
+      },
+      {
+        "year": 2025,
+        "count": 12,
+        "share": 0.000254,
+        "yoy_change": 6e-06
+      },
+      {
+        "year": 2026,
+        "count": 6,
+        "share": 0.000142,
+        "yoy_change": -0.000112
       }
     ],
     "BELG TERVUREN": [
@@ -4318,58 +4396,6 @@
         "yoy_change": 3.2e-05
       }
     ],
-    "SPINONE ITAL": [
-      {
-        "year": 2023,
-        "count": 15,
-        "share": 0.000338,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 11,
-        "share": 0.000248,
-        "yoy_change": -9e-05
-      },
-      {
-        "year": 2025,
-        "count": 12,
-        "share": 0.000254,
-        "yoy_change": 6e-06
-      },
-      {
-        "year": 2026,
-        "count": 6,
-        "share": 0.000142,
-        "yoy_change": -0.000112
-      }
-    ],
-    "BEDLINGTON TERR": [
-      {
-        "year": 2023,
-        "count": 11,
-        "share": 0.000248,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 14,
-        "share": 0.000316,
-        "yoy_change": 6.8e-05
-      },
-      {
-        "year": 2025,
-        "count": 20,
-        "share": 0.000423,
-        "yoy_change": 0.000107
-      },
-      {
-        "year": 2026,
-        "count": 14,
-        "share": 0.000331,
-        "yoy_change": -9.2e-05
-      }
-    ],
     "BARBET": [
       {
         "year": 2023,
@@ -4394,32 +4420,6 @@
         "count": 12,
         "share": 0.000283,
         "yoy_change": -5.6e-05
-      }
-    ],
-    "KEESHOND": [
-      {
-        "year": 2023,
-        "count": 18,
-        "share": 0.000405,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 22,
-        "share": 0.000497,
-        "yoy_change": 9.2e-05
-      },
-      {
-        "year": 2025,
-        "count": 19,
-        "share": 0.000402,
-        "yoy_change": -9.5e-05
-      },
-      {
-        "year": 2026,
-        "count": 19,
-        "share": 0.000449,
-        "yoy_change": 4.7e-05
       }
     ],
     "ALASK KLEE KAI": [
@@ -4474,32 +4474,6 @@
         "yoy_change": -1.8e-05
       }
     ],
-    "PICARDY SHEEPDOG": [
-      {
-        "year": 2023,
-        "count": 6,
-        "share": 0.000135,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 4,
-        "share": 9e-05,
-        "yoy_change": -4.5e-05
-      },
-      {
-        "year": 2025,
-        "count": 2,
-        "share": 4.2e-05,
-        "yoy_change": -4.8e-05
-      },
-      {
-        "year": 2026,
-        "count": 2,
-        "share": 4.7e-05,
-        "yoy_change": 5e-06
-      }
-    ],
     "BERNESE HOUND": [
       {
         "year": 2023,
@@ -4526,30 +4500,56 @@
         "yoy_change": -2.7e-05
       }
     ],
-    "NORW ELKHOUND": [
+    "BEDLINGTON TERR": [
       {
         "year": 2023,
-        "count": 17,
-        "share": 0.000383,
+        "count": 11,
+        "share": 0.000248,
         "yoy_change": null
       },
       {
         "year": 2024,
-        "count": 18,
-        "share": 0.000406,
-        "yoy_change": 2.3e-05
+        "count": 14,
+        "share": 0.000316,
+        "yoy_change": 6.8e-05
       },
       {
         "year": 2025,
-        "count": 22,
-        "share": 0.000466,
-        "yoy_change": 6e-05
+        "count": 20,
+        "share": 0.000423,
+        "yoy_change": 0.000107
       },
       {
         "year": 2026,
-        "count": 16,
-        "share": 0.000378,
-        "yoy_change": -8.8e-05
+        "count": 14,
+        "share": 0.000331,
+        "yoy_change": -9.2e-05
+      }
+    ],
+    "PICARDY SHEEPDOG": [
+      {
+        "year": 2023,
+        "count": 6,
+        "share": 0.000135,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 4,
+        "share": 9e-05,
+        "yoy_change": -4.5e-05
+      },
+      {
+        "year": 2025,
+        "count": 2,
+        "share": 4.2e-05,
+        "yoy_change": -4.8e-05
+      },
+      {
+        "year": 2026,
+        "count": 2,
+        "share": 4.7e-05,
+        "yoy_change": 5e-06
       }
     ],
     "DOGO ARGENTINO": [
@@ -4578,56 +4578,30 @@
         "yoy_change": -0.000198
       }
     ],
-    "TREEING WALKER HOUND": [
+    "NORW ELKHOUND": [
       {
         "year": 2023,
+        "count": 17,
+        "share": 0.000383,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
         "count": 18,
-        "share": 0.000405,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 19,
-        "share": 0.000429,
-        "yoy_change": 2.4e-05
+        "share": 0.000406,
+        "yoy_change": 2.3e-05
       },
       {
         "year": 2025,
-        "count": 19,
-        "share": 0.000402,
-        "yoy_change": -2.7e-05
+        "count": 22,
+        "share": 0.000466,
+        "yoy_change": 6e-05
       },
       {
         "year": 2026,
-        "count": 13,
-        "share": 0.000307,
-        "yoy_change": -9.5e-05
-      }
-    ],
-    "HOVAWART": [
-      {
-        "year": 2023,
-        "count": 3,
-        "share": 6.8e-05,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 1,
-        "share": 2.3e-05,
-        "yoy_change": -4.5e-05
-      },
-      {
-        "year": 2025,
-        "count": 2,
-        "share": 4.2e-05,
-        "yoy_change": 1.9e-05
-      },
-      {
-        "year": 2026,
-        "count": 1,
-        "share": 2.4e-05,
-        "yoy_change": -1.8e-05
+        "count": 16,
+        "share": 0.000378,
+        "yoy_change": -8.8e-05
       }
     ],
     "KUVASZ": [
@@ -4656,30 +4630,30 @@
         "yoy_change": -3e-05
       }
     ],
-    "CHESA BAY RETR": [
+    "BRIARD": [
       {
         "year": 2023,
-        "count": 24,
-        "share": 0.00054,
+        "count": 9,
+        "share": 0.000203,
         "yoy_change": null
       },
       {
         "year": 2024,
-        "count": 24,
-        "share": 0.000542,
-        "yoy_change": 2e-06
+        "count": 7,
+        "share": 0.000158,
+        "yoy_change": -4.5e-05
       },
       {
         "year": 2025,
-        "count": 26,
-        "share": 0.00055,
-        "yoy_change": 8e-06
+        "count": 10,
+        "share": 0.000212,
+        "yoy_change": 5.4e-05
       },
       {
         "year": 2026,
-        "count": 18,
-        "share": 0.000425,
-        "yoy_change": -0.000125
+        "count": 7,
+        "share": 0.000165,
+        "yoy_change": -4.7e-05
       }
     ],
     "PLOTT HOUND": [
@@ -4708,82 +4682,56 @@
         "yoy_change": -6.6e-05
       }
     ],
-    "BRIARD": [
+    "CHESA BAY RETR": [
       {
         "year": 2023,
-        "count": 9,
-        "share": 0.000203,
+        "count": 24,
+        "share": 0.00054,
         "yoy_change": null
       },
       {
         "year": 2024,
-        "count": 7,
-        "share": 0.000158,
-        "yoy_change": -4.5e-05
+        "count": 24,
+        "share": 0.000542,
+        "yoy_change": 2e-06
       },
       {
         "year": 2025,
-        "count": 10,
-        "share": 0.000212,
-        "yoy_change": 5.4e-05
+        "count": 26,
+        "share": 0.00055,
+        "yoy_change": 8e-06
       },
       {
         "year": 2026,
-        "count": 7,
-        "share": 0.000165,
-        "yoy_change": -4.7e-05
-      }
-    ],
-    "ST BERNARD RGH": [
-      {
-        "year": 2023,
-        "count": 71,
-        "share": 0.001598,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 66,
-        "share": 0.00149,
-        "yoy_change": -0.000108
-      },
-      {
-        "year": 2025,
-        "count": 74,
-        "share": 0.001566,
-        "yoy_change": 7.6e-05
-      },
-      {
-        "year": 2026,
-        "count": 61,
-        "share": 0.001441,
+        "count": 18,
+        "share": 0.000425,
         "yoy_change": -0.000125
       }
     ],
-    "FILA": [
+    "HOVAWART": [
       {
         "year": 2023,
-        "count": 9,
-        "share": 0.000203,
+        "count": 3,
+        "share": 6.8e-05,
         "yoy_change": null
       },
       {
         "year": 2024,
-        "count": 7,
-        "share": 0.000158,
+        "count": 1,
+        "share": 2.3e-05,
         "yoy_change": -4.5e-05
       },
       {
         "year": 2025,
-        "count": 7,
-        "share": 0.000148,
-        "yoy_change": -1e-05
+        "count": 2,
+        "share": 4.2e-05,
+        "yoy_change": 1.9e-05
       },
       {
         "year": 2026,
-        "count": 6,
-        "share": 0.000142,
-        "yoy_change": -6e-06
+        "count": 1,
+        "share": 2.4e-05,
+        "yoy_change": -1.8e-05
       }
     ],
     "TAHLTAN BEAR DO": [
@@ -4792,58 +4740,6 @@
         "count": 2,
         "share": 4.5e-05,
         "yoy_change": null
-      }
-    ],
-    "GERMAN PINSCHER": [
-      {
-        "year": 2023,
-        "count": 8,
-        "share": 0.00018,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 11,
-        "share": 0.000248,
-        "yoy_change": 6.8e-05
-      },
-      {
-        "year": 2025,
-        "count": 14,
-        "share": 0.000296,
-        "yoy_change": 4.8e-05
-      },
-      {
-        "year": 2026,
-        "count": 10,
-        "share": 0.000236,
-        "yoy_change": -6e-05
-      }
-    ],
-    "ENTLEBUCHER": [
-      {
-        "year": 2023,
-        "count": 9,
-        "share": 0.000203,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 14,
-        "share": 0.000316,
-        "yoy_change": 0.000113
-      },
-      {
-        "year": 2025,
-        "count": 14,
-        "share": 0.000296,
-        "yoy_change": -2e-05
-      },
-      {
-        "year": 2026,
-        "count": 9,
-        "share": 0.000213,
-        "yoy_change": -8.3e-05
       }
     ],
     "LABRADOODLE": [
@@ -4892,6 +4788,84 @@
         "yoy_change": 6.9e-05
       }
     ],
+    "FILA": [
+      {
+        "year": 2023,
+        "count": 9,
+        "share": 0.000203,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 7,
+        "share": 0.000158,
+        "yoy_change": -4.5e-05
+      },
+      {
+        "year": 2025,
+        "count": 7,
+        "share": 0.000148,
+        "yoy_change": -1e-05
+      },
+      {
+        "year": 2026,
+        "count": 6,
+        "share": 0.000142,
+        "yoy_change": -6e-06
+      }
+    ],
+    "GERMAN PINSCHER": [
+      {
+        "year": 2023,
+        "count": 8,
+        "share": 0.00018,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 11,
+        "share": 0.000248,
+        "yoy_change": 6.8e-05
+      },
+      {
+        "year": 2025,
+        "count": 14,
+        "share": 0.000296,
+        "yoy_change": 4.8e-05
+      },
+      {
+        "year": 2026,
+        "count": 10,
+        "share": 0.000236,
+        "yoy_change": -6e-05
+      }
+    ],
+    "ST BERNARD RGH": [
+      {
+        "year": 2023,
+        "count": 71,
+        "share": 0.001598,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 66,
+        "share": 0.00149,
+        "yoy_change": -0.000108
+      },
+      {
+        "year": 2025,
+        "count": 74,
+        "share": 0.001566,
+        "yoy_change": 7.6e-05
+      },
+      {
+        "year": 2026,
+        "count": 61,
+        "share": 0.001441,
+        "yoy_change": -0.000125
+      }
+    ],
     "BLACK MOUTH CUR": [
       {
         "year": 2023,
@@ -4916,6 +4890,58 @@
         "count": 33,
         "share": 0.000779,
         "yoy_change": -0.00011
+      }
+    ],
+    "ENTLEBUCHER": [
+      {
+        "year": 2023,
+        "count": 9,
+        "share": 0.000203,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 14,
+        "share": 0.000316,
+        "yoy_change": 0.000113
+      },
+      {
+        "year": 2025,
+        "count": 14,
+        "share": 0.000296,
+        "yoy_change": -2e-05
+      },
+      {
+        "year": 2026,
+        "count": 9,
+        "share": 0.000213,
+        "yoy_change": -8.3e-05
+      }
+    ],
+    "FEIST": [
+      {
+        "year": 2023,
+        "count": 81,
+        "share": 0.001823,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 76,
+        "share": 0.001715,
+        "yoy_change": -0.000108
+      },
+      {
+        "year": 2025,
+        "count": 81,
+        "share": 0.001715,
+        "yoy_change": 0.0
+      },
+      {
+        "year": 2026,
+        "count": 66,
+        "share": 0.001559,
+        "yoy_change": -0.000156
       }
     ],
     "SPAN WATER DOG": [
@@ -4970,32 +4996,6 @@
         "yoy_change": -9e-06
       }
     ],
-    "FEIST": [
-      {
-        "year": 2023,
-        "count": 81,
-        "share": 0.001823,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 76,
-        "share": 0.001715,
-        "yoy_change": -0.000108
-      },
-      {
-        "year": 2025,
-        "count": 81,
-        "share": 0.001715,
-        "yoy_change": 0.0
-      },
-      {
-        "year": 2026,
-        "count": 66,
-        "share": 0.001559,
-        "yoy_change": -0.000156
-      }
-    ],
     "CHIHUAHUA": [
       {
         "year": 2023,
@@ -5048,32 +5048,6 @@
         "yoy_change": -4.1e-05
       }
     ],
-    "KOMONDOR": [
-      {
-        "year": 2023,
-        "count": 3,
-        "share": 6.8e-05,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 4,
-        "share": 9e-05,
-        "yoy_change": 2.2e-05
-      },
-      {
-        "year": 2025,
-        "count": 3,
-        "share": 6.4e-05,
-        "yoy_change": -2.6e-05
-      },
-      {
-        "year": 2026,
-        "count": 4,
-        "share": 9.4e-05,
-        "yoy_change": 3e-05
-      }
-    ],
     "GR SWISS MTN": [
       {
         "year": 2023,
@@ -5100,6 +5074,32 @@
         "yoy_change": 0.000103
       }
     ],
+    "KOMONDOR": [
+      {
+        "year": 2023,
+        "count": 3,
+        "share": 6.8e-05,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 4,
+        "share": 9e-05,
+        "yoy_change": 2.2e-05
+      },
+      {
+        "year": 2025,
+        "count": 3,
+        "share": 6.4e-05,
+        "yoy_change": -2.6e-05
+      },
+      {
+        "year": 2026,
+        "count": 4,
+        "share": 9.4e-05,
+        "yoy_change": 3e-05
+      }
+    ],
     "IRISH WATR SPAN": [
       {
         "year": 2023,
@@ -5124,6 +5124,32 @@
         "count": 5,
         "share": 0.000118,
         "yoy_change": 3.3e-05
+      }
+    ],
+    "AMER WATER SPAN": [
+      {
+        "year": 2023,
+        "count": 2,
+        "share": 4.5e-05,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 1,
+        "share": 2.3e-05,
+        "yoy_change": -2.2e-05
+      },
+      {
+        "year": 2025,
+        "count": 2,
+        "share": 4.2e-05,
+        "yoy_change": 1.9e-05
+      },
+      {
+        "year": 2026,
+        "count": 1,
+        "share": 2.4e-05,
+        "yoy_change": -1.8e-05
       }
     ],
     "FIELD SPANIEL": [
@@ -5176,32 +5202,6 @@
         "count": 6,
         "share": 0.000142,
         "yoy_change": 3.6e-05
-      }
-    ],
-    "AMER WATER SPAN": [
-      {
-        "year": 2023,
-        "count": 2,
-        "share": 4.5e-05,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 1,
-        "share": 2.3e-05,
-        "yoy_change": -2.2e-05
-      },
-      {
-        "year": 2025,
-        "count": 2,
-        "share": 4.2e-05,
-        "yoy_change": 1.9e-05
-      },
-      {
-        "year": 2026,
-        "count": 1,
-        "share": 2.4e-05,
-        "yoy_change": -1.8e-05
       }
     ],
     "ENG SHEPHERD": [
@@ -5282,32 +5282,6 @@
         "yoy_change": 5e-05
       }
     ],
-    "DOGUE DE BORDEA": [
-      {
-        "year": 2023,
-        "count": 14,
-        "share": 0.000315,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 17,
-        "share": 0.000384,
-        "yoy_change": 6.9e-05
-      },
-      {
-        "year": 2025,
-        "count": 14,
-        "share": 0.000296,
-        "yoy_change": -8.8e-05
-      },
-      {
-        "year": 2026,
-        "count": 8,
-        "share": 0.000189,
-        "yoy_change": -0.000107
-      }
-    ],
     "SKYE TERRIER": [
       {
         "year": 2023,
@@ -5332,6 +5306,32 @@
         "count": 3,
         "share": 7.1e-05,
         "yoy_change": -1.4e-05
+      }
+    ],
+    "DOGUE DE BORDEA": [
+      {
+        "year": 2023,
+        "count": 14,
+        "share": 0.000315,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 17,
+        "share": 0.000384,
+        "yoy_change": 6.9e-05
+      },
+      {
+        "year": 2025,
+        "count": 14,
+        "share": 0.000296,
+        "yoy_change": -8.8e-05
+      },
+      {
+        "year": 2026,
+        "count": 8,
+        "share": 0.000189,
+        "yoy_change": -0.000107
       }
     ],
     "ANATOLIAN SHEPHERD": [
@@ -5642,32 +5642,6 @@
         "yoy_change": -4e-06
       }
     ],
-    "KOREAN JINDO": [
-      {
-        "year": 2023,
-        "count": 10,
-        "share": 0.000225,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 9,
-        "share": 0.000203,
-        "yoy_change": -2.2e-05
-      },
-      {
-        "year": 2025,
-        "count": 16,
-        "share": 0.000339,
-        "yoy_change": 0.000136
-      },
-      {
-        "year": 2026,
-        "count": 14,
-        "share": 0.000331,
-        "yoy_change": -8e-06
-      }
-    ],
     "KANGAL": [
       {
         "year": 2023,
@@ -5692,32 +5666,6 @@
         "count": 7,
         "share": 0.000165,
         "yoy_change": -4e-06
-      }
-    ],
-    "VIZSLA WH": [
-      {
-        "year": 2023,
-        "count": 7,
-        "share": 0.000158,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 9,
-        "share": 0.000203,
-        "yoy_change": 4.5e-05
-      },
-      {
-        "year": 2025,
-        "count": 10,
-        "share": 0.000212,
-        "yoy_change": 9e-06
-      },
-      {
-        "year": 2026,
-        "count": 7,
-        "share": 0.000165,
-        "yoy_change": -4.7e-05
       }
     ],
     "SCOT DEERHOUND": [
@@ -5746,30 +5694,30 @@
         "yoy_change": -6e-06
       }
     ],
-    "PIT BULL": [
+    "KOREAN JINDO": [
       {
         "year": 2023,
-        "count": 53,
-        "share": 0.001193,
+        "count": 10,
+        "share": 0.000225,
         "yoy_change": null
       },
       {
         "year": 2024,
-        "count": 75,
-        "share": 0.001693,
-        "yoy_change": 0.0005
+        "count": 9,
+        "share": 0.000203,
+        "yoy_change": -2.2e-05
       },
       {
         "year": 2025,
-        "count": 56,
-        "share": 0.001185,
-        "yoy_change": -0.000508
+        "count": 16,
+        "share": 0.000339,
+        "yoy_change": 0.000136
       },
       {
         "year": 2026,
-        "count": 75,
-        "share": 0.001771,
-        "yoy_change": 0.000586
+        "count": 14,
+        "share": 0.000331,
+        "yoy_change": -8e-06
       }
     ],
     "BOERBOEL": [
@@ -5798,6 +5746,84 @@
         "yoy_change": 3.3e-05
       }
     ],
+    "VIZSLA WH": [
+      {
+        "year": 2023,
+        "count": 7,
+        "share": 0.000158,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 9,
+        "share": 0.000203,
+        "yoy_change": 4.5e-05
+      },
+      {
+        "year": 2025,
+        "count": 10,
+        "share": 0.000212,
+        "yoy_change": 9e-06
+      },
+      {
+        "year": 2026,
+        "count": 7,
+        "share": 0.000165,
+        "yoy_change": -4.7e-05
+      }
+    ],
+    "PIT BULL": [
+      {
+        "year": 2023,
+        "count": 53,
+        "share": 0.001193,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 75,
+        "share": 0.001693,
+        "yoy_change": 0.0005
+      },
+      {
+        "year": 2025,
+        "count": 56,
+        "share": 0.001185,
+        "yoy_change": -0.000508
+      },
+      {
+        "year": 2026,
+        "count": 75,
+        "share": 0.001771,
+        "yoy_change": 0.000586
+      }
+    ],
+    "AUSTRALIAN LABR": [
+      {
+        "year": 2023,
+        "count": 2,
+        "share": 4.5e-05,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 1,
+        "share": 2.3e-05,
+        "yoy_change": -2.2e-05
+      },
+      {
+        "year": 2025,
+        "count": 4,
+        "share": 8.5e-05,
+        "yoy_change": 6.2e-05
+      },
+      {
+        "year": 2026,
+        "count": 1,
+        "share": 2.4e-05,
+        "yoy_change": -6.1e-05
+      }
+    ],
     "SWISS HOUND": [
       {
         "year": 2023,
@@ -5824,30 +5850,30 @@
         "yoy_change": 5e-06
       }
     ],
-    "BORZOI": [
+    "WOLF HYBRID": [
       {
         "year": 2023,
-        "count": 7,
-        "share": 0.000158,
+        "count": 2,
+        "share": 4.5e-05,
         "yoy_change": null
       },
       {
         "year": 2024,
-        "count": 6,
-        "share": 0.000135,
-        "yoy_change": -2.3e-05
+        "count": 1,
+        "share": 2.3e-05,
+        "yoy_change": -2.2e-05
       },
       {
         "year": 2025,
-        "count": 6,
-        "share": 0.000127,
-        "yoy_change": -8e-06
+        "count": 2,
+        "share": 4.2e-05,
+        "yoy_change": 1.9e-05
       },
       {
         "year": 2026,
-        "count": 6,
-        "share": 0.000142,
-        "yoy_change": 1.5e-05
+        "count": 2,
+        "share": 4.7e-05,
+        "yoy_change": 5e-06
       }
     ],
     "MIX": [
@@ -5902,32 +5928,6 @@
         "yoy_change": -0.001224
       }
     ],
-    "PYREN SHEPHERD": [
-      {
-        "year": 2023,
-        "count": 4,
-        "share": 9e-05,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 9,
-        "share": 0.000203,
-        "yoy_change": 0.000113
-      },
-      {
-        "year": 2025,
-        "count": 7,
-        "share": 0.000148,
-        "yoy_change": -5.5e-05
-      },
-      {
-        "year": 2026,
-        "count": 4,
-        "share": 9.4e-05,
-        "yoy_change": -5.4e-05
-      }
-    ],
     "GOLDENDOODLE": [
       {
         "year": 2023,
@@ -5954,82 +5954,56 @@
         "yoy_change": 5.9e-05
       }
     ],
-    "AUSTRALIAN LABR": [
+    "PYREN SHEPHERD": [
       {
         "year": 2023,
-        "count": 2,
-        "share": 4.5e-05,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 1,
-        "share": 2.3e-05,
-        "yoy_change": -2.2e-05
-      },
-      {
-        "year": 2025,
         "count": 4,
-        "share": 8.5e-05,
-        "yoy_change": 6.2e-05
-      },
-      {
-        "year": 2026,
-        "count": 1,
-        "share": 2.4e-05,
-        "yoy_change": -6.1e-05
-      }
-    ],
-    "WOLF HYBRID": [
-      {
-        "year": 2023,
-        "count": 2,
-        "share": 4.5e-05,
+        "share": 9e-05,
         "yoy_change": null
       },
       {
         "year": 2024,
-        "count": 1,
-        "share": 2.3e-05,
-        "yoy_change": -2.2e-05
+        "count": 9,
+        "share": 0.000203,
+        "yoy_change": 0.000113
       },
       {
         "year": 2025,
-        "count": 2,
-        "share": 4.2e-05,
-        "yoy_change": 1.9e-05
-      },
-      {
-        "year": 2026,
-        "count": 2,
-        "share": 4.7e-05,
-        "yoy_change": 5e-06
-      }
-    ],
-    "BLUE LACY": [
-      {
-        "year": 2023,
-        "count": 3,
-        "share": 6.8e-05,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 3,
-        "share": 6.8e-05,
-        "yoy_change": 0.0
-      },
-      {
-        "year": 2025,
-        "count": 2,
-        "share": 4.2e-05,
-        "yoy_change": -2.6e-05
+        "count": 7,
+        "share": 0.000148,
+        "yoy_change": -5.5e-05
       },
       {
         "year": 2026,
         "count": 4,
         "share": 9.4e-05,
-        "yoy_change": 5.2e-05
+        "yoy_change": -5.4e-05
+      }
+    ],
+    "AMERICAN COCKER": [
+      {
+        "year": 2023,
+        "count": 1,
+        "share": 2.3e-05,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 1,
+        "share": 2.3e-05,
+        "yoy_change": 0.0
+      },
+      {
+        "year": 2025,
+        "count": 5,
+        "share": 0.000106,
+        "yoy_change": 8.3e-05
+      },
+      {
+        "year": 2026,
+        "count": 3,
+        "share": 7.1e-05,
+        "yoy_change": -3.5e-05
       }
     ],
     "POTCAKE": [
@@ -6058,6 +6032,66 @@
         "yoy_change": -1.8e-05
       }
     ],
+    "BLUE LACY": [
+      {
+        "year": 2023,
+        "count": 3,
+        "share": 6.8e-05,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 3,
+        "share": 6.8e-05,
+        "yoy_change": 0.0
+      },
+      {
+        "year": 2025,
+        "count": 2,
+        "share": 4.2e-05,
+        "yoy_change": -2.6e-05
+      },
+      {
+        "year": 2026,
+        "count": 4,
+        "share": 9.4e-05,
+        "yoy_change": 5.2e-05
+      }
+    ],
+    "BORZOI": [
+      {
+        "year": 2023,
+        "count": 7,
+        "share": 0.000158,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 6,
+        "share": 0.000135,
+        "yoy_change": -2.3e-05
+      },
+      {
+        "year": 2025,
+        "count": 6,
+        "share": 0.000127,
+        "yoy_change": -8e-06
+      },
+      {
+        "year": 2026,
+        "count": 6,
+        "share": 0.000142,
+        "yoy_change": 1.5e-05
+      }
+    ],
+    "ROUGH COLLIE": [
+      {
+        "year": 2026,
+        "count": 1,
+        "share": 2.4e-05,
+        "yoy_change": null
+      }
+    ],
     "KOOIKERHONJE": [
       {
         "year": 2023,
@@ -6082,14 +6116,6 @@
         "count": 1,
         "share": 2.4e-05,
         "yoy_change": 3e-06
-      }
-    ],
-    "ROUGH COLLIE": [
-      {
-        "year": 2026,
-        "count": 1,
-        "share": 2.4e-05,
-        "yoy_change": null
       }
     ],
     "BERNEDOODLE": [
@@ -6118,33 +6144,7 @@
         "yoy_change": -4.1e-05
       }
     ],
-    "SCHAPENDOES": [
-      {
-        "year": 2023,
-        "count": 1,
-        "share": 2.3e-05,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 1,
-        "share": 2.3e-05,
-        "yoy_change": 0.0
-      },
-      {
-        "year": 2025,
-        "count": 1,
-        "share": 2.1e-05,
-        "yoy_change": -2e-06
-      },
-      {
-        "year": 2026,
-        "count": 1,
-        "share": 2.4e-05,
-        "yoy_change": 3e-06
-      }
-    ],
-    "MALTESE MIX": [
+    "SLOVENSKY KOPOV": [
       {
         "year": 2023,
         "count": 2,
@@ -6152,16 +6152,16 @@
         "yoy_change": null
       },
       {
-        "year": 2025,
-        "count": 2,
-        "share": 4.2e-05,
-        "yoy_change": -3e-06
+        "year": 2024,
+        "count": 1,
+        "share": 2.3e-05,
+        "yoy_change": -2.2e-05
       },
       {
-        "year": 2026,
-        "count": 3,
-        "share": 7.1e-05,
-        "yoy_change": 2.9e-05
+        "year": 2025,
+        "count": 1,
+        "share": 2.1e-05,
+        "yoy_change": -2e-06
       }
     ],
     "CLUMBER SPAN": [
@@ -6204,7 +6204,7 @@
         "yoy_change": -1.8e-05
       }
     ],
-    "AMERICAN COCKER": [
+    "SILKEN WINDHOUN": [
       {
         "year": 2023,
         "count": 1,
@@ -6213,41 +6213,21 @@
       },
       {
         "year": 2024,
-        "count": 1,
-        "share": 2.3e-05,
-        "yoy_change": 0.0
+        "count": 3,
+        "share": 6.8e-05,
+        "yoy_change": 4.5e-05
       },
       {
         "year": 2025,
-        "count": 5,
-        "share": 0.000106,
-        "yoy_change": 8.3e-05
+        "count": 4,
+        "share": 8.5e-05,
+        "yoy_change": 1.7e-05
       },
       {
         "year": 2026,
         "count": 3,
         "share": 7.1e-05,
-        "yoy_change": -3.5e-05
-      }
-    ],
-    "SLOVENSKY KOPOV": [
-      {
-        "year": 2023,
-        "count": 2,
-        "share": 4.5e-05,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 1,
-        "share": 2.3e-05,
-        "yoy_change": -2.2e-05
-      },
-      {
-        "year": 2025,
-        "count": 1,
-        "share": 2.1e-05,
-        "yoy_change": -2e-06
+        "yoy_change": -1.4e-05
       }
     ],
     "GLEN OF IMAAL": [
@@ -6276,30 +6256,30 @@
         "yoy_change": -3.5e-05
       }
     ],
-    "SILKEN WINDHOUN": [
+    "TOSA": [
       {
         "year": 2023,
-        "count": 1,
-        "share": 2.3e-05,
+        "count": 2,
+        "share": 4.5e-05,
         "yoy_change": null
       },
       {
         "year": 2024,
-        "count": 3,
-        "share": 6.8e-05,
-        "yoy_change": 4.5e-05
+        "count": 1,
+        "share": 2.3e-05,
+        "yoy_change": -2.2e-05
       },
       {
         "year": 2025,
-        "count": 4,
-        "share": 8.5e-05,
-        "yoy_change": 1.7e-05
+        "count": 1,
+        "share": 2.1e-05,
+        "yoy_change": -2e-06
       },
       {
         "year": 2026,
-        "count": 3,
-        "share": 7.1e-05,
-        "yoy_change": -1.4e-05
+        "count": 1,
+        "share": 2.4e-05,
+        "yoy_change": 3e-06
       }
     ],
     "BOLONKA ZWETNA": [
@@ -6308,6 +6288,52 @@
         "count": 1,
         "share": 2.3e-05,
         "yoy_change": null
+      }
+    ],
+    "BEAUCERON": [
+      {
+        "year": 2023,
+        "count": 2,
+        "share": 4.5e-05,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 3,
+        "share": 6.8e-05,
+        "yoy_change": 2.3e-05
+      },
+      {
+        "year": 2025,
+        "count": 1,
+        "share": 2.1e-05,
+        "yoy_change": -4.7e-05
+      },
+      {
+        "year": 2026,
+        "count": 1,
+        "share": 2.4e-05,
+        "yoy_change": 3e-06
+      }
+    ],
+    "CIRNECO": [
+      {
+        "year": 2023,
+        "count": 1,
+        "share": 2.3e-05,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 1,
+        "share": 2.3e-05,
+        "yoy_change": 0.0
+      },
+      {
+        "year": 2025,
+        "count": 2,
+        "share": 4.2e-05,
+        "yoy_change": 1.9e-05
       }
     ],
     "BARBET- FRENCH": [
@@ -6408,6 +6434,14 @@
         "yoy_change": 3e-06
       }
     ],
+    "XOLOITZCUINTLE": [
+      {
+        "year": 2024,
+        "count": 1,
+        "share": 2.3e-05,
+        "yoy_change": null
+      }
+    ],
     "SHIKOKU": [
       {
         "year": 2023,
@@ -6420,6 +6454,52 @@
         "count": 1,
         "share": 2.3e-05,
         "yoy_change": 0.0
+      }
+    ],
+    "SCHAPENDOES": [
+      {
+        "year": 2023,
+        "count": 1,
+        "share": 2.3e-05,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 1,
+        "share": 2.3e-05,
+        "yoy_change": 0.0
+      },
+      {
+        "year": 2025,
+        "count": 1,
+        "share": 2.1e-05,
+        "yoy_change": -2e-06
+      },
+      {
+        "year": 2026,
+        "count": 1,
+        "share": 2.4e-05,
+        "yoy_change": 3e-06
+      }
+    ],
+    "MALTESE MIX": [
+      {
+        "year": 2023,
+        "count": 2,
+        "share": 4.5e-05,
+        "yoy_change": null
+      },
+      {
+        "year": 2025,
+        "count": 2,
+        "share": 4.2e-05,
+        "yoy_change": -3e-06
+      },
+      {
+        "year": 2026,
+        "count": 3,
+        "share": 7.1e-05,
+        "yoy_change": 2.9e-05
       }
     ],
     "POMSKY": [
@@ -6560,6 +6640,38 @@
         "yoy_change": 3e-06
       }
     ],
+    "SIAMESE": [
+      {
+        "year": 2024,
+        "count": 1,
+        "share": 2.3e-05,
+        "yoy_change": null
+      }
+    ],
+    "BRITISH SH": [
+      {
+        "year": 2024,
+        "count": 1,
+        "share": 2.3e-05,
+        "yoy_change": null
+      }
+    ],
+    "DOMESTIC SH": [
+      {
+        "year": 2024,
+        "count": 2,
+        "share": 4.5e-05,
+        "yoy_change": null
+      }
+    ],
+    "RUSSIAN SPITZ": [
+      {
+        "year": 2024,
+        "count": 2,
+        "share": 4.5e-05,
+        "yoy_change": null
+      }
+    ],
     "BULLY": [
       {
         "year": 2023,
@@ -6586,56 +6698,18 @@
         "yoy_change": 3e-06
       }
     ],
-    "TOSA": [
-      {
-        "year": 2023,
-        "count": 2,
-        "share": 4.5e-05,
-        "yoy_change": null
-      },
+    "ITAL SPINONE": [
       {
         "year": 2024,
         "count": 1,
         "share": 2.3e-05,
-        "yoy_change": -2.2e-05
+        "yoy_change": null
       },
       {
         "year": 2025,
         "count": 1,
         "share": 2.1e-05,
         "yoy_change": -2e-06
-      },
-      {
-        "year": 2026,
-        "count": 1,
-        "share": 2.4e-05,
-        "yoy_change": 3e-06
-      }
-    ],
-    "BEAUCERON": [
-      {
-        "year": 2023,
-        "count": 2,
-        "share": 4.5e-05,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 3,
-        "share": 6.8e-05,
-        "yoy_change": 2.3e-05
-      },
-      {
-        "year": 2025,
-        "count": 1,
-        "share": 2.1e-05,
-        "yoy_change": -4.7e-05
-      },
-      {
-        "year": 2026,
-        "count": 1,
-        "share": 2.4e-05,
-        "yoy_change": 3e-06
       }
     ],
     "BENGAL": [
@@ -6646,92 +6720,12 @@
         "yoy_change": null
       }
     ],
-    "RAGDOLL MIX": [
-      {
-        "year": 2023,
-        "count": 1,
-        "share": 2.3e-05,
-        "yoy_change": null
-      }
-    ],
-    "SPHYNX": [
-      {
-        "year": 2023,
-        "count": 1,
-        "share": 2.3e-05,
-        "yoy_change": null
-      }
-    ],
-    "AFGHAN HOUND": [
-      {
-        "year": 2023,
-        "count": 1,
-        "share": 2.3e-05,
-        "yoy_change": null
-      },
+    "SIAMESE MIX": [
       {
         "year": 2024,
         "count": 1,
         "share": 2.3e-05,
-        "yoy_change": 0.0
-      },
-      {
-        "year": 2026,
-        "count": 1,
-        "share": 2.4e-05,
-        "yoy_change": 1e-06
-      }
-    ],
-    "TAMASKAN": [
-      {
-        "year": 2023,
-        "count": 1,
-        "share": 2.3e-05,
         "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 1,
-        "share": 2.3e-05,
-        "yoy_change": 0.0
-      },
-      {
-        "year": 2025,
-        "count": 1,
-        "share": 2.1e-05,
-        "yoy_change": -2e-06
-      },
-      {
-        "year": 2026,
-        "count": 1,
-        "share": 2.4e-05,
-        "yoy_change": 3e-06
-      }
-    ],
-    "CAUCASIAN SHEPHERD": [
-      {
-        "year": 2023,
-        "count": 1,
-        "share": 2.3e-05,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 1,
-        "share": 2.3e-05,
-        "yoy_change": 0.0
-      },
-      {
-        "year": 2025,
-        "count": 1,
-        "share": 2.1e-05,
-        "yoy_change": -2e-06
-      },
-      {
-        "year": 2026,
-        "count": 1,
-        "share": 2.4e-05,
-        "yoy_change": 3e-06
       }
     ],
     "MORKIE": [
@@ -6760,89 +6754,7 @@
         "yoy_change": -8.2e-05
       }
     ],
-    "DOMESTIC LH": [
-      {
-        "year": 2024,
-        "count": 1,
-        "share": 2.3e-05,
-        "yoy_change": null
-      }
-    ],
-    "XOLOITZCUINTLE": [
-      {
-        "year": 2024,
-        "count": 1,
-        "share": 2.3e-05,
-        "yoy_change": null
-      }
-    ],
-    "BIEWER TERRIER": [
-      {
-        "year": 2024,
-        "count": 2,
-        "share": 4.5e-05,
-        "yoy_change": null
-      },
-      {
-        "year": 2025,
-        "count": 4,
-        "share": 8.5e-05,
-        "yoy_change": 4e-05
-      },
-      {
-        "year": 2026,
-        "count": 2,
-        "share": 4.7e-05,
-        "yoy_change": -3.8e-05
-      }
-    ],
-    "BERGER BLANC SU": [
-      {
-        "year": 2024,
-        "count": 1,
-        "share": 2.3e-05,
-        "yoy_change": null
-      }
-    ],
-    "ARABIAN CUNUCU": [
-      {
-        "year": 2024,
-        "count": 1,
-        "share": 2.3e-05,
-        "yoy_change": null
-      },
-      {
-        "year": 2026,
-        "count": 1,
-        "share": 2.4e-05,
-        "yoy_change": 1e-06
-      }
-    ],
-    "BELDI": [
-      {
-        "year": 2024,
-        "count": 1,
-        "share": 2.3e-05,
-        "yoy_change": null
-      }
-    ],
-    "SIAMESE": [
-      {
-        "year": 2024,
-        "count": 1,
-        "share": 2.3e-05,
-        "yoy_change": null
-      }
-    ],
-    "RUSSIAN SPITZ": [
-      {
-        "year": 2024,
-        "count": 2,
-        "share": 4.5e-05,
-        "yoy_change": null
-      }
-    ],
-    "CIRNECO": [
+    "AFGHAN HOUND": [
       {
         "year": 2023,
         "count": 1,
@@ -6856,146 +6768,10 @@
         "yoy_change": 0.0
       },
       {
-        "year": 2025,
-        "count": 2,
-        "share": 4.2e-05,
-        "yoy_change": 1.9e-05
-      }
-    ],
-    "BRITISH SH": [
-      {
-        "year": 2024,
-        "count": 1,
-        "share": 2.3e-05,
-        "yoy_change": null
-      }
-    ],
-    "DOMESTIC SH": [
-      {
-        "year": 2024,
-        "count": 2,
-        "share": 4.5e-05,
-        "yoy_change": null
-      }
-    ],
-    "AFRICANIS": [
-      {
-        "year": 2025,
-        "count": 1,
-        "share": 2.1e-05,
-        "yoy_change": null
-      },
-      {
         "year": 2026,
         "count": 1,
         "share": 2.4e-05,
-        "yoy_change": 3e-06
-      }
-    ],
-    "ITAL SPINONE": [
-      {
-        "year": 2024,
-        "count": 1,
-        "share": 2.3e-05,
-        "yoy_change": null
-      },
-      {
-        "year": 2025,
-        "count": 1,
-        "share": 2.1e-05,
-        "yoy_change": -2e-06
-      }
-    ],
-    "SIAMESE MIX": [
-      {
-        "year": 2024,
-        "count": 1,
-        "share": 2.3e-05,
-        "yoy_change": null
-      }
-    ],
-    "PIT BULL MIX": [
-      {
-        "year": 2025,
-        "count": 3,
-        "share": 6.4e-05,
-        "yoy_change": null
-      },
-      {
-        "year": 2026,
-        "count": 1,
-        "share": 2.4e-05,
-        "yoy_change": -4e-05
-      }
-    ],
-    "KOOLIE": [
-      {
-        "year": 2025,
-        "count": 1,
-        "share": 2.1e-05,
-        "yoy_change": null
-      }
-    ],
-    "BEAGLE MIX": [
-      {
-        "year": 2024,
-        "count": 1,
-        "share": 2.3e-05,
-        "yoy_change": null
-      },
-      {
-        "year": 2026,
-        "count": 2,
-        "share": 4.7e-05,
-        "yoy_change": 2.4e-05
-      }
-    ],
-    "JINDO MIX": [
-      {
-        "year": 2025,
-        "count": 2,
-        "share": 4.2e-05,
-        "yoy_change": null
-      },
-      {
-        "year": 2026,
-        "count": 2,
-        "share": 4.7e-05,
-        "yoy_change": 5e-06
-      }
-    ],
-    "ROTTWEILER MIX": [
-      {
-        "year": 2025,
-        "count": 2,
-        "share": 4.2e-05,
-        "yoy_change": null
-      },
-      {
-        "year": 2026,
-        "count": 2,
-        "share": 4.7e-05,
-        "yoy_change": 5e-06
-      }
-    ],
-    "MOUNTAIN CUR": [
-      {
-        "year": 2024,
-        "count": 1,
-        "share": 2.3e-05,
-        "yoy_change": null
-      },
-      {
-        "year": 2025,
-        "count": 4,
-        "share": 8.5e-05,
-        "yoy_change": 6.2e-05
-      },
-      {
-        "year": 2026,
-        "count": 3,
-        "share": 7.1e-05,
-        "yoy_change": -1.4e-05
+        "yoy_change": 1e-06
       }
     ],
     "SCOTTISH FOLD": [
@@ -7026,64 +6802,6 @@
         "yoy_change": 3e-06
       }
     ],
-    "CHIHUAHUA MIX": [
-      {
-        "year": 2025,
-        "count": 7,
-        "share": 0.000148,
-        "yoy_change": null
-      },
-      {
-        "year": 2026,
-        "count": 9,
-        "share": 0.000213,
-        "yoy_change": 6.5e-05
-      }
-    ],
-    "AUSSIE POODLE": [
-      {
-        "year": 2025,
-        "count": 1,
-        "share": 2.1e-05,
-        "yoy_change": null
-      }
-    ],
-    "YORKIE MALTESE": [
-      {
-        "year": 2025,
-        "count": 1,
-        "share": 2.1e-05,
-        "yoy_change": null
-      },
-      {
-        "year": 2026,
-        "count": 2,
-        "share": 4.7e-05,
-        "yoy_change": 2.6e-05
-      }
-    ],
-    "BRITTANYPOO": [
-      {
-        "year": 2025,
-        "count": 1,
-        "share": 2.1e-05,
-        "yoy_change": null
-      },
-      {
-        "year": 2026,
-        "count": 1,
-        "share": 2.4e-05,
-        "yoy_change": 3e-06
-      }
-    ],
-    "AKBASH GREAT PY": [
-      {
-        "year": 2025,
-        "count": 1,
-        "share": 2.1e-05,
-        "yoy_change": null
-      }
-    ],
     "CHIWEENIE": [
       {
         "year": 2024,
@@ -7104,34 +6822,88 @@
         "yoy_change": -1.8e-05
       }
     ],
-    "CHUG": [
-      {
-        "year": 2025,
-        "count": 1,
-        "share": 2.1e-05,
-        "yoy_change": null
-      },
-      {
-        "year": 2026,
-        "count": 1,
-        "share": 2.4e-05,
-        "yoy_change": 3e-06
-      }
-    ],
-    "BULLDOG X": [
-      {
-        "year": 2025,
-        "count": 1,
-        "share": 2.1e-05,
-        "yoy_change": null
-      }
-    ],
-    "BRACCO ITALIANO": [
+    "BEAGLE MIX": [
       {
         "year": 2024,
         "count": 1,
         "share": 2.3e-05,
         "yoy_change": null
+      },
+      {
+        "year": 2026,
+        "count": 2,
+        "share": 4.7e-05,
+        "yoy_change": 2.4e-05
+      }
+    ],
+    "RAGDOLL MIX": [
+      {
+        "year": 2023,
+        "count": 1,
+        "share": 2.3e-05,
+        "yoy_change": null
+      }
+    ],
+    "SPHYNX": [
+      {
+        "year": 2023,
+        "count": 1,
+        "share": 2.3e-05,
+        "yoy_change": null
+      }
+    ],
+    "BIEWER TERRIER": [
+      {
+        "year": 2024,
+        "count": 2,
+        "share": 4.5e-05,
+        "yoy_change": null
+      },
+      {
+        "year": 2025,
+        "count": 4,
+        "share": 8.5e-05,
+        "yoy_change": 4e-05
+      },
+      {
+        "year": 2026,
+        "count": 2,
+        "share": 4.7e-05,
+        "yoy_change": -3.8e-05
+      }
+    ],
+    "MOUNTAIN CUR": [
+      {
+        "year": 2024,
+        "count": 1,
+        "share": 2.3e-05,
+        "yoy_change": null
+      },
+      {
+        "year": 2025,
+        "count": 4,
+        "share": 8.5e-05,
+        "yoy_change": 6.2e-05
+      },
+      {
+        "year": 2026,
+        "count": 3,
+        "share": 7.1e-05,
+        "yoy_change": -1.4e-05
+      }
+    ],
+    "CAUCASIAN SHEPHERD": [
+      {
+        "year": 2023,
+        "count": 1,
+        "share": 2.3e-05,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 1,
+        "share": 2.3e-05,
+        "yoy_change": 0.0
       },
       {
         "year": 2025,
@@ -7146,122 +6918,30 @@
         "yoy_change": 3e-06
       }
     ],
-    "BICHON POODLE": [
+    "TAMASKAN": [
       {
-        "year": 2025,
+        "year": 2023,
         "count": 1,
-        "share": 2.1e-05,
+        "share": 2.3e-05,
         "yoy_change": null
       },
       {
-        "year": 2026,
-        "count": 2,
-        "share": 4.7e-05,
-        "yoy_change": 2.6e-05
-      }
-    ],
-    "WHOODLE": [
+        "year": 2024,
+        "count": 1,
+        "share": 2.3e-05,
+        "yoy_change": 0.0
+      },
       {
         "year": 2025,
         "count": 1,
         "share": 2.1e-05,
-        "yoy_change": null
+        "yoy_change": -2e-06
       },
       {
         "year": 2026,
         "count": 1,
         "share": 2.4e-05,
         "yoy_change": 3e-06
-      }
-    ],
-    "COCKAPOO": [
-      {
-        "year": 2025,
-        "count": 3,
-        "share": 6.4e-05,
-        "yoy_change": null
-      },
-      {
-        "year": 2026,
-        "count": 4,
-        "share": 9.4e-05,
-        "yoy_change": 3e-05
-      }
-    ],
-    "AMER STAFF MIX": [
-      {
-        "year": 2025,
-        "count": 1,
-        "share": 2.1e-05,
-        "yoy_change": null
-      }
-    ],
-    "WESTIEPOO": [
-      {
-        "year": 2026,
-        "count": 1,
-        "share": 2.4e-05,
-        "yoy_change": null
-      }
-    ],
-    "BASSET HOUND MI": [
-      {
-        "year": 2026,
-        "count": 2,
-        "share": 4.7e-05,
-        "yoy_change": null
-      }
-    ],
-    "SHORKIE": [
-      {
-        "year": 2026,
-        "count": 1,
-        "share": 2.4e-05,
-        "yoy_change": null
-      }
-    ],
-    "DACHSHUND MIX": [
-      {
-        "year": 2025,
-        "count": 1,
-        "share": 2.1e-05,
-        "yoy_change": null
-      },
-      {
-        "year": 2026,
-        "count": 1,
-        "share": 2.4e-05,
-        "yoy_change": 3e-06
-      }
-    ],
-    "POMERANIAN MIX": [
-      {
-        "year": 2026,
-        "count": 1,
-        "share": 2.4e-05,
-        "yoy_change": null
-      }
-    ],
-    "MALTIPOO": [
-      {
-        "year": 2025,
-        "count": 2,
-        "share": 4.2e-05,
-        "yoy_change": null
-      },
-      {
-        "year": 2026,
-        "count": 3,
-        "share": 7.1e-05,
-        "yoy_change": 2.9e-05
-      }
-    ],
-    "CAVAPOO": [
-      {
-        "year": 2026,
-        "count": 1,
-        "share": 2.4e-05,
-        "yoy_change": null
       }
     ],
     "JAVANESE": [
@@ -7306,15 +6986,57 @@
         "yoy_change": null
       }
     ],
-    "SMOOTH COLLIE": [
+    "BRACCO ITALIANO": [
+      {
+        "year": 2024,
+        "count": 1,
+        "share": 2.3e-05,
+        "yoy_change": null
+      },
+      {
+        "year": 2025,
+        "count": 1,
+        "share": 2.1e-05,
+        "yoy_change": -2e-06
+      },
       {
         "year": 2026,
-        "count": 4,
-        "share": 9.4e-05,
+        "count": 1,
+        "share": 2.4e-05,
+        "yoy_change": 3e-06
+      }
+    ],
+    "BERGER BLANC SU": [
+      {
+        "year": 2024,
+        "count": 1,
+        "share": 2.3e-05,
         "yoy_change": null
       }
     ],
-    "ENG TOY SPANIEL": [
+    "ARABIAN CUNUCU": [
+      {
+        "year": 2024,
+        "count": 1,
+        "share": 2.3e-05,
+        "yoy_change": null
+      },
+      {
+        "year": 2026,
+        "count": 1,
+        "share": 2.4e-05,
+        "yoy_change": 1e-06
+      }
+    ],
+    "DOMESTIC LH": [
+      {
+        "year": 2024,
+        "count": 1,
+        "share": 2.3e-05,
+        "yoy_change": null
+      }
+    ],
+    "AFRICANIS": [
       {
         "year": 2025,
         "count": 1,
@@ -7326,6 +7048,172 @@
         "count": 1,
         "share": 2.4e-05,
         "yoy_change": 3e-06
+      }
+    ],
+    "BELDI": [
+      {
+        "year": 2024,
+        "count": 1,
+        "share": 2.3e-05,
+        "yoy_change": null
+      }
+    ],
+    "DACHSHUND MIX": [
+      {
+        "year": 2025,
+        "count": 1,
+        "share": 2.1e-05,
+        "yoy_change": null
+      },
+      {
+        "year": 2026,
+        "count": 1,
+        "share": 2.4e-05,
+        "yoy_change": 3e-06
+      }
+    ],
+    "ROTTWEILER MIX": [
+      {
+        "year": 2025,
+        "count": 2,
+        "share": 4.2e-05,
+        "yoy_change": null
+      },
+      {
+        "year": 2026,
+        "count": 2,
+        "share": 4.7e-05,
+        "yoy_change": 5e-06
+      }
+    ],
+    "COCKAPOO": [
+      {
+        "year": 2025,
+        "count": 3,
+        "share": 6.4e-05,
+        "yoy_change": null
+      },
+      {
+        "year": 2026,
+        "count": 4,
+        "share": 9.4e-05,
+        "yoy_change": 3e-05
+      }
+    ],
+    "BICHON POODLE": [
+      {
+        "year": 2025,
+        "count": 1,
+        "share": 2.1e-05,
+        "yoy_change": null
+      },
+      {
+        "year": 2026,
+        "count": 2,
+        "share": 4.7e-05,
+        "yoy_change": 2.6e-05
+      }
+    ],
+    "CHIHUAHUA MIX": [
+      {
+        "year": 2025,
+        "count": 7,
+        "share": 0.000148,
+        "yoy_change": null
+      },
+      {
+        "year": 2026,
+        "count": 9,
+        "share": 0.000213,
+        "yoy_change": 6.5e-05
+      }
+    ],
+    "BASSET HOUND MI": [
+      {
+        "year": 2026,
+        "count": 2,
+        "share": 4.7e-05,
+        "yoy_change": null
+      }
+    ],
+    "POMERANIAN MIX": [
+      {
+        "year": 2026,
+        "count": 1,
+        "share": 2.4e-05,
+        "yoy_change": null
+      }
+    ],
+    "YORKIE MALTESE": [
+      {
+        "year": 2025,
+        "count": 1,
+        "share": 2.1e-05,
+        "yoy_change": null
+      },
+      {
+        "year": 2026,
+        "count": 2,
+        "share": 4.7e-05,
+        "yoy_change": 2.6e-05
+      }
+    ],
+    "PIT BULL MIX": [
+      {
+        "year": 2025,
+        "count": 3,
+        "share": 6.4e-05,
+        "yoy_change": null
+      },
+      {
+        "year": 2026,
+        "count": 1,
+        "share": 2.4e-05,
+        "yoy_change": -4e-05
+      }
+    ],
+    "MALTIPOO": [
+      {
+        "year": 2025,
+        "count": 2,
+        "share": 4.2e-05,
+        "yoy_change": null
+      },
+      {
+        "year": 2026,
+        "count": 3,
+        "share": 7.1e-05,
+        "yoy_change": 2.9e-05
+      }
+    ],
+    "CAVAPOO": [
+      {
+        "year": 2026,
+        "count": 1,
+        "share": 2.4e-05,
+        "yoy_change": null
+      }
+    ],
+    "KOOLIE": [
+      {
+        "year": 2025,
+        "count": 1,
+        "share": 2.1e-05,
+        "yoy_change": null
+      }
+    ],
+    "JINDO MIX": [
+      {
+        "year": 2025,
+        "count": 2,
+        "share": 4.2e-05,
+        "yoy_change": null
+      },
+      {
+        "year": 2026,
+        "count": 2,
+        "share": 4.7e-05,
+        "yoy_change": 5e-06
       }
     ],
     "XL BULLY": [
@@ -7356,7 +7244,89 @@
         "yoy_change": 3e-06
       }
     ],
+    "SMOOTH COLLIE": [
+      {
+        "year": 2026,
+        "count": 4,
+        "share": 9.4e-05,
+        "yoy_change": null
+      }
+    ],
+    "AUSSIE POODLE": [
+      {
+        "year": 2025,
+        "count": 1,
+        "share": 2.1e-05,
+        "yoy_change": null
+      }
+    ],
+    "BRITTANYPOO": [
+      {
+        "year": 2025,
+        "count": 1,
+        "share": 2.1e-05,
+        "yoy_change": null
+      },
+      {
+        "year": 2026,
+        "count": 1,
+        "share": 2.4e-05,
+        "yoy_change": 3e-06
+      }
+    ],
+    "AKBASH GREAT PY": [
+      {
+        "year": 2025,
+        "count": 1,
+        "share": 2.1e-05,
+        "yoy_change": null
+      }
+    ],
+    "CHUG": [
+      {
+        "year": 2025,
+        "count": 1,
+        "share": 2.1e-05,
+        "yoy_change": null
+      },
+      {
+        "year": 2026,
+        "count": 1,
+        "share": 2.4e-05,
+        "yoy_change": 3e-06
+      }
+    ],
+    "BULLDOG X": [
+      {
+        "year": 2025,
+        "count": 1,
+        "share": 2.1e-05,
+        "yoy_change": null
+      }
+    ],
+    "WHOODLE": [
+      {
+        "year": 2025,
+        "count": 1,
+        "share": 2.1e-05,
+        "yoy_change": null
+      },
+      {
+        "year": 2026,
+        "count": 1,
+        "share": 2.4e-05,
+        "yoy_change": 3e-06
+      }
+    ],
     "SCHNAUZER MIX": [
+      {
+        "year": 2025,
+        "count": 1,
+        "share": 2.1e-05,
+        "yoy_change": null
+      }
+    ],
+    "AMER STAFF MIX": [
       {
         "year": 2025,
         "count": 1,
@@ -7377,6 +7347,36 @@
         "year": 2025,
         "count": 1,
         "share": 2.1e-05,
+        "yoy_change": null
+      }
+    ],
+    "ENG TOY SPANIEL": [
+      {
+        "year": 2025,
+        "count": 1,
+        "share": 2.1e-05,
+        "yoy_change": null
+      },
+      {
+        "year": 2026,
+        "count": 1,
+        "share": 2.4e-05,
+        "yoy_change": 3e-06
+      }
+    ],
+    "WESTIEPOO": [
+      {
+        "year": 2026,
+        "count": 1,
+        "share": 2.4e-05,
+        "yoy_change": null
+      }
+    ],
+    "SHORKIE": [
+      {
+        "year": 2026,
+        "count": 1,
+        "share": 2.4e-05,
         "yoy_change": null
       }
     ]
@@ -7434,6 +7434,32 @@
         "yoy_change": -0.003427
       }
     ],
+    "SIAMESE": [
+      {
+        "year": 2023,
+        "count": 294,
+        "share": 0.016767,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 285,
+        "share": 0.0159,
+        "yoy_change": -0.000867
+      },
+      {
+        "year": 2025,
+        "count": 330,
+        "share": 0.01612,
+        "yoy_change": 0.00022
+      },
+      {
+        "year": 2026,
+        "count": 348,
+        "share": 0.018351,
+        "yoy_change": 0.002231
+      }
+    ],
     "DOMESTIC LH": [
       {
         "year": 2023,
@@ -7460,30 +7486,108 @@
         "yoy_change": -0.007686
       }
     ],
-    "RAGDOLL": [
+    "HIMALAYAN": [
       {
         "year": 2023,
-        "count": 175,
-        "share": 0.009981,
+        "count": 55,
+        "share": 0.003137,
         "yoy_change": null
       },
       {
         "year": 2024,
-        "count": 199,
-        "share": 0.011102,
-        "yoy_change": 0.001121
+        "count": 64,
+        "share": 0.00357,
+        "yoy_change": 0.000433
       },
       {
         "year": 2025,
-        "count": 239,
-        "share": 0.011674,
-        "yoy_change": 0.000572
+        "count": 86,
+        "share": 0.004201,
+        "yoy_change": 0.000631
       },
       {
         "year": 2026,
-        "count": 202,
-        "share": 0.010652,
-        "yoy_change": -0.001022
+        "count": 73,
+        "share": 0.003849,
+        "yoy_change": -0.000352
+      }
+    ],
+    "MAINE COON": [
+      {
+        "year": 2023,
+        "count": 157,
+        "share": 0.008954,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 166,
+        "share": 0.009261,
+        "yoy_change": 0.000307
+      },
+      {
+        "year": 2025,
+        "count": 211,
+        "share": 0.010307,
+        "yoy_change": 0.001046
+      },
+      {
+        "year": 2026,
+        "count": 206,
+        "share": 0.010863,
+        "yoy_change": 0.000556
+      }
+    ],
+    "MANX": [
+      {
+        "year": 2023,
+        "count": 8,
+        "share": 0.000456,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 11,
+        "share": 0.000614,
+        "yoy_change": 0.000158
+      },
+      {
+        "year": 2025,
+        "count": 8,
+        "share": 0.000391,
+        "yoy_change": -0.000223
+      },
+      {
+        "year": 2026,
+        "count": 8,
+        "share": 0.000422,
+        "yoy_change": 3.1e-05
+      }
+    ],
+    "RUSSIAN BLUE": [
+      {
+        "year": 2023,
+        "count": 109,
+        "share": 0.006216,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 95,
+        "share": 0.0053,
+        "yoy_change": -0.000916
+      },
+      {
+        "year": 2025,
+        "count": 142,
+        "share": 0.006936,
+        "yoy_change": 0.001636
+      },
+      {
+        "year": 2026,
+        "count": 109,
+        "share": 0.005748,
+        "yoy_change": -0.001188
       }
     ],
     "PERSIAN": [
@@ -7590,134 +7694,30 @@
         "yoy_change": -9.4e-05
       }
     ],
-    "HIMALAYAN": [
+    "RAGDOLL": [
       {
         "year": 2023,
-        "count": 55,
-        "share": 0.003137,
+        "count": 175,
+        "share": 0.009981,
         "yoy_change": null
       },
       {
         "year": 2024,
-        "count": 64,
-        "share": 0.00357,
-        "yoy_change": 0.000433
+        "count": 199,
+        "share": 0.011102,
+        "yoy_change": 0.001121
       },
       {
         "year": 2025,
-        "count": 86,
-        "share": 0.004201,
-        "yoy_change": 0.000631
+        "count": 239,
+        "share": 0.011674,
+        "yoy_change": 0.000572
       },
       {
         "year": 2026,
-        "count": 73,
-        "share": 0.003849,
-        "yoy_change": -0.000352
-      }
-    ],
-    "SIAMESE": [
-      {
-        "year": 2023,
-        "count": 294,
-        "share": 0.016767,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 285,
-        "share": 0.0159,
-        "yoy_change": -0.000867
-      },
-      {
-        "year": 2025,
-        "count": 330,
-        "share": 0.01612,
-        "yoy_change": 0.00022
-      },
-      {
-        "year": 2026,
-        "count": 348,
-        "share": 0.018351,
-        "yoy_change": 0.002231
-      }
-    ],
-    "MANX": [
-      {
-        "year": 2023,
-        "count": 8,
-        "share": 0.000456,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 11,
-        "share": 0.000614,
-        "yoy_change": 0.000158
-      },
-      {
-        "year": 2025,
-        "count": 8,
-        "share": 0.000391,
-        "yoy_change": -0.000223
-      },
-      {
-        "year": 2026,
-        "count": 8,
-        "share": 0.000422,
-        "yoy_change": 3.1e-05
-      }
-    ],
-    "RUSSIAN BLUE": [
-      {
-        "year": 2023,
-        "count": 109,
-        "share": 0.006216,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 95,
-        "share": 0.0053,
-        "yoy_change": -0.000916
-      },
-      {
-        "year": 2025,
-        "count": 142,
-        "share": 0.006936,
-        "yoy_change": 0.001636
-      },
-      {
-        "year": 2026,
-        "count": 109,
-        "share": 0.005748,
-        "yoy_change": -0.001188
-      }
-    ],
-    "MAINE COON": [
-      {
-        "year": 2023,
-        "count": 157,
-        "share": 0.008954,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 166,
-        "share": 0.009261,
-        "yoy_change": 0.000307
-      },
-      {
-        "year": 2025,
-        "count": 211,
-        "share": 0.010307,
-        "yoy_change": 0.001046
-      },
-      {
-        "year": 2026,
-        "count": 206,
-        "share": 0.010863,
-        "yoy_change": 0.000556
+        "count": 202,
+        "share": 0.010652,
+        "yoy_change": -0.001022
       }
     ],
     "BRITISH SH": [
@@ -7746,6 +7746,32 @@
         "yoy_change": -0.001281
       }
     ],
+    "TURKISH ANGORA": [
+      {
+        "year": 2023,
+        "count": 12,
+        "share": 0.000684,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 13,
+        "share": 0.000725,
+        "yoy_change": 4.1e-05
+      },
+      {
+        "year": 2025,
+        "count": 20,
+        "share": 0.000977,
+        "yoy_change": 0.000252
+      },
+      {
+        "year": 2026,
+        "count": 13,
+        "share": 0.000686,
+        "yoy_change": -0.000291
+      }
+    ],
     "ABYSSINIAN": [
       {
         "year": 2023,
@@ -7770,6 +7796,32 @@
         "count": 978,
         "share": 0.051571,
         "yoy_change": 0.049959
+      }
+    ],
+    "DEVON REX": [
+      {
+        "year": 2023,
+        "count": 25,
+        "share": 0.001426,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 33,
+        "share": 0.001841,
+        "yoy_change": 0.000415
+      },
+      {
+        "year": 2025,
+        "count": 43,
+        "share": 0.0021,
+        "yoy_change": 0.000259
+      },
+      {
+        "year": 2026,
+        "count": 25,
+        "share": 0.001318,
+        "yoy_change": -0.000782
       }
     ],
     "BENGAL": [
@@ -7798,32 +7850,6 @@
         "yoy_change": -0.00203
       }
     ],
-    "TURKISH ANGORA": [
-      {
-        "year": 2023,
-        "count": 12,
-        "share": 0.000684,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 13,
-        "share": 0.000725,
-        "yoy_change": 4.1e-05
-      },
-      {
-        "year": 2025,
-        "count": 20,
-        "share": 0.000977,
-        "yoy_change": 0.000252
-      },
-      {
-        "year": 2026,
-        "count": 13,
-        "share": 0.000686,
-        "yoy_change": -0.000291
-      }
-    ],
     "SPHYNX": [
       {
         "year": 2023,
@@ -7848,32 +7874,6 @@
         "count": 26,
         "share": 0.001371,
         "yoy_change": -0.000192
-      }
-    ],
-    "DEVON REX": [
-      {
-        "year": 2023,
-        "count": 25,
-        "share": 0.001426,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 33,
-        "share": 0.001841,
-        "yoy_change": 0.000415
-      },
-      {
-        "year": 2025,
-        "count": 43,
-        "share": 0.0021,
-        "yoy_change": 0.000259
-      },
-      {
-        "year": 2026,
-        "count": 25,
-        "share": 0.001318,
-        "yoy_change": -0.000782
       }
     ],
     "MUNCHKIN SH": [
@@ -8026,32 +8026,6 @@
         "yoy_change": 9.1e-05
       }
     ],
-    "BOMBAY": [
-      {
-        "year": 2023,
-        "count": 37,
-        "share": 0.00211,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 43,
-        "share": 0.002399,
-        "yoy_change": 0.000289
-      },
-      {
-        "year": 2025,
-        "count": 70,
-        "share": 0.003419,
-        "yoy_change": 0.00102
-      },
-      {
-        "year": 2026,
-        "count": 40,
-        "share": 0.002109,
-        "yoy_change": -0.00131
-      }
-    ],
     "ORIENTAL SH": [
       {
         "year": 2023,
@@ -8078,30 +8052,30 @@
         "yoy_change": 3.9e-05
       }
     ],
-    "PIXIEBOB LH": [
+    "BOMBAY": [
       {
         "year": 2023,
-        "count": 1,
-        "share": 5.7e-05,
+        "count": 37,
+        "share": 0.00211,
         "yoy_change": null
       },
       {
         "year": 2024,
-        "count": 1,
-        "share": 5.6e-05,
-        "yoy_change": -1e-06
+        "count": 43,
+        "share": 0.002399,
+        "yoy_change": 0.000289
       },
       {
         "year": 2025,
-        "count": 1,
-        "share": 4.9e-05,
-        "yoy_change": -7e-06
+        "count": 70,
+        "share": 0.003419,
+        "yoy_change": 0.00102
       },
       {
         "year": 2026,
-        "count": 1,
-        "share": 5.3e-05,
-        "yoy_change": 4e-06
+        "count": 40,
+        "share": 0.002109,
+        "yoy_change": -0.00131
       }
     ],
     "EUROPEAN SH": [
@@ -8128,6 +8102,32 @@
         "count": 10,
         "share": 0.000527,
         "yoy_change": -0.000303
+      }
+    ],
+    "PIXIEBOB LH": [
+      {
+        "year": 2023,
+        "count": 1,
+        "share": 5.7e-05,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 1,
+        "share": 5.6e-05,
+        "yoy_change": -1e-06
+      },
+      {
+        "year": 2025,
+        "count": 1,
+        "share": 4.9e-05,
+        "yoy_change": -7e-06
+      },
+      {
+        "year": 2026,
+        "count": 1,
+        "share": 5.3e-05,
+        "yoy_change": 4e-06
       }
     ],
     "CORNISH REX": [
@@ -8418,6 +8418,26 @@
         "yoy_change": 4e-06
       }
     ],
+    "SOMALI": [
+      {
+        "year": 2023,
+        "count": 1,
+        "share": 5.7e-05,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 1,
+        "share": 5.6e-05,
+        "yoy_change": -1e-06
+      },
+      {
+        "year": 2026,
+        "count": 1,
+        "share": 5.3e-05,
+        "yoy_change": -3e-06
+      }
+    ],
     "AMER CURL SH": [
       {
         "year": 2023,
@@ -8442,118 +8462,6 @@
         "count": 6,
         "share": 0.000316,
         "yoy_change": -7.5e-05
-      }
-    ],
-    "SOMALI": [
-      {
-        "year": 2023,
-        "count": 1,
-        "share": 5.7e-05,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 1,
-        "share": 5.6e-05,
-        "yoy_change": -1e-06
-      },
-      {
-        "year": 2026,
-        "count": 1,
-        "share": 5.3e-05,
-        "yoy_change": -3e-06
-      }
-    ],
-    "JAPAN BOBTAIL": [
-      {
-        "year": 2023,
-        "count": 2,
-        "share": 0.000114,
-        "yoy_change": null
-      },
-      {
-        "year": 2025,
-        "count": 1,
-        "share": 4.9e-05,
-        "yoy_change": -6.5e-05
-      },
-      {
-        "year": 2026,
-        "count": 1,
-        "share": 5.3e-05,
-        "yoy_change": 4e-06
-      }
-    ],
-    "MIXED": [
-      {
-        "year": 2023,
-        "count": 1,
-        "share": 5.7e-05,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 1,
-        "share": 5.6e-05,
-        "yoy_change": -1e-06
-      },
-      {
-        "year": 2025,
-        "count": 2,
-        "share": 9.8e-05,
-        "yoy_change": 4.2e-05
-      },
-      {
-        "year": 2026,
-        "count": 1,
-        "share": 5.3e-05,
-        "yoy_change": -4.5e-05
-      }
-    ],
-    "AMER WIREHAIR": [
-      {
-        "year": 2023,
-        "count": 1,
-        "share": 5.7e-05,
-        "yoy_change": null
-      },
-      {
-        "year": 2024,
-        "count": 3,
-        "share": 0.000167,
-        "yoy_change": 0.00011
-      },
-      {
-        "year": 2025,
-        "count": 7,
-        "share": 0.000342,
-        "yoy_change": 0.000175
-      },
-      {
-        "year": 2026,
-        "count": 1,
-        "share": 5.3e-05,
-        "yoy_change": -0.000289
-      }
-    ],
-    "SIBERIAN FOREST": [
-      {
-        "year": 2023,
-        "count": 1,
-        "share": 5.7e-05,
-        "yoy_change": null
-      },
-      {
-        "year": 2025,
-        "count": 1,
-        "share": 4.9e-05,
-        "yoy_change": -8e-06
-      },
-      {
-        "year": 2026,
-        "count": 1,
-        "share": 5.3e-05,
-        "yoy_change": 4e-06
       }
     ],
     "KORAT": [
@@ -8582,11 +8490,133 @@
         "yoy_change": -3.7e-05
       }
     ],
+    "AMER WIREHAIR": [
+      {
+        "year": 2023,
+        "count": 1,
+        "share": 5.7e-05,
+        "yoy_change": null
+      },
+      {
+        "year": 2024,
+        "count": 3,
+        "share": 0.000167,
+        "yoy_change": 0.00011
+      },
+      {
+        "year": 2025,
+        "count": 7,
+        "share": 0.000342,
+        "yoy_change": 0.000175
+      },
+      {
+        "year": 2026,
+        "count": 1,
+        "share": 5.3e-05,
+        "yoy_change": -0.000289
+      }
+    ],
+    "JAPAN BOBTAIL": [
+      {
+        "year": 2023,
+        "count": 2,
+        "share": 0.000114,
+        "yoy_change": null
+      },
+      {
+        "year": 2025,
+        "count": 1,
+        "share": 4.9e-05,
+        "yoy_change": -6.5e-05
+      },
+      {
+        "year": 2026,
+        "count": 1,
+        "share": 5.3e-05,
+        "yoy_change": 4e-06
+      }
+    ],
+    "SIBERIAN FOREST": [
+      {
+        "year": 2023,
+        "count": 1,
+        "share": 5.7e-05,
+        "yoy_change": null
+      },
+      {
+        "year": 2025,
+        "count": 1,
+        "share": 4.9e-05,
+        "yoy_change": -8e-06
+      },
+      {
+        "year": 2026,
+        "count": 1,
+        "share": 5.3e-05,
+        "yoy_change": 4e-06
+      }
+    ],
+    "REX": [
+      {
+        "year": 2024,
+        "count": 1,
+        "share": 5.6e-05,
+        "yoy_change": null
+      }
+    ],
     "COLORPOINT": [
       {
         "year": 2023,
         "count": 1,
         "share": 5.7e-05,
+        "yoy_change": null
+      }
+    ],
+    "MIX": [
+      {
+        "year": 2024,
+        "count": 2,
+        "share": 0.000112,
+        "yoy_change": null
+      },
+      {
+        "year": 2025,
+        "count": 2,
+        "share": 9.8e-05,
+        "yoy_change": -1.4e-05
+      },
+      {
+        "year": 2026,
+        "count": 1,
+        "share": 5.3e-05,
+        "yoy_change": -4.5e-05
+      }
+    ],
+    "UNKNOWN": [
+      {
+        "year": 2024,
+        "count": 2,
+        "share": 0.000112,
+        "yoy_change": null
+      },
+      {
+        "year": 2025,
+        "count": 12,
+        "share": 0.000586,
+        "yoy_change": 0.000474
+      },
+      {
+        "year": 2026,
+        "count": 12,
+        "share": 0.000633,
+        "yoy_change": 4.7e-05
+      }
+    ],
+    "MALAYAN": [
+      {
+        "year": 2024,
+        "count": 1,
+        "share": 5.6e-05,
         "yoy_change": null
       }
     ],
@@ -8632,26 +8662,38 @@
         "yoy_change": 4e-06
       }
     ],
-    "REX": [
+    "TONKINESE": [
+      {
+        "year": 2025,
+        "count": 1,
+        "share": 4.9e-05,
+        "yoy_change": null
+      },
+      {
+        "year": 2026,
+        "count": 2,
+        "share": 0.000105,
+        "yoy_change": 5.6e-05
+      }
+    ],
+    "MIXED": [
+      {
+        "year": 2023,
+        "count": 1,
+        "share": 5.7e-05,
+        "yoy_change": null
+      },
       {
         "year": 2024,
         "count": 1,
         "share": 5.6e-05,
-        "yoy_change": null
-      }
-    ],
-    "MIX": [
-      {
-        "year": 2024,
-        "count": 2,
-        "share": 0.000112,
-        "yoy_change": null
+        "yoy_change": -1e-06
       },
       {
         "year": 2025,
         "count": 2,
         "share": 9.8e-05,
-        "yoy_change": -1.4e-05
+        "yoy_change": 4.2e-05
       },
       {
         "year": 2026,
@@ -8660,32 +8702,34 @@
         "yoy_change": -4.5e-05
       }
     ],
-    "MALAYAN": [
+    "SIBERIAN HUSKY": [
       {
-        "year": 2024,
+        "year": 2026,
         "count": 1,
-        "share": 5.6e-05,
+        "share": 5.3e-05,
         "yoy_change": null
       }
     ],
-    "UNKNOWN": [
+    "SHETLD SHEEPDOG": [
       {
-        "year": 2024,
+        "year": 2026,
         "count": 2,
-        "share": 0.000112,
+        "share": 0.000105,
+        "yoy_change": null
+      }
+    ],
+    "RAGDOLL MIX": [
+      {
+        "year": 2025,
+        "count": 2,
+        "share": 9.8e-05,
         "yoy_change": null
       },
       {
-        "year": 2025,
-        "count": 12,
-        "share": 0.000586,
-        "yoy_change": 0.000474
-      },
-      {
         "year": 2026,
-        "count": 12,
-        "share": 0.000633,
-        "yoy_change": 4.7e-05
+        "count": 1,
+        "share": 5.3e-05,
+        "yoy_change": -4.5e-05
       }
     ],
     "OCICAT X": [
@@ -8744,50 +8788,6 @@
         "count": 1,
         "share": 5.3e-05,
         "yoy_change": null
-      }
-    ],
-    "TONKINESE": [
-      {
-        "year": 2025,
-        "count": 1,
-        "share": 4.9e-05,
-        "yoy_change": null
-      },
-      {
-        "year": 2026,
-        "count": 2,
-        "share": 0.000105,
-        "yoy_change": 5.6e-05
-      }
-    ],
-    "SIBERIAN HUSKY": [
-      {
-        "year": 2026,
-        "count": 1,
-        "share": 5.3e-05,
-        "yoy_change": null
-      }
-    ],
-    "SHETLD SHEEPDOG": [
-      {
-        "year": 2026,
-        "count": 2,
-        "share": 0.000105,
-        "yoy_change": null
-      }
-    ],
-    "RAGDOLL MIX": [
-      {
-        "year": 2025,
-        "count": 2,
-        "share": 9.8e-05,
-        "yoy_change": null
-      },
-      {
-        "year": 2026,
-        "count": 1,
-        "share": 5.3e-05,
-        "yoy_change": -4.5e-05
       }
     ]
   }
